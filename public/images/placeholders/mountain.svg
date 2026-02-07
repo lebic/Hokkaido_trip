@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="Mountain view">
+  <rect width="800" height="400" fill="#f0f6ff" />
+  <polygon points="120,320 300,120 480,320" fill="#b3cfe8" />
+  <polygon points="320,320 520,90 720,320" fill="#a3c3df" />
+  <rect y="300" width="800" height="100" fill="#d7e7c9" />
+</svg>

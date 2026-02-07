@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="Lake view">
+  <rect width="800" height="400" fill="#e9f4ff" />
+  <rect y="220" width="800" height="180" fill="#9cc7eb" />
+  <path d="M0 220c120-40 220-40 320 0s200 40 320 0 160-40 160-40v220H0z" fill="#88b6db" />
+  <circle cx="650" cy="90" r="45" fill="#fff0e3" />
+</svg>

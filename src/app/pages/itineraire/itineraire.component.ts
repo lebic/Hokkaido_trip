@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ChipComponent } from '../../ui/chip/chip.component';
 import itineraireData from './itineraire.data.json';
+import { imageForText } from '../../utils/card-images';
 
 type CardTone = 'forest' | 'clay' | 'berry';
 
@@ -46,5 +47,13 @@ export class ItineraireComponent {
       'grid gap-4 rounded-3xl border bg-white/85 p-5 shadow-2xl shadow-amber-900/5 backdrop-blur',
       this.toneClasses[tone]
     ].join(' ');
+  }
+
+  protected cardImageSrc(card: PageCard): string {
+    return imageForText(`${card.title} ${card.chip}`).src;
+  }
+
+  protected cardImageAlt(card: PageCard): string {
+    return imageForText(`${card.title} ${card.chip}`).alt;
   }
 }

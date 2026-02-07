@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-label="Onsen retreat">
+  <rect width="800" height="400" fill="#ffece0" />
+  <rect x="120" y="200" width="560" height="140" rx="40" fill="#f2b29b" />
+  <path d="M220 160c0-24 20-44 44-44" stroke="#d98976" stroke-width="12" fill="none" />
+  <path d="M340 150c0-28 22-50 50-50" stroke="#d98976" stroke-width="12" fill="none" />
+  <path d="M470 160c0-24 20-44 44-44" stroke="#d98976" stroke-width="12" fill="none" />
+</svg>

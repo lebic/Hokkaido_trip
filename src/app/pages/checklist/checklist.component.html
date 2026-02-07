@@ -12,7 +12,9 @@
 
 <div class="grid gap-6 lg:grid-cols-2">
   @for (card of data.cards; track card.title) {
-    <article [class]="cardClass(card.tone)">
+    <article
+      class="grid gap-4 rounded-3xl border border-amber-100/70 bg-white/85 p-5 shadow-2xl shadow-amber-900/5 backdrop-blur"
+    >
       <div class="relative overflow-hidden rounded-2xl border border-amber-100/70">
         <img
           class="h-28 w-full object-cover sm:h-32"
@@ -22,29 +24,36 @@
         />
         <div class="absolute inset-0 bg-gradient-to-t from-white/80 via-white/10 to-transparent"></div>
       </div>
-      <div class="flex flex-wrap items-start justify-between gap-3">
-        <div class="grid gap-1">
-          <div class="flex items-center gap-2">
-            <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
-            <span class="text-xs uppercase tracking-[0.2em] text-amber-700/70">Etape</span>
-          </div>
-          <h2 class="text-xl font-semibold text-zinc-900">{{ card.title }}</h2>
+      <div class="grid gap-1">
+        <div class="flex items-center gap-2">
+          <span
+            class="rounded-full bg-amber-50/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70"
+          >
+            {{ card.chip }}
+          </span>
         </div>
+        <h2 class="text-xl font-semibold text-zinc-900">{{ card.title }}</h2>
       </div>
-
       @if (card.description) {
         <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
       }
 
-      <div class="grid gap-4 md:grid-cols-2">
+      <div class="grid gap-4">
         @for (section of card.sections; track section.title) {
           <div class="rounded-xl border border-amber-100/70 bg-white/80 p-4">
             <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70">
               {{ section.title }}
             </p>
-            <ul class="mt-2 list-disc space-y-1 pl-4 text-sm text-zinc-900/70">
-              @for (item of section.items; track item) {
-                <li>{{ item }}</li>
+            <ul class="mt-2 space-y-2 text-sm text-zinc-900/70">
+              @for (item of section.items; track item.label) {
+                <li class="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    class="h-4 w-4 rounded border-amber-200 text-amber-600"
+                    [checked]="item.checked"
+                  />
+                  <span>{{ item.label }}</span>
+                </li>
               }
             </ul>
           </div>

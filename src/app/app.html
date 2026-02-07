@@ -27,13 +27,15 @@
 
     <nav
       id="site-nav"
-      class="absolute left-6 right-6 top-full mt-2 flex flex-col gap-2 rounded-2xl border border-zinc-900/10 bg-[#fefaf5] p-4 shadow-xl shadow-zinc-900/10 md:static md:mt-0 md:flex md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+      class="absolute left-4 right-4 top-full mt-2 flex flex-col gap-2 rounded-2xl border border-zinc-900/10 bg-[#fefaf5] p-4 shadow-xl shadow-zinc-900/10 md:static md:mt-0 md:!flex md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
       [class.hidden]="!isMenuOpen()"
     >
       <app-nav-link to="/itineraire" (click)="closeMenu()">Itineraire</app-nav-link>
       <app-nav-link to="/hebergements" (click)="closeMenu()">Hebergements</app-nav-link>
       <app-nav-link to="/transports" (click)="closeMenu()">Transports</app-nav-link>
       <app-nav-link to="/activites" (click)="closeMenu()">Activites</app-nav-link>
+      <app-nav-link to="/checklist" (click)="closeMenu()">Checklist</app-nav-link>
+      <app-nav-link to="/reservations" (click)="closeMenu()">Reservations</app-nav-link>
     </nav>
   </header>
 

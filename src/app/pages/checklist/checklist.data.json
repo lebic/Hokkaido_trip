@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "eyebrow": "Checklist",
+    "title": "Tout ce dont j'ai besoin",
+    "description": "Coche au fur et a mesure, sans stress."
+  },
+  "cards": [
+    {
+      "chip": "Documents",
+      "title": "Essentiels",
+      "description": "A garder sur soi ou dans le cloud.",
+      "sections": [
+        {
+          "title": "Identite",
+          "items": [
+            { "label": "Passeport", "checked": false },
+            { "label": "Copie passeport", "checked": false },
+            { "label": "Assurance voyage", "checked": false }
+          ]
+        },
+        {
+          "title": "Reservations",
+          "items": [
+            { "label": "Billets avion", "checked": false },
+            { "label": "Ferry Sunflower", "checked": false },
+            { "label": "Hotels et ryokans", "checked": false }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Tech",
+      "title": "Electronique",
+      "description": "Pour rester connecte et serein.",
+      "sections": [
+        {
+          "title": "Materiel",
+          "items": [
+            { "label": "Telephone + chargeur", "checked": false },
+            { "label": "Batterie externe", "checked": false },
+            { "label": "Adaptateur prise", "checked": false }
+          ]
+        },
+        {
+          "title": "Apps",
+          "items": [
+            { "label": "Maps hors ligne", "checked": false },
+            { "label": "Traduction", "checked": false },
+            { "label": "Wallet / IC card", "checked": false }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Valise",
+      "title": "Vetements",
+      "description": "Minimaliste et adapte a la saison.",
+      "sections": [
+        {
+          "title": "Base",
+          "items": [
+            { "label": "Tenues confort", "checked": false },
+            { "label": "Couche chaude", "checked": false },
+            { "label": "Chaussures marche", "checked": false }
+          ]
+        },
+        {
+          "title": "Extras",
+          "items": [
+            { "label": "Maillot / serviette", "checked": false },
+            { "label": "Imperméable", "checked": false },
+            { "label": "Trousse toilette", "checked": false }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Sante",
+      "title": "Bien-etre",
+      "description": "Pour voyager serein.",
+      "sections": [
+        {
+          "title": "A prevoir",
+          "items": [
+            { "label": "Medicaments personnels", "checked": false },
+            { "label": "Masques", "checked": false },
+            { "label": "Gel / lingettes", "checked": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
