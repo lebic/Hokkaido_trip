@@ -38,7 +38,7 @@
       "chip": "JR Pass",
       "tone": "clay",
       "title": "Cartes JR Pass necessaires",
-      "description": "Utiliser les trains pour les grandes villes.",
+      "description": "Trains pour les grandes villes, voiture uniquement pour zones isolees.",
       "sections": [
         {
           "title": "Pass recommande",
@@ -50,14 +50,14 @@
           "title": "Couvrir",
           "items": [
             "Sapporo <-> Otaru (Jour 6)",
-            "Sapporo <-> Hakodate si changement de plan",
-            "Sapporo <-> Asahikawa si besoin"
+            "Sapporo <-> Asahikawa (Jour 8, option train)",
+            "Sapporo <-> Hakodate si besoin"
           ]
         },
         {
           "title": "Activation",
           "items": [
-            "Demarrer autour des Jours 5-7",
+            "Demarrer autour des Jours 5-9",
             "Reserver les sieges a l'avance"
           ]
         }
@@ -130,7 +130,7 @@
           "title": "Lignes utiles",
           "items": [
             "Sapporo <-> Otaru (JR Hakodate Line)",
-            "Sapporo -> Asahikawa (si besoin)"
+            "Sapporo -> Asahikawa (option train avant location)"
           ]
         },
         {
@@ -146,7 +146,7 @@
       "chip": "Jours 8-13",
       "tone": "berry",
       "title": "Location voiture (zones isolees)",
-      "description": "Selon itineraire : Sounkyo, Akan-ko, Biei.",
+      "description": "Uniquement pour Sounkyo, Akan-ko et Biei.",
       "sections": [
         {
           "title": "Quand louer",
