@@ -1,8 +1,8 @@
 <div
-  class="relative min-h-screen overflow-x-hidden font-display text-zinc-900 before:absolute before:-right-36 before:-top-28 before:h-80 before:w-80 before:rounded-full before:bg-[radial-gradient(circle_at_30%_30%,_#f8c3a1,_transparent_65%)] after:absolute after:-bottom-40 after:-left-40 after:h-[420px] after:w-[420px] after:rounded-full after:bg-[radial-gradient(circle_at_60%_40%,_#b4d8c2,_transparent_70%)]"
+  class="relative z-0 min-h-screen overflow-x-hidden font-display text-zinc-900 before:absolute before:-right-36 before:-top-28 before:h-80 before:w-80 before:rounded-full before:bg-[radial-gradient(circle_at_30%_30%,_#f8c3a1,_transparent_65%)] before:-z-10 after:absolute after:-bottom-40 after:-left-40 after:h-[420px] after:w-[420px] after:rounded-full after:bg-[radial-gradient(circle_at_60%_40%,_#b4d8c2,_transparent_70%)] after:-z-10"
 >
   <header
-    class="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-zinc-900/10 bg-[#f6f1ea]/80 px-6 py-5 backdrop-blur"
+    class="fixed left-0 right-0 top-0 z-10 flex items-center justify-between gap-4 border-b border-zinc-900/10 bg-[#f6f1ea]/80 px-6 py-5 backdrop-blur"
   >
     <div class="flex flex-col gap-1 uppercase tracking-[0.2em]">
       <span class="text-sm font-semibold">Hokkaido Trip</span>
@@ -39,7 +39,7 @@
     </nav>
   </header>
 
-  <main class="relative z-0 mx-auto w-full max-w-5xl px-6 pb-12 pt-10">
+  <main class="relative z-0 mx-auto w-full max-w-5xl px-6 pb-12 pt-28">
     <router-outlet></router-outlet>
   </main>
 </div>
