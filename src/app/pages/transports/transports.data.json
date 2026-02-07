@@ -1,38 +1,247 @@
 {
   "hero": {
     "eyebrow": "Transports",
-    "title": "Se deplacer facilement",
-    "description": "Gardez toutes vos liaisons et horaires dans un seul endroit."
+    "title": "Trains en priorite + voiture pour zones isolees",
+    "description": "Base sur l'itineraire : trains pour grandes villes, voiture ponctuelle en zones remotes."
   },
   "cards": [
     {
-      "chip": "Vol",
+      "chip": "Avant depart",
       "tone": "forest",
-      "title": "Tokyo -> Sapporo",
-      "description": "Aller en debut de voyage.",
-      "bullets": [
-        "Depart matin",
-        "Arrivee a New Chitose"
+      "title": "Vol international vers Tokyo",
+      "description": "Reservation principale du voyage.",
+      "sections": [
+        {
+          "title": "Reservation",
+          "items": [
+            "Billet avion aller-retour Europe -> Tokyo",
+            "Verifier bagages et correspondances"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        },
+        {
+          "title": "Arrivee",
+          "items": [
+            "Narita ou Haneda",
+            "Prevoir change et carte IC"
+          ]
+        }
       ]
     },
     {
-      "chip": "Train",
+      "chip": "JR Pass",
       "tone": "clay",
-      "title": "Sapporo -> Otaru",
-      "description": "Trajet express rapide, ideal pour la journee.",
-      "bullets": [
-        "JR Hakodate Line",
-        "Reservez les places fenetre"
+      "title": "Cartes JR Pass necessaires",
+      "description": "Utiliser les trains pour les grandes villes.",
+      "sections": [
+        {
+          "title": "Pass recommande",
+          "items": [
+            "JR Hokkaido Rail Pass (5 jours)"
+          ]
+        },
+        {
+          "title": "Couvrir",
+          "items": [
+            "Sapporo <-> Otaru (Jour 6)",
+            "Sapporo <-> Hakodate si changement de plan",
+            "Sapporo <-> Asahikawa si besoin"
+          ]
+        },
+        {
+          "title": "Activation",
+          "items": [
+            "Demarrer autour des Jours 5-7",
+            "Reserver les sieges a l'avance"
+          ]
+        }
       ]
     },
     {
-      "chip": "Voiture",
+      "chip": "Jours 1-3",
       "tone": "berry",
-      "title": "Otaru -> Furano",
-      "description": "Road trip flexible avec arrets photo.",
-      "bullets": [
-        "Temps estime: 3h",
-        "Pause a Asahikawa"
+      "title": "Transports Tokyo",
+      "description": "Deplacements urbains avant le ferry.",
+      "sections": [
+        {
+          "title": "Transferts",
+          "items": [
+            "Narita Express ou monorail vers hotel",
+            "Metro Tokyo pour visites"
+          ]
+        },
+        {
+          "title": "Jour 3 soir",
+          "items": [
+            "Train Tokyo -> Mito (1h30)",
+            "Bus Mito -> Oarai Ferry Terminal (30 min)"
+          ]
+        },
+        {
+          "title": "Reservation",
+          "items": [
+            "Billets train et bus (achat sur place)"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Jour 4",
+      "tone": "forest",
+      "title": "Ferry Oarai -> Tomakomai",
+      "description": "Traversees de 18h avec cabine.",
+      "sections": [
+        {
+          "title": "Reservation",
+          "items": [
+            "Ferry Sunflower (cabine privee)",
+            "Reserver 2-3 mois a l'avance"
+          ]
+        },
+        {
+          "title": "Horaires",
+          "items": [
+            "01h45 depart Oarai",
+            "19h45 arrivee Tomakomai"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email ferry"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Jours 5-7",
+      "tone": "clay",
+      "title": "Trains regionaux Hokkaido",
+      "description": "Priorite aux trains pour Sapporo et Otaru.",
+      "sections": [
+        {
+          "title": "Lignes utiles",
+          "items": [
+            "Sapporo <-> Otaru (JR Hakodate Line)",
+            "Sapporo -> Asahikawa (si besoin)"
+          ]
+        },
+        {
+          "title": "Conseils",
+          "items": [
+            "Reserver sieges fenetre",
+            "Utiliser JR Pass si actif"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Jours 8-13",
+      "tone": "berry",
+      "title": "Location voiture (zones isolees)",
+      "description": "Selon itineraire : Sounkyo, Akan-ko, Biei.",
+      "sections": [
+        {
+          "title": "Quand louer",
+          "items": [
+            "Sapporo -> Sounkyo Onsen",
+            "Sounkyo -> Akan-ko",
+            "Akan-ko -> Furano",
+            "Biei routes panoramiques"
+          ]
+        },
+        {
+          "title": "Reservation",
+          "items": [
+            "Assurance complete conseillee",
+            "Demander ETC + GPS"
+          ]
+        },
+        {
+          "title": "Retour",
+          "items": [
+            "Retour voiture a Sapporo (Jour 14)"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Excursions",
+      "tone": "forest",
+      "title": "Reservations activites",
+      "description": "A planifier selon les jours du road trip.",
+      "sections": [
+        {
+          "title": "Sounkyo",
+          "items": [
+            "Daisetsuzan Ropeway (reserver si possible)"
+          ]
+        },
+        {
+          "title": "Akan-ko",
+          "items": [
+            "Bateau sur Lake Akan",
+            "Village Ainou : spectacle et musee"
+          ]
+        },
+        {
+          "title": "Furano/Biei",
+          "items": [
+            "Farm Tomita (sans reservation)",
+            "Furano Wine House (reservation si besoin)"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Jour 15",
+      "tone": "clay",
+      "title": "Vol Sapporo -> Tokyo",
+      "description": "Retour en avion depuis New Chitose.",
+      "sections": [
+        {
+          "title": "Reservation",
+          "items": [
+            "Billet avion Sapporo (CTS) -> Tokyo (HND)",
+            "Choisir option bagages"
+          ]
+        },
+        {
+          "title": "Transferts",
+          "items": [
+            "Navette hotel -> aeroport",
+            "Monorail vers hotel Tokyo"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Jour 18",
+      "tone": "berry",
+      "title": "Vol retour Europe",
+      "description": "Depart final depuis Tokyo.",
+      "sections": [
+        {
+          "title": "Reservation",
+          "items": [
+            "Billet retour Tokyo -> Europe",
+            "Verifier heure d'enregistrement"
+          ]
+        },
+        {
+          "title": "Transfert",
+          "items": [
+            "Acces aeroport depuis hotel",
+            "Verifier transport tardif"
+          ]
+        }
       ]
     }
   ]
