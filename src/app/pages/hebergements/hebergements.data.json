@@ -1,38 +1,459 @@
 {
   "hero": {
     "eyebrow": "Hebergements",
-    "title": "Ou poser vos valises",
-    "description": "Centralisez vos reservations et les infos utiles pour chaque etape."
+    "title": "Guide complet des hebergements",
+    "description": "Budget total hebergements : 2100 EUR"
   },
   "cards": [
     {
-      "chip": "Sapporo",
+      "chip": "Tokyo",
       "tone": "forest",
-      "title": "Hotel central",
-      "description": "Proche des lignes de metro et du quartier Susukino.",
-      "bullets": [
-        "Check-in 15:00",
-        "Petit-dejeuner inclus"
+      "title": "Jours 1-3 (arrivee)",
+      "description": "Hotel 3 etoiles centre-ville.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "300 EUR (100 EUR / nuit)"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver"
+          ]
+        },
+        {
+          "title": "Options recommandees",
+          "items": [
+            "Hotel near Tokyo Station (Nihonbashi, Yaesu, Marunouchi)",
+            "Hotel near Shinjuku (centre-ville anime)",
+            "Hotel near Ueno (proche parc et musees)"
+          ]
+        },
+        {
+          "title": "Criteres",
+          "items": [
+            "Acces facile depuis aeroport",
+            "Check-in tardif possible",
+            "Proximite transports pour Oarai (jour 3)"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        }
       ]
     },
     {
-      "chip": "Otaru",
+      "chip": "Ferry",
       "tone": "clay",
-      "title": "Ryokan bord de canal",
-      "description": "Ambiance traditionnelle et vue nocturne.",
-      "bullets": [
-        "Bain prive reserve",
-        "Proche des boutiques artisanales"
+      "title": "Jour 4 (Sunflower Ferry)",
+      "description": "Cabine privee sur ferry.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "150 EUR (cabine privee)"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver en priorite"
+          ]
+        },
+        {
+          "title": "Transport",
+          "items": [
+            "Route : Oarai Port -> Tomakomai Port",
+            "Duree : 18h (01h45 -> 19h45)"
+          ]
+        },
+        {
+          "title": "Cabines",
+          "items": [
+            "Standard privee (~150 EUR)",
+            "Deluxe (~250 EUR)",
+            "Suite (~400 EUR)"
+          ]
+        },
+        {
+          "title": "Acces a Oarai",
+          "items": [
+            "Train Tokyo -> Mito (1h30)",
+            "Bus Mito -> Oarai (30 min)",
+            "Taxi direct (2h)"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email ferry"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Sapporo",
+      "tone": "berry",
+      "title": "Jours 5-7",
+      "description": "Hotel 3 etoiles centre-ville.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "300 EUR (100 EUR / nuit)"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver"
+          ]
+        },
+        {
+          "title": "Options recommandees",
+          "items": [
+            "Vessel Inn Sapporo Nakajima Park",
+            "ibis Styles Sapporo",
+            "UNWIND HOTEL & BAR SAPPORO"
+          ]
+        },
+        {
+          "title": "Notes",
+          "items": [
+            "Arrivee tardive jour 4",
+            "Parking si voiture de location",
+            "Verifier check-in tardif"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Sounkyo Onsen",
+      "tone": "forest",
+      "title": "Jour 8",
+      "description": "Ryokan avec onsen et demi-pension.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "180 EUR"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver en priorite"
+          ]
+        },
+        {
+          "title": "Caracteristiques",
+          "items": [
+            "Onsen de qualite",
+            "Demi-pension incluse",
+            "Vue gorges de Sounkyo",
+            "Parking gratuit"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Sounkyo Choyotei",
+            "Hotel Taisetsu",
+            "Choyo Resort Hotel"
+          ]
+        },
+        {
+          "title": "Notes",
+          "items": [
+            "Reserver tot",
+            "Confirmer repas inclus",
+            "Demander chambre avec vue"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Akan-ko",
+      "tone": "clay",
+      "title": "Jours 9-11",
+      "description": "Ryokan ou hotel avec onsen.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "450 EUR (150 EUR / nuit)"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver en priorite"
+          ]
+        },
+        {
+          "title": "Caracteristiques",
+          "items": [
+            "Bord du lac Akan",
+            "Onsen avec vue",
+            "Demi-pension incluse",
+            "Parking gratuit"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Tsuruga Wings",
+            "New Akan Hotel",
+            "Akan Yuku no Sato Tsuruga",
+            "Akan no Mori Tsuruga Resort Hanayuuka"
+          ]
+        },
+        {
+          "title": "Criteres",
+          "items": [
+            "Vue sur le lac",
+            "Qualite des onsen",
+            "Proximite village Ainou",
+            "Qualite repas kaiseki"
+          ]
+        },
+        {
+          "title": "Notes",
+          "items": [
+            "Reserver 3-6 mois a l'avance",
+            "Sejour 3 nuits possible",
+            "Verifier politique repas"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        }
       ]
     },
     {
       "chip": "Furano",
       "tone": "berry",
-      "title": "Auberge nature",
-      "description": "Calme absolu, parfait pour recuperer.",
-      "bullets": [
-        "Parking inclus",
-        "Option repas maison"
+      "title": "Jours 12-13",
+      "description": "Hotel 3 etoiles centre-ville ou proche nature.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "200 EUR (100 EUR / nuit)"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Natulux Hotel Furano",
+            "New Furano Prince Hotel",
+            "Hotel Munin Furano"
+          ]
+        },
+        {
+          "title": "Criteres",
+          "items": [
+            "Parking gratuit",
+            "Acces facile vers Biei et Farm Tomita",
+            "Proximite restaurants",
+            "Vue montagnes"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Sapporo",
+      "tone": "forest",
+      "title": "Jour 14 (retour)",
+      "description": "Hotel 3 etoiles centre-ville.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "100 EUR"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Meme hotel que jours 5-7",
+            "Ou nouveau quartier"
+          ]
+        },
+        {
+          "title": "Criteres",
+          "items": [
+            "Centre-ville",
+            "Proche agence location",
+            "Acces New Chitose",
+            "Proximite shopping"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Tokyo",
+      "tone": "clay",
+      "title": "Jours 16-18 (retour)",
+      "description": "Hotel 3 etoiles centre-ville.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "300 EUR (100 EUR / nuit)"
+          ]
+        },
+        {
+          "title": "Statut",
+          "items": [
+            "A reserver"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Meme quartier qu'arrivee",
+            "Ou nouveau quartier (Ginza, Roppongi, Asakusa)"
+          ]
+        },
+        {
+          "title": "Criteres",
+          "items": [
+            "Acces facile depuis Haneda",
+            "Acces facile vers aeroport jour 18",
+            "Proximite shopping",
+            "Quartier avec bons restaurants"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport",
+            "Confirmation email"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Checklist",
+      "tone": "berry",
+      "title": "Checklist de reservation",
+      "description": "Priorites de reservation.",
+      "sections": [
+        {
+          "title": "Priorite 1",
+          "items": [
+            "Ferry Sunflower (jour 4)",
+            "Sounkyo Onsen (jour 8)",
+            "Akan-ko (jours 9-11)"
+          ]
+        },
+        {
+          "title": "Priorite 2",
+          "items": [
+            "Tokyo jours 1-3",
+            "Sapporo jours 5-7",
+            "Furano jours 12-13",
+            "Sapporo jour 14",
+            "Tokyo jours 16-18"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Conseils",
+      "tone": "forest",
+      "title": "Conseils generaux",
+      "description": "Bonnes pratiques pour reserver.",
+      "sections": [
+        {
+          "title": "Reservation",
+          "items": [
+            "Ferry : reserver 2-3 mois a l'avance",
+            "Hotels : Booking, Agoda, Rakuten",
+            "Ryokans : sites specialises",
+            "Reserver 3-6 mois pour meilleurs tarifs"
+          ]
+        },
+        {
+          "title": "Communication",
+          "items": [
+            "Staff anglophone frequent",
+            "Adresse en japonais sur telephone",
+            "Confirmer heure check-in",
+            "Preciser restrictions alimentaires"
+          ]
+        },
+        {
+          "title": "Inclus",
+          "items": [
+            "WiFi gratuit",
+            "Produits de bain",
+            "Pyjamas/yukatas en ryokan",
+            "Parking gratuit hors Tokyo"
+          ]
+        },
+        {
+          "title": "A verifier",
+          "items": [
+            "Check-in / check-out",
+            "Petit-dejeuner inclus",
+            "Politique d'annulation",
+            "Parking disponible",
+            "Repas inclus en ryokan"
+          ]
+        }
       ]
     }
   ]
