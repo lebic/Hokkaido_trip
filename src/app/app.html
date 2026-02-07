@@ -1,0 +1,38 @@
+<div class="app-shell">
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-label">Hokkaido Trip</span>
+      <span class="brand-sub">Carnet de voyage</span>
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isMenuOpen()"
+      aria-controls="site-nav"
+    >
+      <span class="menu-icon" aria-hidden="true"></span>
+      Menu
+    </button>
+
+    <nav id="site-nav" class="site-nav" [class.is-open]="isMenuOpen()">
+      <a routerLink="/itineraire" routerLinkActive="active" (click)="closeMenu()">
+        Itineraire
+      </a>
+      <a routerLink="/hebergements" routerLinkActive="active" (click)="closeMenu()">
+        Hebergements
+      </a>
+      <a routerLink="/transports" routerLinkActive="active" (click)="closeMenu()">
+        Transports
+      </a>
+      <a routerLink="/activites" routerLinkActive="active" (click)="closeMenu()">
+        Activites
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <router-outlet></router-outlet>
+  </main>
+</div>
