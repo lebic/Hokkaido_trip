@@ -1,38 +1,43 @@
-<div class="app-shell">
-  <header class="site-header">
-    <div class="brand">
-      <span class="brand-label">Hokkaido Trip</span>
-      <span class="brand-sub">Carnet de voyage</span>
+<div
+  class="relative min-h-screen overflow-x-hidden font-display text-zinc-900 before:absolute before:-right-36 before:-top-28 before:h-80 before:w-80 before:rounded-full before:bg-[radial-gradient(circle_at_30%_30%,_#f8c3a1,_transparent_65%)] after:absolute after:-bottom-40 after:-left-40 after:h-[420px] after:w-[420px] after:rounded-full after:bg-[radial-gradient(circle_at_60%_40%,_#b4d8c2,_transparent_70%)]"
+>
+  <header
+    class="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-zinc-900/10 bg-[#f6f1ea]/80 px-6 py-5 backdrop-blur"
+  >
+    <div class="flex flex-col gap-1 uppercase tracking-[0.2em]">
+      <span class="text-sm font-semibold">Hokkaido Trip</span>
+      <span class="text-[0.65rem] font-medium text-zinc-900/60">Carnet de voyage</span>
     </div>
 
-    <button
-      class="menu-toggle"
-      type="button"
+    <app-button
+      className="md:hidden border border-zinc-900/20 bg-[#fefaf5] px-4 py-2 text-[0.65rem] tracking-[0.2em]"
+      variant="outline"
+      size="sm"
+      [ariaExpanded]="isMenuOpen()"
+      ariaControls="site-nav"
       (click)="toggleMenu()"
-      [attr.aria-expanded]="isMenuOpen()"
-      aria-controls="site-nav"
     >
-      <span class="menu-icon" aria-hidden="true"></span>
+      <span class="flex flex-col gap-1" aria-hidden="true">
+        <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
+        <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
+        <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
+      </span>
       Menu
-    </button>
+    </app-button>
 
-    <nav id="site-nav" class="site-nav" [class.is-open]="isMenuOpen()">
-      <a routerLink="/itineraire" routerLinkActive="active" (click)="closeMenu()">
-        Itineraire
-      </a>
-      <a routerLink="/hebergements" routerLinkActive="active" (click)="closeMenu()">
-        Hebergements
-      </a>
-      <a routerLink="/transports" routerLinkActive="active" (click)="closeMenu()">
-        Transports
-      </a>
-      <a routerLink="/activites" routerLinkActive="active" (click)="closeMenu()">
-        Activites
-      </a>
+    <nav
+      id="site-nav"
+      class="absolute left-6 right-6 top-full mt-2 flex flex-col gap-2 rounded-2xl border border-zinc-900/10 bg-[#fefaf5] p-4 shadow-xl shadow-zinc-900/10 md:static md:mt-0 md:flex md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+      [class.hidden]="!isMenuOpen()"
+    >
+      <app-nav-link to="/itineraire" (click)="closeMenu()">Itineraire</app-nav-link>
+      <app-nav-link to="/hebergements" (click)="closeMenu()">Hebergements</app-nav-link>
+      <app-nav-link to="/transports" (click)="closeMenu()">Transports</app-nav-link>
+      <app-nav-link to="/activites" (click)="closeMenu()">Activites</app-nav-link>
     </nav>
   </header>
 
-  <main class="page">
+  <main class="relative z-0 mx-auto w-full max-w-5xl px-6 pb-12 pt-10">
     <router-outlet></router-outlet>
   </main>
 </div>

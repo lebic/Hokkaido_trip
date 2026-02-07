@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
+import { ButtonComponent } from './ui/button/button.component';
+import { NavLinkComponent } from './ui/nav-link/nav-link.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, ButtonComponent, NavLinkComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

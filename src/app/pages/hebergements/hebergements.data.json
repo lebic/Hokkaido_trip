@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Hebergements",
+    "title": "Ou poser vos valises",
+    "description": "Centralisez vos reservations et les infos utiles pour chaque etape."
+  },
+  "cards": [
+    {
+      "chip": "Sapporo",
+      "tone": "forest",
+      "title": "Hotel central",
+      "description": "Proche des lignes de metro et du quartier Susukino.",
+      "bullets": [
+        "Check-in 15:00",
+        "Petit-dejeuner inclus"
+      ]
+    },
+    {
+      "chip": "Otaru",
+      "tone": "clay",
+      "title": "Ryokan bord de canal",
+      "description": "Ambiance traditionnelle et vue nocturne.",
+      "bullets": [
+        "Bain prive reserve",
+        "Proche des boutiques artisanales"
+      ]
+    },
+    {
+      "chip": "Furano",
+      "tone": "berry",
+      "title": "Auberge nature",
+      "description": "Calme absolu, parfait pour recuperer.",
+      "bullets": [
+        "Parking inclus",
+        "Option repas maison"
+      ]
+    }
+  ]
+}

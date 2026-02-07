@@ -1,39 +1,26 @@
-<section class="page-hero">
-  <span class="eyebrow">Itineraire</span>
-  <h1>Carte mentale de votre voyage</h1>
-  <p>
-    Planifiez les etapes principales et gardez une vision claire des villes a visiter.
+<section class="grid gap-3 pb-4">
+  <span class="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-zinc-900/60">
+    {{ data.hero.eyebrow }}
+  </span>
+  <h1 class="text-3xl font-semibold">{{ data.hero.title }}</h1>
+  <p class="max-w-2xl text-base leading-relaxed text-zinc-900/70">
+    {{ data.hero.description }}
   </p>
 </section>
 
-<div class="card-grid">
-  <article class="card">
-    <span class="chip">Jour 1-2</span>
-    <h2>Sapporo</h2>
-    <p>Arrivee, check-in, et premiere immersion dans la ville.</p>
-    <ul class="list">
-      <li>Odori Park au coucher du soleil</li>
-      <li>Marche de Nijo pour les saveurs locales</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Jour 3-4</span>
-    <h2>Otaru</h2>
-    <p>Ville portuaire et canaux pour une escapade romantique.</p>
-    <ul class="list">
-      <li>Canal et entrepots en pierre</li>
-      <li>Rue des verreries et cafes</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Jour 5-7</span>
-    <h2>Furano</h2>
-    <p>Nature, champs fleuris et paysages ouverts.</p>
-    <ul class="list">
-      <li>Route panoramique</li>
-      <li>Pause photo dans les collines</li>
-    </ul>
-  </article>
+<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+  @for (card of data.cards; track card.title) {
+    <article
+      class="grid gap-3 rounded-2xl border border-zinc-900/10 bg-[#fffaf5] p-5 shadow-lg shadow-zinc-900/5"
+    >
+      <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
+      <h2 class="text-lg font-semibold">{{ card.title }}</h2>
+      <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
+      <ul class="list-disc pl-4 text-sm text-zinc-900/70">
+        @for (item of card.bullets; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+  }
 </div>

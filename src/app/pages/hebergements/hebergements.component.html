@@ -1,37 +1,26 @@
-<section class="page-hero">
-  <span class="eyebrow">Hebergements</span>
-  <h1>Ou poser vos valises</h1>
-  <p>Centralisez vos reservations et les infos utiles pour chaque etape.</p>
+<section class="grid gap-3 pb-4">
+  <span class="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-zinc-900/60">
+    {{ data.hero.eyebrow }}
+  </span>
+  <h1 class="text-3xl font-semibold">{{ data.hero.title }}</h1>
+  <p class="max-w-2xl text-base leading-relaxed text-zinc-900/70">
+    {{ data.hero.description }}
+  </p>
 </section>
 
-<div class="card-grid">
-  <article class="card">
-    <span class="chip">Sapporo</span>
-    <h2>Hotel central</h2>
-    <p>Proche des lignes de metro et du quartier Susukino.</p>
-    <ul class="list">
-      <li>Check-in 15:00</li>
-      <li>Petit-dejeuner inclus</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Otaru</span>
-    <h2>Ryokan bord de canal</h2>
-    <p>Ambiance traditionnelle et vue nocturne.</p>
-    <ul class="list">
-      <li>Bain prive reserve</li>
-      <li>Proche des boutiques artisanales</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Furano</span>
-    <h2>Auberge nature</h2>
-    <p>Calme absolu, parfait pour recuperer.</p>
-    <ul class="list">
-      <li>Parking inclus</li>
-      <li>Option repas maison</li>
-    </ul>
-  </article>
+<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+  @for (card of data.cards; track card.title) {
+    <article
+      class="grid gap-3 rounded-2xl border border-zinc-900/10 bg-[#fffaf5] p-5 shadow-lg shadow-zinc-900/5"
+    >
+      <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
+      <h2 class="text-lg font-semibold">{{ card.title }}</h2>
+      <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
+      <ul class="list-disc pl-4 text-sm text-zinc-900/70">
+        @for (item of card.bullets; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+  }
 </div>

@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Transports",
+    "title": "Se deplacer facilement",
+    "description": "Gardez toutes vos liaisons et horaires dans un seul endroit."
+  },
+  "cards": [
+    {
+      "chip": "Vol",
+      "tone": "forest",
+      "title": "Tokyo -> Sapporo",
+      "description": "Aller en debut de voyage.",
+      "bullets": [
+        "Depart matin",
+        "Arrivee a New Chitose"
+      ]
+    },
+    {
+      "chip": "Train",
+      "tone": "clay",
+      "title": "Sapporo -> Otaru",
+      "description": "Trajet express rapide, ideal pour la journee.",
+      "bullets": [
+        "JR Hakodate Line",
+        "Reservez les places fenetre"
+      ]
+    },
+    {
+      "chip": "Voiture",
+      "tone": "berry",
+      "title": "Otaru -> Furano",
+      "description": "Road trip flexible avec arrets photo.",
+      "bullets": [
+        "Temps estime: 3h",
+        "Pause a Asahikawa"
+      ]
+    }
+  ]
+}

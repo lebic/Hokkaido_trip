@@ -1,37 +1,26 @@
-<section class="page-hero">
-  <span class="eyebrow">Transports</span>
-  <h1>Se deplacer facilement</h1>
-  <p>Gardez toutes vos liaisons et horaires dans un seul endroit.</p>
+<section class="grid gap-3 pb-4">
+  <span class="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-zinc-900/60">
+    {{ data.hero.eyebrow }}
+  </span>
+  <h1 class="text-3xl font-semibold">{{ data.hero.title }}</h1>
+  <p class="max-w-2xl text-base leading-relaxed text-zinc-900/70">
+    {{ data.hero.description }}
+  </p>
 </section>
 
-<div class="card-grid">
-  <article class="card">
-    <span class="chip">Vol</span>
-    <h2>Tokyo -> Sapporo</h2>
-    <p>Aller en debut de voyage.</p>
-    <ul class="list">
-      <li>Depart matin</li>
-      <li>Arrivee a New Chitose</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Train</span>
-    <h2>Sapporo -> Otaru</h2>
-    <p>Trajet express rapide, ideal pour la journee.</p>
-    <ul class="list">
-      <li>JR Hakodate Line</li>
-      <li>Reservez les places fenetre</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Voiture</span>
-    <h2>Otaru -> Furano</h2>
-    <p>Road trip flexible avec arrets photo.</p>
-    <ul class="list">
-      <li>Temps estime: 3h</li>
-      <li>Pause a Asahikawa</li>
-    </ul>
-  </article>
+<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+  @for (card of data.cards; track card.title) {
+    <article
+      class="grid gap-3 rounded-2xl border border-zinc-900/10 bg-[#fffaf5] p-5 shadow-lg shadow-zinc-900/5"
+    >
+      <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
+      <h2 class="text-lg font-semibold">{{ card.title }}</h2>
+      <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
+      <ul class="list-disc pl-4 text-sm text-zinc-900/70">
+        @for (item of card.bullets; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+  }
 </div>

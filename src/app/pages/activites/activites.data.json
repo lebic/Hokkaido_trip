@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Activites",
+    "title": "Moments forts a ne pas rater",
+    "description": "Listez vos experiences favorites et les horaires importants."
+  },
+  "cards": [
+    {
+      "chip": "Nature",
+      "tone": "forest",
+      "title": "Onsen en soiree",
+      "description": "Detente apres une journee de marche.",
+      "bullets": [
+        "Reservation 20:00",
+        "Serviettes fournies"
+      ]
+    },
+    {
+      "chip": "Ville",
+      "tone": "clay",
+      "title": "Marche nocturne",
+      "description": "Street food et ambiance lumineuse.",
+      "bullets": [
+        "Quartier Susukino",
+        "Budget snacks"
+      ]
+    },
+    {
+      "chip": "Photo",
+      "tone": "berry",
+      "title": "Points de vue",
+      "description": "Selection d'endroits pour capturer la lumiere.",
+      "bullets": [
+        "Colline panoramique",
+        "Canal d'Otaru au matin"
+      ]
+    }
+  ]
+}

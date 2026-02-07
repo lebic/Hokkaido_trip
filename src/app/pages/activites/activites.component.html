@@ -1,37 +1,26 @@
-<section class="page-hero">
-  <span class="eyebrow">Activites</span>
-  <h1>Moments forts a ne pas rater</h1>
-  <p>Listez vos experiences favorites et les horaires importants.</p>
+<section class="grid gap-3 pb-4">
+  <span class="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-zinc-900/60">
+    {{ data.hero.eyebrow }}
+  </span>
+  <h1 class="text-3xl font-semibold">{{ data.hero.title }}</h1>
+  <p class="max-w-2xl text-base leading-relaxed text-zinc-900/70">
+    {{ data.hero.description }}
+  </p>
 </section>
 
-<div class="card-grid">
-  <article class="card">
-    <span class="chip">Nature</span>
-    <h2>Onsen en soiree</h2>
-    <p>Detente apres une journee de marche.</p>
-    <ul class="list">
-      <li>Reservation 20:00</li>
-      <li>Serviettes fournies</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Ville</span>
-    <h2>Marche nocturne</h2>
-    <p>Street food et ambiance lumineuse.</p>
-    <ul class="list">
-      <li>Quartier Susukino</li>
-      <li>Budget snacks</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <span class="chip">Photo</span>
-    <h2>Points de vue</h2>
-    <p>Selection d'endroits pour capturer la lumiere.</p>
-    <ul class="list">
-      <li>Colline panoramique</li>
-      <li>Canal d'Otaru au matin</li>
-    </ul>
-  </article>
+<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+  @for (card of data.cards; track card.title) {
+    <article
+      class="grid gap-3 rounded-2xl border border-zinc-900/10 bg-[#fffaf5] p-5 shadow-lg shadow-zinc-900/5"
+    >
+      <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
+      <h2 class="text-lg font-semibold">{{ card.title }}</h2>
+      <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
+      <ul class="list-disc pl-4 text-sm text-zinc-900/70">
+        @for (item of card.bullets; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+  }
 </div>

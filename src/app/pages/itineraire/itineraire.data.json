@@ -1,0 +1,245 @@
+{
+  "hero": {
+    "eyebrow": "Itineraire",
+    "title": "Itineraire jour par jour - 19 jours",
+    "description": "Cout total estime : 3920 EUR"
+  },
+  "cards": [
+    {
+      "chip": "Jour 1",
+      "tone": "forest",
+      "title": "Arrivee a Tokyo",
+      "description": "Installation et premiere decouverte.",
+      "bullets": [
+        "Hebergement : hotel a Tokyo (1 nuit)",
+        "Transport : arrivee a Tokyo (Narita ou Haneda)",
+        "Train Narita Express vers hotel centre-ville",
+        "Quartier au choix : Shibuya, Shinjuku, Asakusa",
+        "Diner local puis repos"
+      ]
+    },
+    {
+      "chip": "Jour 2",
+      "tone": "clay",
+      "title": "Tokyo -> Sapporo",
+      "description": "Long trajet en shinkansen et express JR.",
+      "bullets": [
+        "Hebergement : hotel a Sapporo centre-ville",
+        "08h00 : depart Tokyo Station (Hayabusa)",
+        "12h00 : arrivee Shin-Hakodate-Hokuto",
+        "12h30 : JR Limited Express Hokuto",
+        "16h00 : arrivee Sapporo Station",
+        "Duree totale : 8h avec pause repas"
+      ]
+    },
+    {
+      "chip": "Jour 3",
+      "tone": "berry",
+      "title": "Sapporo - exploration urbaine",
+      "description": "Sites centraux et quartier Susukino.",
+      "bullets": [
+        "Hebergement : hotel a Sapporo",
+        "Odori Park et Clock Tower",
+        "Musee de la biere de Sapporo",
+        "Hitsujigaoka Observation Hill",
+        "Soiree a Susukino"
+      ]
+    },
+    {
+      "chip": "Jour 4",
+      "tone": "forest",
+      "title": "Excursion a Otaru",
+      "description": "Canal historique et artisanat.",
+      "bullets": [
+        "Train vers Otaru (~35 min)",
+        "Promenade le long du canal",
+        "Boutiques de verre artisanal",
+        "Snacks locaux et degustations",
+        "Retour a Sapporo en fin de journee"
+      ]
+    },
+    {
+      "chip": "Jour 5",
+      "tone": "clay",
+      "title": "Sapporo -> Asahikawa",
+      "description": "Installation et soiree ramen.",
+      "bullets": [
+        "Hebergement : hotel a Asahikawa (2 nuits)",
+        "09h30 : depart Sapporo Station",
+        "11h00 : arrivee Asahikawa (JR Limited Express)",
+        "Exploration centre-ville",
+        "Soiree ramen, specialite locale"
+      ]
+    },
+    {
+      "chip": "Jour 6",
+      "tone": "berry",
+      "title": "Asahikawa",
+      "description": "Journee nature et temps libre.",
+      "bullets": [
+        "Hebergement : hotel a Asahikawa",
+        "Asahiyama Zoo",
+        "Ueno Farm ou marches locaux",
+        "Temps libre en ville"
+      ]
+    },
+    {
+      "chip": "Jour 7",
+      "tone": "forest",
+      "title": "Asahikawa -> Noboribetsu Onsen",
+      "description": "Arrivee au ryokan et onsen.",
+      "bullets": [
+        "Hebergement : ryokan Noboribetsu (2 nuits)",
+        "09h00 : depart Asahikawa",
+        "13h30 : arrivee Noboribetsu via Sapporo",
+        "Navette ryokan (15 min, reserver)",
+        "Onsen et diner kaiseki"
+      ]
+    },
+    {
+      "chip": "Jour 8",
+      "tone": "clay",
+      "title": "Noboribetsu Onsen",
+      "description": "Nature volcanique et bains.",
+      "bullets": [
+        "Hebergement : ryokan Noboribetsu",
+        "Balade Jigokudani (Hell Valley)",
+        "Sentier Oyunuma footbath",
+        "Plusieurs sessions onsen",
+        "Diner kaiseki"
+      ]
+    },
+    {
+      "chip": "Jour 9",
+      "tone": "berry",
+      "title": "Noboribetsu -> Hakodate",
+      "description": "Arrivee et premiere exploration.",
+      "bullets": [
+        "Hebergement : hotel a Hakodate (3 nuits)",
+        "10h00 : navette vers gare",
+        "13h00 : arrivee Hakodate (JR Hokuto)",
+        "Installation a l'hotel",
+        "Diner local"
+      ]
+    },
+    {
+      "chip": "Jour 10",
+      "tone": "forest",
+      "title": "Hakodate - decouverte",
+      "description": "Marche, parc et vue nocturne.",
+      "bullets": [
+        "Hebergement : hotel a Hakodate",
+        "Marche du matin (poisson frais)",
+        "Goryokaku Park et tour d'observation",
+        "Vue nocturne depuis Mount Hakodate"
+      ]
+    },
+    {
+      "chip": "Jour 11",
+      "tone": "clay",
+      "title": "Hakodate - culture locale",
+      "description": "Quartiers historiques et cuisine.",
+      "bullets": [
+        "Hebergement : hotel a Hakodate",
+        "Hakodate Park",
+        "Balade dans les quartiers historiques",
+        "Decouvertes culinaires"
+      ]
+    },
+    {
+      "chip": "Jour 12",
+      "tone": "berry",
+      "title": "Hakodate -> Furano",
+      "description": "Long trajet avec correspondance.",
+      "bullets": [
+        "Hebergement : hotel a Furano (2 nuits)",
+        "08h00 : depart Hakodate",
+        "14h00 : arrivee Furano via Sapporo",
+        "Prevoir dejeuner a Sapporo Station",
+        "Installation et decouverte locale"
+      ]
+    },
+    {
+      "chip": "Jour 13",
+      "tone": "forest",
+      "title": "Furano & Biei",
+      "description": "Fleurs, artisanat et paysages.",
+      "bullets": [
+        "Hebergement : hotel a Furano",
+        "Champs floraux (selon saison)",
+        "Furano Cheese Factory",
+        "Ningle Terrace & cafes",
+        "Paysages de Biei (voiture conseillee)"
+      ]
+    },
+    {
+      "chip": "Jour 14",
+      "tone": "clay",
+      "title": "Furano -> Sapporo",
+      "description": "Retour et soiree detente.",
+      "bullets": [
+        "Hebergement : hotel a Sapporo (3 nuits)",
+        "14h00 : depart Furano",
+        "16h30 : arrivee Sapporo",
+        "Check-in vers 17h",
+        "Soiree detente"
+      ]
+    },
+    {
+      "chip": "Jour 15",
+      "tone": "berry",
+      "title": "Sapporo - excursion nature",
+      "description": "Journee au choix.",
+      "bullets": [
+        "Hebergement : hotel a Sapporo",
+        "Daisetsuzan National Park",
+        "Lac Toya",
+        "Niseko"
+      ]
+    },
+    {
+      "chip": "Jour 16",
+      "tone": "forest",
+      "title": "Sapporo - temps libre",
+      "description": "Shopping et musees.",
+      "bullets": [
+        "Hebergement : hotel a Sapporo",
+        "Shopping grands magasins",
+        "Musees et quartiers historiques",
+        "Derniers achats souvenirs"
+      ]
+    },
+    {
+      "chip": "Jour 17",
+      "tone": "clay",
+      "title": "Sapporo -> Tokyo",
+      "description": "Vol interieur et arrivee a Tokyo.",
+      "bullets": [
+        "Navette hotel -> aeroport",
+        "14h00 : depart New Chitose",
+        "17h30 : arrivee Haneda",
+        "Soiree libre a Tokyo"
+      ]
+    },
+    {
+      "chip": "Jour 18",
+      "tone": "berry",
+      "title": "Tokyo",
+      "description": "Dernieres decouvertes.",
+      "bullets": [
+        "Shopping ou visites symboliques",
+        "Quartiers : Ginza, Akihabara, Harajuku",
+        "Derniers souvenirs"
+      ]
+    },
+    {
+      "chip": "Jour 19",
+      "tone": "forest",
+      "title": "Retour Europe",
+      "description": "Vol retour depuis Tokyo.",
+      "bullets": [
+        "Depart depuis Tokyo vers l'Europe"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<a
+  [routerLink]="to()"
+  [routerLinkActive]="activeClasses"
+  [routerLinkActiveOptions]="{ exact: exact() }"
+  [class]="classes()"
+>
+  <ng-content></ng-content>
+</a>
