@@ -8,19 +8,37 @@
   </p>
 </section>
 
-<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+<div class="grid gap-6 lg:grid-cols-2">
   @for (card of data.cards; track card.title) {
-    <article
-      class="grid gap-3 rounded-2xl border border-zinc-900/10 bg-[#fffaf5] p-5 shadow-lg shadow-zinc-900/5"
-    >
-      <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
-      <h2 class="text-lg font-semibold">{{ card.title }}</h2>
-      <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
-      <ul class="list-disc pl-4 text-sm text-zinc-900/70">
-        @for (item of card.bullets; track item) {
-          <li>{{ item }}</li>
+    <article [class]="cardClass(card.tone)">
+      <div class="flex flex-wrap items-start justify-between gap-3">
+        <div class="grid gap-1">
+          <div class="flex items-center gap-2">
+            <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
+            <span class="text-xs uppercase tracking-[0.2em] text-zinc-500">Etape</span>
+          </div>
+          <h2 class="text-xl font-semibold text-zinc-900">{{ card.title }}</h2>
+        </div>
+      </div>
+
+      @if (card.description) {
+        <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
+      }
+
+      <div class="grid gap-4 md:grid-cols-2">
+        @for (section of card.sections; track section.title) {
+          <div class="rounded-xl border border-white/70 bg-white/70 p-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+              {{ section.title }}
+            </p>
+            <ul class="mt-2 list-disc space-y-1 pl-4 text-sm text-zinc-900/70">
+              @for (item of section.items; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </div>
         }
-      </ul>
+      </div>
     </article>
   }
 </div>

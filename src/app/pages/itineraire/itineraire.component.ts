@@ -4,12 +4,17 @@ import itineraireData from './itineraire.data.json';
 
 type CardTone = 'forest' | 'clay' | 'berry';
 
+interface PageSection {
+  title: string;
+  items: string[];
+}
+
 interface PageCard {
   chip: string;
   tone: CardTone;
   title: string;
-  description: string;
-  bullets: string[];
+  description?: string;
+  sections: PageSection[];
 }
 
 interface PageData {
@@ -30,4 +35,16 @@ interface PageData {
 })
 export class ItineraireComponent {
   protected readonly data = itineraireData as PageData;
+  private readonly toneClasses: Record<CardTone, string> = {
+    forest: 'border-emerald-200/70 bg-emerald-50/40',
+    clay: 'border-amber-200/70 bg-amber-50/40',
+    berry: 'border-rose-200/70 bg-rose-50/40'
+  };
+
+  protected cardClass(tone: CardTone): string {
+    return [
+      'grid gap-4 rounded-2xl border bg-white/80 p-5 shadow-xl shadow-zinc-900/5 backdrop-blur',
+      this.toneClasses[tone]
+    ].join(' ');
+  }
 }
