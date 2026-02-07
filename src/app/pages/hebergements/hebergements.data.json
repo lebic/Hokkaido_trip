@@ -10,6 +10,11 @@
       "tone": "forest",
       "title": "Jours 1-3 (arrivee)",
       "description": "Hotel 3 etoiles centre-ville.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Budget",
@@ -63,6 +68,11 @@
       "tone": "clay",
       "title": "Jour 4 (Sunflower Ferry)",
       "description": "Cabine privee sur ferry.",
+      "image": {
+        "src": "/images/header-card/ferry.jpg",
+        "alt": "Ferry at sea",
+        "position": "center 55%"
+      },
       "sections": [
         {
           "title": "Budget",
@@ -119,6 +129,11 @@
       "tone": "berry",
       "title": "Jours 5-7",
       "description": "Hotel 3 etoiles centre-ville.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
       "sections": [
         {
           "title": "Budget",
@@ -368,6 +383,11 @@
       "tone": "forest",
       "title": "Jour 14 (retour)",
       "description": "Hotel 3 etoiles centre-ville.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
       "sections": [
         {
           "title": "Budget",
@@ -417,6 +437,11 @@
       "tone": "clay",
       "title": "Jours 16-18 (retour)",
       "description": "Hotel 3 etoiles centre-ville.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Budget",

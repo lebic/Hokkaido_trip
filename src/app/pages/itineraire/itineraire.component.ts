@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ChipComponent } from '../../ui/chip/chip.component';
 import itineraireData from './itineraire.data.json';
-import { imageForText } from '../../utils/card-images';
+import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
 
 type CardTone = 'forest' | 'clay' | 'berry';
 
@@ -15,6 +15,7 @@ interface PageCard {
   tone: CardTone;
   title: string;
   description?: string;
+  image?: CardImageOverride;
   sections: PageSection[];
 }
 
@@ -36,6 +37,7 @@ interface PageData {
 })
 export class ItineraireComponent {
   protected readonly data = itineraireData as PageData;
+  private readonly defaultImagePosition = 'center 65%';
   private readonly toneClasses: Record<CardTone, string> = {
     forest: 'border-emerald-200/70 bg-emerald-50/40',
     clay: 'border-amber-200/70 bg-amber-50/40',
@@ -50,10 +52,14 @@ export class ItineraireComponent {
   }
 
   protected cardImageSrc(card: PageCard): string {
-    return imageForText(`${card.title} ${card.chip}`).src;
+    return resolveCardImage(`${card.title} ${card.chip}`, card.image).src;
   }
 
   protected cardImageAlt(card: PageCard): string {
-    return imageForText(`${card.title} ${card.chip}`).alt;
+    return resolveCardImage(`${card.title} ${card.chip}`, card.image).alt;
+  }
+
+  protected cardImagePosition(card: PageCard): string {
+    return card.image?.position ?? this.defaultImagePosition;
   }
 }

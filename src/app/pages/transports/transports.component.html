@@ -13,11 +13,12 @@
 <div class="grid gap-6 lg:grid-cols-2">
   @for (card of data.cards; track card.title) {
     <article [class]="cardClass(card.tone)">
-      <div class="relative overflow-hidden rounded-2xl border border-amber-100/70">
+      <div class="relative -mx-5 -mt-5 overflow-hidden rounded-t-3xl border-b border-amber-100/70">
         <img
           class="h-28 w-full object-cover sm:h-32"
           [src]="cardImageSrc(card)"
           [alt]="cardImageAlt(card)"
+          [style.object-position]="cardImagePosition(card)"
           loading="lazy"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-white/80 via-white/10 to-transparent"></div>

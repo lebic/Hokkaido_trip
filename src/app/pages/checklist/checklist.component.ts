@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import checklistData from './checklist.data.json';
-import { imageForText } from '../../utils/card-images';
+import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
 
 interface ChecklistItem {
   label: string;
@@ -16,6 +16,7 @@ interface ChecklistCard {
   chip: string;
   title: string;
   description?: string;
+  image?: CardImageOverride;
   sections: ChecklistSection[];
 }
 
@@ -35,12 +36,17 @@ interface ChecklistData {
 })
 export class ChecklistComponent {
   protected readonly data = checklistData as ChecklistData;
+  private readonly defaultImagePosition = 'center 65%';
 
   protected cardImageSrc(card: ChecklistCard): string {
-    return imageForText(`${card.title} ${card.chip}`).src;
+    return resolveCardImage(`${card.title} ${card.chip}`, card.image).src;
   }
 
   protected cardImageAlt(card: ChecklistCard): string {
-    return imageForText(`${card.title} ${card.chip}`).alt;
+    return resolveCardImage(`${card.title} ${card.chip}`, card.image).alt;
+  }
+
+  protected cardImagePosition(card: ChecklistCard): string {
+    return card.image?.position ?? this.defaultImagePosition;
   }
 }

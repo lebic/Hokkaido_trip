@@ -10,6 +10,11 @@
       "tone": "forest",
       "title": "Vol international vers Tokyo",
       "description": "Reservation principale du voyage.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Reservation",
@@ -78,6 +83,11 @@
       "tone": "berry",
       "title": "Transports Tokyo",
       "description": "Deplacements urbains avant le ferry.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Transferts",
@@ -106,6 +116,11 @@
       "tone": "forest",
       "title": "Ferry Oarai -> Tomakomai",
       "description": "Traversees de 18h avec cabine.",
+      "image": {
+        "src": "/images/header-card/ferry.jpg",
+        "alt": "Ferry at sea",
+        "position": "center 55%"
+      },
       "sections": [
         {
           "title": "Reservation",
@@ -141,6 +156,11 @@
       "tone": "clay",
       "title": "Trains regionaux Hokkaido",
       "description": "Priorite aux trains pour Sapporo et Otaru.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
       "sections": [
         {
           "title": "Lignes utiles",
@@ -231,6 +251,11 @@
       "tone": "clay",
       "title": "Vol Sapporo -> Tokyo",
       "description": "Retour en avion depuis New Chitose.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Reservation",

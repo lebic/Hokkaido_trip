@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import reservationsData from './reservations.data.json';
-import { imageForText } from '../../utils/card-images';
+import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
 
 interface LinkItem {
   label: string;
@@ -16,6 +16,7 @@ interface ReservationCard {
   chip: string;
   title: string;
   description?: string;
+  image?: CardImageOverride;
   sections: ReservationSection[];
   links?: LinkItem[];
 }
@@ -36,12 +37,17 @@ interface ReservationsData {
 })
 export class ReservationsComponent {
   protected readonly data = reservationsData as ReservationsData;
+  private readonly defaultImagePosition = 'center 65%';
 
   protected cardImageSrc(card: ReservationCard): string {
-    return imageForText(`${card.title} ${card.chip}`).src;
+    return resolveCardImage(`${card.title} ${card.chip}`, card.image).src;
   }
 
   protected cardImageAlt(card: ReservationCard): string {
-    return imageForText(`${card.title} ${card.chip}`).alt;
+    return resolveCardImage(`${card.title} ${card.chip}`, card.image).alt;
+  }
+
+  protected cardImagePosition(card: ReservationCard): string {
+    return card.image?.position ?? this.defaultImagePosition;
   }
 }

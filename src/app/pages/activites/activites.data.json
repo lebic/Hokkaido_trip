@@ -10,6 +10,11 @@
       "tone": "forest",
       "title": "Tokyo (arrivee)",
       "description": "Decouverte progressive sans rush.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 10%"
+      },
       "sections": [
         {
           "title": "Jour 1",
@@ -42,6 +47,11 @@
       "tone": "clay",
       "title": "Ferry overnight",
       "description": "Journee lente et reposante.",
+      "image": {
+        "src": "/images/header-card/ferry.jpg",
+        "alt": "Ferry at sea",
+        "position": "center 55%"
+      },
       "sections": [
         {
           "title": "A bord",
@@ -65,6 +75,11 @@
       "tone": "berry",
       "title": "Sapporo et Otaru",
       "description": "Ville + excursion courte.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
       "sections": [
         {
           "title": "Jour 5",
@@ -219,6 +234,11 @@
       "tone": "forest",
       "title": "Vol vers Tokyo",
       "description": "Journee de transfert.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Essentiel",
@@ -235,6 +255,11 @@
       "tone": "clay",
       "title": "Tokyo (retour)",
       "description": "Dernieres decouvertes tranquilles.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Jour 16",
@@ -259,6 +284,11 @@
       "tone": "berry",
       "title": "Depart Tokyo",
       "description": "Fin du voyage.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
       "sections": [
         {
           "title": "Essentiel",

@@ -3,10 +3,19 @@ export interface CardImage {
   alt: string;
 }
 
+export interface CardImageOverride {
+  src: string;
+  alt?: string;
+  position?: string;
+}
+
 const IMAGE_MAP: Array<{ keywords: string[]; image: CardImage }> = [
   {
     keywords: ['tokyo', 'shibuya', 'shinjuku', 'asakusa', 'ginza', 'harajuku'],
-    image: { src: '/images/placeholders/city.svg', alt: 'City skyline' }
+    image: {
+      src: '/images/header-card/tokyo.avif',
+      alt: 'Tokyo skyline'
+    }
   },
   {
     keywords: ['sapporo', 'otaru', 'hakodate', 'asahikawa'],
@@ -58,4 +67,14 @@ export function imageForText(text: string): CardImage {
     }
   }
   return { src: '/images/placeholders/landscape.svg', alt: 'Travel landscape' };
+}
+
+export function resolveCardImage(text: string, override?: CardImageOverride): CardImage {
+  if (override?.src) {
+    return {
+      src: override.src,
+      alt: override.alt ?? text
+    };
+  }
+  return imageForText(text);
 }

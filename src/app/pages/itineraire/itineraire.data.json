@@ -10,6 +10,11 @@
       "tone": "forest",
       "title": "Tokyo (arrivee)",
       "description": "Installation et decouverte progressive de la ville.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 10%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -63,6 +68,11 @@
       "tone": "clay",
       "title": "Ferry overnight vers Hokkaido",
       "description": "Traversees longues mais confortables.",
+      "image": {
+        "src": "/images/header-card/ferry.jpg",
+        "alt": "Ferry at sea",
+        "position": "center 55%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -102,6 +112,11 @@
       "tone": "berry",
       "title": "Sapporo",
       "description": "Exploration urbaine et excursion a Otaru.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -367,6 +382,11 @@
       "tone": "forest",
       "title": "Sapporo -> Tokyo (vol)",
       "description": "Vol interieur et arrivee a Tokyo.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 10%"
+      },
       "sections": [
         {
           "title": "Transport",
@@ -391,6 +411,11 @@
       "tone": "clay",
       "title": "Tokyo (retour)",
       "description": "Derniers quartiers et shopping.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 10%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -422,6 +447,11 @@
       "tone": "berry",
       "title": "Depart Tokyo",
       "description": "Fin du voyage.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 10%"
+      },
       "sections": [
         {
           "title": "Transport",
