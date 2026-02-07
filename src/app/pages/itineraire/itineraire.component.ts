@@ -43,7 +43,7 @@ export class ItineraireComponent {
 
   protected cardClass(tone: CardTone): string {
     return [
-      'grid gap-4 rounded-2xl border bg-white/80 p-5 shadow-xl shadow-zinc-900/5 backdrop-blur',
+      'grid gap-4 rounded-3xl border bg-white/85 p-5 shadow-2xl shadow-amber-900/5 backdrop-blur',
       this.toneClasses[tone]
     ].join(' ');
   }

@@ -1,5 +1,7 @@
 <section class="grid gap-3 pb-4">
-  <span class="text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-zinc-900/60">
+  <span
+    class="inline-flex w-fit items-center gap-2 rounded-full bg-amber-50/70 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-amber-700/70"
+  >
     {{ data.hero.eyebrow }}
   </span>
   <h1 class="text-3xl font-semibold">{{ data.hero.title }}</h1>
@@ -15,7 +17,7 @@
         <div class="grid gap-1">
           <div class="flex items-center gap-2">
             <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
-            <span class="text-xs uppercase tracking-[0.2em] text-zinc-500">Transport</span>
+            <span class="text-xs uppercase tracking-[0.2em] text-amber-700/70">Transport</span>
           </div>
           <h2 class="text-xl font-semibold text-zinc-900">{{ card.title }}</h2>
         </div>
@@ -27,8 +29,8 @@
 
       <div class="grid gap-4 md:grid-cols-2">
         @for (section of card.sections; track section.title) {
-          <div class="rounded-xl border border-white/70 bg-white/70 p-4">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+          <div class="rounded-xl border border-amber-100/70 bg-white/80 p-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70">
               {{ section.title }}
             </p>
             <ul class="mt-2 list-disc space-y-1 pl-4 text-sm text-zinc-900/70">
@@ -39,6 +41,28 @@
           </div>
         }
       </div>
+
+      @if (card.links?.length) {
+        <div class="rounded-xl border border-amber-100/70 bg-amber-50/40 p-4">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70">
+            Liens utiles
+          </p>
+          <ul class="mt-2 space-y-1 text-sm">
+            @for (link of card.links; track link.url) {
+              <li>
+                <a
+                  class="font-semibold text-amber-700 hover:text-amber-900 underline decoration-amber-200/80"
+                  [href]="link.url"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {{ link.label }}
+                </a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
     </article>
   }
 </div>

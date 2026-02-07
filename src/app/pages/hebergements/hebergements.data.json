@@ -46,6 +46,16 @@
             "Confirmation email"
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Tokyo",
+          "url": "https://www.booking.com/city/jp/tokyo.en.html"
+        },
+        {
+          "label": "Agoda Tokyo",
+          "url": "https://www.agoda.com/city/tokyo-jp.html"
+        }
       ]
     },
     {
@@ -96,6 +106,12 @@
             "Confirmation email ferry"
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "Sunflower Ferry",
+          "url": "https://www.sunflower.co.jp/en/"
+        }
       ]
     },
     {
@@ -138,6 +154,20 @@
             "Passeport",
             "Confirmation email"
           ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Vessel Inn Sapporo (Booking)",
+          "url": "https://www.booking.com/Share-N0o365"
+        },
+        {
+          "label": "ibis Styles Sapporo (Booking)",
+          "url": "https://www.booking.com/Share-1QU1T5y"
+        },
+        {
+          "label": "UNWIND HOTEL & BAR (Booking)",
+          "url": "https://www.booking.com/Share-PIJhl5"
         }
       ]
     },
@@ -190,6 +220,20 @@
             "Passeport",
             "Confirmation email"
           ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/"
+        },
+        {
+          "label": "Rakuten Travel",
+          "url": "https://travel.rakuten.com/"
+        },
+        {
+          "label": "Japanese Guest Houses",
+          "url": "https://www.japaneseguesthouses.com/"
         }
       ]
     },
@@ -253,6 +297,16 @@
             "Confirmation email"
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/"
+        },
+        {
+          "label": "Rakuten Travel",
+          "url": "https://travel.rakuten.com/"
+        }
       ]
     },
     {
@@ -297,6 +351,16 @@
             "Confirmation email"
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/"
+        },
+        {
+          "label": "Rakuten Travel",
+          "url": "https://travel.rakuten.com/"
+        }
       ]
     },
     {
@@ -340,6 +404,12 @@
             "Confirmation email"
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Sapporo",
+          "url": "https://www.booking.com/city/jp/sapporo.en.html"
+        }
       ]
     },
     {
@@ -382,6 +452,12 @@
             "Passeport",
             "Confirmation email"
           ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Tokyo",
+          "url": "https://www.booking.com/city/jp/tokyo.en.html"
         }
       ]
     },

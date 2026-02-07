@@ -61,6 +61,16 @@
             "Reserver les sieges a l'avance"
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "JR Hokkaido Rail Pass",
+          "url": "https://www.jrhokkaido.co.jp/global/english/ticket/railpass/"
+        },
+        {
+          "label": "JR East - South Hokkaido Rail Pass",
+          "url": "https://www.jreast.co.jp/multi/en/pass/east-south-hokkaido.html"
+        }
       ]
     },
     {
@@ -118,6 +128,12 @@
             "Confirmation email ferry"
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "Sunflower Ferry",
+          "url": "https://www.sunflower.co.jp/en/"
+        }
       ]
     },
     {
@@ -169,6 +185,16 @@
           "items": [
             "Retour voiture a Sapporo (Jour 14)"
           ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Toyota Rent a Car",
+          "url": "https://rent.toyota.co.jp/eng/"
+        },
+        {
+          "label": "Times Car Rental",
+          "url": "https://www.timescar-rental.com/en/"
         }
       ]
     },
