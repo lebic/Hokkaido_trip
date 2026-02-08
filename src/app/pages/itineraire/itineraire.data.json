@@ -166,6 +166,11 @@
       "tone": "forest",
       "title": "Sapporo -> Sounkyo Onsen",
       "description": "Route panoramique et nuit en ryokan.",
+      "image": {
+        "src": "/images/header-card/sounkyo-onsen.jpg",
+        "alt": "Sounkyo Onsen",
+        "position": "center 40%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -206,6 +211,11 @@
       "tone": "clay",
       "title": "Sounkyo Onsen -> Akan-ko",
       "description": "Longue route avec lacs et volcans.",
+      "image": {
+        "src": "/images/header-card/iozan.jpeg",
+        "alt": "Mt. Io (Iozan)",
+        "position": "center 40%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -246,6 +256,11 @@
       "tone": "berry",
       "title": "Akan-ko",
       "description": "Nature, culture locale et randos.",
+      "image": {
+        "src": "/images/header-card/akan-ko.jpg",
+        "alt": "Akan-ko Lake",
+        "position": "center 40%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -280,6 +295,11 @@
       "tone": "forest",
       "title": "Akan-ko -> Furano",
       "description": "Long trajet et arrets gourmands.",
+      "image": {
+        "src": "/images/header-card/biei.jpg",
+        "alt": "Biei blue pond",
+        "position": "center 60%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -319,6 +339,11 @@
       "tone": "clay",
       "title": "Furano & Biei",
       "description": "Lavande et route panoramique.",
+      "image": {
+        "src": "/images/header-card/farm-tomita.avif",
+        "alt": "Farm Tomita lavender fields",
+        "position": "center 60%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -343,6 +368,11 @@
       "tone": "berry",
       "title": "Furano -> Sapporo",
       "description": "Retour et derniers achats.",
+      "image": {
+        "src": "/images/header-card/sapporo-tadao-ando.webp",
+        "alt": "Sapporo Tadao Ando Museum",
+        "position": "center 45%"
+      },
       "sections": [
         {
           "title": "Hebergement",
@@ -412,9 +442,9 @@
       "title": "Tokyo (retour)",
       "description": "Derniers quartiers et shopping.",
       "image": {
-        "src": "/images/header-card/tokyo.avif",
-        "alt": "Tokyo skyline",
-        "position": "center 10%"
+        "src": "/images/header-card/akihabara.jpg",
+        "alt": "Akihabara district",
+        "position": "center 90%"
       },
       "sections": [
         {
@@ -448,9 +478,9 @@
       "title": "Depart Tokyo",
       "description": "Fin du voyage.",
       "image": {
-        "src": "/images/header-card/tokyo.avif",
-        "alt": "Tokyo skyline",
-        "position": "center 10%"
+        "src": "/images/header-card/retour-europe.jpg",
+        "alt": "Retour en Europe",
+        "position": "center 85%"
       },
       "sections": [
         {
