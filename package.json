@@ -44,5 +44,8 @@
     "tailwindcss": "^4.1.18",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
+  },
+  "overrides": {
+    "ajv": "^8.18.0"
   }
 }
