@@ -204,28 +204,28 @@
       <div class="flex gap-3 pt-1">
         @if (prev) {
           <button
-            class="flex-1 rounded-xl border border-zinc-100 bg-white px-4 py-3 text-left shadow-sm transition hover:shadow-md"
+            class="min-w-0 flex-1 rounded-xl border border-zinc-100 bg-white px-4 py-3 text-left shadow-sm transition hover:shadow-md"
             (click)="navigate(prev.index)"
           >
-            <p class="mb-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">
-              <svg class="mr-0.5 inline h-3 w-3 -translate-y-px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            <p class="mb-0.5 flex items-center gap-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">
+              <svg class="h-3 w-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
               Précédent
             </p>
-            <p class="truncate text-sm font-semibold text-zinc-800">{{ prev.card.title }}</p>
+            <p class="line-clamp-2 text-sm font-semibold leading-snug text-zinc-800">{{ prev.card.title }}</p>
           </button>
         } @else {
           <div class="flex-1"></div>
         }
         @if (next) {
           <button
-            class="flex-1 rounded-xl border border-zinc-100 bg-white px-4 py-3 text-right shadow-sm transition hover:shadow-md"
+            class="min-w-0 flex-1 rounded-xl border border-zinc-100 bg-white px-4 py-3 text-right shadow-sm transition hover:shadow-md"
             (click)="navigate(next.index)"
           >
-            <p class="mb-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">
+            <p class="mb-0.5 flex items-center justify-end gap-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">
               Suivant
-              <svg class="ml-0.5 inline h-3 w-3 -translate-y-px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+              <svg class="h-3 w-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
             </p>
-            <p class="truncate text-sm font-semibold text-zinc-800">{{ next.card.title }}</p>
+            <p class="line-clamp-2 text-sm font-semibold leading-snug text-zinc-800">{{ next.card.title }}</p>
           </button>
         }
       </div>
