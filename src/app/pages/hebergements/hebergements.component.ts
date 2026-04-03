@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
-import { ChipComponent } from '../../ui/chip/chip.component';
+import { Component, computed, signal } from '@angular/core';
 import hebergementsData from './hebergements.data.json';
-import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
 
-type CardTone = 'forest' | 'clay' | 'berry';
+type Priority = 1 | 2;
 
 interface LinkItem {
   label: string;
@@ -15,57 +13,79 @@ interface PageSection {
   items: string[];
 }
 
-interface PageCard {
+interface HotelCard {
   chip: string;
-  tone: CardTone;
   title: string;
+  location: string;
+  nights: string;
+  priority: Priority;
   description?: string;
-  image?: CardImageOverride;
-  sections: PageSection[];
   links?: LinkItem[];
+  sections?: PageSection[];
 }
 
 interface PageData {
-  hero: {
-    eyebrow: string;
-    title: string;
-    description: string;
-  };
-  cards: PageCard[];
+  hero: { eyebrow: string; title: string; description: string; };
+  cards: Record<string, unknown>[];
 }
+
+const STORAGE_KEY = 'hokkaido-hebergements-reserved';
 
 @Component({
   selector: 'app-hebergements',
   standalone: true,
-  imports: [ChipComponent],
+  imports: [],
   templateUrl: './hebergements.component.html',
-  styleUrl: './hebergements.component.scss'
 })
 export class HebergementsComponent {
-  protected readonly data = hebergementsData as PageData;
-  private readonly defaultImagePosition = 'center 65%';
-  private readonly toneClasses: Record<CardTone, string> = {
-    forest: 'border-emerald-200/70 bg-emerald-50/40',
-    clay: 'border-amber-200/70 bg-amber-50/40',
-    berry: 'border-rose-200/70 bg-rose-50/40'
-  };
+  private readonly rawData = hebergementsData as PageData;
 
-  protected cardClass(tone: CardTone): string {
-    return [
-      'grid gap-4 rounded-3xl border bg-white/85 p-5 shadow-2xl shadow-amber-900/5 backdrop-blur',
-      this.toneClasses[tone]
-    ].join(' ');
+  protected readonly accommodations: HotelCard[] = (this.rawData.cards as unknown as HotelCard[]).filter(
+    (c) => typeof c.location === 'string'
+  );
+
+  protected readonly conseilsSections: PageSection[] = (() => {
+    const tips = this.rawData.cards.find(
+      (c) => (c as { title?: string }).title === 'Conseils generaux'
+    ) as { sections?: PageSection[] } | undefined;
+    return tips?.sections ?? [];
+  })();
+
+  private loadState(): boolean[] {
+    try {
+      if (typeof localStorage === 'undefined') {
+        return new Array<boolean>(this.accommodations.length).fill(false);
+      }
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const arr: boolean[] = raw ? (JSON.parse(raw) as boolean[]) : [];
+      return Array.from({ length: this.accommodations.length }, (_, i) => arr[i] ?? false);
+    } catch {
+      return new Array<boolean>(this.accommodations.length).fill(false);
+    }
   }
 
-  protected cardImageSrc(card: PageCard): string {
-    return resolveCardImage(`${card.title} ${card.chip}`, card.image).src;
+  protected readonly reservedState = signal<boolean[]>(this.loadState());
+
+  protected readonly reservedCount = computed(() =>
+    this.reservedState().filter(Boolean).length
+  );
+
+  protected readonly progressPercent = computed(() =>
+    this.accommodations.length > 0
+      ? Math.round((this.reservedCount() / this.accommodations.length) * 100)
+      : 0
+  );
+
+  protected isReserved(index: number): boolean {
+    return this.reservedState()[index] ?? false;
   }
 
-  protected cardImageAlt(card: PageCard): string {
-    return resolveCardImage(`${card.title} ${card.chip}`, card.image).alt;
-  }
-
-  protected cardImagePosition(card: PageCard): string {
-    return card.image?.position ?? this.defaultImagePosition;
+  protected toggle(index: number): void {
+    const state = [...this.reservedState()];
+    state[index] = !state[index];
+    this.reservedState.set(state);
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch { /* localStorage unavailable */ }
   }
 }

@@ -1,78 +1,117 @@
-<section class="grid gap-3 pb-4">
-  <span
-    class="inline-flex w-fit items-center gap-2 rounded-full bg-amber-50/70 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-amber-700/70"
-  >
-    {{ data.hero.eyebrow }}
-  </span>
-  <h1 class="text-3xl font-semibold">{{ data.hero.title }}</h1>
-  <p class="max-w-2xl text-base leading-relaxed text-zinc-900/70">
-    {{ data.hero.description }}
-  </p>
-</section>
+<!-- Progress header -->
+<div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-500 p-5 text-white shadow-lg">
+  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Hébergements</p>
+  <h1 class="mb-0.5 text-2xl font-bold">Hébergements à réserver</h1>
+  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ accommodations.length }} réservations confirmées</p>
+  <div class="h-1.5 w-full overflow-hidden rounded-full bg-white/30">
+    <div
+      class="h-full rounded-full bg-white transition-all duration-500"
+      [style.width]="progressPercent() + '%'"
+    ></div>
+  </div>
+</div>
 
-<div class="grid gap-6 lg:grid-cols-2">
-  @for (card of data.cards; track card.title) {
-    <article [class]="cardClass(card.tone)">
-      <div class="relative -mx-5 -mt-5 overflow-hidden rounded-t-3xl border-b border-amber-100/70">
-        <img
-          class="h-28 w-full object-cover sm:h-32"
-          [src]="cardImageSrc(card)"
-          [alt]="cardImageAlt(card)"
-          [style.object-position]="cardImagePosition(card)"
-          loading="lazy"
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-white/80 via-white/10 to-transparent"></div>
-      </div>
-      <div class="flex flex-wrap items-start justify-between gap-3">
-        <div class="grid gap-1">
-          <div class="flex items-center gap-2">
-            <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
-            <span class="text-xs uppercase tracking-[0.2em] text-amber-700/70">Sejour</span>
+<!-- Reservation list -->
+<div class="overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm">
+  @for (card of accommodations; track card.title; let i = $index; let last = $last) {
+    <div
+      class="flex cursor-pointer gap-4 p-4 transition hover:bg-zinc-50"
+      [class.border-b]="!last"
+      [class.border-zinc-100]="!last"
+      (click)="toggle(i)"
+      role="button"
+      [attr.aria-pressed]="isReserved(i)"
+      [attr.aria-label]="'Marquer ' + card.title + ' comme réservé'"
+    >
+      <!-- Circle toggle -->
+      <div class="mt-0.5 shrink-0">
+        @if (isReserved(i)) {
+          <div class="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500">
+            <svg class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
           </div>
-          <h2 class="text-xl font-semibold text-zinc-900">{{ card.title }}</h2>
-        </div>
-      </div>
-
-      @if (card.description) {
-        <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
-      }
-
-      <div class="grid gap-4 md:grid-cols-2">
-        @for (section of card.sections; track section.title) {
-          <div class="rounded-xl border border-amber-100/70 bg-white/80 p-4">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70">
-              {{ section.title }}
-            </p>
-            <ul class="mt-2 list-disc space-y-1 pl-4 text-sm text-zinc-900/70">
-              @for (item of section.items; track item) {
-                <li>{{ item }}</li>
-              }
-            </ul>
-          </div>
+        } @else {
+          <div class="h-7 w-7 rounded-full border-2 border-zinc-200"></div>
         }
       </div>
 
-      @if (card.links?.length) {
-        <div class="rounded-xl border border-amber-100/70 bg-amber-50/40 p-4">
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70">
-            Liens utiles
-          </p>
-          <ul class="mt-2 space-y-1 text-sm">
+      <!-- Content -->
+      <div class="min-w-0 flex-1">
+        <div class="mb-1 flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span class="text-[0.65rem] font-semibold uppercase tracking-wider text-zinc-400">{{ card.chip }}</span>
+          @if (isReserved(i)) {
+            <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">Réservé</span>
+          } @else if (card.priority === 1) {
+            <span class="rounded-full bg-amber-50 px-2 py-0.5 text-[0.65rem] font-bold text-amber-700">Priorité</span>
+          }
+        </div>
+        <p
+          class="font-semibold text-zinc-800 transition"
+          [class.text-zinc-400]="isReserved(i)"
+          [class.line-through]="isReserved(i)"
+        >{{ card.title }}</p>
+        <div class="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.78rem] text-zinc-400">
+          <span class="flex items-center gap-1.5">
+            <svg class="h-3.5 w-3.5 text-violet-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            {{ card.location }}
+          </span>
+          <span class="flex items-center gap-1.5">
+            <svg class="h-3.5 w-3.5 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+            </svg>
+            {{ card.nights }}
+          </span>
+        </div>
+        @if (card.links?.length) {
+          <div class="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1">
             @for (link of card.links; track link.url) {
-              <li>
-                <a
-                  class="font-semibold text-amber-700 hover:text-amber-900 underline decoration-amber-200/80"
-                  [href]="link.url"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {{ link.label }}
-                </a>
+              <a
+                [href]="link.url"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="text-[0.78rem] font-semibold text-violet-600 hover:text-violet-800 hover:underline"
+                (click)="$event.stopPropagation()"
+              >{{ link.label }} →</a>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>
+
+<!-- Conseils section -->
+@if (conseilsSections.length) {
+  <details class="mt-6 rounded-2xl border border-zinc-100 bg-white shadow-sm">
+    <summary class="flex cursor-pointer items-center gap-2 p-4 text-sm font-semibold text-zinc-600 hover:text-zinc-900">
+      <svg class="h-4 w-4 shrink-0 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+      Conseils de réservation
+    </summary>
+    <div class="grid gap-4 border-t border-zinc-100 p-4 sm:grid-cols-2">
+      @for (section of conseilsSections; track section.title) {
+        <div>
+          <p class="mb-1.5 text-[0.65rem] font-bold uppercase tracking-widest text-zinc-400">{{ section.title }}</p>
+          <ul class="space-y-1">
+            @for (item of section.items; track item) {
+              <li class="flex items-start gap-2 text-sm text-zinc-600">
+                <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-amber-300"></span>
+                {{ item }}
               </li>
             }
           </ul>
         </div>
       }
-    </article>
-  }
-</div>
+    </div>
+  </details>
+}

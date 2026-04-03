@@ -1,78 +1,83 @@
-<section class="grid gap-3 pb-4">
-  <span
-    class="inline-flex w-fit items-center gap-2 rounded-full bg-amber-50/70 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-amber-700/70"
-  >
-    {{ data.hero.eyebrow }}
-  </span>
-  <h1 class="text-3xl font-semibold">{{ data.hero.title }}</h1>
-  <p class="max-w-2xl text-base leading-relaxed text-zinc-900/70">
-    {{ data.hero.description }}
-  </p>
-</section>
+<!-- Progress header -->
+<div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-sky-600 to-blue-500 p-5 text-white shadow-lg">
+  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Transports</p>
+  <h1 class="mb-0.5 text-2xl font-bold">Transports à réserver</h1>
+  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ reservations.length }} réservations confirmées</p>
+  <div class="h-1.5 w-full overflow-hidden rounded-full bg-white/30">
+    <div
+      class="h-full rounded-full bg-white transition-all duration-500"
+      [style.width]="progressPercent() + '%'"
+    ></div>
+  </div>
+</div>
 
-<div class="grid gap-6 lg:grid-cols-2">
-  @for (card of data.cards; track card.title) {
-    <article [class]="cardClass(card.tone)">
-      <div class="relative -mx-5 -mt-5 overflow-hidden rounded-t-3xl border-b border-amber-100/70">
-        <img
-          class="h-28 w-full object-cover sm:h-32"
-          [src]="cardImageSrc(card)"
-          [alt]="cardImageAlt(card)"
-          [style.object-position]="cardImagePosition(card)"
-          loading="lazy"
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-white/80 via-white/10 to-transparent"></div>
+<!-- Grouped reservation list -->
+@for (cat of categories; track cat) {
+  @let items = getByCategory(cat);
+  @let meta = categoryMeta[cat];
+  @if (items.length > 0) {
+    <div class="mb-5">
+      <div class="mb-2 flex items-center gap-2 px-1">
+        <span class="text-base leading-none">{{ meta.icon }}</span>
+        <h2 class="text-sm font-bold text-zinc-600">{{ meta.label }}</h2>
       </div>
-      <div class="flex flex-wrap items-start justify-between gap-3">
-        <div class="grid gap-1">
-          <div class="flex items-center gap-2">
-            <app-chip [tone]="card.tone">{{ card.chip }}</app-chip>
-            <span class="text-xs uppercase tracking-[0.2em] text-amber-700/70">Transport</span>
-          </div>
-          <h2 class="text-xl font-semibold text-zinc-900">{{ card.title }}</h2>
-        </div>
-      </div>
-
-      @if (card.description) {
-        <p class="text-sm text-zinc-900/70">{{ card.description }}</p>
-      }
-
-      <div class="grid gap-4 md:grid-cols-2">
-        @for (section of card.sections; track section.title) {
-          <div class="rounded-xl border border-amber-100/70 bg-white/80 p-4">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70">
-              {{ section.title }}
-            </p>
-            <ul class="mt-2 list-disc space-y-1 pl-4 text-sm text-zinc-900/70">
-              @for (item of section.items; track item) {
-                <li>{{ item }}</li>
+      <div class="overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm">
+        @for (item of items; track item.card.title; let last = $last) {
+          <div
+            class="flex cursor-pointer gap-4 p-4 transition hover:bg-zinc-50"
+            [class.border-b]="!last"
+            [class.border-zinc-100]="!last"
+            (click)="toggle(item.index)"
+            role="button"
+            [attr.aria-pressed]="isReserved(item.index)"
+            [attr.aria-label]="'Marquer ' + item.card.title + ' comme réservé'"
+          >
+            <!-- Circle toggle -->
+            <div class="mt-0.5 shrink-0">
+              @if (isReserved(item.index)) {
+                <div class="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500">
+                  <svg class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5"/>
+                  </svg>
+                </div>
+              } @else {
+                <div class="h-7 w-7 rounded-full border-2 border-zinc-200"></div>
               }
-            </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="min-w-0 flex-1">
+              <div class="mb-1 flex flex-wrap items-center gap-2">
+                <span [class]="'rounded-full px-2 py-0.5 text-[0.65rem] font-semibold ' + meta.badge">{{ item.card.chip }}</span>
+                @if (isReserved(item.index)) {
+                  <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">Réservé</span>
+                }
+              </div>
+              <p
+                class="font-semibold text-zinc-800 transition"
+                [class.text-zinc-400]="isReserved(item.index)"
+                [class.line-through]="isReserved(item.index)"
+              >{{ item.card.title }}</p>
+              @if (item.card.description) {
+                <p class="mt-0.5 text-[0.8rem] text-zinc-400">{{ item.card.description }}</p>
+              }
+              @if (item.card.links?.length) {
+                <div class="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1">
+                  @for (link of item.card.links; track link.url) {
+                    <a
+                      [href]="link.url"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="text-[0.78rem] font-semibold text-sky-600 hover:text-sky-800 hover:underline"
+                      (click)="$event.stopPropagation()"
+                    >{{ link.label }} →</a>
+                  }
+                </div>
+              }
+            </div>
           </div>
         }
       </div>
-
-      @if (card.links?.length) {
-        <div class="rounded-xl border border-amber-100/70 bg-amber-50/40 p-4">
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700/70">
-            Liens utiles
-          </p>
-          <ul class="mt-2 space-y-1 text-sm">
-            @for (link of card.links; track link.url) {
-              <li>
-                <a
-                  class="font-semibold text-amber-700 hover:text-amber-900 underline decoration-amber-200/80"
-                  [href]="link.url"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {{ link.label }}
-                </a>
-              </li>
-            }
-          </ul>
-        </div>
-      }
-    </article>
+    </div>
   }
-</div>
+}

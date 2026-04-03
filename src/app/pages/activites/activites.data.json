@@ -1,211 +1,58 @@
 {
   "hero": {
     "eyebrow": "Activites",
-    "title": "Activites jour par jour",
-    "description": "Rythme chill, qualite plutot que quantite."
+    "title": "Activites a reserver",
+    "description": "Experiences necessitant une reservation ou une planification a l'avance. Les details jour par jour sont dans l'itineraire."
   },
-  "cards": [
-    {
-      "chip": "Jours 1-3",
-      "tone": "forest",
-      "title": "Tokyo (arrivee)",
-      "description": "Decouverte progressive sans rush.",
-      "image": {
-        "src": "/images/header-card/tokyo.avif",
-        "alt": "Tokyo skyline",
-        "position": "center 10%"
-      },
-      "sections": [
-        {
-          "title": "Jour 1",
-          "items": [
-            "Installation a l'hotel",
-            "Balade douce dans le quartier",
-            "Diner local simple"
-          ]
-        },
-        {
-          "title": "Jour 2",
-          "items": [
-            "Asakusa et Sensoji",
-            "Pause cafe + balade Sumida",
-            "Tokyo Skytree ou jardin imperial (choisir 1)"
-          ]
-        },
-        {
-          "title": "Jour 3",
-          "items": [
-            "Shibuya Crossing",
-            "Meiji Shrine ou Harajuku (choisir 1)",
-            "Soiree calme a Shinjuku"
-          ]
-        }
-      ]
-    },
-    {
-      "chip": "Jour 4",
-      "tone": "clay",
-      "title": "Ferry overnight",
-      "description": "Journee lente et reposante.",
-      "image": {
-        "src": "/images/header-card/ferry.jpg",
-        "alt": "Ferry at sea",
-        "position": "center 55%"
-      },
-      "sections": [
-        {
-          "title": "A bord",
-          "items": [
-            "Pause lecture ou sieste",
-            "Coucher de soleil sur l'ocean",
-            "Diner simple au restaurant"
-          ]
-        },
-        {
-          "title": "Arrivee",
-          "items": [
-            "Balade courte a Tomakomai",
-            "Check-in hotel a Sapporo"
-          ]
-        }
-      ]
-    },
-    {
-      "chip": "Jours 5-7",
-      "tone": "berry",
-      "title": "Sapporo et Otaru",
-      "description": "Ville + excursion courte.",
-      "image": {
-        "src": "/images/header-card/sapporo.jpeg",
-        "alt": "Sapporo city",
-        "position": "center 45%"
-      },
-      "sections": [
-        {
-          "title": "Jour 5",
-          "items": [
-            "Odori Park",
-            "Clock Tower",
-            "Soiree a Susukino"
-          ]
-        },
-        {
-          "title": "Jour 6",
-          "items": [
-            "Otaru canal",
-            "Boutiques artisanales",
-            "Retour a Sapporo en fin d'apres-midi"
-          ]
-        },
-        {
-          "title": "Jour 7",
-          "items": [
-            "Shopping tranquille",
-            "Ramen alley",
-            "Preparation depart"
-          ]
-        }
-      ]
-    },
+  "activities": [
     {
       "chip": "Jour 8",
-      "tone": "forest",
-      "title": "Sounkyo Onsen",
-      "description": "Nature + onsen.",
-      "sections": [
+      "title": "Daisetsuzan Ropeway",
+      "location": "Sounkyo Onsen",
+      "description": "Teleeferique panoramique. Ouverture conditionnee a la meteo, affluence elevee en haute saison.",
+      "links": [
         {
-          "title": "Essentiel",
-          "items": [
-            "Balade gorges de Sounkyo",
-            "Ropeway si meteo",
-            "Onsen et diner kaiseki"
-          ]
+          "label": "Daisetsuzan Ropeway",
+          "url": "https://www.rinyu.co.jp/sounkyo/en/"
         }
       ]
     },
     {
-      "chip": "Jour 9",
-      "tone": "clay",
-      "title": "Route vers Akan-ko",
-      "description": "Longue route avec 1-2 arrets.",
-      "sections": [
+      "chip": "Jour 10",
+      "title": "Village Ainou - Spectacle Ikahchu",
+      "location": "Akan-ko",
+      "description": "Spectacle de danse et musique Ainou en soiree. Seances limitees, reservation recommandee.",
+      "links": [
         {
-          "title": "Arrets",
-          "items": [
-            "Lake Kussharo (Sunayu)",
-            "Mt. Io ou Lake Mashu (choisir 1)"
-          ]
-        },
-        {
-          "title": "Soiree",
-          "items": [
-            "Arrivee lac Akan",
-            "Onsen au ryokan"
-          ]
+          "label": "Akan Ainu Theater (Ikor)",
+          "url": "https://www.akanainu.jp/"
         }
       ]
     },
     {
-      "chip": "Jours 10-11",
-      "tone": "berry",
-      "title": "Akan-ko",
-      "description": "Culture locale et temps slow.",
-      "sections": [
+      "chip": "Jour 10",
+      "title": "Bateau sur Lake Akan",
+      "location": "Akan-ko",
+      "description": "Tour du lac avec visite du Marimo Exhibition Center.",
+      "links": [
         {
-          "title": "Jour 10",
-          "items": [
-            "Bateau sur Lake Akan",
-            "Village Ainou",
-            "Onsen en soiree"
-          ]
-        },
-        {
-          "title": "Jour 11",
-          "items": [
-            "Balade courte ou randonnee",
-            "Canoe ou repos au ryokan",
-            "Exploration du village"
-          ]
+          "label": "Akan Kisen (bateaux)",
+          "url": "https://www.akankisen.com/lang_eng/"
         }
       ]
     },
     {
-      "chip": "Jour 12",
-      "tone": "forest",
-      "title": "Akan-ko -> Furano",
-      "description": "Trajet long, arrets limites.",
-      "sections": [
-        {
-          "title": "Arrets",
-          "items": [
-            "Pause dejeuner a Obihiro",
-            "Blue Pond ou Shikisai-no-oka (choisir 1)"
-          ]
-        },
-        {
-          "title": "Soiree",
-          "items": [
-            "Check-in hotel",
-            "Diner local"
-          ]
-        }
-      ]
+      "chip": "Jour 11",
+      "title": "Canoe sur Lake Akan",
+      "location": "Akan-ko",
+      "description": "Optionnel. Reserver aupres des operateurs locaux a l'arrivee ou en avance.",
+      "links": []
     },
     {
       "chip": "Jour 13",
-      "tone": "clay",
-      "title": "Furano & Biei",
-      "description": "Nature et paysages.",
-      "sections": [
-        {
-          "title": "Essentiel",
-          "items": [
-            "Farm Tomita",
-            "Biei viewpoints",
-            "Ningle Terrace"
-          ]
-        }
-      ],
+      "title": "Farm Tomita",
+      "location": "Furano",
+      "description": "Champs de lavande et Melon House. Entree libre, verifier ouverture selon la saison.",
       "links": [
         {
           "label": "Farm Tomita",
@@ -214,89 +61,14 @@
       ]
     },
     {
-      "chip": "Jour 14",
-      "tone": "berry",
-      "title": "Retour Sapporo",
-      "description": "Derniers achats sans stress.",
-      "sections": [
+      "chip": "Jour 13",
+      "title": "Ningle Terrace",
+      "location": "Furano",
+      "description": "Village artisanal en pleine foret de Furano. Soiree recommandee, horaires a verifier.",
+      "links": [
         {
-          "title": "Soiree",
-          "items": [
-            "Retour voiture",
-            "Souvenirs",
-            "Ramen tranquille"
-          ]
-        }
-      ]
-    },
-    {
-      "chip": "Jour 15",
-      "tone": "forest",
-      "title": "Vol vers Tokyo",
-      "description": "Journee de transfert.",
-      "image": {
-        "src": "/images/header-card/tokyo.avif",
-        "alt": "Tokyo skyline",
-        "position": "center 30%"
-      },
-      "sections": [
-        {
-          "title": "Essentiel",
-          "items": [
-            "Vol Sapporo -> Tokyo",
-            "Check-in hotel",
-            "Soiree detente"
-          ]
-        }
-      ]
-    },
-    {
-      "chip": "Jours 16-17",
-      "tone": "clay",
-      "title": "Tokyo (retour)",
-      "description": "Dernieres decouvertes tranquilles.",
-      "image": {
-        "src": "/images/header-card/tokyo.avif",
-        "alt": "Tokyo skyline",
-        "position": "center 30%"
-      },
-      "sections": [
-        {
-          "title": "Jour 16",
-          "items": [
-            "Ueno Park",
-            "Yanaka",
-            "Cafe de fin de journee"
-          ]
-        },
-        {
-          "title": "Jour 17",
-          "items": [
-            "Ginza ou Roppongi (choisir 1)",
-            "Dernier repas prefere",
-            "Preparation bagages"
-          ]
-        }
-      ]
-    },
-    {
-      "chip": "Jour 18",
-      "tone": "berry",
-      "title": "Depart Tokyo",
-      "description": "Fin du voyage.",
-      "image": {
-        "src": "/images/header-card/tokyo.avif",
-        "alt": "Tokyo skyline",
-        "position": "center 30%"
-      },
-      "sections": [
-        {
-          "title": "Essentiel",
-          "items": [
-            "Check-out",
-            "Aeroport",
-            "Vol retour"
-          ]
+          "label": "Ningle Terrace",
+          "url": "https://www.princehotels.com/en/furano/ningle-terrace/"
         }
       ]
     }

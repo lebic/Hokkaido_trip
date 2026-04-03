@@ -9,6 +9,7 @@
       "chip": "Jours 1-3",
       "tone": "forest",
       "title": "Tokyo (arrivee)",
+      "location": "Tokyo",
       "description": "Installation et decouverte progressive de la ville.",
       "image": {
         "src": "/images/header-card/tokyo.avif",
@@ -67,6 +68,7 @@
       "chip": "Jour 4",
       "tone": "clay",
       "title": "Ferry overnight vers Hokkaido",
+      "location": "En mer (Océan Pacifique)",
       "description": "Traversees longues mais confortables.",
       "image": {
         "src": "/images/header-card/ferry.jpg",
@@ -111,6 +113,7 @@
       "chip": "Jours 5-7",
       "tone": "berry",
       "title": "Sapporo",
+      "location": "Sapporo, Hokkaido",
       "description": "Exploration urbaine et excursion a Otaru.",
       "image": {
         "src": "/images/header-card/sapporo.jpeg",
@@ -165,6 +168,7 @@
       "chip": "Jour 8",
       "tone": "forest",
       "title": "Sapporo -> Sounkyo Onsen",
+      "location": "Sounkyo Onsen",
       "description": "Route panoramique et nuit en ryokan.",
       "image": {
         "src": "/images/header-card/sounkyo-onsen.jpg",
@@ -210,6 +214,7 @@
       "chip": "Jour 9",
       "tone": "clay",
       "title": "Sounkyo Onsen -> Akan-ko",
+      "location": "Akan-ko",
       "description": "Longue route avec lacs et volcans.",
       "image": {
         "src": "/images/header-card/iozan.jpeg",
@@ -255,6 +260,7 @@
       "chip": "Jours 10-11",
       "tone": "berry",
       "title": "Akan-ko",
+      "location": "Akan-ko",
       "description": "Nature, culture locale et randos.",
       "image": {
         "src": "/images/header-card/akan-ko.jpg",
@@ -294,6 +300,7 @@
       "chip": "Jour 12",
       "tone": "forest",
       "title": "Akan-ko -> Furano",
+      "location": "Furano",
       "description": "Long trajet et arrets gourmands.",
       "image": {
         "src": "/images/header-card/biei.jpg",
@@ -338,6 +345,7 @@
       "chip": "Jour 13",
       "tone": "clay",
       "title": "Furano & Biei",
+      "location": "Furano & Biei",
       "description": "Lavande et route panoramique.",
       "image": {
         "src": "/images/header-card/farm-tomita.avif",
@@ -367,6 +375,7 @@
       "chip": "Jour 14",
       "tone": "berry",
       "title": "Furano -> Sapporo",
+      "location": "Sapporo",
       "description": "Retour et derniers achats.",
       "image": {
         "src": "/images/header-card/sapporo-tadao-ando.webp",
@@ -411,6 +420,7 @@
       "chip": "Jour 15",
       "tone": "forest",
       "title": "Sapporo -> Tokyo (vol)",
+      "location": "Tokyo",
       "description": "Vol interieur et arrivee a Tokyo.",
       "image": {
         "src": "/images/header-card/tokyo.avif",
@@ -440,6 +450,7 @@
       "chip": "Jours 16-17",
       "tone": "clay",
       "title": "Tokyo (retour)",
+      "location": "Tokyo",
       "description": "Derniers quartiers et shopping.",
       "image": {
         "src": "/images/header-card/akihabara.jpg",
@@ -476,6 +487,7 @@
       "chip": "Jour 18",
       "tone": "berry",
       "title": "Depart Tokyo",
+      "location": "Tokyo",
       "description": "Fin du voyage.",
       "image": {
         "src": "/images/header-card/retour-europe.jpg",
@@ -495,6 +507,7 @@
       "chip": "Recap",
       "tone": "forest",
       "title": "Recapitulatif",
+      "location": "Japon",
       "description": "Vue d'ensemble du voyage.",
       "sections": [
         {

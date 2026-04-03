@@ -1,71 +1,105 @@
-import { Component } from '@angular/core';
-import { ChipComponent } from '../../ui/chip/chip.component';
+import { Component, computed, signal } from '@angular/core';
 import transportsData from './transports.data.json';
-import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
 
-type CardTone = 'forest' | 'clay' | 'berry';
+type Category = 'vol' | 'ferry' | 'train' | 'voiture' | 'local' | 'activites';
 
 interface LinkItem {
   label: string;
   url: string;
 }
 
-interface PageSection {
-  title: string;
-  items: string[];
-}
-
-interface PageCard {
+interface TransportCard {
   chip: string;
-  tone: CardTone;
   title: string;
   description?: string;
-  image?: CardImageOverride;
-  sections: PageSection[];
+  category: Category;
+  toReserve: boolean;
   links?: LinkItem[];
 }
 
 interface PageData {
-  hero: {
-    eyebrow: string;
-    title: string;
-    description: string;
-  };
-  cards: PageCard[];
+  hero: { eyebrow: string; title: string; description: string; };
+  cards: Record<string, unknown>[];
 }
+
+interface CategoryMeta {
+  label: string;
+  icon: string;
+  badge: string;
+  dot: string;
+}
+
+const STORAGE_KEY = 'hokkaido-transports-reserved';
+
+const CATEGORY_META: Record<Category, CategoryMeta> = {
+  vol:       { label: 'Vols',                    icon: '✈️', badge: 'bg-blue-50 text-blue-700',      dot: 'bg-blue-400' },
+  ferry:     { label: 'Ferry',                    icon: '⛴️', badge: 'bg-sky-50 text-sky-700',       dot: 'bg-sky-400' },
+  train:     { label: 'Train / JR Pass',          icon: '🚂', badge: 'bg-violet-50 text-violet-700', dot: 'bg-violet-400' },
+  voiture:   { label: 'Location voiture',         icon: '🚗', badge: 'bg-amber-50 text-amber-700',   dot: 'bg-amber-400' },
+  local:     { label: 'Déplacements locaux',      icon: '🚌', badge: 'bg-zinc-50 text-zinc-600',     dot: 'bg-zinc-400' },
+  activites: { label: 'Activités à réserver',     icon: '🎌', badge: 'bg-emerald-50 text-emerald-700', dot: 'bg-emerald-400' },
+};
 
 @Component({
   selector: 'app-transports',
   standalone: true,
-  imports: [ChipComponent],
+  imports: [],
   templateUrl: './transports.component.html',
-  styleUrl: './transports.component.scss'
 })
 export class TransportsComponent {
-  protected readonly data = transportsData as PageData;
-  private readonly defaultImagePosition = 'center 65%';
-  private readonly toneClasses: Record<CardTone, string> = {
-    forest: 'border-emerald-200/70 bg-emerald-50/40',
-    clay: 'border-amber-200/70 bg-amber-50/40',
-    berry: 'border-rose-200/70 bg-rose-50/40'
-  };
+  private readonly rawData = transportsData as PageData;
 
-  protected cardClass(tone: CardTone): string {
-    return [
-      'grid gap-4 rounded-3xl border bg-white/85 p-5 shadow-2xl shadow-amber-900/5 backdrop-blur',
-      this.toneClasses[tone]
-    ].join(' ');
+  protected readonly reservations: TransportCard[] = (this.rawData.cards as unknown as TransportCard[]).filter(
+    (c) => c.toReserve === true
+  );
+
+  protected readonly categoryMeta = CATEGORY_META;
+
+  protected readonly categories: Category[] = [...new Set(
+    this.reservations.map((c) => c.category)
+  )];
+
+  private loadState(): boolean[] {
+    try {
+      if (typeof localStorage === 'undefined') {
+        return new Array<boolean>(this.reservations.length).fill(false);
+      }
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const arr: boolean[] = raw ? (JSON.parse(raw) as boolean[]) : [];
+      return Array.from({ length: this.reservations.length }, (_, i) => arr[i] ?? false);
+    } catch {
+      return new Array<boolean>(this.reservations.length).fill(false);
+    }
   }
 
-  protected cardImageSrc(card: PageCard): string {
-    return resolveCardImage(`${card.title} ${card.chip}`, card.image).src;
+  protected readonly reservedState = signal<boolean[]>(this.loadState());
+
+  protected readonly reservedCount = computed(() =>
+    this.reservedState().filter(Boolean).length
+  );
+
+  protected readonly progressPercent = computed(() =>
+    this.reservations.length > 0
+      ? Math.round((this.reservedCount() / this.reservations.length) * 100)
+      : 0
+  );
+
+  protected isReserved(index: number): boolean {
+    return this.reservedState()[index] ?? false;
   }
 
-  protected cardImageAlt(card: PageCard): string {
-    return resolveCardImage(`${card.title} ${card.chip}`, card.image).alt;
+  protected toggle(index: number): void {
+    const state = [...this.reservedState()];
+    state[index] = !state[index];
+    this.reservedState.set(state);
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch { /* localStorage unavailable */ }
   }
 
-  protected cardImagePosition(card: PageCard): string {
-    return card.image?.position ?? this.defaultImagePosition;
+  protected getByCategory(category: Category): Array<{ card: TransportCard; index: number }> {
+    return this.reservations
+      .map((card, index) => ({ card, index }))
+      .filter(({ card }) => card.category === category);
   }
 }

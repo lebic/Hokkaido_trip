@@ -9,6 +9,8 @@
       "chip": "Avant depart",
       "tone": "forest",
       "title": "Vol international vers Tokyo",
+      "category": "vol",
+      "toReserve": true,
       "description": "Reservation principale du voyage.",
       "image": {
         "src": "/images/header-card/tokyo.avif",
@@ -43,6 +45,8 @@
       "chip": "JR Pass",
       "tone": "clay",
       "title": "Cartes JR Pass necessaires",
+      "category": "train",
+      "toReserve": true,
       "description": "Trains pour les grandes villes, voiture uniquement pour zones isolees.",
       "sections": [
         {
@@ -82,6 +86,8 @@
       "chip": "Jours 1-3",
       "tone": "berry",
       "title": "Transports Tokyo",
+      "category": "local",
+      "toReserve": false,
       "description": "Deplacements urbains avant le ferry.",
       "image": {
         "src": "/images/header-card/tokyo.avif",
@@ -115,6 +121,8 @@
       "chip": "Jour 4",
       "tone": "forest",
       "title": "Ferry Oarai -> Tomakomai",
+      "category": "ferry",
+      "toReserve": true,
       "description": "Traversees de 18h avec cabine.",
       "image": {
         "src": "/images/header-card/ferry.jpg",
@@ -155,6 +163,8 @@
       "chip": "Jours 5-7",
       "tone": "clay",
       "title": "Trains regionaux Hokkaido",
+      "category": "local",
+      "toReserve": false,
       "description": "Priorite aux trains pour Sapporo et Otaru.",
       "image": {
         "src": "/images/header-card/sapporo.jpeg",
@@ -182,6 +192,8 @@
       "chip": "Jours 8-13",
       "tone": "berry",
       "title": "Location voiture (zones isolees)",
+      "category": "voiture",
+      "toReserve": true,
       "description": "Uniquement pour Sounkyo, Akan-ko et Biei.",
       "sections": [
         {
@@ -222,6 +234,8 @@
       "chip": "Excursions",
       "tone": "forest",
       "title": "Reservations activites",
+      "category": "activites",
+      "toReserve": true,
       "description": "A planifier selon les jours du road trip.",
       "sections": [
         {
@@ -250,6 +264,8 @@
       "chip": "Jour 15",
       "tone": "clay",
       "title": "Vol Sapporo -> Tokyo",
+      "category": "vol",
+      "toReserve": true,
       "description": "Retour en avion depuis New Chitose.",
       "image": {
         "src": "/images/header-card/tokyo.avif",
@@ -277,6 +293,8 @@
       "chip": "Jour 18",
       "tone": "berry",
       "title": "Vol retour Europe",
+      "category": "vol",
+      "toReserve": true,
       "description": "Depart final depuis Tokyo.",
       "sections": [
         {
