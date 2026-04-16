@@ -1,5 +1,6 @@
 import { Component, signal, computed } from '@angular/core';
 import { ChipComponent } from '../../ui/chip/chip.component';
+import { RouteMapComponent, type RouteWaypoint, type TransportMode } from '../../ui/route-map/route-map.component';
 import itineraireData from './itineraire.data.json';
 import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
 
@@ -19,6 +20,8 @@ interface PageCard {
   description?: string;
   image?: CardImageOverride;
   sections: PageSection[];
+  routeWaypoints?: RouteWaypoint[];
+  transportMode?: TransportMode;
 }
 
 interface PageData {
@@ -33,7 +36,7 @@ interface PageData {
 @Component({
   selector: 'app-itineraire',
   standalone: true,
-  imports: [ChipComponent],
+  imports: [ChipComponent, RouteMapComponent],
   templateUrl: './itineraire.component.html',
 })
 export class ItineraireComponent {

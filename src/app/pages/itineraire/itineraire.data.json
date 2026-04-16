@@ -11,6 +11,11 @@
       "title": "Tokyo (arrivee)",
       "location": "Tokyo",
       "description": "Installation et decouverte progressive de la ville.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Narita Airport", "lat": 35.7647, "lng": 140.3864 },
+        { "name": "Tokyo Centre", "lat": 35.6762, "lng": 139.6503 }
+      ],
       "image": {
         "src": "/images/header-card/tokyo.avif",
         "alt": "Tokyo skyline",
@@ -70,6 +75,11 @@
       "title": "Ferry overnight vers Hokkaido",
       "location": "En mer (Océan Pacifique)",
       "description": "Traversees longues mais confortables.",
+      "transportMode": "ferry",
+      "routeWaypoints": [
+        { "name": "Oarai Port", "lat": 36.3133, "lng": 140.5782 },
+        { "name": "Tomakomai Port", "lat": 42.6333, "lng": 141.6007 }
+      ],
       "image": {
         "src": "/images/header-card/ferry.jpg",
         "alt": "Ferry at sea",
@@ -115,6 +125,11 @@
       "title": "Sapporo",
       "location": "Sapporo, Hokkaido",
       "description": "Exploration urbaine et excursion a Otaru.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 },
+        { "name": "Otaru", "lat": 43.1906, "lng": 140.9946 }
+      ],
       "image": {
         "src": "/images/header-card/sapporo.jpeg",
         "alt": "Sapporo city",
@@ -170,6 +185,12 @@
       "title": "Sapporo -> Sounkyo Onsen",
       "location": "Sounkyo Onsen",
       "description": "Route panoramique et nuit en ryokan.",
+      "transportMode": "driving",
+      "routeWaypoints": [
+        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 },
+        { "name": "Asahikawa", "lat": 43.7683, "lng": 142.3649, "isStop": true },
+        { "name": "Sounkyo Onsen", "lat": 43.7429, "lng": 142.9884 }
+      ],
       "image": {
         "src": "/images/header-card/sounkyo-onsen.jpg",
         "alt": "Sounkyo Onsen",
@@ -216,6 +237,14 @@
       "title": "Sounkyo Onsen -> Akan-ko",
       "location": "Akan-ko",
       "description": "Longue route avec lacs et volcans.",
+      "transportMode": "driving",
+      "routeWaypoints": [
+        { "name": "Sounkyo Onsen", "lat": 43.7429, "lng": 142.9884 },
+        { "name": "Lake Kussharo", "lat": 43.6033, "lng": 144.3433, "isStop": true },
+        { "name": "Mt. Io (Iozan)", "lat": 43.5867, "lng": 144.4483, "isStop": true },
+        { "name": "Lake Mashu", "lat": 43.5710, "lng": 144.5277, "isStop": true },
+        { "name": "Akan-ko", "lat": 43.4364, "lng": 144.1072 }
+      ],
       "image": {
         "src": "/images/header-card/iozan.jpeg",
         "alt": "Mt. Io (Iozan)",
@@ -302,6 +331,13 @@
       "title": "Akan-ko -> Furano",
       "location": "Furano",
       "description": "Long trajet et arrets gourmands.",
+      "transportMode": "driving",
+      "routeWaypoints": [
+        { "name": "Akan-ko", "lat": 43.4364, "lng": 144.1072 },
+        { "name": "Obihiro", "lat": 42.9178, "lng": 143.1963, "isStop": true },
+        { "name": "Biei", "lat": 43.5925, "lng": 142.4700, "isStop": true },
+        { "name": "Furano", "lat": 43.3418, "lng": 142.3834 }
+      ],
       "image": {
         "src": "/images/header-card/biei.jpg",
         "alt": "Biei blue pond",
@@ -377,6 +413,11 @@
       "title": "Furano -> Sapporo",
       "location": "Sapporo",
       "description": "Retour et derniers achats.",
+      "transportMode": "driving",
+      "routeWaypoints": [
+        { "name": "Furano", "lat": 43.3418, "lng": 142.3834 },
+        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 }
+      ],
       "image": {
         "src": "/images/header-card/sapporo-tadao-ando.webp",
         "alt": "Sapporo Tadao Ando Museum",
@@ -422,6 +463,11 @@
       "title": "Sapporo -> Tokyo (vol)",
       "location": "Tokyo",
       "description": "Vol interieur et arrivee a Tokyo.",
+      "transportMode": "flight",
+      "routeWaypoints": [
+        { "name": "New Chitose Airport (CTS)", "lat": 42.7754, "lng": 141.6923 },
+        { "name": "Tokyo Haneda (HND)", "lat": 35.5533, "lng": 139.7811 }
+      ],
       "image": {
         "src": "/images/header-card/tokyo.avif",
         "alt": "Tokyo skyline",

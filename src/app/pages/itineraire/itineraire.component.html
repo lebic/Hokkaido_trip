@@ -166,6 +166,22 @@
         </div>
       }
 
+      <!-- Interactive Route Map -->
+      @if (detail.routeWaypoints && detail.routeWaypoints.length >= 2) {
+        <div class="rounded-2xl border border-zinc-100 bg-white p-4 shadow-sm">
+          <h3 class="mb-3 flex items-center gap-2 font-semibold text-zinc-700">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+            </svg>
+            Carte du trajet
+          </h3>
+          <app-route-map
+            [waypoints]="detail.routeWaypoints"
+            [mode]="detail.transportMode ?? 'driving'"
+          />
+        </div>
+      }
+
       <!-- Programme card -->
       @if (programmeSections(detail).length > 0) {
         <div class="rounded-2xl border border-zinc-100 bg-white p-4 shadow-sm">
