@@ -1,8 +1,10 @@
 {
   "hero": {
     "eyebrow": "Itineraire",
-    "title": "Voyage Japon : Tokyo -> Hokkaido Loop (18 jours)",
-    "description": "Cout total estime : 4200 EUR"
+    "title": "Voyage Japon : Tokyo -> Hokkaido Loop",
+    "description": "Cout total estime : 5470 EUR (Avec Japan Experience: 7551 EUR)",
+    "duration": "18 jours / 17 nuits",
+    "date": "21 Oct au 9 Nov 2026"
   },
   "cards": [
     {
@@ -592,9 +594,10 @@
         {
           "title": "Budget total",
           "items": [
-            "4200 EUR",
-            "Hebergements : 2100 EUR",
-            "Transports : 1100 EUR",
+            "5470 EUR",
+            "Hebergements : 1450 EUR",
+            "Transports : 820 EUR",
+            "Tickets Avions : +-2200 EUR",
             "Activites & repas : 1000 EUR"
           ]
         }

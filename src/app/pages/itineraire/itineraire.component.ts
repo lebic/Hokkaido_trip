@@ -29,6 +29,8 @@ interface PageData {
     eyebrow: string;
     title: string;
     description: string;
+    duration?: string;
+    date?: string;
   };
   cards: PageCard[];
 }
