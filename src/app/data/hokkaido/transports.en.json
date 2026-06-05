@@ -1,0 +1,317 @@
+{
+  "hero": {
+    "eyebrow": "Transport",
+    "title": "Trains first + car for remote areas",
+    "description": "Based on the itinerary: trains for major cities, car only in remote areas."
+  },
+  "cards": [
+    {
+      "chip": "Before departure",
+      "tone": "forest",
+      "title": "International flight to Tokyo",
+      "category": "vol",
+      "toReserve": true,
+      "description": "Main booking for the trip.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
+      "sections": [
+        {
+          "title": "Booking",
+          "items": [
+            "Round-trip flight Europe → Tokyo",
+            "Check luggage and connections"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        },
+        {
+          "title": "Arrival",
+          "items": [
+            "Narita or Haneda",
+            "Arrange currency exchange and IC card"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "JR Pass",
+      "tone": "clay",
+      "title": "Required JR Pass",
+      "category": "train",
+      "toReserve": true,
+      "description": "Trains for major cities, car only for remote areas.",
+      "sections": [
+        {
+          "title": "Recommended pass",
+          "items": [
+            "JR Hokkaido Rail Pass (5 days)"
+          ]
+        },
+        {
+          "title": "Covers",
+          "items": [
+            "Sapporo ↔ Otaru (Day 6)",
+            "Sapporo ↔ Asahikawa (Day 8, train option)",
+            "Sapporo ↔ Hakodate if needed"
+          ]
+        },
+        {
+          "title": "Activation",
+          "items": [
+            "Start around Days 5-9",
+            "Reserve seats in advance"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "JR Hokkaido Rail Pass",
+          "url": "https://www.jrhokkaido.co.jp/global/english/ticket/railpass/"
+        },
+        {
+          "label": "JR East - South Hokkaido Rail Pass",
+          "url": "https://www.jreast.co.jp/multi/en/pass/east-south-hokkaido.html"
+        }
+      ]
+    },
+    {
+      "chip": "Days 1-3",
+      "tone": "berry",
+      "title": "Tokyo transport",
+      "category": "local",
+      "toReserve": false,
+      "description": "Urban travel before the ferry.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
+      "sections": [
+        {
+          "title": "Transfers",
+          "items": [
+            "Narita Express or monorail to hotel",
+            "Tokyo metro for sightseeing"
+          ]
+        },
+        {
+          "title": "Day 3 evening",
+          "items": [
+            "Train Tokyo → Mito (1h30)",
+            "Bus Mito → Oarai Ferry Terminal (30 min)"
+          ]
+        },
+        {
+          "title": "Booking",
+          "items": [
+            "Train and bus tickets (buy on-site)"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Day 4",
+      "tone": "forest",
+      "title": "Ferry Oarai → Tomakomai",
+      "category": "ferry",
+      "toReserve": true,
+      "description": "18h crossing with private cabin.",
+      "image": {
+        "src": "/images/header-card/ferry.jpg",
+        "alt": "Ferry at sea",
+        "position": "center 55%"
+      },
+      "sections": [
+        {
+          "title": "Booking",
+          "items": [
+            "Sunflower Ferry (private cabin)",
+            "Book 2-3 months in advance"
+          ]
+        },
+        {
+          "title": "Schedule",
+          "items": [
+            "01:45 departure from Oarai",
+            "19:45 arrival at Tomakomai"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Ferry email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Sunflower Ferry",
+          "url": "https://www.sunflower.co.jp/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Days 5-7",
+      "tone": "clay",
+      "title": "Hokkaido regional trains",
+      "category": "local",
+      "toReserve": false,
+      "description": "Trains first for Sapporo and Otaru.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
+      "sections": [
+        {
+          "title": "Useful lines",
+          "items": [
+            "Sapporo ↔ Otaru (JR Hakodate Line)",
+            "Sapporo → Asahikawa (train option before car rental)"
+          ]
+        },
+        {
+          "title": "Tips",
+          "items": [
+            "Book window seats",
+            "Use JR Pass if active"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Days 8-13",
+      "tone": "berry",
+      "title": "Rental car (remote areas)",
+      "category": "voiture",
+      "toReserve": true,
+      "description": "Only for Sounkyo, Akan-ko and Biei.",
+      "sections": [
+        {
+          "title": "When to use",
+          "items": [
+            "Sapporo → Sounkyo Onsen",
+            "Sounkyo → Akan-ko",
+            "Akan-ko → Furano",
+            "Biei scenic roads"
+          ]
+        },
+        {
+          "title": "Booking",
+          "items": [
+            "Full insurance recommended",
+            "Request ETC card + GPS"
+          ]
+        },
+        {
+          "title": "Return",
+          "items": [
+            "Return car in Sapporo (Day 14)"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Toyota Rent a Car",
+          "url": "https://rent.toyota.co.jp/eng/"
+        },
+        {
+          "label": "Times Car Rental",
+          "url": "https://www.timescar-rental.com/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Excursions",
+      "tone": "forest",
+      "title": "Activity bookings",
+      "category": "activites",
+      "toReserve": true,
+      "description": "Plan according to road trip days.",
+      "sections": [
+        {
+          "title": "Sounkyo",
+          "items": [
+            "Daisetsuzan Ropeway (book if possible)"
+          ]
+        },
+        {
+          "title": "Akan-ko",
+          "items": [
+            "Boat on Lake Akan",
+            "Ainu Village: performance and museum"
+          ]
+        },
+        {
+          "title": "Furano/Biei",
+          "items": [
+            "Farm Tomita (no booking needed)",
+            "Furano Wine House (book if needed)"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Day 15",
+      "tone": "clay",
+      "title": "Flight Sapporo → Tokyo",
+      "category": "vol",
+      "toReserve": true,
+      "description": "Return by plane from New Chitose.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
+      "sections": [
+        {
+          "title": "Booking",
+          "items": [
+            "Flight ticket Sapporo (CTS) → Tokyo (HND)",
+            "Choose baggage option"
+          ]
+        },
+        {
+          "title": "Transfers",
+          "items": [
+            "Hotel shuttle to airport",
+            "Monorail to Tokyo hotel"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Day 18",
+      "tone": "berry",
+      "title": "Return flight to Europe",
+      "category": "vol",
+      "toReserve": true,
+      "description": "Final departure from Tokyo.",
+      "sections": [
+        {
+          "title": "Booking",
+          "items": [
+            "Return flight Tokyo → Europe",
+            "Check check-in time"
+          ]
+        },
+        {
+          "title": "Transfer",
+          "items": [
+            "Airport access from hotel",
+            "Check late transport options"
+          ]
+        }
+      ]
+    }
+  ]
+}

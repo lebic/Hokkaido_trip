@@ -1,0 +1,66 @@
+<!-- Hero -->
+<div class="mb-8">
+  <p class="mb-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-zinc-400">Mes voyages</p>
+  <h1 class="text-3xl font-bold text-zinc-900">Choisir un voyage</h1>
+  <p class="mt-2 text-sm text-zinc-500">Selectionne un voyage pour consulter son itineraire, ses hebergements et ses reservations.</p>
+</div>
+
+<!-- Travel cards grid -->
+<div class="grid gap-5 sm:grid-cols-2">
+  @for (travel of travels; track travel.id) {
+    @let isActive = travelService.selectedId() === travel.id;
+
+    <button
+      type="button"
+      (click)="selectTravel(travel.id)"
+      class="group relative overflow-hidden rounded-2xl border text-left shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+      [class.border-zinc-200]="!isActive"
+      [class.border-transparent]="isActive"
+      [class.ring-2]="isActive"
+      [class.ring-zinc-900]="isActive"
+    >
+      <!-- Header gradient -->
+      <div class="relative h-28 bg-gradient-to-br overflow-hidden" [class]="'bg-gradient-to-br ' + travel.color">
+        <img
+          [src]="travel.image"
+          [alt]="travel.name"
+          class="absolute inset-0 h-full w-full object-cover opacity-30 mix-blend-multiply"
+          aria-hidden="true"
+        />
+        <!-- Active badge -->
+        @if (isActive) {
+          <span class="absolute right-3 top-3 rounded-full bg-white/90 px-2.5 py-0.5 text-[0.65rem] font-bold text-zinc-900 shadow">
+            Actif
+          </span>
+        }
+      </div>
+
+      <!-- Content -->
+      <div class="bg-white p-5">
+        <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-zinc-400">{{ travel.subtitle }}</p>
+        <h2 class="text-lg font-bold text-zinc-900">{{ travel.name }}</h2>
+        <p class="mt-1 text-[0.8rem] text-zinc-500">{{ travel.description }}</p>
+
+        <div class="mt-3 flex flex-wrap items-center gap-3 border-t border-zinc-100 pt-3">
+          <span class="rounded-full bg-zinc-100 px-2.5 py-0.5 text-[0.72rem] font-medium text-zinc-600">
+            {{ travel.dates }}
+          </span>
+          <span class="rounded-full bg-zinc-100 px-2.5 py-0.5 text-[0.72rem] font-medium text-zinc-600">
+            {{ travel.duration }}
+          </span>
+        </div>
+
+        <p class="mt-4 flex items-center gap-1.5 text-[0.82rem] font-semibold text-zinc-700 group-hover:text-zinc-900 transition">
+          @if (isActive) {
+            Voir l'itineraire
+          } @else {
+            Selectionner ce voyage
+          }
+          <svg class="h-3.5 w-3.5 transition group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </p>
+      </div>
+    </button>
+  }
+</div>

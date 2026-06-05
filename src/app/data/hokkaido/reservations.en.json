@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "eyebrow": "Bookings",
+    "title": "All bookings in one place",
+    "description": "A clear overview for your tickets, hotels and transport."
+  },
+  "categories": [
+    {
+      "key": "vols",
+      "icon": "✈️",
+      "label": "Flights",
+      "badge": "bg-blue-50 text-blue-700",
+      "docs": ["Outbound flight Europe → Tokyo", "Return flight Tokyo → Europe", "Flight Sapporo → Tokyo (Day 15)"]
+    },
+    {
+      "key": "ferry",
+      "icon": "⛴️",
+      "label": "Ferry",
+      "badge": "bg-sky-50 text-sky-700",
+      "docs": ["Sunflower Ferry – Oarai → Tomakomai (Day 4)"]
+    },
+    {
+      "key": "hebergements",
+      "icon": "🏨",
+      "label": "Accommodation",
+      "badge": "bg-violet-50 text-violet-700",
+      "docs": [
+        "Tokyo arrival (Days 1-3)",
+        "Sapporo (Days 5-7)",
+        "Sounkyo Onsen (Day 8)",
+        "Akan-ko (Days 9-11)",
+        "Furano (Days 12-13)",
+        "Sapporo return (Day 14)",
+        "Tokyo return (Days 16-18)"
+      ]
+    },
+    {
+      "key": "train",
+      "icon": "🚂",
+      "label": "JR Pass / Train",
+      "badge": "bg-amber-50 text-amber-700",
+      "docs": ["JR Hokkaido Rail Pass", "Seat reservations"]
+    },
+    {
+      "key": "voiture",
+      "icon": "🚗",
+      "label": "Car rental",
+      "badge": "bg-emerald-50 text-emerald-700",
+      "docs": ["Car rental confirmation (Days 8-13)"]
+    },
+    {
+      "key": "activites",
+      "icon": "🎌",
+      "label": "Activities",
+      "badge": "bg-rose-50 text-rose-700",
+      "docs": ["Ainu performance – Akan-ko", "Daisetsuzan Ropeway", "Other tickets"]
+    }
+  ]
+}

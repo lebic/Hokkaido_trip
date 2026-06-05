@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "eyebrow": "Activities",
+    "title": "Activities to book",
+    "description": "Experiences requiring advance booking or planning. Day-by-day details are in the itinerary."
+  },
+  "activities": [
+    {
+      "chip": "Day 8",
+      "title": "Daisetsuzan Ropeway",
+      "location": "Sounkyo Onsen",
+      "description": "Panoramic gondola. Opening depends on weather, can get busy in peak season.",
+      "links": [
+        {
+          "label": "Daisetsuzan Ropeway",
+          "url": "https://www.rinyu.co.jp/sounkyo/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 10",
+      "title": "Ainu Village - Ikahchu Performance",
+      "location": "Akan-ko",
+      "description": "Evening Ainu dance and music show. Limited sessions, booking recommended.",
+      "links": [
+        {
+          "label": "Akan Ainu Theater (Ikor)",
+          "url": "https://www.akanainu.jp/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 10",
+      "title": "Boat trip on Lake Akan",
+      "location": "Akan-ko",
+      "description": "Lake tour with a visit to the Marimo Exhibition Center.",
+      "links": [
+        {
+          "label": "Akan Kisen (boats)",
+          "url": "https://www.akankisen.com/lang_eng/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 11",
+      "title": "Canoe on Lake Akan",
+      "location": "Akan-ko",
+      "description": "Optional. Book with local operators on arrival or in advance.",
+      "links": []
+    },
+    {
+      "chip": "Day 13",
+      "title": "Farm Tomita",
+      "location": "Furano",
+      "description": "Lavender fields and Melon House. Free entry, check opening based on season.",
+      "links": [
+        {
+          "label": "Farm Tomita",
+          "url": "https://www.farm-tomita.co.jp/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 13",
+      "title": "Ningle Terrace",
+      "location": "Furano",
+      "description": "Artisan village in the Furano forest. Evening visit recommended, check opening hours.",
+      "links": [
+        {
+          "label": "Ningle Terrace",
+          "url": "https://www.princehotels.com/en/furano/ningle-terrace/"
+        }
+      ]
+    }
+  ]
+}

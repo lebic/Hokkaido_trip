@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "eyebrow": "Activites",
+    "title": "Activites a reserver",
+    "description": "Experiences necessitant une reservation ou une planification a l'avance. Les details jour par jour sont dans l'itineraire."
+  },
+  "activities": [
+    {
+      "chip": "Vienne - Jour 3",
+      "title": "Musee du Belvedere",
+      "location": "Vienne, Autriche",
+      "description": "Célèbre pour 'Le Baiser' de Klimt. File d'attente possible, billet en ligne conseille.",
+      "links": [
+        {
+          "label": "Belvedere Museum",
+          "url": "https://www.belvedere.at/en"
+        }
+      ]
+    },
+    {
+      "chip": "Vienne - Jour 4",
+      "title": "Opera de Vienne (soiree)",
+      "location": "Vienne, Autriche",
+      "description": "Un des plus grands operas du monde. Places a partir de 3 EUR debout, billets reguliers a reserver des que possible.",
+      "links": [
+        {
+          "label": "Wiener Staatsoper",
+          "url": "https://www.wiener-staatsoper.at/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Vienne - Jour 2",
+      "title": "Palais de Schonbrunn",
+      "location": "Vienne, Autriche",
+      "description": "Ancienne residence imperiale des Habsbourg. Visite guidee recommandee, billet en ligne pour eviter la file.",
+      "links": [
+        {
+          "label": "Schönbrunn Palace",
+          "url": "https://www.schoenbrunn.at/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Munich - Jour 9",
+      "title": "BMW Museum",
+      "location": "Munich, Allemagne",
+      "description": "Musee et BMW Welt. Entree musee payante, BMW Welt gratuit. Visite supplementaire a l'usine possible sur reservation.",
+      "links": [
+        {
+          "label": "BMW Museum",
+          "url": "https://www.bmw-welt.com/en/topics/museum.html"
+        }
+      ]
+    },
+    {
+      "chip": "Munich - Jour 7",
+      "title": "Deutsches Museum",
+      "location": "Munich, Allemagne",
+      "description": "Plus grand musee des sciences et techniques du monde. Prevoir au moins une demi-journee.",
+      "links": [
+        {
+          "label": "Deutsches Museum",
+          "url": "https://www.deutsches-museum.de/en"
+        }
+      ]
+    }
+  ]
+}

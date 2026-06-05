@@ -1,5 +1,5 @@
-import { Component, computed, signal } from '@angular/core';
-import hebergementsData from './hebergements.data.json';
+import { Component, computed, signal, inject } from '@angular/core';
+import { TravelService } from '../../services/travel.service';
 
 type Priority = 1 | 2;
 
@@ -29,7 +29,7 @@ interface PageData {
   cards: Record<string, unknown>[];
 }
 
-const STORAGE_KEY = 'hokkaido-hebergements-reserved';
+const TIPS_TITLES = ['Conseils generaux', 'General tips'];
 
 @Component({
   selector: 'app-hebergements',
@@ -38,29 +38,31 @@ const STORAGE_KEY = 'hokkaido-hebergements-reserved';
   templateUrl: './hebergements.component.html',
 })
 export class HebergementsComponent {
-  private readonly rawData = hebergementsData as PageData;
+  private readonly travelService = inject(TravelService);
+  private readonly storageKey = computed(() => `${this.travelService.selectedId()}-hebergements-reserved`);
+  private readonly rawData = computed(() => this.travelService.hebergementsData() as PageData);
 
-  protected readonly accommodations: HotelCard[] = (this.rawData.cards as unknown as HotelCard[]).filter(
-    (c) => typeof c.location === 'string'
+  protected readonly accommodations = computed(() =>
+    (this.rawData().cards as unknown as HotelCard[]).filter((c) => typeof c.location === 'string')
   );
 
-  protected readonly conseilsSections: PageSection[] = (() => {
-    const tips = this.rawData.cards.find(
-      (c) => (c as { title?: string }).title === 'Conseils generaux'
+  protected readonly conseilsSections = computed((): PageSection[] => {
+    const tips = this.rawData().cards.find(
+      (c) => TIPS_TITLES.includes((c as { title?: string }).title ?? '')
     ) as { sections?: PageSection[] } | undefined;
     return tips?.sections ?? [];
-  })();
+  });
 
   private loadState(): boolean[] {
     try {
       if (typeof localStorage === 'undefined') {
-        return new Array<boolean>(this.accommodations.length).fill(false);
+        return new Array<boolean>(this.accommodations().length).fill(false);
       }
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(this.storageKey());
       const arr: boolean[] = raw ? (JSON.parse(raw) as boolean[]) : [];
-      return Array.from({ length: this.accommodations.length }, (_, i) => arr[i] ?? false);
+      return Array.from({ length: this.accommodations().length }, (_, i) => arr[i] ?? false);
     } catch {
-      return new Array<boolean>(this.accommodations.length).fill(false);
+      return new Array<boolean>(this.accommodations().length).fill(false);
     }
   }
 
@@ -71,8 +73,8 @@ export class HebergementsComponent {
   );
 
   protected readonly progressPercent = computed(() =>
-    this.accommodations.length > 0
-      ? Math.round((this.reservedCount() / this.accommodations.length) * 100)
+    this.accommodations().length > 0
+      ? Math.round((this.reservedCount() / this.accommodations().length) * 100)
       : 0
   );
 
@@ -85,7 +87,7 @@ export class HebergementsComponent {
     state[index] = !state[index];
     this.reservedState.set(state);
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      localStorage.setItem(this.storageKey(), JSON.stringify(state));
     } catch { /* localStorage unavailable */ }
   }
 }

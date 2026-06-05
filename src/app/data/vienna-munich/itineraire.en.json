@@ -1,0 +1,195 @@
+{
+  "hero": {
+    "eyebrow": "Itinerary",
+    "title": "Vienna & Munich: Winter Capitals",
+    "description": "Estimated total cost: 1800 EUR",
+    "duration": "11 days / 10 nights",
+    "date": "Jan 29 to Feb 8, 2027"
+  },
+  "cards": [
+    {
+      "chip": "Days 1-5",
+      "tone": "forest",
+      "title": "Vienna",
+      "location": "Vienna, Austria",
+      "description": "Five days to explore the imperial capital: palaces, museums and historic cafes.",
+      "transportMode": "plane",
+      "routeWaypoints": [
+        { "name": "Luxembourg Airport", "lat": 49.6233, "lng": 6.2044 },
+        { "name": "Vienna Airport (VIE)", "lat": 48.1103, "lng": 16.5697 }
+      ],
+      "image": {
+        "src": "/images/placeholders/city.svg",
+        "alt": "Vienna",
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "title": "Accommodation",
+          "items": [
+            "Hotel in central Vienna (5 nights, Jan 29 - Feb 3)"
+          ]
+        },
+        {
+          "title": "Day 1 - Transport",
+          "items": [
+            "Flight Luxembourg (LUX) → Vienna (VIE)",
+            "Shuttle or S-Bahn from airport to city centre (≈ 16 min)"
+          ]
+        },
+        {
+          "title": "Day 1 - Activities",
+          "items": [
+            "Hotel check-in",
+            "Walk along the Ringstrasse",
+            "Explore the neighbourhood"
+          ]
+        },
+        {
+          "title": "Day 2 - Activities",
+          "items": [
+            "Schönbrunn Palace and gardens",
+            "Naschmarkt district",
+            "Stephansdom (St. Stephen's Cathedral)"
+          ]
+        },
+        {
+          "title": "Day 3 - Activities",
+          "items": [
+            "Belvedere Museum (Klimt - The Kiss)",
+            "Hofburg Palace",
+            "Wiener Prater and Giant Ferris Wheel"
+          ]
+        },
+        {
+          "title": "Day 4 - Activities",
+          "items": [
+            "Kunsthistorisches Museum",
+            "Cafe Central or Cafe Landtmann",
+            "Vienna State Opera (evening possible)"
+          ]
+        },
+        {
+          "title": "Day 5 - Activities",
+          "items": [
+            "Morning neighbourhood market",
+            "Free walk in the Innere Stadt",
+            "Prepare for departure to Munich"
+          ]
+        },
+        {
+          "title": "Day 5 - Transport",
+          "items": [
+            "Railjet train: Wien Hbf → München Hbf (≈ 4h)"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Days 6-10",
+      "tone": "clay",
+      "title": "Munich",
+      "location": "Munich, Germany",
+      "description": "Five days in the Bavarian capital: beers, baroque and world-class museums.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Wien Hauptbahnhof", "lat": 48.1851, "lng": 16.3762 },
+        { "name": "München Hauptbahnhof", "lat": 48.1402, "lng": 11.5600 }
+      ],
+      "image": {
+        "src": "/images/placeholders/city.svg",
+        "alt": "Munich",
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "title": "Accommodation",
+          "items": [
+            "Hotel in central Munich (5 nights, Feb 3 - Feb 8)"
+          ]
+        },
+        {
+          "title": "Day 6 - Arrival",
+          "items": [
+            "Arrival by train from Vienna",
+            "Hotel check-in",
+            "Marienplatz and Glockenspiel in the evening"
+          ]
+        },
+        {
+          "title": "Day 7 - Activities",
+          "items": [
+            "Deutsches Museum (science and technology)",
+            "Isar Promenade",
+            "Hofbräuhaus in the evening"
+          ]
+        },
+        {
+          "title": "Day 8 - Activities",
+          "items": [
+            "Nymphenburg Palace and gardens",
+            "Olympiapark and Olympic Tower",
+            "Panoramic view of the Alps"
+          ]
+        },
+        {
+          "title": "Day 9 - Activities",
+          "items": [
+            "BMW Museum or BMW Welt",
+            "Englischer Garten",
+            "Viktualienmarkt"
+          ]
+        },
+        {
+          "title": "Day 10 - Activities",
+          "items": [
+            "Alte Pinakothek (old masters)",
+            "Free walk in Maxvorstadt",
+            "Last Bavarian dinner"
+          ]
+        },
+        {
+          "title": "Day 10 - Transport",
+          "items": [
+            "Pack luggage, check next day's flight time"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Day 11",
+      "tone": "berry",
+      "title": "Return to Luxembourg",
+      "location": "Munich → Luxembourg",
+      "description": "Last morning in Munich, return flight to Luxembourg.",
+      "transportMode": "plane",
+      "routeWaypoints": [
+        { "name": "Munich Airport (MUC)", "lat": 48.3537, "lng": 11.7750 },
+        { "name": "Luxembourg Airport (LUX)", "lat": 49.6233, "lng": 6.2044 }
+      ],
+      "image": {
+        "src": "/images/placeholders/airport.svg",
+        "alt": "Munich Airport",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Transport",
+          "items": [
+            "S-Bahn or shuttle from hotel to Munich Airport (MUC)",
+            "Flight Munich (MUC) → Luxembourg (LUX)",
+            "Return home"
+          ]
+        },
+        {
+          "title": "To prepare",
+          "items": [
+            "Online check-in the day before",
+            "Arrive at airport 2h before flight",
+            "Check baggage allowance"
+          ]
+        }
+      ]
+    }
+  ]
+}

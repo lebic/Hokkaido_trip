@@ -1,5 +1,5 @@
-import { Component, computed, signal } from '@angular/core';
-import transportsData from './transports.data.json';
+import { Component, computed, signal, inject } from '@angular/core';
+import { TravelService } from '../../services/travel.service';
 
 type Category = 'vol' | 'ferry' | 'train' | 'voiture' | 'local' | 'activites';
 
@@ -29,8 +29,6 @@ interface CategoryMeta {
   dot: string;
 }
 
-const STORAGE_KEY = 'hokkaido-transports-reserved';
-
 const CATEGORY_META: Record<Category, CategoryMeta> = {
   vol:       { label: 'Vols',                    icon: '✈️', badge: 'bg-blue-50 text-blue-700',      dot: 'bg-blue-400' },
   ferry:     { label: 'Ferry',                    icon: '⛴️', badge: 'bg-sky-50 text-sky-700',       dot: 'bg-sky-400' },
@@ -47,28 +45,28 @@ const CATEGORY_META: Record<Category, CategoryMeta> = {
   templateUrl: './transports.component.html',
 })
 export class TransportsComponent {
-  private readonly rawData = transportsData as PageData;
+  private readonly travelService = inject(TravelService);
+  private readonly storageKey = computed(() => `${this.travelService.selectedId()}-transports-reserved`);
+  private readonly rawData = computed(() => this.travelService.transportsData() as PageData);
 
-  protected readonly reservations: TransportCard[] = (this.rawData.cards as unknown as TransportCard[]).filter(
-    (c) => c.toReserve === true
+  protected readonly reservations = computed(() =>
+    (this.rawData().cards as unknown as TransportCard[]).filter((c) => c.toReserve === true)
   );
 
-  protected readonly categoryMeta = CATEGORY_META;
-
-  protected readonly categories: Category[] = [...new Set(
-    this.reservations.map((c) => c.category)
-  )];
+  protected readonly categories = computed(() =>
+    [...new Set(this.reservations().map((c) => c.category))] as Category[]
+  );
 
   private loadState(): boolean[] {
     try {
       if (typeof localStorage === 'undefined') {
-        return new Array<boolean>(this.reservations.length).fill(false);
+        return new Array<boolean>(this.reservations().length).fill(false);
       }
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(this.storageKey());
       const arr: boolean[] = raw ? (JSON.parse(raw) as boolean[]) : [];
-      return Array.from({ length: this.reservations.length }, (_, i) => arr[i] ?? false);
+      return Array.from({ length: this.reservations().length }, (_, i) => arr[i] ?? false);
     } catch {
-      return new Array<boolean>(this.reservations.length).fill(false);
+      return new Array<boolean>(this.reservations().length).fill(false);
     }
   }
 
@@ -79,10 +77,14 @@ export class TransportsComponent {
   );
 
   protected readonly progressPercent = computed(() =>
-    this.reservations.length > 0
-      ? Math.round((this.reservedCount() / this.reservations.length) * 100)
+    this.reservations().length > 0
+      ? Math.round((this.reservedCount() / this.reservations().length) * 100)
       : 0
   );
+
+  protected getCategoryMeta(cat: Category): CategoryMeta {
+    return CATEGORY_META[cat];
+  }
 
   protected isReserved(index: number): boolean {
     return this.reservedState()[index] ?? false;
@@ -93,13 +95,14 @@ export class TransportsComponent {
     state[index] = !state[index];
     this.reservedState.set(state);
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      localStorage.setItem(this.storageKey(), JSON.stringify(state));
     } catch { /* localStorage unavailable */ }
   }
 
   protected getByCategory(category: Category): Array<{ card: TransportCard; index: number }> {
-    return this.reservations
+    return this.reservations()
       .map((card, index) => ({ card, index }))
       .filter(({ card }) => card.category === category);
   }
 }
+

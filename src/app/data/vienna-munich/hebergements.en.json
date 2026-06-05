@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "eyebrow": "Accommodation",
+    "title": "Complete accommodation guide",
+    "description": "Total accommodation budget: 700 EUR"
+  },
+  "cards": [
+    {
+      "chip": "Vienna",
+      "tone": "forest",
+      "title": "Days 1-5 (Jan 29 - Feb 3)",
+      "location": "Vienna, Austria",
+      "nights": "5 nights",
+      "priority": 1,
+      "description": "3-star hotel near the historic city centre.",
+      "image": {
+        "src": "/images/placeholders/city.svg",
+        "alt": "Vienna",
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "350 EUR (70 EUR / night)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "To book"
+          ]
+        },
+        {
+          "title": "Recommended options",
+          "items": [
+            "Hotel near Stephansdom (1st district)",
+            "Hotel near Naschmarkt (4th/6th district)",
+            "Hotel near Westbahnhof (for the train to Munich)"
+          ]
+        },
+        {
+          "title": "Criteria",
+          "items": [
+            "Easy access from airport (S-Bahn)",
+            "Close to U-Bahn",
+            "Late check-in available",
+            "Flexible check-out on February 3 (daytime train)"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport or national ID",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Vienna – 509€, i.e. 254.50€ per person",
+          "url": "https://www.booking.com/Share-fX1Hw3"
+        }
+      ]
+    },
+    {
+      "chip": "Munich",
+      "tone": "clay",
+      "title": "Days 6-10 (Feb 3 - Feb 8)",
+      "location": "Munich, Germany",
+      "nights": "5 nights",
+      "priority": 1,
+      "description": "3-star hotel in central Munich.",
+      "image": {
+        "src": "/images/placeholders/city.svg",
+        "alt": "Munich",
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "350 EUR (70 EUR / night)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "To book"
+          ]
+        },
+        {
+          "title": "Recommended options",
+          "items": [
+            "Hotel near Marienplatz (Altstadt)",
+            "Hotel near Hauptbahnhof (easy access)",
+            "Hotel near Schwabing or Maxvorstadt"
+          ]
+        },
+        {
+          "title": "Criteria",
+          "items": [
+            "Easy access from central station (Railjet from Vienna)",
+            "Close to S-Bahn to airport (Day 11)",
+            "Check-out on February 8 (possible early morning flight)"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport or national ID",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Munich –845€, i.e. 422.50€ per person",
+          "url": "https://www.booking.com/Share-yPPIIRR"
+        }
+      ]
+    }
+  ]
+}

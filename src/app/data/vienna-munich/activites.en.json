@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "eyebrow": "Activities",
+    "title": "Activities to book",
+    "description": "Experiences requiring advance booking or planning. Day-by-day details are in the itinerary."
+  },
+  "activities": [
+    {
+      "chip": "Vienna - Day 3",
+      "title": "Belvedere Museum",
+      "location": "Vienna, Austria",
+      "description": "Famous for Klimt's 'The Kiss'. Queue possible, online ticket recommended.",
+      "links": [
+        {
+          "label": "Belvedere Museum",
+          "url": "https://www.belvedere.at/en"
+        }
+      ]
+    },
+    {
+      "chip": "Vienna - Day 4",
+      "title": "Vienna State Opera (evening)",
+      "location": "Vienna, Austria",
+      "description": "One of the greatest opera houses in the world. Standing tickets from 3 EUR, regular tickets should be booked as early as possible.",
+      "links": [
+        {
+          "label": "Wiener Staatsoper",
+          "url": "https://www.wiener-staatsoper.at/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Vienna - Day 2",
+      "title": "Schönbrunn Palace",
+      "location": "Vienna, Austria",
+      "description": "Former imperial residence of the Habsburgs. Guided tour recommended, online ticket to skip the queue.",
+      "links": [
+        {
+          "label": "Schönbrunn Palace",
+          "url": "https://www.schoenbrunn.at/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Munich - Day 9",
+      "title": "BMW Museum",
+      "location": "Munich, Germany",
+      "description": "Museum and BMW Welt. Museum entry is paid, BMW Welt is free. Factory tour available on request.",
+      "links": [
+        {
+          "label": "BMW Museum",
+          "url": "https://www.bmw-welt.com/en/topics/museum.html"
+        }
+      ]
+    },
+    {
+      "chip": "Munich - Day 7",
+      "title": "Deutsches Museum",
+      "location": "Munich, Germany",
+      "description": "Largest science and technology museum in the world. Allow at least half a day.",
+      "links": [
+        {
+          "label": "Deutsches Museum",
+          "url": "https://www.deutsches-museum.de/en"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-import { Component, computed, signal } from '@angular/core';
-import activitesData from './activites.data.json';
+import { Component, computed, signal, inject } from '@angular/core';
+import { TravelService } from '../../services/travel.service';
 
 interface LinkItem {
   label: string;
@@ -19,8 +19,6 @@ interface PageData {
   activities: ActivityCard[];
 }
 
-const STORAGE_KEY = 'hokkaido-activites-reserved';
-
 @Component({
   selector: 'app-activites',
   standalone: true,
@@ -28,20 +26,22 @@ const STORAGE_KEY = 'hokkaido-activites-reserved';
   templateUrl: './activites.component.html',
 })
 export class ActivitesComponent {
-  private readonly rawData = activitesData as unknown as PageData;
+  private readonly travelService = inject(TravelService);
+  private readonly storageKey = computed(() => `${this.travelService.selectedId()}-activites-reserved`);
+  private readonly rawData = computed(() => this.travelService.activitesData() as unknown as PageData);
 
-  protected readonly activities: ActivityCard[] = this.rawData.activities;
+  protected readonly activities = computed(() => this.rawData().activities);
 
   private loadState(): boolean[] {
     try {
       if (typeof localStorage === 'undefined') {
-        return new Array<boolean>(this.activities.length).fill(false);
+        return new Array<boolean>(this.activities().length).fill(false);
       }
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(this.storageKey());
       const arr: boolean[] = raw ? (JSON.parse(raw) as boolean[]) : [];
-      return Array.from({ length: this.activities.length }, (_, i) => arr[i] ?? false);
+      return Array.from({ length: this.activities().length }, (_, i) => arr[i] ?? false);
     } catch {
-      return new Array<boolean>(this.activities.length).fill(false);
+      return new Array<boolean>(this.activities().length).fill(false);
     }
   }
 
@@ -52,8 +52,8 @@ export class ActivitesComponent {
   );
 
   protected readonly progressPercent = computed(() =>
-    this.activities.length > 0
-      ? Math.round((this.reservedCount() / this.activities.length) * 100)
+    this.activities().length > 0
+      ? Math.round((this.reservedCount() / this.activities().length) * 100)
       : 0
   );
 
@@ -66,7 +66,7 @@ export class ActivitesComponent {
     state[index] = !state[index];
     this.reservedState.set(state);
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      localStorage.setItem(this.storageKey(), JSON.stringify(state));
     } catch { /* localStorage unavailable */ }
   }
 }

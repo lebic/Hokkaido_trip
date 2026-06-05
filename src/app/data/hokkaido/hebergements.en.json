@@ -1,0 +1,585 @@
+{
+  "hero": {
+    "eyebrow": "Accommodation",
+    "title": "Complete accommodation guide",
+    "description": "Total accommodation budget: 2100 EUR"
+  },
+  "cards": [
+    {
+      "chip": "Tokyo",
+      "tone": "forest",
+      "title": "Days 1-3 (arrival)",
+      "location": "Tokyo",
+      "nights": "3 nights",
+      "priority": 2,
+      "description": "3-star city centre hotel.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "300 EUR (100 EUR / night)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "To book"
+          ]
+        },
+        {
+          "title": "Recommended options",
+          "items": [
+            "Hotel near Tokyo Station (Nihonbashi, Yaesu, Marunouchi)",
+            "Hotel near Shinjuku (lively city centre)",
+            "Hotel near Ueno (close to park and museums)"
+          ]
+        },
+        {
+          "title": "Criteria",
+          "items": [
+            "Easy access from airport",
+            "Late check-in available",
+            "Close to transport for Oarai (Day 3)"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Tokyo",
+          "url": "https://www.booking.com/city/jp/tokyo.en.html"
+        },
+        {
+          "label": "Agoda Tokyo",
+          "url": "https://www.agoda.com/city/tokyo-jp.html"
+        }
+      ]
+    },
+    {
+      "chip": "Ferry",
+      "tone": "clay",
+      "title": "Day 4 (Sunflower Ferry)",
+      "location": "At sea (Pacific Ocean)",
+      "nights": "1 night",
+      "priority": 1,
+      "description": "Private cabin on the ferry.",
+      "image": {
+        "src": "/images/header-card/ferry.jpg",
+        "alt": "Ferry at sea",
+        "position": "center 55%"
+      },
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "150 EUR (private cabin)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "Top priority to book"
+          ]
+        },
+        {
+          "title": "Transport",
+          "items": [
+            "Route: Oarai Port → Tomakomai Port",
+            "Duration: 18h (01:45 → 19:45)"
+          ]
+        },
+        {
+          "title": "Cabins",
+          "items": [
+            "Standard private (~150 EUR)",
+            "Deluxe (~250 EUR)",
+            "Suite (~400 EUR)"
+          ]
+        },
+        {
+          "title": "Getting to Oarai",
+          "items": [
+            "Train Tokyo → Mito (1h30)",
+            "Bus Mito → Oarai (30 min)",
+            "Direct taxi (2h)"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Ferry email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Sunflower Ferry",
+          "url": "https://www.sunflower.co.jp/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Sapporo",
+      "tone": "berry",
+      "title": "Days 5-7",
+      "location": "Sapporo, Hokkaido",
+      "nights": "3 nights",
+      "priority": 2,
+      "description": "3-star city centre hotel.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "300 EUR (100 EUR / night)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "To book"
+          ]
+        },
+        {
+          "title": "Recommended options",
+          "items": [
+            "Vessel Inn Sapporo Nakajima Park",
+            "ibis Styles Sapporo",
+            "UNWIND HOTEL & BAR SAPPORO"
+          ]
+        },
+        {
+          "title": "Notes",
+          "items": [
+            "Late arrival on Day 4",
+            "Parking if renting a car",
+            "Check late check-in policy"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Vessel Inn Sapporo (Booking)",
+          "url": "https://www.booking.com/Share-N0o365"
+        },
+        {
+          "label": "ibis Styles Sapporo (Booking)",
+          "url": "https://www.booking.com/Share-1QU1T5y"
+        },
+        {
+          "label": "UNWIND HOTEL & BAR (Booking)",
+          "url": "https://www.booking.com/Share-PIJhl5"
+        }
+      ]
+    },
+    {
+      "chip": "Sounkyo Onsen",
+      "tone": "forest",
+      "title": "Day 8",
+      "location": "Sounkyo Onsen",
+      "nights": "1 night",
+      "priority": 1,
+      "description": "Ryokan with onsen and half-board.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "180 EUR"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "Top priority to book"
+          ]
+        },
+        {
+          "title": "Features",
+          "items": [
+            "Quality onsen",
+            "Half-board included",
+            "Sounkyo Gorge view",
+            "Free parking"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Sounkyo Choyotei",
+            "Hotel Taisetsu",
+            "Choyo Resort Hotel"
+          ]
+        },
+        {
+          "title": "Notes",
+          "items": [
+            "Book early",
+            "Confirm meals included",
+            "Request room with a view"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/"
+        },
+        {
+          "label": "Rakuten Travel",
+          "url": "https://travel.rakuten.com/"
+        },
+        {
+          "label": "Japanese Guest Houses",
+          "url": "https://www.japaneseguesthouses.com/"
+        }
+      ]
+    },
+    {
+      "chip": "Akan-ko",
+      "tone": "clay",
+      "title": "Days 9-11",
+      "location": "Akan-ko",
+      "nights": "3 nights",
+      "priority": 1,
+      "description": "Ryokan or hotel with onsen.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "450 EUR (150 EUR / night)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "Top priority to book"
+          ]
+        },
+        {
+          "title": "Features",
+          "items": [
+            "Lakeside setting",
+            "Onsen with view",
+            "Half-board included",
+            "Free parking"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Tsuruga Wings",
+            "New Akan Hotel",
+            "Akan Yuku no Sato Tsuruga",
+            "Akan no Mori Tsuruga Resort Hanayuuka"
+          ]
+        },
+        {
+          "title": "Criteria",
+          "items": [
+            "Lake view",
+            "Onsen quality",
+            "Close to Ainu village",
+            "Kaiseki meal quality"
+          ]
+        },
+        {
+          "title": "Notes",
+          "items": [
+            "Book 3-6 months in advance",
+            "3-night stay possible",
+            "Check meal policy"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/"
+        },
+        {
+          "label": "Rakuten Travel",
+          "url": "https://travel.rakuten.com/"
+        }
+      ]
+    },
+    {
+      "chip": "Furano",
+      "tone": "berry",
+      "title": "Days 12-13",
+      "location": "Furano",
+      "nights": "2 nights",
+      "priority": 2,
+      "description": "3-star hotel in town or close to nature.",
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "200 EUR (100 EUR / night)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "To book"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Natulux Hotel Furano",
+            "New Furano Prince Hotel",
+            "Hotel Munin Furano"
+          ]
+        },
+        {
+          "title": "Criteria",
+          "items": [
+            "Free parking",
+            "Easy access to Biei and Farm Tomita",
+            "Close to restaurants",
+            "Mountain view"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/"
+        },
+        {
+          "label": "Rakuten Travel",
+          "url": "https://travel.rakuten.com/"
+        }
+      ]
+    },
+    {
+      "chip": "Sapporo",
+      "tone": "forest",
+      "title": "Day 14 (return)",
+      "location": "Sapporo, Hokkaido",
+      "nights": "1 night",
+      "priority": 2,
+      "description": "3-star city centre hotel.",
+      "image": {
+        "src": "/images/header-card/sapporo.jpeg",
+        "alt": "Sapporo city",
+        "position": "center 45%"
+      },
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "100 EUR"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "To book"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Same hotel as Days 5-7",
+            "Or a new neighbourhood"
+          ]
+        },
+        {
+          "title": "Criteria",
+          "items": [
+            "City centre",
+            "Close to car rental agency",
+            "Easy access to New Chitose",
+            "Close to shopping"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Sapporo",
+          "url": "https://www.booking.com/city/jp/sapporo.en.html"
+        }
+      ]
+    },
+    {
+      "chip": "Tokyo",
+      "tone": "clay",
+      "title": "Days 16-18 (return)",
+      "location": "Tokyo",
+      "nights": "3 nights",
+      "priority": 2,
+      "description": "3-star city centre hotel.",
+      "image": {
+        "src": "/images/header-card/tokyo.avif",
+        "alt": "Tokyo skyline",
+        "position": "center 30%"
+      },
+      "sections": [
+        {
+          "title": "Budget",
+          "items": [
+            "300 EUR (100 EUR / night)"
+          ]
+        },
+        {
+          "title": "Status",
+          "items": [
+            "To book"
+          ]
+        },
+        {
+          "title": "Options",
+          "items": [
+            "Same area as on arrival",
+            "Or a new neighbourhood (Ginza, Roppongi, Asakusa)"
+          ]
+        },
+        {
+          "title": "Criteria",
+          "items": [
+            "Easy access from Haneda",
+            "Easy airport access on Day 18",
+            "Close to shopping",
+            "Good restaurant area"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passport",
+            "Email confirmation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Booking.com Tokyo",
+          "url": "https://www.booking.com/city/jp/tokyo.en.html"
+        }
+      ]
+    },
+    {
+      "chip": "Checklist",
+      "tone": "berry",
+      "title": "Booking checklist",
+      "description": "Booking priorities.",
+      "sections": [
+        {
+          "title": "Priority 1",
+          "items": [
+            "Sunflower Ferry (Day 4)",
+            "Sounkyo Onsen (Day 8)",
+            "Akan-ko (Days 9-11)"
+          ]
+        },
+        {
+          "title": "Priority 2",
+          "items": [
+            "Tokyo Days 1-3",
+            "Sapporo Days 5-7",
+            "Furano Days 12-13",
+            "Sapporo Day 14",
+            "Tokyo Days 16-18"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Tips",
+      "tone": "forest",
+      "title": "General tips",
+      "description": "Best practices for booking.",
+      "sections": [
+        {
+          "title": "Booking",
+          "items": [
+            "Ferry: book 2-3 months in advance",
+            "Hotels: Booking, Agoda, Rakuten",
+            "Ryokans: specialist websites",
+            "Book 3-6 months ahead for best rates"
+          ]
+        },
+        {
+          "title": "Communication",
+          "items": [
+            "English-speaking staff is common",
+            "Keep hotel address in Japanese on your phone",
+            "Confirm check-in time",
+            "Mention dietary restrictions"
+          ]
+        },
+        {
+          "title": "Included",
+          "items": [
+            "Free Wi-Fi",
+            "Toiletries",
+            "Pyjamas/yukatas at ryokans",
+            "Free parking outside Tokyo"
+          ]
+        },
+        {
+          "title": "To check",
+          "items": [
+            "Check-in / check-out times",
+            "Breakfast included",
+            "Cancellation policy",
+            "Parking available",
+            "Meals included at ryokan"
+          ]
+        }
+      ]
+    }
+  ]
+}

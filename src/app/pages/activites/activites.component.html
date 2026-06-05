@@ -2,7 +2,7 @@
 <div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-500 p-5 text-white shadow-lg">
   <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Activités</p>
   <h1 class="mb-0.5 text-2xl font-bold">Activités à réserver</h1>
-  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ activities.length }} activités confirmées</p>
+  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ activities().length }} activités confirmées</p>
   <div class="h-1.5 w-full overflow-hidden rounded-full bg-white/30">
     <div
       class="h-full rounded-full bg-white transition-all duration-500"
@@ -13,7 +13,7 @@
 
 <!-- Reservation list -->
 <div class="overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm">
-  @for (activity of activities; track activity.title; let i = $index; let last = $last) {
+  @for (activity of activities(); track activity.title; let i = $index; let last = $last) {
     <div
       class="flex cursor-pointer gap-4 p-4 transition hover:bg-zinc-50"
       [class.border-b]="!last"

@@ -1,0 +1,179 @@
+{
+  "hero": {
+    "eyebrow": "Transports",
+    "title": "3 transports principaux a reserver",
+    "description": "Vol aller, train intercites et vol retour."
+  },
+  "cards": [
+    {
+      "chip": "Jour 1",
+      "tone": "forest",
+      "title": "Vol Luxembourg → Vienne",
+      "category": "vol",
+      "toReserve": true,
+      "description": "Vol aller Luxembourg (LUX) vers Vienne (VIE).",
+      "image": {
+        "src": "/images/placeholders/airport.svg",
+        "alt": "Aeroport de Luxembourg",
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "title": "Reservation",
+          "items": [
+            "Billet aller Luxembourg (LUX) → Vienne (VIE)",
+            "Date : 29 janvier 2027",
+            "Verifier bagages en soute et franchise"
+          ]
+        },
+        {
+          "title": "Depuis l'aeroport",
+          "items": [
+            "S-Bahn CAT ou S7 depuis Vienna Airport vers centre (16-30 min)",
+            "Ticket valable sur transports en commun de Vienne"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport ou CNI",
+            "Confirmation email"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Jour 5",
+      "tone": "clay",
+      "title": "Train Vienne → Munich (Railjet)",
+      "category": "train",
+      "toReserve": true,
+      "description": "Train a grande vitesse ÖBB Railjet entre Wien Hbf et München Hbf.",
+      "image": {
+        "src": "/images/placeholders/train.svg",
+        "alt": "Train Railjet",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Trajet",
+          "items": [
+            "Wien Hauptbahnhof → München Hauptbahnhof",
+            "Duree : environ 4 heures",
+            "Date : 3 fevrier 2027"
+          ]
+        },
+        {
+          "title": "Reservation",
+          "items": [
+            "Reserver sur ÖBB ou Deutsche Bahn",
+            "Tarifs Sparschiene disponibles 6 mois a l'avance",
+            "2e classe suffisant"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport ou CNI",
+            "Billet electronique"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "ÖBB (Autriche)",
+          "url": "https://www.oebb.at/en/"
+        },
+        {
+          "label": "Deutsche Bahn",
+          "url": "https://www.bahn.de/en"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 11",
+      "tone": "berry",
+      "title": "Vol Munich → Luxembourg",
+      "category": "vol",
+      "toReserve": true,
+      "description": "Vol retour Munich (MUC) vers Luxembourg (LUX).",
+      "image": {
+        "src": "/images/placeholders/airport.svg",
+        "alt": "Aeroport de Munich",
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "title": "Reservation",
+          "items": [
+            "Billet retour Munich (MUC) → Luxembourg (LUX)",
+            "Date : 8 fevrier 2027",
+            "Verifier heure d'enregistrement"
+          ]
+        },
+        {
+          "title": "Vers l'aeroport",
+          "items": [
+            "S8 depuis Munich Hauptbahnhof vers Munich Airport (40 min)",
+            "Prevoir 2h avant le vol"
+          ]
+        },
+        {
+          "title": "Documents",
+          "items": [
+            "Passeport ou CNI",
+            "Confirmation email"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Sur place",
+      "tone": "forest",
+      "title": "Transports locaux Vienne",
+      "category": "local",
+      "toReserve": false,
+      "description": "La Wiener Linien couvre tres bien le centre avec metro, tram et bus.",
+      "sections": [
+        {
+          "title": "Options",
+          "items": [
+            "Ticket 24h ou 48h (carte multi-trajets)",
+            "Vienna City Card (inclut musees et transports)",
+            "Les principales attractions sont accessibles a pied depuis le centre"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Wiener Linien",
+          "url": "https://www.wienerlinien.at/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Sur place",
+      "tone": "clay",
+      "title": "Transports locaux Munich",
+      "category": "local",
+      "toReserve": false,
+      "description": "Le reseau MVV (metro, tram, bus, S-Bahn) est tres efficace.",
+      "sections": [
+        {
+          "title": "Options",
+          "items": [
+            "Tageskarte (ticket journalier)",
+            "IsarCard 7 jours si besoin",
+            "Munich City Tour Card (inclut musees)"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "MVV Munich",
+          "url": "https://www.mvv-muenchen.de/en/"
+        }
+      ]
+    }
+  ]
+}

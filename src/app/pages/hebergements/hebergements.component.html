@@ -2,7 +2,7 @@
 <div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-500 p-5 text-white shadow-lg">
   <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Hébergements</p>
   <h1 class="mb-0.5 text-2xl font-bold">Hébergements à réserver</h1>
-  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ accommodations.length }} réservations confirmées</p>
+  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ accommodations().length }} réservations confirmées</p>
   <div class="h-1.5 w-full overflow-hidden rounded-full bg-white/30">
     <div
       class="h-full rounded-full bg-white transition-all duration-500"
@@ -13,7 +13,7 @@
 
 <!-- Reservation list -->
 <div class="overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm">
-  @for (card of accommodations; track card.title; let i = $index; let last = $last) {
+  @for (card of accommodations(); track card.title; let i = $index; let last = $last) {
     <div
       class="flex cursor-pointer gap-4 p-4 transition hover:bg-zinc-50"
       [class.border-b]="!last"
@@ -88,7 +88,7 @@
 </div>
 
 <!-- Conseils section -->
-@if (conseilsSections.length) {
+@if (conseilsSections().length) {
   <details class="mt-6 rounded-2xl border border-zinc-100 bg-white shadow-sm">
     <summary class="flex cursor-pointer items-center gap-2 p-4 text-sm font-semibold text-zinc-600 hover:text-zinc-900">
       <svg class="h-4 w-4 shrink-0 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -99,7 +99,7 @@
       Conseils de réservation
     </summary>
     <div class="grid gap-4 border-t border-zinc-100 p-4 sm:grid-cols-2">
-      @for (section of conseilsSections; track section.title) {
+      @for (section of conseilsSections(); track section.title) {
         <div>
           <p class="mb-1.5 text-[0.65rem] font-bold uppercase tracking-widest text-zinc-400">{{ section.title }}</p>
           <ul class="space-y-1">

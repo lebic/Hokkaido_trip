@@ -1,8 +1,8 @@
-import { Component, signal, computed } from '@angular/core';
+import { Component, signal, computed, inject } from '@angular/core';
 import { ChipComponent } from '../../ui/chip/chip.component';
 import { RouteMapComponent, type RouteWaypoint, type TransportMode } from '../../ui/route-map/route-map.component';
-import itineraireData from './itineraire.data.json';
 import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
+import { TravelService } from '../../services/travel.service';
 
 type CardTone = 'forest' | 'clay' | 'berry';
 type SectionType = 'hebergement' | 'transport' | 'activite' | 'other';
@@ -42,26 +42,27 @@ interface PageData {
   templateUrl: './itineraire.component.html',
 })
 export class ItineraireComponent {
-  protected readonly data = itineraireData as PageData;
+  private readonly travelService = inject(TravelService);
+  protected readonly data = computed(() => this.travelService.itineraireData() as PageData);
   private readonly defaultImagePosition = 'center 65%';
 
   protected readonly selectedIndex = signal<number | null>(null);
 
   protected readonly selectedCard = computed(() => {
     const i = this.selectedIndex();
-    return i !== null ? this.data.cards[i] : null;
+    return i !== null ? this.data().cards[i] : null;
   });
 
   protected readonly prevCard = computed(() => {
     const i = this.selectedIndex();
     if (i === null || i === 0) return null;
-    return { card: this.data.cards[i - 1], index: i - 1 };
+    return { card: this.data().cards[i - 1], index: i - 1 };
   });
 
   protected readonly nextCard = computed(() => {
     const i = this.selectedIndex();
-    if (i === null || i >= this.data.cards.length - 1) return null;
-    return { card: this.data.cards[i + 1], index: i + 1 };
+    if (i === null || i >= this.data().cards.length - 1) return null;
+    return { card: this.data().cards[i + 1], index: i + 1 };
   });
 
   protected selectCard(index: number): void {

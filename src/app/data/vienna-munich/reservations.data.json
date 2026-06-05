@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "eyebrow": "Reservations",
+    "title": "Toutes les reservations au meme endroit",
+    "description": "Un tableau clair pour tes billets, hotels et activites."
+  },
+  "categories": [
+    {
+      "key": "vols",
+      "icon": "✈️",
+      "label": "Vols",
+      "badge": "bg-blue-50 text-blue-700",
+      "docs": [
+        "Vol aller Luxembourg (LUX) → Vienne (VIE) – 29 jan",
+        "Vol retour Munich (MUC) → Luxembourg (LUX) – 8 fev"
+      ]
+    },
+    {
+      "key": "train",
+      "icon": "🚂",
+      "label": "Train",
+      "badge": "bg-violet-50 text-violet-700",
+      "docs": [
+        "Railjet Wien Hbf → München Hbf – 3 fev"
+      ]
+    },
+    {
+      "key": "hebergements",
+      "icon": "🏨",
+      "label": "Hebergements",
+      "badge": "bg-amber-50 text-amber-700",
+      "docs": [
+        "Hotel Vienne (29 jan – 3 fev, 5 nuits)",
+        "Hotel Munich (3 fev – 8 fev, 5 nuits)"
+      ]
+    },
+    {
+      "key": "activites",
+      "icon": "🎭",
+      "label": "Activites",
+      "badge": "bg-rose-50 text-rose-700",
+      "docs": [
+        "Opera de Vienne – billet soiree",
+        "Musee du Belvedere – billet en ligne",
+        "Palais de Schönbrunn – billet en ligne"
+      ]
+    }
+  ]
+}
