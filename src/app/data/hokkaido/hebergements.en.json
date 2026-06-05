@@ -14,7 +14,7 @@
       "priority": 2,
       "description": "3-star city centre hotel.",
       "image": {
-        "src": "/images/header-card/tokyo.avif",
+        "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
         "position": "center 30%"
       },
@@ -75,7 +75,7 @@
       "priority": 1,
       "description": "Private cabin on the ferry.",
       "image": {
-        "src": "/images/header-card/ferry.jpg",
+        "src": "/images/header-card/japan/ferry.jpg",
         "alt": "Ferry at sea",
         "position": "center 55%"
       },
@@ -139,7 +139,7 @@
       "priority": 2,
       "description": "3-star city centre hotel.",
       "image": {
-        "src": "/images/header-card/sapporo.jpeg",
+        "src": "/images/header-card/japan/sapporo.jpeg",
         "alt": "Sapporo city",
         "position": "center 45%"
       },
@@ -405,7 +405,7 @@
       "priority": 2,
       "description": "3-star city centre hotel.",
       "image": {
-        "src": "/images/header-card/sapporo.jpeg",
+        "src": "/images/header-card/japan/sapporo.jpeg",
         "alt": "Sapporo city",
         "position": "center 45%"
       },
@@ -462,7 +462,7 @@
       "priority": 2,
       "description": "3-star city centre hotel.",
       "image": {
-        "src": "/images/header-card/tokyo.avif",
+        "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
         "position": "center 30%"
       },

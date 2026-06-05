@@ -1,5 +1,6 @@
 import { Component, computed, signal, inject } from '@angular/core';
 import { TravelService } from '../../services/travel.service';
+import { TranslationService } from '../../services/translation.service';
 
 interface DocCategory {
   key: string;
@@ -27,9 +28,11 @@ interface ReservationsData {
 })
 export class ReservationsComponent {
   private readonly travelService = inject(TravelService);
-  private readonly rawData = this.travelService.reservationsData() as unknown as ReservationsData;
+  protected readonly translationService = inject(TranslationService);
 
-  protected readonly categories: DocCategory[] = this.rawData.categories ?? [];
+  protected readonly categories = computed(() =>
+    ((this.travelService.reservationsData() as unknown as ReservationsData).categories ?? []) as DocCategory[]
+  );
 
   protected readonly uploads = signal<Record<string, UploadedFile[]>>({});
 

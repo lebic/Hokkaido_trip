@@ -1,4 +1,5 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, computed } from '@angular/core';
+import { UI_TRANSLATIONS } from './ui-translations';
 
 export type Locale = 'fr' | 'en';
 
@@ -27,6 +28,7 @@ function loadPersistedLocale(): Locale {
 @Injectable({ providedIn: 'root' })
 export class TranslationService {
   readonly locale = signal<Locale>(loadPersistedLocale());
+  readonly t = computed(() => UI_TRANSLATIONS[this.locale()]);
 
   setLocale(code: Locale): void {
     this.locale.set(code);

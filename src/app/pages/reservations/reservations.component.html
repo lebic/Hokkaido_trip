@@ -1,13 +1,13 @@
 <!-- Header -->
 <div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-rose-500 to-orange-400 p-5 text-white shadow-lg">
-  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Documents</p>
-  <h1 class="mb-0.5 text-2xl font-bold">Réservations &amp; Documents</h1>
-  <p class="text-sm text-white/80">{{ totalCount() }} document{{ totalCount() !== 1 ? 's' : '' }} ajouté{{ totalCount() !== 1 ? 's' : '' }}</p>
+  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">{{ translationService.t().reservations.eyebrow }}</p>
+  <h1 class="mb-0.5 text-2xl font-bold">{{ translationService.t().reservations.title }}</h1>
+  <p class="text-sm text-white/80">{{ totalCount() }} {{ totalCount() !== 1 ? translationService.t().reservations.docsWord : translationService.t().reservations.docWord }} {{ totalCount() !== 1 ? translationService.t().reservations.addedWordPlural : translationService.t().reservations.addedWord }}</p>
 </div>
 
 <!-- Category cards -->
 <div class="grid gap-4 sm:grid-cols-2">
-  @for (cat of categories; track cat.key) {
+  @for (cat of categories(); track cat.key) {
     @let files = getFiles(cat.key);
     <div class="overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm">
 
@@ -16,7 +16,7 @@
         <span class="text-xl">{{ cat.icon }}</span>
         <span [class]="'rounded-full px-2.5 py-0.5 text-xs font-semibold ' + cat.badge">{{ cat.label }}</span>
         @if (files.length) {
-          <span class="ml-auto rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">{{ files.length }} doc{{ files.length > 1 ? 's' : '' }}</span>
+          <span class="ml-auto rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">{{ files.length }} {{ translationService.t().reservations.docSuffix }}{{ files.length > 1 ? 's' : '' }}</span>
         }
       </div>
 
@@ -46,7 +46,7 @@
                   type="button"
                   class="shrink-0 text-zinc-300 hover:text-rose-500 transition"
                   (click)="removeFile(cat.key, i)"
-                  [attr.aria-label]="'Supprimer ' + file.name"
+                  [attr.aria-label]="translationService.t().reservations.delete + ' ' + file.name"
                 >
                   <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"/>
@@ -65,7 +65,7 @@
             <polyline points="17 8 12 3 7 8"/>
             <line x1="12" y1="3" x2="12" y2="15"/>
           </svg>
-          Ajouter un fichier
+          {{ translationService.t().reservations.addFile }}
           <input
             type="file"
             multiple
@@ -78,4 +78,4 @@
 
     </div>
   }
-</div>
+</div>

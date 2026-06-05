@@ -4,6 +4,7 @@ import { ButtonComponent } from './ui/button/button.component';
 import { NavLinkComponent } from './ui/nav-link/nav-link.component';
 import { LangPickerComponent } from './ui/lang-picker/lang-picker.component';
 import { TravelService } from './services/travel.service';
+import { TranslationService } from './services/translation.service';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { TravelService } from './services/travel.service';
 })
 export class App {
   protected readonly travelService = inject(TravelService);
+  protected readonly translationService = inject(TranslationService);
   protected readonly title = signal('hokkaido-trip');
   protected readonly isMenuOpen = signal(false);
 

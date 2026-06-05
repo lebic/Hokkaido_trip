@@ -13,7 +13,7 @@
       "toReserve": true,
       "description": "Reservation principale du voyage.",
       "image": {
-        "src": "/images/header-card/tokyo.avif",
+        "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
         "position": "center 30%"
       },
@@ -90,7 +90,7 @@
       "toReserve": false,
       "description": "Deplacements urbains avant le ferry.",
       "image": {
-        "src": "/images/header-card/tokyo.avif",
+        "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
         "position": "center 30%"
       },
@@ -125,7 +125,7 @@
       "toReserve": true,
       "description": "Traversees de 18h avec cabine.",
       "image": {
-        "src": "/images/header-card/ferry.jpg",
+        "src": "/images/header-card/japan/ferry.jpg",
         "alt": "Ferry at sea",
         "position": "center 55%"
       },
@@ -167,7 +167,7 @@
       "toReserve": false,
       "description": "Priorite aux trains pour Sapporo et Otaru.",
       "image": {
-        "src": "/images/header-card/sapporo.jpeg",
+        "src": "/images/header-card/japan/sapporo.jpeg",
         "alt": "Sapporo city",
         "position": "center 45%"
       },
@@ -268,7 +268,7 @@
       "toReserve": true,
       "description": "Retour en avion depuis New Chitose.",
       "image": {
-        "src": "/images/header-card/tokyo.avif",
+        "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
         "position": "center 30%"
       },

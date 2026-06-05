@@ -1,5 +1,6 @@
 import { Component, computed, signal, inject } from '@angular/core';
 import { TravelService } from '../../services/travel.service';
+import { TranslationService } from '../../services/translation.service';
 
 type Category = 'vol' | 'ferry' | 'train' | 'voiture' | 'local' | 'activites';
 
@@ -46,6 +47,7 @@ const CATEGORY_META: Record<Category, CategoryMeta> = {
 })
 export class TransportsComponent {
   private readonly travelService = inject(TravelService);
+  protected readonly translationService = inject(TranslationService);
   private readonly storageKey = computed(() => `${this.travelService.selectedId()}-transports-reserved`);
   private readonly rawData = computed(() => this.travelService.transportsData() as PageData);
 
@@ -83,7 +85,8 @@ export class TransportsComponent {
   );
 
   protected getCategoryMeta(cat: Category): CategoryMeta {
-    return CATEGORY_META[cat];
+    const label = this.translationService.t().transports.categories[cat];
+    return { ...CATEGORY_META[cat], label };
   }
 
   protected isReserved(index: number): boolean {

@@ -1,5 +1,6 @@
 import { Component, computed, signal, inject } from '@angular/core';
 import { TravelService } from '../../services/travel.service';
+import { TranslationService } from '../../services/translation.service';
 
 interface LinkItem {
   label: string;
@@ -27,6 +28,7 @@ interface PageData {
 })
 export class ActivitesComponent {
   private readonly travelService = inject(TravelService);
+  protected readonly translationService = inject(TranslationService);
   private readonly storageKey = computed(() => `${this.travelService.selectedId()}-activites-reserved`);
   private readonly rawData = computed(() => this.travelService.activitesData() as unknown as PageData);
 

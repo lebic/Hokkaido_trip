@@ -3,6 +3,7 @@ import { ChipComponent } from '../../ui/chip/chip.component';
 import { RouteMapComponent, type RouteWaypoint, type TransportMode } from '../../ui/route-map/route-map.component';
 import { resolveCardImage, type CardImageOverride } from '../../utils/card-images';
 import { TravelService } from '../../services/travel.service';
+import { TranslationService } from '../../services/translation.service';
 
 type CardTone = 'forest' | 'clay' | 'berry';
 type SectionType = 'hebergement' | 'transport' | 'activite' | 'other';
@@ -43,6 +44,7 @@ interface PageData {
 })
 export class ItineraireComponent {
   private readonly travelService = inject(TravelService);
+  protected readonly translationService = inject(TranslationService);
   protected readonly data = computed(() => this.travelService.itineraireData() as PageData);
   private readonly defaultImagePosition = 'center 65%';
 

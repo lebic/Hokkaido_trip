@@ -1,8 +1,8 @@
 <!-- Progress header -->
 <div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-500 p-5 text-white shadow-lg">
-  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Activités</p>
-  <h1 class="mb-0.5 text-2xl font-bold">Activités à réserver</h1>
-  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ activities().length }} activités confirmées</p>
+  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">{{ translationService.t().activites.eyebrow }}</p>
+  <h1 class="mb-0.5 text-2xl font-bold">{{ translationService.t().activites.title }}</h1>
+  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} {{ translationService.t().common.of }} {{ activities().length }} {{ translationService.t().activites.progressSuffix }}</p>
   <div class="h-1.5 w-full overflow-hidden rounded-full bg-white/30">
     <div
       class="h-full rounded-full bg-white transition-all duration-500"
@@ -21,7 +21,7 @@
       (click)="toggle(i)"
       role="button"
       [attr.aria-pressed]="isReserved(i)"
-      [attr.aria-label]="'Marquer ' + activity.title + ' comme réservé'"
+      [attr.aria-label]="translationService.t().common.markPrefix + ' ' + activity.title + ' ' + translationService.t().common.markSuffix"
     >
       <!-- Circle toggle -->
       <div class="mt-0.5 shrink-0">
@@ -41,7 +41,7 @@
         <div class="mb-1 flex flex-wrap items-center gap-x-3 gap-y-1">
           <span class="text-[0.65rem] font-semibold uppercase tracking-wider text-zinc-400">{{ activity.chip }}</span>
           @if (isReserved(i)) {
-            <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">Réservé</span>
+            <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">{{ translationService.t().common.reserved }}</span>
           }
         </div>
         <p

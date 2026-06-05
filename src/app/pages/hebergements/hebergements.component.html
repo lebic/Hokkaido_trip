@@ -1,8 +1,8 @@
 <!-- Progress header -->
 <div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-500 p-5 text-white shadow-lg">
-  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Hébergements</p>
-  <h1 class="mb-0.5 text-2xl font-bold">Hébergements à réserver</h1>
-  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ accommodations().length }} réservations confirmées</p>
+  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">{{ translationService.t().hebergements.eyebrow }}</p>
+  <h1 class="mb-0.5 text-2xl font-bold">{{ translationService.t().hebergements.title }}</h1>
+  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} {{ translationService.t().common.of }} {{ accommodations().length }} {{ translationService.t().hebergements.progressSuffix }}</p>
   <div class="h-1.5 w-full overflow-hidden rounded-full bg-white/30">
     <div
       class="h-full rounded-full bg-white transition-all duration-500"
@@ -21,7 +21,7 @@
       (click)="toggle(i)"
       role="button"
       [attr.aria-pressed]="isReserved(i)"
-      [attr.aria-label]="'Marquer ' + card.title + ' comme réservé'"
+      [attr.aria-label]="translationService.t().common.markPrefix + ' ' + card.title + ' ' + translationService.t().common.markSuffix"
     >
       <!-- Circle toggle -->
       <div class="mt-0.5 shrink-0">
@@ -41,9 +41,9 @@
         <div class="mb-1 flex flex-wrap items-center gap-x-3 gap-y-1">
           <span class="text-[0.65rem] font-semibold uppercase tracking-wider text-zinc-400">{{ card.chip }}</span>
           @if (isReserved(i)) {
-            <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">Réservé</span>
+            <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">{{ translationService.t().common.reserved }}</span>
           } @else if (card.priority === 1) {
-            <span class="rounded-full bg-amber-50 px-2 py-0.5 text-[0.65rem] font-bold text-amber-700">Priorité</span>
+            <span class="rounded-full bg-amber-50 px-2 py-0.5 text-[0.65rem] font-bold text-amber-700">{{ translationService.t().common.priority }}</span>
           }
         </div>
         <p
@@ -96,7 +96,7 @@
         <line x1="12" y1="16" x2="12" y2="12"/>
         <line x1="12" y1="8" x2="12.01" y2="8"/>
       </svg>
-      Conseils de réservation
+      {{ translationService.t().hebergements.tips }}
     </summary>
     <div class="grid gap-4 border-t border-zinc-100 p-4 sm:grid-cols-2">
       @for (section of conseilsSections(); track section.title) {

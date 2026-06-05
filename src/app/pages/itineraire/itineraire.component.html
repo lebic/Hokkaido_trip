@@ -45,7 +45,7 @@
         (keydown.enter)="selectCard(i)"
         tabindex="0"
         role="button"
-        [attr.aria-label]="'Voir les détails : ' + card.chip + ' ' + card.title"
+        [attr.aria-label]="translationService.t().itineraire.viewDetailsAria + card.chip + ' ' + card.title"
       >
         <!-- Hero image with chip + title overlay -->
         <div class="relative h-44 overflow-hidden">
@@ -89,7 +89,7 @@
             </div>
           }
           <div class="flex items-center gap-1 pt-1 text-[0.82rem] font-semibold text-amber-700 transition-all group-hover:gap-2">
-            Voir les détails
+            {{ translationService.t().itineraire.viewDetails }}
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -118,7 +118,7 @@
       <button
         class="absolute left-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/85 shadow-md backdrop-blur transition hover:bg-white"
         (click)="closeDetail()"
-        aria-label="Retour à l'itinéraire"
+        aria-label="{{ translationService.t().itineraire.backAria }}"
       >
         <svg class="h-5 w-5 text-zinc-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M19 12H5M12 19l-7-7 7-7"/>
@@ -144,7 +144,7 @@
               <circle cx="12" cy="9" r="2.5"/>
             </svg>
             <div>
-              <p class="mb-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">Localisation</p>
+              <p class="mb-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">{{ translationService.t().itineraire.location }}</p>
               <p class="text-sm font-semibold text-zinc-800">{{ detail.location }}</p>
             </div>
           </div>
@@ -159,7 +159,7 @@
               <path d="M16.5 14h1"/><path d="M16.5 18h1"/>
             </svg>
             <div>
-              <p class="mb-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">Hébergement</p>
+              <p class="mb-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">{{ translationService.t().itineraire.accommodation }}</p>
               <p class="text-sm font-semibold text-zinc-800">{{ hebergementItem(detail) }}</p>
             </div>
           </div>
@@ -176,7 +176,7 @@
               <circle cx="5.5" cy="18.5" r="2.5"/>
               <circle cx="18.5" cy="18.5" r="2.5"/>
             </svg>
-            Transport
+            {{ translationService.t().itineraire.transport }}
           </h3>
           @for (section of transportSections(detail); track section.title) {
             <ul class="mb-2 space-y-1.5 last:mb-0">
@@ -198,7 +198,7 @@
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="3 11 22 2 13 21 11 13 3 11"/>
             </svg>
-            Carte du trajet
+            {{ translationService.t().itineraire.routeMap }}
           </h3>
           <app-route-map
             [waypoints]="detail.routeWaypoints"
@@ -215,7 +215,7 @@
               <circle cx="12" cy="12" r="10"/>
               <polyline points="12 6 12 12 16 14"/>
             </svg>
-            Programme
+            {{ translationService.t().itineraire.programme }}
           </h3>
           @for (section of programmeSections(detail); track section.title) {
             <div class="mb-2 mt-4 flex items-center gap-2 border-l-[3px] border-violet-300 pl-2.5 first:mt-0">
@@ -250,7 +250,7 @@
           >
             <p class="mb-0.5 flex items-center gap-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">
               <svg class="h-3 w-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-              Précédent
+              {{ translationService.t().itineraire.previous }}
             </p>
             <p class="line-clamp-2 text-sm font-semibold leading-snug text-zinc-800">{{ prev.card.title }}</p>
           </button>
@@ -263,7 +263,7 @@
             (click)="navigate(next.index)"
           >
             <p class="mb-0.5 flex items-center justify-end gap-0.5 text-[0.62rem] font-semibold uppercase tracking-widest text-zinc-400">
-              Suivant
+              {{ translationService.t().itineraire.next }}
               <svg class="h-3 w-3 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
             </p>
             <p class="line-clamp-2 text-sm font-semibold leading-snug text-zinc-800">{{ next.card.title }}</p>

@@ -1,5 +1,6 @@
 import { Component, computed, signal, inject } from '@angular/core';
 import { TravelService } from '../../services/travel.service';
+import { TranslationService } from '../../services/translation.service';
 
 type Priority = 1 | 2;
 
@@ -39,6 +40,7 @@ const TIPS_TITLES = ['Conseils generaux', 'General tips'];
 })
 export class HebergementsComponent {
   private readonly travelService = inject(TravelService);
+  protected readonly translationService = inject(TranslationService);
   private readonly storageKey = computed(() => `${this.travelService.selectedId()}-hebergements-reserved`);
   private readonly rawData = computed(() => this.travelService.hebergementsData() as PageData);
 

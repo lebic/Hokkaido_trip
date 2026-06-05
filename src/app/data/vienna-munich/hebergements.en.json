@@ -14,7 +14,7 @@
       "priority": 1,
       "description": "3-star hotel near the historic city centre.",
       "image": {
-        "src": "/images/placeholders/city.svg",
+        "src": "/images/header-card/vienna/vienna.jpg",
         "alt": "Vienna",
         "position": "center 40%"
       },
@@ -72,7 +72,7 @@
       "priority": 1,
       "description": "3-star hotel in central Munich.",
       "image": {
-        "src": "/images/placeholders/city.svg",
+        "src": "/images/header-card/munich/munich.avif",
         "alt": "Munich",
         "position": "center 40%"
       },

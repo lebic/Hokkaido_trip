@@ -24,6 +24,27 @@ export class TravelService {
     TRAVELS_REGISTRY.find((t) => t.id === this.selectedId()) ?? TRAVELS_REGISTRY[0]
   );
 
+  readonly localizedTravels = computed(() => {
+    const locale = this.translationService.locale();
+    return TRAVELS_REGISTRY.map((t) => ({
+      ...t,
+      subtitle: locale === 'en' ? t.subtitleEn : t.subtitle,
+      duration: locale === 'en' ? t.durationEn : t.duration,
+      description: locale === 'en' ? t.descriptionEn : t.description,
+    }));
+  });
+
+  readonly currentTravelLocalized = computed(() => {
+    const locale = this.translationService.locale();
+    const travel = this.currentTravel();
+    return {
+      ...travel,
+      subtitle: locale === 'en' ? travel.subtitleEn : travel.subtitle,
+      duration: locale === 'en' ? travel.durationEn : travel.duration,
+      description: locale === 'en' ? travel.descriptionEn : travel.description,
+    };
+  });
+
   private readonly localeData = computed(() =>
     ALL_TRAVEL_DATA[this.selectedId() as TravelId][this.translationService.locale()]
   );

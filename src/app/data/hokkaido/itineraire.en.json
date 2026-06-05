@@ -19,7 +19,7 @@
         { "name": "Tokyo Centre", "lat": 35.6762, "lng": 139.6503 }
       ],
       "image": {
-        "src": "/images/header-card/tokyo.avif",
+        "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
         "position": "center 10%"
       },
@@ -83,7 +83,7 @@
         { "name": "Tomakomai Port", "lat": 42.6333, "lng": 141.6007 }
       ],
       "image": {
-        "src": "/images/header-card/ferry.jpg",
+        "src": "/images/header-card/japan/ferry.jpg",
         "alt": "Ferry at sea",
         "position": "center 55%"
       },
@@ -133,7 +133,7 @@
         { "name": "Otaru", "lat": 43.1906, "lng": 140.9946 }
       ],
       "image": {
-        "src": "/images/header-card/sapporo.jpeg",
+        "src": "/images/header-card/japan/sapporo.jpeg",
         "alt": "Sapporo city",
         "position": "center 45%"
       },
@@ -194,7 +194,7 @@
         { "name": "Sounkyo Onsen", "lat": 43.7429, "lng": 142.9884 }
       ],
       "image": {
-        "src": "/images/header-card/sounkyo-onsen.jpg",
+        "src": "/images/header-card/japan/sounkyo-onsen.jpg",
         "alt": "Sounkyo Onsen",
         "position": "center 40%"
       },
@@ -248,7 +248,7 @@
         { "name": "Akan-ko", "lat": 43.4364, "lng": 144.1072 }
       ],
       "image": {
-        "src": "/images/header-card/iozan.jpeg",
+        "src": "/images/header-card/japan/iozan.jpeg",
         "alt": "Mt. Io (Iozan)",
         "position": "center 40%"
       },
@@ -294,7 +294,7 @@
       "location": "Akan-ko",
       "description": "Nature, local culture and hikes.",
       "image": {
-        "src": "/images/header-card/akan-ko.jpg",
+        "src": "/images/header-card/japan/akan-ko.jpg",
         "alt": "Akan-ko Lake",
         "position": "center 40%"
       },
@@ -341,7 +341,7 @@
         { "name": "Furano", "lat": 43.3418, "lng": 142.3834 }
       ],
       "image": {
-        "src": "/images/header-card/biei.jpg",
+        "src": "/images/header-card/japan/biei.jpg",
         "alt": "Biei blue pond",
         "position": "center 60%"
       },
@@ -386,7 +386,7 @@
       "location": "Furano & Biei",
       "description": "Lavender fields and scenic roads.",
       "image": {
-        "src": "/images/header-card/farm-tomita.avif",
+        "src": "/images/header-card/japan/farm-tomita.avif",
         "alt": "Farm Tomita lavender fields",
         "position": "center 60%"
       },
@@ -421,7 +421,7 @@
         { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 }
       ],
       "image": {
-        "src": "/images/header-card/sapporo-tadao-ando.webp",
+        "src": "/images/header-card/japan/sapporo-tadao-ando.webp",
         "alt": "Sapporo Tadao Ando Museum",
         "position": "center 45%"
       },
@@ -471,7 +471,7 @@
         { "name": "Tokyo Haneda (HND)", "lat": 35.5533, "lng": 139.7811 }
       ],
       "image": {
-        "src": "/images/header-card/tokyo.avif",
+        "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
         "position": "center 10%"
       },
@@ -501,7 +501,7 @@
       "location": "Tokyo",
       "description": "Last neighbourhoods and shopping.",
       "image": {
-        "src": "/images/header-card/akihabara.jpg",
+        "src": "/images/header-card/japan/akihabara.jpg",
         "alt": "Akihabara district",
         "position": "center 90%"
       },
@@ -538,7 +538,7 @@
       "location": "Tokyo",
       "description": "End of the trip.",
       "image": {
-        "src": "/images/header-card/retour-europe.jpg",
+        "src": "/images/header-card/japan/retour-europe.jpg",
         "alt": "Return to Europe",
         "position": "center 85%"
       },

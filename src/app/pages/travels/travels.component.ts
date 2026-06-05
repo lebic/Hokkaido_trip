@@ -1,7 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, computed } from '@angular/core';
 import { Router } from '@angular/router';
 import { TravelService } from '../../services/travel.service';
-import { TRAVELS_REGISTRY, type TravelMeta } from '../../data/all-travels';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-travels',
@@ -12,7 +12,8 @@ import { TRAVELS_REGISTRY, type TravelMeta } from '../../data/all-travels';
 export class TravelsComponent {
   private readonly router = inject(Router);
   protected readonly travelService = inject(TravelService);
-  protected readonly travels: TravelMeta[] = TRAVELS_REGISTRY;
+  protected readonly translationService = inject(TranslationService);
+  protected readonly travels = computed(() => this.travelService.localizedTravels());
 
   protected selectTravel(id: string): void {
     this.travelService.select(id);

@@ -15,12 +15,20 @@
       "description": "Cinq jours pour explorer la capitale imperiale : palais, musees et cafes historiques.",
       "transportMode": "plane",
       "routeWaypoints": [
-        { "name": "Luxembourg Airport", "lat": 49.6233, "lng": 6.2044 },
-        { "name": "Vienna Airport (VIE)", "lat": 48.1103, "lng": 16.5697 }
+        {
+          "name": "Luxembourg Airport",
+          "lat": 49.6233,
+          "lng": 6.2044
+        },
+        {
+          "name": "Vienna Airport (VIE)",
+          "lat": 48.1103,
+          "lng": 16.5697
+        }
       ],
       "image": {
-        "src": "/images/placeholders/city.svg",
-        "alt": "Vienne",
+        "src": "/images/header-card/vienna/vienna.jpg",
+        "alt": "Vienna",
         "position": "center 40%"
       },
       "sections": [
@@ -93,11 +101,19 @@
       "description": "Cinq jours dans la capitale bavaroise : bieres, baroque et musees de classe mondiale.",
       "transportMode": "train",
       "routeWaypoints": [
-        { "name": "Wien Hauptbahnhof", "lat": 48.1851, "lng": 16.3762 },
-        { "name": "München Hauptbahnhof", "lat": 48.1402, "lng": 11.5600 }
+        {
+          "name": "Wien Hauptbahnhof",
+          "lat": 48.1851,
+          "lng": 16.3762
+        },
+        {
+          "name": "München Hauptbahnhof",
+          "lat": 48.1402,
+          "lng": 11.56
+        }
       ],
       "image": {
-        "src": "/images/placeholders/city.svg",
+        "src": "/images/header-card/munich/munich.avif",
         "alt": "Munich",
         "position": "center 40%"
       },
@@ -164,8 +180,16 @@
       "description": "Dernier matin a Munich, vol de retour vers Luxembourg.",
       "transportMode": "plane",
       "routeWaypoints": [
-        { "name": "Munich Airport (MUC)", "lat": 48.3537, "lng": 11.7750 },
-        { "name": "Luxembourg Airport (LUX)", "lat": 49.6233, "lng": 6.2044 }
+        {
+          "name": "Munich Airport (MUC)",
+          "lat": 48.3537,
+          "lng": 11.775
+        },
+        {
+          "name": "Luxembourg Airport (LUX)",
+          "lat": 49.6233,
+          "lng": 6.2044
+        }
       ],
       "image": {
         "src": "/images/placeholders/airport.svg",

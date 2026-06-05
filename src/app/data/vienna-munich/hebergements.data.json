@@ -14,8 +14,8 @@
       "priority": 1,
       "description": "Hotel 3 etoiles proche du centre historique.",
       "image": {
-        "src": "/images/placeholders/city.svg",
-        "alt": "Vienne",
+        "src": "/images/header-card/vienna/vienna.jpg",
+        "alt": "Vienna",
         "position": "center 40%"
       },
       "sections": [
@@ -72,7 +72,7 @@
       "priority": 1,
       "description": "Hotel 3 etoiles dans le centre de Munich.",
       "image": {
-        "src": "/images/placeholders/city.svg",
+        "src": "/images/header-card/munich/munich.avif",
         "alt": "Munich",
         "position": "center 40%"
       },

@@ -5,8 +5,8 @@
     class="fixed left-0 right-0 top-0 z-10 flex items-center justify-between gap-4 border-b border-zinc-900/10 bg-[#f6f1ea]/80 px-6 py-5 backdrop-blur"
   >
     <div class="flex flex-col gap-1 uppercase tracking-[0.2em]">
-      <span class="text-sm font-semibold">Carnet de voyage</span>
-      <span class="text-[0.65rem] font-medium text-zinc-900/60">{{ travelService.currentTravel().name }}</span>
+      <span class="text-sm font-semibold">{{ translationService.t().nav.brand }}</span>
+      <span class="text-[0.65rem] font-medium text-zinc-900/60">{{ travelService.currentTravelLocalized().name }}</span>
     </div>
 
     <div class="flex items-center gap-3">
@@ -32,12 +32,12 @@
       class="absolute left-4 right-4 top-full mt-2 flex flex-col gap-2 rounded-2xl border border-zinc-900/10 bg-[#fefaf5] p-4 shadow-xl shadow-zinc-900/10 md:static md:mt-0 md:!flex md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
       [class.hidden]="!isMenuOpen()"
     >
-      <app-nav-link to="/voyages" (click)="closeMenu()">Voyages</app-nav-link>
-      <app-nav-link to="/itineraire" (click)="closeMenu()">Itineraire</app-nav-link>
-      <app-nav-link to="/hebergements" (click)="closeMenu()">Hebergements</app-nav-link>
-      <app-nav-link to="/transports" (click)="closeMenu()">Transports</app-nav-link>
-      <app-nav-link to="/activites" (click)="closeMenu()">Activites</app-nav-link>
-      <app-nav-link to="/reservations" (click)="closeMenu()">Reservations</app-nav-link>
+      <app-nav-link to="/voyages" (click)="closeMenu()">{{ translationService.t().nav.voyages }}</app-nav-link>
+      <app-nav-link to="/itineraire" (click)="closeMenu()">{{ translationService.t().nav.itineraire }}</app-nav-link>
+      <app-nav-link to="/hebergements" (click)="closeMenu()">{{ translationService.t().nav.hebergements }}</app-nav-link>
+      <app-nav-link to="/transports" (click)="closeMenu()">{{ translationService.t().nav.transports }}</app-nav-link>
+      <app-nav-link to="/activites" (click)="closeMenu()">{{ translationService.t().nav.activites }}</app-nav-link>
+      <app-nav-link to="/reservations" (click)="closeMenu()">{{ translationService.t().nav.reservations }}</app-nav-link>
 
       <span class="hidden md:block w-px h-4 bg-zinc-900/15 mx-1"></span>
       <app-lang-picker />

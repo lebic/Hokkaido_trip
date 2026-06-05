@@ -1,8 +1,8 @@
 <!-- Progress header -->
 <div class="mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-sky-600 to-blue-500 p-5 text-white shadow-lg">
-  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">Transports</p>
-  <h1 class="mb-0.5 text-2xl font-bold">Transports à réserver</h1>
-  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} sur {{ reservations().length }} réservations confirmées</p>
+  <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-white/70">{{ translationService.t().transports.eyebrow }}</p>
+  <h1 class="mb-0.5 text-2xl font-bold">{{ translationService.t().transports.title }}</h1>
+  <p class="mb-3 text-sm text-white/80">{{ reservedCount() }} {{ translationService.t().common.of }} {{ reservations().length }} {{ translationService.t().transports.progressSuffix }}</p>
   <div class="h-1.5 w-full overflow-hidden rounded-full bg-white/30">
     <div
       class="h-full rounded-full bg-white transition-all duration-500"
@@ -30,7 +30,7 @@
             (click)="toggle(item.index)"
             role="button"
             [attr.aria-pressed]="isReserved(item.index)"
-            [attr.aria-label]="'Marquer ' + item.card.title + ' comme réservé'"
+            [attr.aria-label]="translationService.t().common.markPrefix + ' ' + item.card.title + ' ' + translationService.t().common.markSuffix"
           >
             <!-- Circle toggle -->
             <div class="mt-0.5 shrink-0">
@@ -50,7 +50,7 @@
               <div class="mb-1 flex flex-wrap items-center gap-2">
                 <span [class]="'rounded-full px-2 py-0.5 text-[0.65rem] font-semibold ' + meta.badge">{{ item.card.chip }}</span>
                 @if (isReserved(item.index)) {
-                  <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">Réservé</span>
+                  <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-bold text-emerald-600">{{ translationService.t().common.reserved }}</span>
                 }
               </div>
               <p
