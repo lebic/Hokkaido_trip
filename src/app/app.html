@@ -9,21 +9,23 @@
       <span class="text-[0.65rem] font-medium text-zinc-900/60">{{ travelService.currentTravel().name }}</span>
     </div>
 
-    <app-button
-      className="md:hidden border border-zinc-900/20 bg-[#fefaf5] px-4 py-2 text-[0.65rem] tracking-[0.2em]"
-      variant="outline"
-      size="sm"
-      [ariaExpanded]="isMenuOpen()"
-      ariaControls="site-nav"
-      (click)="toggleMenu()"
-    >
-      <span class="flex flex-col gap-1" aria-hidden="true">
-        <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
-        <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
-        <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
-      </span>
-      Menu
-    </app-button>
+    <div class="flex items-center gap-3">
+      <app-button
+        className="md:hidden border border-zinc-900/20 bg-[#fefaf5] px-4 py-2 text-[0.65rem] tracking-[0.2em]"
+        variant="outline"
+        size="sm"
+        [ariaExpanded]="isMenuOpen()"
+        ariaControls="site-nav"
+        (click)="toggleMenu()"
+      >
+        <span class="flex flex-col gap-1" aria-hidden="true">
+          <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
+          <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
+          <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
+        </span>
+        Menu
+      </app-button>
+    </div>
 
     <nav
       id="site-nav"
@@ -36,6 +38,9 @@
       <app-nav-link to="/transports" (click)="closeMenu()">Transports</app-nav-link>
       <app-nav-link to="/activites" (click)="closeMenu()">Activites</app-nav-link>
       <app-nav-link to="/reservations" (click)="closeMenu()">Reservations</app-nav-link>
+
+      <span class="hidden md:block w-px h-4 bg-zinc-900/15 mx-1"></span>
+      <app-lang-picker />
     </nav>
   </header>
 

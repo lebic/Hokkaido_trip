@@ -2,11 +2,12 @@ import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ButtonComponent } from './ui/button/button.component';
 import { NavLinkComponent } from './ui/nav-link/nav-link.component';
+import { LangPickerComponent } from './ui/lang-picker/lang-picker.component';
 import { TravelService } from './services/travel.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ButtonComponent, NavLinkComponent],
+  imports: [RouterOutlet, ButtonComponent, NavLinkComponent, LangPickerComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

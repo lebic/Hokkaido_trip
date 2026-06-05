@@ -1,0 +1,13 @@
+<div class="flex items-center gap-0.5">
+  @for (locale of locales; track locale.code) {
+    <button
+      type="button"
+      (click)="translationService.setLocale(locale.code)"
+      [class]="translationService.locale() === locale.code
+        ? 'rounded-full border border-zinc-900/20 bg-zinc-900/8 px-3 py-2 text-sm font-semibold text-zinc-900 transition'
+        : 'rounded-full border border-transparent px-3 py-2 text-sm font-semibold text-zinc-400 transition hover:border-zinc-900/20 hover:bg-zinc-900/5 hover:text-zinc-900'"
+    >
+      {{ locale.flag }}&nbsp;{{ locale.code | uppercase }}
+    </button>
+  }
+</div>

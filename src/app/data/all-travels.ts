@@ -1,14 +1,5 @@
-import hokkaidoItineraire from './hokkaido/itineraire.data.json';
-import hokkaidoHebergements from './hokkaido/hebergements.data.json';
-import hokkaidoTransports from './hokkaido/transports.data.json';
-import hokkaidoActivites from './hokkaido/activites.data.json';
-import hokkaidoReservations from './hokkaido/reservations.data.json';
-
-import viennaMunichItineraire from './vienna-munich/itineraire.data.json';
-import viennaMunichHebergements from './vienna-munich/hebergements.data.json';
-import viennaMunichTransports from './vienna-munich/transports.data.json';
-import viennaMunichActivites from './vienna-munich/activites.data.json';
-import viennaMunichReservations from './vienna-munich/reservations.data.json';
+import { hokkaidoData } from './hokkaido/index';
+import { viennaMunichData } from './vienna-munich/index';
 
 export interface TravelMeta {
   id: string;
@@ -45,18 +36,6 @@ export const TRAVELS_REGISTRY: TravelMeta[] = [
 ];
 
 export const ALL_TRAVEL_DATA = {
-  hokkaido: {
-    itineraire: hokkaidoItineraire,
-    hebergements: hokkaidoHebergements,
-    transports: hokkaidoTransports,
-    activites: hokkaidoActivites,
-    reservations: hokkaidoReservations,
-  },
-  'vienna-munich': {
-    itineraire: viennaMunichItineraire,
-    hebergements: viennaMunichHebergements,
-    transports: viennaMunichTransports,
-    activites: viennaMunichActivites,
-    reservations: viennaMunichReservations,
-  },
+  hokkaido: hokkaidoData,
+  'vienna-munich': viennaMunichData,
 };
