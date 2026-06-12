@@ -8,9 +8,9 @@
     {
       "chip": "Tokyo",
       "tone": "forest",
-      "title": "Jours 1-3 (arrivee)",
+      "title": "Jours 1-5 (arrivee)",
       "location": "Tokyo",
-      "nights": "3 nuits",
+      "nights": "5 nuits",
       "priority": 2,
       "description": "Hotel 3 etoiles centre-ville.",
       "image": {
@@ -22,7 +22,7 @@
         {
           "title": "Budget",
           "items": [
-            "300 EUR (100 EUR / nuit)"
+            "500 EUR (100 EUR / nuit)"
           ]
         },
         {
@@ -44,7 +44,7 @@
           "items": [
             "Acces facile depuis aeroport",
             "Check-in tardif possible",
-            "Proximite transports pour Oarai (jour 3)"
+            "Proximite transports pour Oarai (jour 5)"
           ]
         },
         {
@@ -69,7 +69,7 @@
     {
       "chip": "Ferry",
       "tone": "clay",
-      "title": "Jour 4 (Sunflower Ferry)",
+      "title": "Jour 6 (Sunflower Ferry)",
       "location": "En mer (Océan Pacifique)",
       "nights": "1 nuit",
       "priority": 1,
@@ -167,7 +167,7 @@
         {
           "title": "Notes",
           "items": [
-            "Arrivee tardive jour 4",
+            "Arrivee tardive jour 6",
             "Parking si voiture de location",
             "Verifier check-in tardif"
           ]
@@ -519,7 +519,7 @@
         {
           "title": "Priorite 1",
           "items": [
-            "Ferry Sunflower (jour 4)",
+            "Ferry Sunflower (jour 6)",
             "Sounkyo Onsen (jour 8)",
             "Akan-ko (jours 9-11)"
           ]
@@ -527,7 +527,7 @@
         {
           "title": "Priorite 2",
           "items": [
-            "Tokyo jours 1-3",
+            "Tokyo jours 1-5",
             "Sapporo jours 5-7",
             "Furano jours 12-13",
             "Sapporo jour 14",
