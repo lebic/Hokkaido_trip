@@ -18,18 +18,6 @@
       ]
     },
     {
-      "chip": "Vienne - Jour 4",
-      "title": "Opera de Vienne (soiree)",
-      "location": "Vienne, Autriche",
-      "description": "Un des plus grands operas du monde. Places a partir de 3 EUR debout, billets reguliers a reserver des que possible.",
-      "links": [
-        {
-          "label": "Wiener Staatsoper",
-          "url": "https://www.wiener-staatsoper.at/en/"
-        }
-      ]
-    },
-    {
       "chip": "Vienne - Jour 2",
       "title": "Palais de Schonbrunn",
       "location": "Vienne, Autriche",
@@ -42,14 +30,26 @@
       ]
     },
     {
-      "chip": "Munich - Jour 9",
-      "title": "BMW Museum",
-      "location": "Munich, Allemagne",
-      "description": "Musee et BMW Welt. Entree musee payante, BMW Welt gratuit. Visite supplementaire a l'usine possible sur reservation.",
+      "chip": "Vienne - Jour 4",
+      "title": "Excursion a Hallstatt (bus)",
+      "location": "Hallstatt, Autriche",
+      "description": "Village de conte de fees au bord du lac, inscrit au patrimoine mondial UNESCO. Journee complete en bus organise depuis Vienne. Inclut generalement la mine de sel, le Skywalk et le village.",
       "links": [
         {
-          "label": "BMW Museum",
-          "url": "https://www.bmw-welt.com/en/topics/museum.html"
+          "label": "Hallstatt Salt Mine",
+          "url": "https://www.salzwelten.at/en/hallstatt/"
+        }
+      ]
+    },
+    {
+      "chip": "Munich - Jour 9",
+      "title": "Munich Residence",
+      "location": "Munich, Allemagne",
+      "description": "Munich Residence, ancienne residence des ducs et rois de Baviere. Visite guidee recommandee pour decouvrir les appartements royaux et le tresor.",
+      "links": [
+        {
+          "label": "Munich Residence",
+          "url": "https://www.residenz-muenchen.de/englisch/museum/index.htm"
         }
       ]
     },

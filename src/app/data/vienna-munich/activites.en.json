@@ -18,18 +18,6 @@
       ]
     },
     {
-      "chip": "Vienna - Day 4",
-      "title": "Vienna State Opera (evening)",
-      "location": "Vienna, Austria",
-      "description": "One of the greatest opera houses in the world. Standing tickets from 3 EUR, regular tickets should be booked as early as possible.",
-      "links": [
-        {
-          "label": "Wiener Staatsoper",
-          "url": "https://www.wiener-staatsoper.at/en/"
-        }
-      ]
-    },
-    {
       "chip": "Vienna - Day 2",
       "title": "Schönbrunn Palace",
       "location": "Vienna, Austria",
@@ -42,14 +30,26 @@
       ]
     },
     {
-      "chip": "Munich - Day 9",
-      "title": "BMW Museum",
-      "location": "Munich, Germany",
-      "description": "Museum and BMW Welt. Museum entry is paid, BMW Welt is free. Factory tour available on request.",
+      "chip": "Vienna - Day 4",
+      "title": "Hallstatt Day Trip (bus tour)",
+      "location": "Hallstatt, Austria",
+      "description": "UNESCO World Heritage fairytale village on the lake shore. Full-day organised bus tour from Vienna, typically including the salt mine, Skywalk viewpoint, and a walk through the village.",
       "links": [
         {
-          "label": "BMW Museum",
-          "url": "https://www.bmw-welt.com/en/topics/museum.html"
+          "label": "Hallstatt Salt Mine",
+          "url": "https://www.salzwelten.at/en/hallstatt/"
+        }
+      ]
+    },
+    {
+      "chip": "Munich - Day 9",
+      "title": "Munich Residenz",
+      "location": "Munich, Germany",
+      "description": "Former residence of the Dukes and Kings of Bavaria. Guided tour recommended to explore the royal apartments and the treasury.",
+      "links": [
+        {
+          "label": "Munich Residenz",
+          "url": "https://www.residenz-muenchen.de/englisch/museum/index.htm"
         }
       ]
     },

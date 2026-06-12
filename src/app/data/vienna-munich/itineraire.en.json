@@ -12,7 +12,7 @@
       "tone": "forest",
       "title": "Vienna",
       "location": "Vienna, Austria",
-      "description": "Five days to explore the imperial capital: palaces, museums and historic cafes.",
+      "description": "Five days to explore the imperial capital: palaces, museums and a day trip to Hallstatt.",
       "transportMode": "plane",
       "routeWaypoints": [
         {
@@ -70,18 +70,19 @@
           ]
         },
         {
-          "title": "Day 4 - Activities",
+          "title": "Day 4 - Hallstatt Excursion",
           "items": [
-            "Kunsthistorisches Museum",
-            "Cafe Central or Cafe Landtmann",
-            "Vienna State Opera (evening possible)"
+            "Organised bus tour from Vienna (early departure ~7am)",
+            "Walk through the historic village and along the lake",
+            "Hallstatt Salt Mine and World Heritage Skywalk",
+            "Return to Vienna in the evening (~7-8pm)"
           ]
         },
         {
           "title": "Day 5 - Activities",
           "items": [
-            "Morning neighbourhood market",
-            "Free walk in the Innere Stadt",
+            "Kunsthistorisches Museum",
+            "Cafe Central or Cafe Landtmann",
             "Prepare for departure to Munich"
           ]
         },
@@ -151,7 +152,7 @@
         {
           "title": "Day 9 - Activities",
           "items": [
-            "BMW Museum or BMW Welt",
+            "Munich Residenz and treasury",
             "Englischer Garten",
             "Viktualienmarkt"
           ]

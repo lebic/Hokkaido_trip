@@ -12,7 +12,7 @@
       "tone": "forest",
       "title": "Vienne",
       "location": "Vienne, Autriche",
-      "description": "Cinq jours pour explorer la capitale imperiale : palais, musees et cafes historiques.",
+      "description": "Cinq jours pour explorer la capitale imperiale : palais, musees et une excursion a Hallstatt.",
       "transportMode": "plane",
       "routeWaypoints": [
         {
@@ -70,18 +70,19 @@
           ]
         },
         {
-          "title": "Jour 4 - Activites",
+          "title": "Jour 4 - Excursion Hallstatt",
           "items": [
-            "Kunsthistorisches Museum",
-            "Cafe Central ou Cafe Landtmann",
-            "Opera de Vienne (soiree possible)"
+            "Bus organise depuis Vienne (depart matinal ~7h)",
+            "Village historique et promenade au bord du lac",
+            "Mine de sel de Hallstatt et World Heritage Skywalk",
+            "Retour a Vienne en soiree (~19h-20h)"
           ]
         },
         {
           "title": "Jour 5 - Activites",
           "items": [
-            "Marche de quartier le matin",
-            "Promenade libre dans la Innere Stadt",
+            "Kunsthistorisches Museum",
+            "Cafe Central ou Cafe Landtmann",
             "Preparation du depart pour Munich"
           ]
         },
@@ -151,7 +152,7 @@
         {
           "title": "Jour 9 - Activites",
           "items": [
-            "BMW Museum ou BMW Welt",
+            "Munich Residenz et trésor",
             "Englischer Garten",
             "Viktualienmarkt"
           ]
