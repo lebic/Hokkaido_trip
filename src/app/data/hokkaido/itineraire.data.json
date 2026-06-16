@@ -15,8 +15,16 @@
       "description": "Installation et decouverte progressive de la ville.",
       "transportMode": "train",
       "routeWaypoints": [
-        { "name": "Narita Airport", "lat": 35.7647, "lng": 140.3864 },
-        { "name": "Tokyo Centre", "lat": 35.6762, "lng": 139.6503 }
+        {
+          "name": "Narita Airport",
+          "lat": 35.7647,
+          "lng": 140.3864
+        },
+        {
+          "name": "Tokyo Centre",
+          "lat": 35.6762,
+          "lng": 139.6503
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
@@ -41,42 +49,76 @@
           "title": "Jour 1 - Activites",
           "items": [
             "Installation a l'hotel",
-            "Premiere decouverte de Tokyo",
+            {
+              "text": "Asakusa (Sensoji Temple)",
+              "url": "https://maps.app.goo.gl/jq75j6RzL1MHDK7z8"
+            },
+            {
+              "text": "Jardins imperiaux",
+              "url": "https://maps.app.goo.gl/zBe9WUDMCM9UV2dF9"
+            },
+            {
+              "text": "Tokyo Skytree (evening view)",
+              "url": "https://maps.app.goo.gl/VZsTgehoznXaLgZP6"
+            },
             "Repos apres le vol"
           ]
         },
         {
           "title": "Jour 2 - Activites",
           "items": [
-            "Asakusa (Sensoji Temple)",
-            "Tokyo Skytree",
-            "Tsukiji Outer Market",
-            "Jardins imperiaux"
+            {
+              "text": "Shibuya Crossing",
+              "url": "https://maps.app.goo.gl/kfdUUBxt6HY7DhbZ8"
+            },
+            {
+              "text": "Meiji Shrine",
+              "url": "https://maps.app.goo.gl/1ThcQ9KqszwrniUp8"
+            },
+            {
+              "text": "Harajuku",
+              "url": "https://maps.app.goo.gl/wECPUpN8nUE34xJY8"
+            },
+            {
+              "text": "Shinjuku Gyoen National Garden",
+              "url": "https://maps.app.goo.gl/pUH2BrkppuqwT4tw6"
+            },
+            {
+              "text": "Soiree a Shinjuku (Golden Gai)",
+              "url": "https://maps.app.goo.gl/nBeLu9Eb7V6KbeQN6"
+            }
           ]
         },
         {
           "title": "Jour 3 - Activites",
           "items": [
-            "Shibuya Crossing",
-            "Meiji Shrine",
-            "Harajuku",
-            "Shinjuku en soiree"
+            {
+              "text": "Kamakura (grande statue du Bouddha, temples)",
+              "url": "https://maps.app.goo.gl/ak35jHKzWGK3MAKe6"
+            },
+            {
+              "text": "Hokoku-ji (temple du bambou)",
+              "url": "https://maps.app.goo.gl/48mftMv1YtyAPtaYA"
+            }
           ]
         },
         {
           "title": "Jour 4 - Activites",
           "items": [
-            "Odaiba (teamLab, Palette Town)",
-            "Pont en arc-en-ciel",
-            "Akihabara en soiree"
+            {
+              "text": "Harry potter tour",
+              "url": "https://maps.app.goo.gl/nMX7J8Hwc7iUXYgG8"
+            }
           ]
         },
         {
           "title": "Jour 5 - Activites",
           "items": [
-            "Ikebukuro (Sunshine City)",
-            "Yanaka (vieux quartier)",
-            "Ueno Park"
+            {
+              "text": "Ueno Park et musees",
+              "url": "https://maps.app.goo.gl/32JMeZvNry9iFYiBA"
+            },
+            "18h00 : depart vers Oarai Port (2h en train)"
           ]
         },
         {
@@ -95,8 +137,16 @@
       "description": "Traversees longues mais confortables.",
       "transportMode": "ferry",
       "routeWaypoints": [
-        { "name": "Oarai Port", "lat": 36.3133, "lng": 140.5782 },
-        { "name": "Tomakomai Port", "lat": 42.6333, "lng": 141.6007 }
+        {
+          "name": "Oarai Port",
+          "lat": 36.3133,
+          "lng": 140.5782
+        },
+        {
+          "name": "Tomakomai Port",
+          "lat": 42.6333,
+          "lng": 141.6007
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/ferry.jpg",
@@ -145,8 +195,16 @@
       "description": "Exploration urbaine et excursion a Otaru.",
       "transportMode": "train",
       "routeWaypoints": [
-        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 },
-        { "name": "Otaru", "lat": 43.1906, "lng": 140.9946 }
+        {
+          "name": "Sapporo",
+          "lat": 43.0618,
+          "lng": 141.3545
+        },
+        {
+          "name": "Otaru",
+          "lat": 43.1906,
+          "lng": 140.9946
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/sapporo.jpeg",
@@ -163,11 +221,26 @@
         {
           "title": "Jour 5 - Activites",
           "items": [
-            "Odori Park",
-            "Sapporo Clock Tower",
-            "Musee de la biere de Sapporo",
-            "Hitsujigaoka Observation Hill",
-            "Susukino en soiree"
+            {
+              "text": "Odori Park",
+              "url": "https://maps.google.com/?q=43.0606,141.3526"
+            },
+            {
+              "text": "Sapporo Clock Tower",
+              "url": "https://maps.google.com/?q=43.0614,141.3556"
+            },
+            {
+              "text": "Musee de la biere de Sapporo",
+              "url": "https://maps.google.com/?q=43.0714,141.3671"
+            },
+            {
+              "text": "Hitsujigaoka Observation Hill",
+              "url": "https://maps.google.com/?q=42.9867,141.4225"
+            },
+            {
+              "text": "Susukino en soiree",
+              "url": "https://maps.google.com/?q=43.0554,141.3546"
+            }
           ]
         },
         {
@@ -179,10 +252,19 @@
         {
           "title": "Jour 6 - Activites",
           "items": [
-            "Promenade le long du canal",
-            "Boutiques de verre artisanal",
+            {
+              "text": "Promenade le long du canal",
+              "url": "https://maps.google.com/?q=43.1987,141.0043"
+            },
+            {
+              "text": "Boutiques de verre artisanal",
+              "url": "https://maps.google.com/?q=43.2001,141.0025"
+            },
             "Snacks locaux et degustations",
-            "Marche aux poissons",
+            {
+              "text": "Marche aux poissons",
+              "url": "https://maps.google.com/?q=43.1948,141.0013"
+            },
             "Retour a Sapporo en fin d'apres-midi"
           ]
         },
@@ -190,8 +272,14 @@
           "title": "Jour 7 - Activites",
           "items": [
             "Shopping dernieres provisions",
-            "Tanukikoji Shopping Arcade",
-            "Yokocho Ramen Alley",
+            {
+              "text": "Tanukikoji Shopping Arcade",
+              "url": "https://maps.google.com/?q=43.0587,141.3527"
+            },
+            {
+              "text": "Yokocho Ramen Alley",
+              "url": "https://maps.google.com/?q=43.0621,141.3537"
+            },
             "Preparation depart matinal"
           ]
         }
@@ -205,9 +293,22 @@
       "description": "Route panoramique et nuit en ryokan.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 },
-        { "name": "Asahikawa", "lat": 43.7683, "lng": 142.3649, "isStop": true },
-        { "name": "Sounkyo Onsen", "lat": 43.7429, "lng": 142.9884 }
+        {
+          "name": "Sapporo",
+          "lat": 43.0618,
+          "lng": 141.3545
+        },
+        {
+          "name": "Asahikawa",
+          "lat": 43.7683,
+          "lng": 142.3649,
+          "isStop": true
+        },
+        {
+          "name": "Sounkyo Onsen",
+          "lat": 43.7429,
+          "lng": 142.9884
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/sounkyo-onsen.jpg",
@@ -241,8 +342,14 @@
           "title": "Activites",
           "items": [
             "Check-in au ryokan",
-            "Gorges de Sounkyo",
-            "Daisetsuzan Ropeway (si meteo)",
+            {
+              "text": "Gorges de Sounkyo",
+              "url": "https://maps.google.com/?q=43.7469,142.9918"
+            },
+            {
+              "text": "Daisetsuzan Ropeway (si meteo)",
+              "url": "https://maps.google.com/?q=43.7485,142.9880"
+            },
             "Onsen en soiree",
             "Diner kaiseki (inclus)"
           ]
@@ -257,11 +364,34 @@
       "description": "Longue route avec lacs et volcans.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Sounkyo Onsen", "lat": 43.7429, "lng": 142.9884 },
-        { "name": "Lake Kussharo", "lat": 43.6033, "lng": 144.3433, "isStop": true },
-        { "name": "Mt. Io (Iozan)", "lat": 43.5867, "lng": 144.4483, "isStop": true },
-        { "name": "Lake Mashu", "lat": 43.5710, "lng": 144.5277, "isStop": true },
-        { "name": "Akan-ko", "lat": 43.4364, "lng": 144.1072 }
+        {
+          "name": "Sounkyo Onsen",
+          "lat": 43.7429,
+          "lng": 142.9884
+        },
+        {
+          "name": "Lake Kussharo",
+          "lat": 43.6033,
+          "lng": 144.3433,
+          "isStop": true
+        },
+        {
+          "name": "Mt. Io (Iozan)",
+          "lat": 43.5867,
+          "lng": 144.4483,
+          "isStop": true
+        },
+        {
+          "name": "Lake Mashu",
+          "lat": 43.5710,
+          "lng": 144.5277,
+          "isStop": true
+        },
+        {
+          "name": "Akan-ko",
+          "lat": 43.4364,
+          "lng": 144.1072
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/iozan.jpeg",
@@ -287,9 +417,18 @@
         {
           "title": "Arrets en route",
           "items": [
-            "Lake Kussharo (Sunayu, Kotan Onsen)",
-            "Mt. Io (Iozan) - fumerolles",
-            "Lake Mashu - observation deck"
+            {
+              "text": "Lake Kussharo (Sunayu, Kotan Onsen)",
+              "url": "https://maps.google.com/?q=43.6033,144.3433"
+            },
+            {
+              "text": "Mt. Io (Iozan) - fumerolles",
+              "url": "https://maps.google.com/?q=43.5867,144.4483"
+            },
+            {
+              "text": "Lake Mashu - observation deck",
+              "url": "https://maps.google.com/?q=43.5710,144.5277"
+            }
           ]
         },
         {
@@ -324,18 +463,36 @@
         {
           "title": "Jour 10 - Activites",
           "items": [
-            "Balade en bateau sur Lake Akan",
-            "Marimo Observation Center",
-            "Village Ainou (musee, danse, artisanat)",
-            "Randonnee vers Bokke",
+            {
+              "text": "Balade en bateau sur Lake Akan",
+              "url": "https://maps.google.com/?q=43.4394,144.1131"
+            },
+            {
+              "text": "Marimo Observation Center",
+              "url": "https://maps.google.com/?q=43.4394,144.1131"
+            },
+            {
+              "text": "Village Ainou (musee, danse, artisanat)",
+              "url": "https://maps.google.com/?q=43.4387,144.1081"
+            },
+            {
+              "text": "Randonnee vers Bokke",
+              "url": "https://maps.google.com/?q=43.4452,144.1079"
+            },
             "Onsen en soiree"
           ]
         },
         {
           "title": "Jour 11 - Au choix",
           "items": [
-            "Randonnee Mt. Oakan (4-5h)",
-            "Randonnee Mt. Meakan (6-7h)",
+            {
+              "text": "Randonnee Mt. Oakan (4-5h)",
+              "url": "https://maps.google.com/?q=43.4614,144.2078"
+            },
+            {
+              "text": "Randonnee Mt. Meakan (6-7h)",
+              "url": "https://maps.google.com/?q=43.3833,144.0167"
+            },
             "Canoe sur le lac",
             "Detente ryokan et onsen",
             "Exploration du village"
@@ -351,10 +508,28 @@
       "description": "Long trajet et arrets gourmands.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Akan-ko", "lat": 43.4364, "lng": 144.1072 },
-        { "name": "Obihiro", "lat": 42.9178, "lng": 143.1963, "isStop": true },
-        { "name": "Biei", "lat": 43.5925, "lng": 142.4700, "isStop": true },
-        { "name": "Furano", "lat": 43.3418, "lng": 142.3834 }
+        {
+          "name": "Akan-ko",
+          "lat": 43.4364,
+          "lng": 144.1072
+        },
+        {
+          "name": "Obihiro",
+          "lat": 42.9178,
+          "lng": 143.1963,
+          "isStop": true
+        },
+        {
+          "name": "Biei",
+          "lat": 43.5925,
+          "lng": 142.4700,
+          "isStop": true
+        },
+        {
+          "name": "Furano",
+          "lat": 43.3418,
+          "lng": 142.3834
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/biei.jpg",
@@ -380,9 +555,15 @@
         {
           "title": "Arrets suggeres",
           "items": [
-            "Obihiro (dejeuner, butadon)",
+            {
+              "text": "Obihiro (dejeuner, butadon)",
+              "url": "https://maps.google.com/?q=42.9178,143.1963"
+            },
             "Tokachigawa Onsen (pause cafe)",
-            "Biei : Blue Pond, Shikisai-no-oka"
+            {
+              "text": "Biei : Blue Pond, Shikisai-no-oka",
+              "url": "https://maps.google.com/?q=43.5999,142.4968"
+            }
           ]
         },
         {
@@ -416,11 +597,26 @@
         {
           "title": "Activites",
           "items": [
-            "Farm Tomita (lavande, Melon House)",
-            "Furano Cheese Factory",
-            "Ningle Terrace",
-            "Route panoramique Biei (Patchwork, Panorama)",
-            "Furano Wine House"
+            {
+              "text": "Farm Tomita (lavande, Melon House)",
+              "url": "https://maps.google.com/?q=43.3578,142.4441"
+            },
+            {
+              "text": "Furano Cheese Factory",
+              "url": "https://maps.google.com/?q=43.3523,142.4040"
+            },
+            {
+              "text": "Ningle Terrace",
+              "url": "https://maps.google.com/?q=43.3523,142.3809"
+            },
+            {
+              "text": "Route panoramique Biei (Patchwork, Panorama)",
+              "url": "https://maps.google.com/?q=43.5925,142.4700"
+            },
+            {
+              "text": "Furano Wine House",
+              "url": "https://maps.google.com/?q=43.3387,142.3811"
+            }
           ]
         }
       ]
@@ -433,8 +629,16 @@
       "description": "Retour et derniers achats.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Furano", "lat": 43.3418, "lng": 142.3834 },
-        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 }
+        {
+          "name": "Furano",
+          "lat": 43.3418,
+          "lng": 142.3834
+        },
+        {
+          "name": "Sapporo",
+          "lat": 43.0618,
+          "lng": 141.3545
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/sapporo-tadao-ando.webp",
@@ -460,7 +664,10 @@
         {
           "title": "Option en route",
           "items": [
-            "Asahikawa (Asahiyama Zoo si interet)"
+            {
+              "text": "Asahikawa (Asahiyama Zoo si interet)",
+              "url": "https://maps.google.com/?q=43.7783,142.4708"
+            }
           ]
         },
         {
@@ -483,8 +690,16 @@
       "description": "Vol interieur et arrivee a Tokyo.",
       "transportMode": "flight",
       "routeWaypoints": [
-        { "name": "New Chitose Airport (CTS)", "lat": 42.7754, "lng": 141.6923 },
-        { "name": "Tokyo Haneda (HND)", "lat": 35.5533, "lng": 139.7811 }
+        {
+          "name": "New Chitose Airport (CTS)",
+          "lat": 42.7754,
+          "lng": 141.6923
+        },
+        {
+          "name": "Tokyo Haneda (HND)",
+          "lat": 35.5533,
+          "lng": 139.7811
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
@@ -531,16 +746,31 @@
         {
           "title": "Jour 16 - Activites",
           "items": [
-            "Ueno Park & museums",
-            "Akihabara (electronique)",
-            "Yanaka (vieux quartier)"
+            {
+              "text": "Ueno Park & museums",
+              "url": "https://maps.google.com/?q=35.7148,139.7731"
+            },
+            {
+              "text": "Akihabara (electronique)",
+              "url": "https://maps.google.com/?q=35.7022,139.7745"
+            },
+            {
+              "text": "Yanaka (vieux quartier)",
+              "url": "https://maps.google.com/?q=35.7277,139.7666"
+            }
           ]
         },
         {
           "title": "Jour 17 - Activites",
           "items": [
-            "Ginza (shopping haut de gamme)",
-            "Tokyo Tower ou Roppongi Hills",
+            {
+              "text": "Ginza (shopping haut de gamme)",
+              "url": "https://maps.google.com/?q=35.6714,139.7670"
+            },
+            {
+              "text": "Tokyo Tower ou Roppongi Hills",
+              "url": "https://maps.google.com/?q=35.6586,139.7454"
+            },
             "Derniers restaurants favoris",
             "Preparation bagages"
           ]

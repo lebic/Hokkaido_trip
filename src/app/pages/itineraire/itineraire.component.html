@@ -180,10 +180,14 @@
           </h3>
           @for (section of transportSections(detail); track section.title) {
             <ul class="mb-2 space-y-1.5 last:mb-0">
-              @for (item of section.items; track item) {
+              @for (item of section.items; track $index) {
                 <li class="flex items-start gap-2 text-sm text-zinc-700">
                   <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span>
-                  {{ item }}
+                  @if (itemUrl(item)) {
+                    <a [href]="itemUrl(item)" target="_blank" rel="noopener noreferrer" class="underline decoration-sky-300 underline-offset-2 hover:text-sky-700 transition-colors">{{ itemText(item) }}</a>
+                  } @else {
+                    {{ itemText(item) }}
+                  }
                 </li>
               }
             </ul>
@@ -228,10 +232,14 @@
               <p class="text-sm font-bold text-violet-700">{{ section.title }}</p>
             </div>
             <ul class="space-y-1.5 pl-3">
-              @for (item of section.items; track item) {
+              @for (item of section.items; track $index) {
                 <li class="flex items-start gap-2 text-sm text-zinc-700">
                   <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-300"></span>
-                  {{ item }}
+                  @if (itemUrl(item)) {
+                    <a [href]="itemUrl(item)" target="_blank" rel="noopener noreferrer" class="underline decoration-violet-300 underline-offset-2 hover:text-violet-700 transition-colors">{{ itemText(item) }}</a>
+                  } @else {
+                    {{ itemText(item) }}
+                  }
                 </li>
               }
             </ul>

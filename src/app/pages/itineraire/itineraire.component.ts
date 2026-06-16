@@ -8,9 +8,14 @@ import { TranslationService } from '../../services/translation.service';
 type CardTone = 'forest' | 'clay' | 'berry';
 type SectionType = 'hebergement' | 'transport' | 'activite' | 'other';
 
+export interface PageItem {
+  text: string;
+  url?: string;
+}
+
 interface PageSection {
   title: string;
-  items: string[];
+  items: (string | PageItem)[];
 }
 
 interface PageCard {
@@ -99,7 +104,9 @@ export class ItineraireComponent {
 
   protected hebergementItem(card: PageCard): string {
     const s = card.sections.find(s => this.isHebergementSection(s.title));
-    return s?.items[0] ?? '';
+    const item = s?.items[0];
+    if (!item) return '';
+    return typeof item === 'string' ? item : item.text;
   }
 
   protected transportSections(card: PageCard): PageSection[] {
@@ -122,6 +129,14 @@ export class ItineraireComponent {
 
   protected cardImagePosition(card: PageCard): string {
     return card.image?.position ?? this.defaultImagePosition;
+  }
+
+  protected itemText(item: string | PageItem): string {
+    return typeof item === 'string' ? item : item.text;
+  }
+
+  protected itemUrl(item: string | PageItem): string | null {
+    return typeof item === 'string' ? null : (item.url ?? null);
   }
 }
 
