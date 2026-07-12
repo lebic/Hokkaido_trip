@@ -45,21 +45,30 @@ export class PreparatifsService {
     }
   }
 
-  readonly doneCount = computed(() => {
-    const state = this.checked();
-    return this.allItems().filter((i) => state[i.id]).length;
+  /** Items réservés par défaut (statut confirmé) → cochés tant que non modifiés à la main. */
+  private readonly bookedDefaults = computed<Record<string, boolean>>(() => {
+    const map: Record<string, boolean> = {};
+    for (const item of this.allItems()) {
+      if (item.booked) map[item.id] = true;
+    }
+    return map;
   });
+
+  readonly doneCount = computed(() =>
+    this.allItems().filter((i) => this.isChecked(i.id)).length,
+  );
 
   readonly progressPercent = computed(() =>
     this.totalCount() > 0 ? Math.round((this.doneCount() / this.totalCount()) * 100) : 0,
   );
 
   isChecked(id: string): boolean {
-    return this.checked()[id] ?? false;
+    // L'état manuel (localStorage) prime ; sinon on retombe sur le statut "réservé".
+    return this.checked()[id] ?? this.bookedDefaults()[id] ?? false;
   }
 
   toggle(id: string): void {
-    const next = { ...this.checked(), [id]: !this.checked()[id] };
+    const next = { ...this.checked(), [id]: !this.isChecked(id) };
     this.checked.set(next);
     try {
       localStorage.setItem(this.storageKey(), JSON.stringify(next));

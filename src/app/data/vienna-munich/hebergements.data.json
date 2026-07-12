@@ -2,27 +2,26 @@
   "hero": {
     "eyebrow": "Hebergements",
     "title": "Hebergements a reserver",
-    "description": "Budget total estime hebergements : ~1240 EUR"
+    "description": "Budget total estime hebergements : ~1216 EUR"
   },
   "cards": [
     {
       "chip": "29 Jan - 2 Fev",
       "tone": "forest",
-      "title": "Vienne (4 nuits)",
+      "title": "Hotel Caroline (4 nuits)",
       "location": "Vienne, Autriche",
       "nights": "4 nuits",
       "priority": 2,
-      "description": "Hotel centre-ville, proche des transports.",
+      "description": "Reserve et paye. Chambre Double, 2 adultes, petit-dejeuner inclus.",
       "sections": [
-        { "title": "Budget", "items": ["~400 EUR (100 EUR / nuit)"] },
-        { "title": "Statut", "items": ["Reserve - voir confirmation (Drive)"] },
-        { "title": "Options recommandees", "items": ["Hotel Caroline (reserve)", "Innere Stadt (1er arrondissement)", "Proche du Ring / Stephansplatz", "Quartier Mariahilf (anime)"] },
+        { "title": "Budget", "items": ["357,21 EUR (2 pers, 4 nuits) - paye via Booking, petit-dej inclus"] },
+        { "title": "Statut", "items": ["Reserve et paye - voir confirmation (Drive)"] },
+        { "title": "Reservation", "items": ["Hotel Caroline - Gudrunstrasse 138, 1100 Vienne (Favoriten)", "Arrivee ven. 29 jan (des 14h) -> Depart mar. 2 fev (jusqu'a 12h)", "Chambre Double, 2 adultes - petit-dejeuner inclus", "Paye d'avance via Booking (357,21 EUR)", "Annulation gratuite jusqu'au 29 jan 2027 18h (puis 105,30 EUR)"] },
         { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation (voir Drive)"] }
       ],
       "links": [
         { "label": "Ma confirmation (Drive)", "url": "https://drive.google.com/file/d/1nXRW4c-j5UCKM_8j8Fm7POTPnYCIvjw2/view?usp=drive_link" },
-        { "label": "Hotel Caroline (Booking)", "url": "https://www.booking.com/hotel/at/caroline.fr.html" },
-        { "label": "Booking.com Vienne", "url": "https://www.booking.com/city/at/vienna.html" }
+        { "label": "Hotel Caroline (Booking)", "url": "https://www.booking.com/hotel/at/caroline.fr.html" }
       ]
     },
     {

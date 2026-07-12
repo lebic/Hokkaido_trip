@@ -26,6 +26,8 @@ export interface PrepItem {
   options: string[];
   /** Détails d'une réservation confirmée (adresse, dates, conditions…). */
   reservation: string[];
+  /** true si déjà réservé (statut) → coché par défaut dans les préparatifs. */
+  booked: boolean;
 }
 
 export interface PrepGroup {
@@ -94,6 +96,16 @@ function collectSection(card: { sections?: RawSection[] }, titleIncludes: string
   return (section?.items ?? []).map((i) => (typeof i === 'string' ? i : i.text));
 }
 
+/** Détecte un hébergement déjà réservé via sa section Statut/Status. */
+function isBookedStay(card: { sections?: RawSection[] }): boolean {
+  const status = firstSectionItem(card, 'statut') ?? firstSectionItem(card, 'status');
+  if (!status) return false;
+  const s = status.toLowerCase();
+  const reserved = s.startsWith('reserve') || s.startsWith('réserv') || s.startsWith('book');
+  const toBook = s.includes('a reserver') || s.includes('à reserver') || s.includes('to book');
+  return reserved && !toBook;
+}
+
 export function buildPreparatifs(opts: {
   transports: unknown;
   hebergements: unknown;
@@ -119,6 +131,7 @@ export function buildPreparatifs(opts: {
       stageIndex: matchStage(stages, c.title),
       options: [],
       reservation: [],
+      booked: false,
     }));
 
   // --- Hébergements (une carte = un séjour à réserver) ---
@@ -135,6 +148,7 @@ export function buildPreparatifs(opts: {
       stageIndex: matchStage(stages, c.location),
       options: collectSection(c, 'option'),
       reservation: collectSection(c, 'reserv'),
+      booked: isBookedStay(c),
     }));
 
   // --- Activités à réserver ---
@@ -149,6 +163,7 @@ export function buildPreparatifs(opts: {
     stageIndex: matchStage(stages, a.location),
     options: [],
     reservation: [],
+    booked: false,
   }));
 
   // --- Documents (déduits des sections "Documents" existantes, dédupliqués) ---
@@ -174,6 +189,7 @@ export function buildPreparatifs(opts: {
           stageIndex: null,
           options: [],
           reservation: [],
+          booked: false,
         });
       }
     }
@@ -193,8 +209,9 @@ export function sumBudget(groups: PrepGroup[]): number {
   let total = 0;
   for (const g of groups) {
     for (const item of g.items) {
-      const match = item.meta?.match(/(\d[\d\s.]*)\s*(?:EUR|€)/i);
-      if (match) total += Number.parseInt(match[1].replace(/[\s.]/g, ''), 10) || 0;
+      // Partie entière (chiffres + espaces), décimale optionnelle (, ou .), puis EUR/€.
+      const match = item.meta?.match(/(\d[\d\s]*)(?:[.,]\d+)?\s*(?:EUR|€)/i);
+      if (match) total += Number.parseInt(match[1].replace(/\s/g, ''), 10) || 0;
     }
   }
   return total;

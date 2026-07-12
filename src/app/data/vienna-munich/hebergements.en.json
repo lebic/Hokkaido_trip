@@ -2,27 +2,26 @@
   "hero": {
     "eyebrow": "Accommodation",
     "title": "Accommodation to book",
-    "description": "Estimated total accommodation budget: ~1240 EUR"
+    "description": "Estimated total accommodation budget: ~1216 EUR"
   },
   "cards": [
     {
       "chip": "Jan 29 - Feb 2",
       "tone": "forest",
-      "title": "Vienna (4 nights)",
+      "title": "Hotel Caroline (4 nights)",
       "location": "Vienna, Austria",
       "nights": "4 nights",
       "priority": 2,
-      "description": "City-centre hotel, close to transport.",
+      "description": "Booked and paid. Double Room, 2 adults, breakfast included.",
       "sections": [
-        { "title": "Budget", "items": ["~400 EUR (100 EUR / night)"] },
-        { "title": "Status", "items": ["Booked - see confirmation (Drive)"] },
-        { "title": "Recommended options", "items": ["Hotel Caroline (booked)", "Innere Stadt (1st district)", "Near the Ring / Stephansplatz", "Mariahilf district (lively)"] },
+        { "title": "Budget", "items": ["357.21 EUR (2 guests, 4 nights) - prepaid via Booking, breakfast included"] },
+        { "title": "Status", "items": ["Booked & paid - see confirmation (Drive)"] },
+        { "title": "Reservation", "items": ["Hotel Caroline - Gudrunstrasse 138, 1100 Vienna (Favoriten)", "Check-in Fri Jan 29 (from 2pm) -> Check-out Tue Feb 2 (by noon)", "Double Room, 2 adults - breakfast included", "Prepaid via Booking (357.21 EUR)", "Free cancellation until Jan 29, 2027 6pm (then 105.30 EUR)"] },
         { "title": "Documents", "items": ["Passport or ID card", "Confirmation (see Drive)"] }
       ],
       "links": [
         { "label": "My confirmation (Drive)", "url": "https://drive.google.com/file/d/1nXRW4c-j5UCKM_8j8Fm7POTPnYCIvjw2/view?usp=drive_link" },
-        { "label": "Hotel Caroline (Booking)", "url": "https://www.booking.com/hotel/at/caroline.en-gb.html" },
-        { "label": "Booking.com Vienna", "url": "https://www.booking.com/city/at/vienna.html" }
+        { "label": "Hotel Caroline (Booking)", "url": "https://www.booking.com/hotel/at/caroline.en-gb.html" }
       ]
     },
     {

@@ -26,7 +26,7 @@
       "sections": [
         {
           "title": "Accommodation",
-          "items": ["Hotel in central Vienna (4 nights, Jan 29 - Feb 2)"]
+          "items": ["Hotel Caroline (4 nights, Jan 29 - Feb 2)"]
         },
         {
           "title": "Day 1 (Jan 29) - Transport",
@@ -107,7 +107,7 @@
         { "name": "Salzburg Hbf", "lat": 47.813, "lng": 13.0459 }
       ],
       "image": {
-        "src": "/images/header-card/vienna/salzburg.svg",
+        "src": "/images/header-card/vienna/salzbourg.jpg",
         "alt": "Salzburg",
         "position": "center 60%"
       },
@@ -169,7 +169,7 @@
         { "name": "Hallstatt", "lat": 47.5615, "lng": 13.6449 }
       ],
       "image": {
-        "src": "/images/header-card/vienna/hallstatt.svg",
+        "src": "/images/header-card/vienna/hallstatt.jpg",
         "alt": "Hallstatt",
         "position": "center 60%"
       },
@@ -304,7 +304,7 @@
         { "name": "Fussen", "lat": 47.5714, "lng": 10.7007 }
       ],
       "image": {
-        "src": "/images/header-card/vienna/neuschwanstein.svg",
+        "src": "/images/header-card/vienna/neuschwanstein.jpg",
         "alt": "Neuschwanstein Castle",
         "position": "center 55%"
       },
