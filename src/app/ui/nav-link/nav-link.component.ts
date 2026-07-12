@@ -3,7 +3,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { cva } from 'class-variance-authority';
 
 const navLinkStyles = cva(
-  'rounded-full border border-transparent px-3 py-2 text-sm font-medium transition hover:bg-black/[0.04]',
+  'block rounded-full border border-transparent px-3 py-2 text-sm font-medium transition hover:bg-black/[0.04] md:inline-block',
   {
     variants: {
       tone: {

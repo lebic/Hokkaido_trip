@@ -1,6 +1,6 @@
 <div class="relative z-0 min-h-screen overflow-x-hidden text-[color:var(--tb-ink)]">
   <header
-    class="tb-glass fixed left-0 right-0 top-0 z-30 flex items-center justify-between gap-4 border-b border-white/40 px-5 py-3.5 sm:px-6"
+    class="fixed left-0 right-0 top-0 z-30 flex items-center justify-between gap-4 border-b border-black/5 bg-white/80 px-5 py-3.5 backdrop-blur-xl sm:px-6"
   >
     <a routerLink="/voyages" class="flex items-center gap-3">
       <span class="tb-accent-bg flex h-9 w-9 items-center justify-center rounded-xl text-base shadow-sm" aria-hidden="true">✦</span>
@@ -30,7 +30,7 @@
 
     <nav
       id="site-nav"
-      class="tb-glass absolute left-4 right-4 top-full mt-2 flex flex-col gap-1 rounded-2xl border border-white/50 p-3 shadow-xl shadow-black/10 md:static md:mt-0 md:!flex md:flex-row md:items-center md:gap-1 md:border-0 md:!bg-transparent md:p-0 md:shadow-none md:backdrop-blur-none"
+      class="absolute left-4 right-4 top-full z-40 mt-2 flex flex-col gap-1 rounded-2xl border border-black/10 bg-white/95 p-3 shadow-2xl shadow-black/20 backdrop-blur-xl md:static md:z-auto md:mt-0 md:!flex md:flex-row md:items-center md:gap-1 md:border-0 md:!bg-transparent md:p-0 md:shadow-none md:backdrop-blur-none"
       [class.hidden]="!isMenuOpen()"
     >
       <app-nav-link to="/voyages" (click)="closeMenu()">{{ translationService.t().nav.voyages }}</app-nav-link>

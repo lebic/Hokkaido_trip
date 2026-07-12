@@ -54,7 +54,6 @@ export class TravelService {
   readonly hebergementsData = computed(() => this.localeData().hebergements);
   readonly transportsData = computed(() => this.localeData().transports);
   readonly activitesData = computed(() => this.localeData().activites);
-  readonly reservationsData = computed(() => this.localeData().reservations);
 
   /** Vue "centrée étape" dérivée de l'itinéraire (source unique de vérité). */
   readonly stages = computed(() => buildStages(this.itineraireData() as unknown as RawTripData));
