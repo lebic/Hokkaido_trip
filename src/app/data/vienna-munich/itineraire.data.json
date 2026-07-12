@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Itineraire",
     "title": "Autriche & Baviere : Vienne -> Munich",
-    "description": "Cout total estime : +-1600 EUR. Vienne, Salzbourg, Hallstatt puis Munich, en train.",
+    "description": "Cout total estime : +-1600 EUR. Vienne, Salzbourg, Hallstatt, Munich et Neuschwanstein, en train.",
     "duration": "12 jours / 11 nuits",
     "date": "29 Jan au 9 Fev 2027"
   },
@@ -106,9 +106,9 @@
         { "name": "Salzburg Hbf", "lat": 47.813, "lng": 13.0459 }
       ],
       "image": {
-        "src": "/images/placeholders/city.svg",
+        "src": "/images/header-card/vienna/salzburg.svg",
         "alt": "Salzbourg",
-        "position": "center 50%"
+        "position": "center 60%"
       },
       "sections": [
         {
@@ -168,9 +168,9 @@
         { "name": "Hallstatt", "lat": 47.5615, "lng": 13.6449 }
       ],
       "image": {
-        "src": "/images/placeholders/lake.svg",
+        "src": "/images/header-card/vienna/hallstatt.svg",
         "alt": "Hallstatt",
-        "position": "center 50%"
+        "position": "center 60%"
       },
       "sections": [
         {
@@ -213,11 +213,11 @@
       ]
     },
     {
-      "chip": "5 - 9 Fev",
+      "chip": "5 - 8 Fev",
       "tone": "forest",
       "title": "Munich",
       "location": "Munich, Allemagne",
-      "description": "Quatre nuits dans la capitale bavaroise : bieres, baroque et musees de classe mondiale.",
+      "description": "Trois nuits dans la capitale bavaroise : bieres, baroque et musees de classe mondiale.",
       "transportMode": "train",
       "routeWaypoints": [
         { "name": "Hallstatt", "lat": 47.5615, "lng": 13.6449 },
@@ -231,7 +231,7 @@
       "sections": [
         {
           "title": "Hebergement",
-          "items": ["Hotel a Munich centre-ville (4 nuits, 5 - 9 fev)"]
+          "items": ["Maritim Hotel München (3 nuits, 5 - 8 fev)"]
         },
         {
           "title": "Transport",
@@ -282,21 +282,66 @@
               "text": "Alte Pinakothek",
               "url": "https://maps.google.com/?q=48.1485,11.5700"
             },
-            "Quartier de Maxvorstadt"
+            {
+              "text": "Palais de Nymphenburg et jardins (optionnel)",
+              "url": "https://maps.google.com/?q=48.1583,11.5033"
+            },
+            "Dernier soir a Munich (Maxvorstadt)"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "8 - 9 Fev",
+      "tone": "berry",
+      "title": "Fussen & Neuschwanstein",
+      "location": "Fussen, Allemagne",
+      "description": "Derniere nuit au pied des Alpes, pres du chateau de conte de fees de Neuschwanstein.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Munchen Hbf", "lat": 48.1402, "lng": 11.56 },
+        { "name": "Fussen", "lat": 47.5714, "lng": 10.7007 }
+      ],
+      "image": {
+        "src": "/images/header-card/vienna/neuschwanstein.svg",
+        "alt": "Chateau de Neuschwanstein",
+        "position": "center 55%"
+      },
+      "sections": [
+        {
+          "title": "Hebergement",
+          "items": ["Hotel a Fussen ou Hohenschwangau (1 nuit, 8 - 9 fev)"]
+        },
+        {
+          "title": "Transport",
+          "items": [
+            "Train Munich -> Fussen (~2h, direct ou via Buchloe)",
+            "Bus 73/78 Fussen -> Hohenschwangau (~10 min) pour les chateaux"
           ]
         },
         {
-          "title": "Jour 4 (8 fev) - Activites",
+          "title": "Activites",
           "items": [
             {
-              "text": "Excursion possible : chateau de Neuschwanstein (train + bus)",
+              "text": "Chateau de Neuschwanstein (billets horodates a reserver)",
               "url": "https://maps.google.com/?q=47.5576,10.7498"
             },
             {
-              "text": "Ou Palais de Nymphenburg et jardins",
-              "url": "https://maps.google.com/?q=48.1583,11.5033"
+              "text": "Chateau de Hohenschwangau",
+              "url": "https://maps.google.com/?q=47.5560,10.7297"
             },
-            "Dernier repas bavarois"
+            {
+              "text": "Marienbrucke (vue sur le chateau)",
+              "url": "https://maps.google.com/?q=47.5580,10.7497"
+            },
+            {
+              "text": "Lac Alpsee",
+              "url": "https://maps.google.com/?q=47.5510,10.7300"
+            },
+            {
+              "text": "Vieille ville de Fussen",
+              "url": "https://maps.google.com/?q=47.5710,10.7010"
+            }
           ]
         }
       ]
@@ -305,8 +350,8 @@
       "chip": "9 Fev",
       "tone": "clay",
       "title": "Retour Luxembourg",
-      "location": "Munich -> Luxembourg",
-      "description": "Dernier matin a Munich, vol de retour vers Luxembourg.",
+      "location": "Fussen -> Luxembourg",
+      "description": "Dernier matin pres de Neuschwanstein, retour vers Munich puis vol pour Luxembourg.",
       "transportMode": "flight",
       "routeWaypoints": [
         { "name": "Munich Airport (MUC)", "lat": 48.3537, "lng": 11.775 },
@@ -321,7 +366,7 @@
         {
           "title": "Transport",
           "items": [
-            "S-Bahn ou navette depuis l'hotel vers Munich Airport (MUC)",
+            "Train Fussen -> Munich (~2h), puis S-Bahn vers Munich Airport (MUC)",
             "Vol Munich (MUC) -> Luxembourg (LUX)",
             "Retour a la maison"
           ]

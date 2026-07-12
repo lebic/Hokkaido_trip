@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Accommodation",
     "title": "Accommodation to book",
-    "description": "Estimated total accommodation budget: ~1210 EUR"
+    "description": "Estimated total accommodation budget: ~1240 EUR"
   },
   "cards": [
     {
@@ -15,11 +15,15 @@
       "description": "City-centre hotel, close to transport.",
       "sections": [
         { "title": "Budget", "items": ["~400 EUR (100 EUR / night)"] },
-        { "title": "Status", "items": ["To book"] },
-        { "title": "Recommended options", "items": ["Innere Stadt (1st district)", "Near the Ring / Stephansplatz", "Mariahilf district (lively)"] },
-        { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
+        { "title": "Status", "items": ["Booked - see confirmation (Drive)"] },
+        { "title": "Recommended options", "items": ["Hotel Caroline (booked)", "Innere Stadt (1st district)", "Near the Ring / Stephansplatz", "Mariahilf district (lively)"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation (see Drive)"] }
       ],
-      "links": [{ "label": "Booking.com Vienna", "url": "https://www.booking.com/city/at/vienna.html" }]
+      "links": [
+        { "label": "My confirmation (Drive)", "url": "https://drive.google.com/file/d/1nXRW4c-j5UCKM_8j8Fm7POTPnYCIvjw2/view?usp=drive_link" },
+        { "label": "Hotel Caroline (Booking)", "url": "https://www.booking.com/hotel/at/caroline.en-gb.html" },
+        { "label": "Booking.com Vienna", "url": "https://www.booking.com/city/at/vienna.html" }
+      ]
     },
     {
       "chip": "Feb 2 - 4",
@@ -54,20 +58,39 @@
       "links": [{ "label": "Booking.com Hallstatt", "url": "https://www.booking.com/city/at/hallstatt.html" }]
     },
     {
-      "chip": "Feb 5 - 9",
+      "chip": "Feb 5 - 8",
       "tone": "forest",
-      "title": "Munich (4 nights)",
+      "title": "Maritim Hotel München (3 nights)",
       "location": "Munich, Germany",
-      "nights": "4 nights",
+      "nights": "3 nights",
       "priority": 2,
-      "description": "City centre, close to sights and the station.",
+      "description": "Booked. Queen-size bed room, 2 adults, breakfast not included.",
       "sections": [
-        { "title": "Budget", "items": ["~440 EUR (110 EUR / night)"] },
-        { "title": "Status", "items": ["To book"] },
-        { "title": "Recommended options", "items": ["Altstadt (near Marienplatz)", "Near Munchen Hauptbahnhof", "Ludwigsvorstadt district"] },
-        { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
+        { "title": "Budget", "items": ["349 EUR (2 guests, 3 nights) - pay at the property"] },
+        { "title": "Status", "items": ["Booked - see confirmation (Drive)"] },
+        { "title": "Reservation", "items": ["Goethestr. 7, Ludwigsvorstadt, 80336 Munich", "Check-in Fri Feb 5 (from 3pm) -> Check-out Mon Feb 8 (by noon)", "Queen-size bed room, 2 adults", "Free cancellation until Feb 3, 2027", "Public parking ~32 EUR/day (tell reception) - free WiFi"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation (see Drive)"] }
       ],
-      "links": [{ "label": "Booking.com Munich", "url": "https://www.booking.com/city/de/munich.html" }]
+      "links": [
+        { "label": "My confirmation (Drive)", "url": "https://drive.google.com/file/d/1GjKIk1zAidd8BzlFXFkWzzzRaPFKRBEF/view?usp=drive_link" },
+        { "label": "Maritim Hotel München (Booking)", "url": "https://www.booking.com/hotel/de/maritimmuenchen.en-gb.html" }
+      ]
+    },
+    {
+      "chip": "Feb 8 - 9",
+      "tone": "berry",
+      "title": "Fussen / Neuschwanstein (1 night)",
+      "location": "Fussen, Germany",
+      "nights": "1 night",
+      "priority": 1,
+      "description": "Last night near Neuschwanstein Castle.",
+      "sections": [
+        { "title": "Budget", "items": ["~140 EUR"] },
+        { "title": "Status", "items": ["To book (few hotels in the area)"] },
+        { "title": "Recommended options", "items": ["Fussen centre (old town + station)", "Hohenschwangau (foot of the castles)", "Schwangau (near Neuschwanstein)"] },
+        { "title": "To check", "items": ["Train Munich -> Fussen (~2h)", "Bus to Hohenschwangau"] }
+      ],
+      "links": [{ "label": "Booking.com Fussen", "url": "https://www.booking.com/city/de/fussen.html" }]
     }
   ]
 }

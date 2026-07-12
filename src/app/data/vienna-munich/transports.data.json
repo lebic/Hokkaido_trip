@@ -59,6 +59,19 @@
       ]
     },
     {
+      "chip": "8 - 9 Fev",
+      "tone": "berry",
+      "title": "Train Munich <-> Fussen",
+      "category": "train",
+      "toReserve": true,
+      "description": "Aller le 8, retour vers Munich le 9 (aeroport). ~2h par trajet.",
+      "sections": [
+        { "title": "Reservation", "items": ["Munich -> Fussen (8 fev)", "Fussen -> Munich (9 fev, avant le vol)", "Bus 73/78 vers Hohenschwangau sur place"] },
+        { "title": "A verifier", "items": ["Correspondance a Buchloe selon l'horaire", "Bayern-Ticket possible (illimite en Baviere)"] }
+      ],
+      "links": [{ "label": "Deutsche Bahn", "url": "https://www.bahn.com/en" }]
+    },
+    {
       "chip": "9 Fev",
       "tone": "clay",
       "title": "Vol Munich -> Luxembourg",

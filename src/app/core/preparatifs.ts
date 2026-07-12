@@ -24,6 +24,8 @@ export interface PrepItem {
   stageIndex: number | null;
   /** Options candidates (ex : hôtels recommandés) — surtout pour les séjours. */
   options: string[];
+  /** Détails d'une réservation confirmée (adresse, dates, conditions…). */
+  reservation: string[];
 }
 
 export interface PrepGroup {
@@ -116,6 +118,7 @@ export function buildPreparatifs(opts: {
       links: c.links ?? [],
       stageIndex: matchStage(stages, c.title),
       options: [],
+      reservation: [],
     }));
 
   // --- Hébergements (une carte = un séjour à réserver) ---
@@ -131,6 +134,7 @@ export function buildPreparatifs(opts: {
       links: c.links ?? [],
       stageIndex: matchStage(stages, c.location),
       options: collectSection(c, 'option'),
+      reservation: collectSection(c, 'reserv'),
     }));
 
   // --- Activités à réserver ---
@@ -144,6 +148,7 @@ export function buildPreparatifs(opts: {
     links: a.links ?? [],
     stageIndex: matchStage(stages, a.location),
     options: [],
+    reservation: [],
   }));
 
   // --- Documents (déduits des sections "Documents" existantes, dédupliqués) ---
@@ -168,6 +173,7 @@ export function buildPreparatifs(opts: {
           links: [],
           stageIndex: null,
           options: [],
+          reservation: [],
         });
       }
     }

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { TravelService } from '../../services/travel.service';
 import { TranslationService } from '../../services/translation.service';
 import { RevealDirective } from '../../ui/reveal/reveal.directive';
+import { MagneticDirective } from '../../ui/magnetic/magnetic.directive';
 import { resolveCardImage } from '../../utils/card-images';
 import { transportMeta, type CardTone, type Stage } from '../../core/trip-stages';
 import type { TransportMode } from '../../ui/route-map/route-map.component';
@@ -22,7 +23,7 @@ const TONE_STYLES: Record<CardTone, ToneStyle> = {
 @Component({
   selector: 'app-journey',
   standalone: true,
-  imports: [RevealDirective],
+  imports: [RevealDirective, MagneticDirective],
   templateUrl: './journey.component.html',
 })
 export class JourneyComponent {
@@ -70,5 +71,16 @@ export class JourneyComponent {
   /** Délai en cascade pour l'apparition au scroll (plafonné). */
   protected revealDelay(index: number): number {
     return Math.min(index, 4) * 60;
+  }
+
+  private readonly photoRotations = ['-3deg', '2.2deg', '-1.6deg', '3deg', '-2.4deg', '1.6deg'];
+
+  /** Légère inclinaison "photo collée" variant selon l'étape. */
+  protected photoRotation(index: number): string {
+    return this.photoRotations[index % this.photoRotations.length];
+  }
+
+  protected tapeRotation(index: number): string {
+    return index % 2 === 0 ? '-24deg' : '18deg';
   }
 }

@@ -55,7 +55,7 @@
         <span class="text-[0.85rem] font-semibold text-[color:var(--tb-ink)]">
           @if (isActive) { {{ t.travels.viewItinerary }} } @else { {{ t.travels.select }} }
         </span>
-        <span class="tb-accent-bg flex h-8 w-8 items-center justify-center rounded-full shadow-sm transition-transform duration-300 group-hover:translate-x-1">
+        <span [appMagnetic]="0.5" class="tb-accent-bg flex h-8 w-8 items-center justify-center rounded-full shadow-sm">
           <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M3 8h10M9 4l4 4-4 4" />
           </svg>

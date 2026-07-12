@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { TravelService } from '../../services/travel.service';
 import { TranslationService } from '../../services/translation.service';
 import { RouteMapComponent } from '../../ui/route-map/route-map.component';
+import { MagneticDirective } from '../../ui/magnetic/magnetic.directive';
 import { resolveCardImage } from '../../utils/card-images';
 import { transportMeta, type CardTone, type Stage, type StageItem } from '../../core/trip-stages';
 import type { TransportMode } from '../../ui/route-map/route-map.component';
@@ -18,7 +19,7 @@ const TONE_ACCENT: Record<CardTone, string> = {
 @Component({
   selector: 'app-stage',
   standalone: true,
-  imports: [RouteMapComponent],
+  imports: [RouteMapComponent, MagneticDirective],
   templateUrl: './stage.component.html',
 })
 export class StageComponent {

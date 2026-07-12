@@ -59,6 +59,19 @@
       ]
     },
     {
+      "chip": "Feb 8 - 9",
+      "tone": "berry",
+      "title": "Train Munich <-> Fussen",
+      "category": "train",
+      "toReserve": true,
+      "description": "Out on the 8th, back to Munich (airport) on the 9th. ~2h each way.",
+      "sections": [
+        { "title": "Booking", "items": ["Munich -> Fussen (Feb 8)", "Fussen -> Munich (Feb 9, before the flight)", "Bus 73/78 to Hohenschwangau on site"] },
+        { "title": "To check", "items": ["Change at Buchloe depending on schedule", "Bayern-Ticket possible (unlimited in Bavaria)"] }
+      ],
+      "links": [{ "label": "Deutsche Bahn", "url": "https://www.bahn.com/en" }]
+    },
+    {
       "chip": "Feb 9",
       "tone": "clay",
       "title": "Flight Munich -> Luxembourg",

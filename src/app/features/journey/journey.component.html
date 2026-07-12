@@ -15,6 +15,7 @@
   <button
     type="button"
     (click)="backToTrips()"
+    appMagnetic
     class="tb-glass absolute left-5 top-[5.5rem] inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[0.72rem] font-semibold text-[color:var(--tb-ink)] transition hover:bg-white/80 sm:left-6"
   >
     <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -107,19 +108,27 @@
         [attr.aria-label]="t.journey.openStage + ' ' + stage.chip + ' ' + stage.title"
       >
         <div class="flex gap-3.5 p-3">
-          <div class="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl sm:h-28 sm:w-28">
-            <img
-              class="h-full w-full scale-105 object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-125"
-              [src]="imageSrc(stage)"
-              [alt]="imageAlt(stage)"
-              [style.object-position]="imagePosition(stage)"
-              loading="lazy"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div class="relative shrink-0 self-center py-1" [style.--rot]="photoRotation(i)">
+            <span
+              class="tb-tape absolute -top-1 left-5 z-10 w-11 rounded-[1px]"
+              [style.transform]="'rotate(' + tapeRotation(i) + ')'"
+              aria-hidden="true"
+            ></span>
+            <div class="tb-photo">
+              <div class="relative h-[4.75rem] w-[4.75rem] overflow-hidden sm:h-[5.5rem] sm:w-[5.5rem]">
+                <img
+                  class="h-full w-full object-cover"
+                  [src]="imageSrc(stage)"
+                  [alt]="imageAlt(stage)"
+                  [style.object-position]="imagePosition(stage)"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
 
           <div class="flex min-w-0 flex-1 flex-col justify-center">
-            <span class="inline-flex w-fit items-center rounded-full px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-wide" [class]="tone(stage).chip">
+            <span class="tb-stamp inline-flex w-fit items-center text-[0.58rem] font-bold uppercase" [class]="tone(stage).chip">
               {{ stage.chip }}
             </span>
             <h2 class="mt-1.5 truncate font-display text-[1.15rem] font-semibold leading-snug text-[color:var(--tb-ink)]">{{ stage.title }}</h2>

@@ -3,11 +3,12 @@ import { Router } from '@angular/router';
 import { TravelService } from '../../services/travel.service';
 import { TranslationService } from '../../services/translation.service';
 import { RevealDirective } from '../../ui/reveal/reveal.directive';
+import { MagneticDirective } from '../../ui/magnetic/magnetic.directive';
 
 @Component({
   selector: 'app-travels',
   standalone: true,
-  imports: [RevealDirective],
+  imports: [RevealDirective, MagneticDirective],
   templateUrl: './travels.component.html',
 })
 export class TravelsComponent {

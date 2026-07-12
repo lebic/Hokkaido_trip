@@ -20,6 +20,7 @@
     <div class="tb-hero-tint absolute inset-0"></div>
 
     <button
+      appMagnetic
       class="tb-glass absolute left-5 top-[5.5rem] flex h-9 w-9 items-center justify-center rounded-full text-[color:var(--tb-ink)] transition hover:bg-white/80 sm:left-6"
       (click)="goToJourney()"
       [attr.aria-label]="t.stage.backAria"
@@ -81,6 +82,17 @@
                 <ul class="mt-0.5 flex flex-wrap gap-1.5">
                   @for (opt of stay.options; track opt) {
                     <li class="rounded-full bg-black/[0.05] px-2 py-0.5 text-[0.72rem] text-[color:var(--tb-ink)]/80">{{ opt }}</li>
+                  }
+                </ul>
+              }
+              @if (stay && stay.reservation.length > 0) {
+                <p class="mt-2 text-[0.55rem] font-semibold uppercase tracking-widest text-[color:var(--tb-muted)]">{{ t.stage.reservation }}</p>
+                <ul class="mt-1 space-y-1">
+                  @for (r of stay.reservation; track r) {
+                    <li class="flex items-start gap-2 text-[0.78rem] text-[color:var(--tb-ink)]/85">
+                      <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full" [style.background]="'var(--tb-accent)'"></span>
+                      <span>{{ r }}</span>
+                    </li>
                   }
                 </ul>
               }

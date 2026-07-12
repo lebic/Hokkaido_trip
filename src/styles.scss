@@ -134,6 +134,64 @@
 }
 
 /* =========================================================
+   Travel-book / scrapbook accents
+   ========================================================= */
+/* Photo "collée" façon polaroïd, légèrement inclinée, redressée au survol. */
+.tb-photo {
+	background: #fffdf7;
+	padding: 5px 5px 9px;
+	border-radius: 3px;
+	box-shadow:
+		0 8px 16px -8px rgba(40, 26, 12, 0.55),
+		0 1px 0 rgba(0, 0, 0, 0.05);
+	transform: rotate(var(--rot, 0deg));
+	transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tb-photo img {
+	border-radius: 2px;
+}
+.group:hover .tb-photo {
+	transform: rotate(0deg) scale(1.04);
+}
+
+/* Bande de scotch washi translucide. */
+.tb-tape {
+	position: absolute;
+	z-index: 3;
+	height: 18px;
+	background: rgba(226, 208, 160, 0.62);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+	mix-blend-mode: multiply;
+}
+.tb-tape::before,
+.tb-tape::after {
+	content: "";
+	position: absolute;
+	inset: 0 -1px;
+	background: inherit;
+	opacity: 0.5;
+}
+
+/* Tampon encreur (chip de date). */
+.tb-stamp {
+	font-family: "Inter", sans-serif;
+	letter-spacing: 0.12em;
+	border: 1.5px solid currentColor;
+	border-radius: 4px;
+	padding: 1px 7px;
+	transform: rotate(-2.5deg);
+	opacity: 0.92;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tb-photo,
+	.group:hover .tb-photo {
+		transform: rotate(var(--rot, 0deg));
+		transition: none;
+	}
+}
+
+/* =========================================================
    Cinematic motion
    ========================================================= */
 @keyframes tb-kenburns {
