@@ -4,8 +4,8 @@
       type="button"
       (click)="translationService.setLocale(locale.code)"
       [class]="translationService.locale() === locale.code
-        ? 'rounded-full border border-zinc-900/20 bg-zinc-900/8 px-3 py-2 text-sm font-semibold text-zinc-900 transition'
-        : 'rounded-full border border-transparent px-3 py-2 text-sm font-semibold text-zinc-400 transition hover:border-zinc-900/20 hover:bg-zinc-900/5 hover:text-zinc-900'"
+        ? 'tb-accent-soft rounded-full px-3 py-2 text-sm font-semibold transition'
+        : 'rounded-full border border-transparent px-3 py-2 text-sm font-medium text-[color:var(--tb-muted)] transition hover:bg-black/[0.04] hover:text-[color:var(--tb-ink)]'"
     >
       {{ locale.flag }}&nbsp;{{ locale.code | uppercase }}
     </button>

@@ -2,68 +2,39 @@
   "hero": {
     "eyebrow": "Activites",
     "title": "Activites a reserver",
-    "description": "Experiences necessitant une reservation ou une planification a l'avance. Les details jour par jour sont dans l'itineraire."
+    "description": "Experiences necessitant une reservation ou des billets a l'avance. Les details jour par jour sont dans l'itineraire."
   },
   "activities": [
     {
-      "chip": "Vienne - Jour 3",
-      "title": "Musee du Belvedere",
+      "chip": "30 Jan",
+      "title": "Concert de musique classique",
       "location": "Vienne, Autriche",
-      "description": "Célèbre pour 'Le Baiser' de Klimt. File d'attente possible, billet en ligne conseille.",
+      "description": "Soiree concert le 30 au soir. Reserver a l'avance (Musikverein, Konzerthaus ou Staatsoper selon programme).",
       "links": [
-        {
-          "label": "Belvedere Museum",
-          "url": "https://www.belvedere.at/en"
-        }
+        { "label": "Musikverein", "url": "https://www.musikverein.at/en" },
+        { "label": "Wiener Konzerthaus", "url": "https://www.konzerthaus.at/en" }
       ]
     },
     {
-      "chip": "Vienne - Jour 2",
-      "title": "Palais de Schonbrunn",
-      "location": "Vienne, Autriche",
-      "description": "Ancienne residence imperiale des Habsbourg. Visite guidee recommandee, billet en ligne pour eviter la file.",
-      "links": [
-        {
-          "label": "Schönbrunn Palace",
-          "url": "https://www.schoenbrunn.at/en/"
-        }
-      ]
+      "chip": "3 Fev",
+      "title": "Forteresse Hohensalzburg",
+      "location": "Salzbourg, Autriche",
+      "description": "Funiculaire + billet d'entree. Reserver un creneau en haute saison.",
+      "links": [{ "label": "Salzburg Burgen", "url": "https://www.salzburg-burgen.at/en/hohensalzburg-fortress/" }]
     },
     {
-      "chip": "Vienne - Jour 4",
-      "title": "Excursion a Hallstatt (bus)",
+      "chip": "4-5 Fev",
+      "title": "Salzwelten Hallstatt (mine de sel)",
       "location": "Hallstatt, Autriche",
-      "description": "Village de conte de fees au bord du lac, inscrit au patrimoine mondial UNESCO. Journee complete en bus organise depuis Vienne. Inclut generalement la mine de sel, le Skywalk et le village.",
-      "links": [
-        {
-          "label": "Hallstatt Salt Mine",
-          "url": "https://www.salzwelten.at/en/hallstatt/"
-        }
-      ]
+      "description": "Plus vieille mine de sel du monde + funiculaire. Verifier ouverture hivernale.",
+      "links": [{ "label": "Salzwelten Hallstatt", "url": "https://www.salzwelten.at/en/hallstatt/" }]
     },
     {
-      "chip": "Munich - Jour 9",
-      "title": "Munich Residence",
+      "chip": "8 Fev",
+      "title": "Chateau de Neuschwanstein",
       "location": "Munich, Allemagne",
-      "description": "Munich Residence, ancienne residence des ducs et rois de Baviere. Visite guidee recommandee pour decouvrir les appartements royaux et le tresor.",
-      "links": [
-        {
-          "label": "Munich Residence",
-          "url": "https://www.residenz-muenchen.de/englisch/museum/index.htm"
-        }
-      ]
-    },
-    {
-      "chip": "Munich - Jour 7",
-      "title": "Deutsches Museum",
-      "location": "Munich, Allemagne",
-      "description": "Plus grand musee des sciences et techniques du monde. Prevoir au moins une demi-journee.",
-      "links": [
-        {
-          "label": "Deutsches Museum",
-          "url": "https://www.deutsches-museum.de/en"
-        }
-      ]
+      "description": "Excursion depuis Munich. Billets a reserver a l'avance (creneaux horodates).",
+      "links": [{ "label": "Billets Neuschwanstein", "url": "https://www.hohenschwangau.de/" }]
     }
   ]
 }

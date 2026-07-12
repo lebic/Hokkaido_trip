@@ -1,178 +1,85 @@
 {
   "hero": {
     "eyebrow": "Transport",
-    "title": "3 main transports to book",
-    "description": "Outbound flight, intercity train and return flight."
+    "title": "Return flights + trains between cities",
+    "description": "Flights Luxembourg <-> airports, then ÖBB/DB trains between Vienna, Salzburg, Hallstatt and Munich."
   },
   "cards": [
     {
-      "chip": "Day 1",
+      "chip": "Jan 29",
       "tone": "forest",
-      "title": "Flight Luxembourg → Vienna",
+      "title": "Flight Luxembourg -> Vienna",
       "category": "vol",
       "toReserve": true,
-      "description": "Outbound flight Luxembourg (LUX) to Vienna (VIE).",
-      "image": {
-        "src": "/images/placeholders/airport.svg",
-        "alt": "Luxembourg Airport",
-        "position": "center 40%"
-      },
+      "description": "Outbound flight to Vienna (VIE).",
       "sections": [
-        {
-          "title": "Booking",
-          "items": [
-            "Outbound ticket Luxembourg (LUX) → Vienna (VIE)",
-            "Date: January 29, 2027",
-            "Check hold luggage and baggage allowance"
-          ]
-        },
-        {
-          "title": "From the airport",
-          "items": [
-            "CAT or S7 S-Bahn from Vienna Airport to city centre (16-30 min)",
-            "Ticket valid on Vienna public transport"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passport or national ID",
-            "Email confirmation"
-          ]
-        }
-      ]
+        { "title": "Booking", "items": ["Ticket Luxembourg (LUX) -> Vienna (VIE)", "Check baggage"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
+      ],
+      "links": [{ "label": "Luxair", "url": "https://www.luxair.lu/en" }]
     },
     {
-      "chip": "Day 5",
+      "chip": "Feb 2",
       "tone": "clay",
-      "title": "Train Vienna → Munich (Railjet)",
+      "title": "Railjet Vienna -> Salzburg",
       "category": "train",
       "toReserve": true,
-      "description": "ÖBB Railjet high-speed train from Wien Hbf to München Hbf.",
-      "image": {
-        "src": "/images/placeholders/train.svg",
-        "alt": "Railjet train",
-        "position": "center 50%"
-      },
+      "description": "Railjet train, ~2h30. Reserve a seat.",
       "sections": [
-        {
-          "title": "Journey",
-          "items": [
-            "Wien Hauptbahnhof → München Hauptbahnhof",
-            "Duration: approximately 4 hours",
-            "Date: February 3, 2027"
-          ]
-        },
-        {
-          "title": "Booking",
-          "items": [
-            "Book on ÖBB or Deutsche Bahn",
-            "Sparschiene fares available 6 months in advance",
-            "2nd class is sufficient"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passport or national ID",
-            "E-ticket"
-          ]
-        }
+        { "title": "Booking", "items": ["Wien Hbf -> Salzburg Hbf", "Book early (Sparschiene fare)"] }
+      ],
+      "links": [{ "label": "ÖBB", "url": "https://www.oebb.at/en" }]
+    },
+    {
+      "chip": "Feb 4",
+      "tone": "berry",
+      "title": "Train Salzburg -> Hallstatt",
+      "category": "train",
+      "toReserve": true,
+      "description": "~2h20 via Attnang-Puchheim. Subject to going to Hallstatt.",
+      "sections": [
+        { "title": "Booking", "items": ["Salzburg Hbf -> Hallstatt", "Then ferry shuttle to the village"] },
+        { "title": "To check", "items": ["Winter train times", "Connection at Attnang-Puchheim"] }
+      ],
+      "links": [{ "label": "ÖBB", "url": "https://www.oebb.at/en" }]
+    },
+    {
+      "chip": "Feb 5",
+      "tone": "forest",
+      "title": "Train Hallstatt -> Munich",
+      "category": "train",
+      "toReserve": true,
+      "description": "~3h-4h via Salzburg.",
+      "sections": [
+        { "title": "Booking", "items": ["Hallstatt -> Munchen Hbf (via Salzburg)", "Book early"] }
       ],
       "links": [
-        {
-          "label": "ÖBB (Austria)",
-          "url": "https://www.oebb.at/en/"
-        },
-        {
-          "label": "Deutsche Bahn",
-          "url": "https://www.bahn.de/en"
-        }
+        { "label": "ÖBB", "url": "https://www.oebb.at/en" },
+        { "label": "Deutsche Bahn", "url": "https://www.bahn.com/en" }
       ]
     },
     {
-      "chip": "Day 11",
-      "tone": "berry",
-      "title": "Flight Munich → Luxembourg",
+      "chip": "Feb 9",
+      "tone": "clay",
+      "title": "Flight Munich -> Luxembourg",
       "category": "vol",
       "toReserve": true,
-      "description": "Return flight Munich (MUC) to Luxembourg (LUX).",
-      "image": {
-        "src": "/images/placeholders/airport.svg",
-        "alt": "Munich Airport",
-        "position": "center 40%"
-      },
+      "description": "Return flight from Munich (MUC).",
       "sections": [
-        {
-          "title": "Booking",
-          "items": [
-            "Return ticket Munich (MUC) → Luxembourg (LUX)",
-            "Date: February 8, 2027",
-            "Check check-in time"
-          ]
-        },
-        {
-          "title": "To the airport",
-          "items": [
-            "S8 from Munich Hauptbahnhof to Munich Airport (40 min)",
-            "Allow 2h before the flight"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passport or national ID",
-            "Email confirmation"
-          ]
-        }
-      ]
+        { "title": "Booking", "items": ["Ticket Munich (MUC) -> Luxembourg (LUX)", "Choose baggage option"] }
+      ],
+      "links": [{ "label": "Luxair", "url": "https://www.luxair.lu/en" }]
     },
     {
-      "chip": "On-site",
-      "tone": "forest",
-      "title": "Local transport Vienna",
+      "chip": "On site",
+      "tone": "berry",
+      "title": "Local transport",
       "category": "local",
       "toReserve": false,
-      "description": "Wiener Linien covers the centre very well with metro, tram and bus.",
+      "description": "Metro/tram in Vienna and Munich, on foot in Salzburg and Hallstatt.",
       "sections": [
-        {
-          "title": "Options",
-          "items": [
-            "24h or 48h ticket (multi-trip card)",
-            "Vienna City Card (includes museums and transport)",
-            "Main attractions are walkable from the centre"
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "Wiener Linien",
-          "url": "https://www.wienerlinien.at/en/"
-        }
-      ]
-    },
-    {
-      "chip": "On-site",
-      "tone": "clay",
-      "title": "Local transport Munich",
-      "category": "local",
-      "toReserve": false,
-      "description": "The MVV network (metro, tram, bus, S-Bahn) is very efficient.",
-      "sections": [
-        {
-          "title": "Options",
-          "items": [
-            "Tageskarte (day ticket)",
-            "IsarCard 7 days if needed",
-            "Munich City Tour Card (includes museums)"
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "MVV Munich",
-          "url": "https://www.mvv-muenchen.de/en/"
-        }
+        { "title": "Vienna", "items": ["Metro (U-Bahn) and tram", "24h/48h ticket or Vienna City Card"] },
+        { "title": "Munich", "items": ["U-Bahn/S-Bahn", "Day or group ticket"] }
       ]
     }
   ]

@@ -1,0 +1,163 @@
+@let t = translationService.t();
+@let heroData = hero();
+@let tripData = travel();
+
+<!-- ==================== CINEMATIC HERO ==================== -->
+<section class="relative -mx-5 -mt-24 mb-8 h-[400px] overflow-hidden sm:-mx-6 sm:h-[440px]">
+  <img
+    [src]="tripData.image"
+    [alt]="tripData.name"
+    class="tb-kenburns absolute inset-0 h-full w-full object-cover"
+    [style.object-position]="tripData.imagePosition ?? 'center 40%'"
+  />
+  <div class="tb-hero-tint absolute inset-0"></div>
+
+  <button
+    type="button"
+    (click)="backToTrips()"
+    class="tb-glass absolute left-5 top-[5.5rem] inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[0.72rem] font-semibold text-[color:var(--tb-ink)] transition hover:bg-white/80 sm:left-6"
+  >
+    <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 18l-6-6 6-6" />
+    </svg>
+    {{ t.journey.backToTrips }}
+  </button>
+
+  <div class="absolute inset-x-0 bottom-0 px-5 pb-7 sm:px-6">
+    <div class="mx-auto max-w-5xl">
+      <p class="mb-2 text-[0.66rem] font-semibold uppercase tracking-[0.28em] text-white/75">{{ tripData.subtitle }} · {{ heroData.eyebrow }}</p>
+      <h1 class="font-display text-[2.4rem] font-semibold leading-[1.02] tracking-tight text-white drop-shadow-md sm:text-[3.2rem]">{{ tripData.name }}</h1>
+
+      <div class="mt-4 flex flex-wrap items-center gap-2">
+        @if (heroData.date) {
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[0.74rem] font-medium text-white ring-1 ring-white/25 backdrop-blur-sm">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            {{ heroData.date }}
+          </span>
+        }
+        @if (heroData.duration) {
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[0.74rem] font-medium text-white ring-1 ring-white/25 backdrop-blur-sm">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+            </svg>
+            {{ heroData.duration }}
+          </span>
+        }
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[0.74rem] font-medium text-white ring-1 ring-white/25 backdrop-blur-sm">
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="10" r="3" /><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z" />
+          </svg>
+          {{ stages().length }} {{ t.journey.stagesLabel }}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Intro line -->
+<div class="mb-6 flex items-start justify-between gap-4">
+  <p class="max-w-2xl text-[0.9rem] leading-relaxed text-[color:var(--tb-muted)]">{{ heroData.description }}</p>
+</div>
+<p class="mb-5 flex items-center gap-1.5 text-[0.72rem] text-[color:var(--tb-muted)]">
+  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0" /><path d="M17.6 17.6L22 22" />
+  </svg>
+  {{ t.journey.tapHint }}
+</p>
+
+<!-- ==================== TIMELINE ==================== -->
+<ol class="relative">
+  @for (stage of stages(); track stage.index; let i = $index; let last = $last) {
+    <li [appReveal]="revealDelay(i)" class="grid grid-cols-[2.75rem_1fr] gap-x-3 sm:grid-cols-[3.25rem_1fr] sm:gap-x-4">
+      <!-- ---- Left rail : connector + node ---- -->
+      <div class="relative flex flex-col items-center">
+        @if (i > 0) {
+          <div class="relative flex w-full flex-1 justify-center">
+            <span class="absolute inset-y-0 w-[3px] rounded-full bg-black/[0.07]"></span>
+            <span class="tb-connector-fill absolute inset-y-0 w-[3px] rounded-full" [style.background]="'linear-gradient(to bottom, var(--tb-accent-soft), var(--tb-accent))'"></span>
+            @if (transportIcon(stage.transportMode); as icon) {
+              <span
+                class="tb-glass tb-glide absolute top-1/2 z-10 -translate-y-1/2 rounded-full px-1.5 py-1 text-[0.85rem] leading-none shadow-sm"
+                [attr.aria-label]="transportLabel(stage.transportMode)"
+                [attr.title]="transportLabel(stage.transportMode)"
+              >{{ icon }}</span>
+            }
+          </div>
+        } @else {
+          <div class="flex-1"></div>
+        }
+
+        <span
+          class="tb-node-badge relative z-10 my-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[0.8rem] font-bold text-white shadow-md ring-4 ring-[color:var(--tb-canvas)] sm:h-9 sm:w-9"
+          [class]="tone(stage).node"
+        >{{ i + 1 }}</span>
+
+        @if (!last) {
+          <span class="w-[3px] flex-1 rounded-full bg-black/[0.07]"></span>
+        }
+      </div>
+
+      <!-- ---- Card ---- -->
+      <button
+        type="button"
+        (click)="openStage(stage.index)"
+        class="tb-card group mb-5 w-full overflow-hidden rounded-2xl text-left transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_26px_50px_-28px_rgba(30,18,10,0.55)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--tb-accent)]"
+        [attr.aria-label]="t.journey.openStage + ' ' + stage.chip + ' ' + stage.title"
+      >
+        <div class="flex gap-3.5 p-3">
+          <div class="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl sm:h-28 sm:w-28">
+            <img
+              class="h-full w-full scale-105 object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-125"
+              [src]="imageSrc(stage)"
+              [alt]="imageAlt(stage)"
+              [style.object-position]="imagePosition(stage)"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          </div>
+
+          <div class="flex min-w-0 flex-1 flex-col justify-center">
+            <span class="inline-flex w-fit items-center rounded-full px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-wide" [class]="tone(stage).chip">
+              {{ stage.chip }}
+            </span>
+            <h2 class="mt-1.5 truncate font-display text-[1.15rem] font-semibold leading-snug text-[color:var(--tb-ink)]">{{ stage.title }}</h2>
+
+            @if (stage.location) {
+              <p class="mt-0.5 flex items-center gap-1 text-[0.78rem] text-[color:var(--tb-muted)]">
+                <svg class="h-3.5 w-3.5 shrink-0 tb-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z" /><circle cx="12" cy="9" r="2.5" />
+                </svg>
+                <span class="truncate">{{ stage.location }}</span>
+              </p>
+            }
+
+            <div class="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.72rem] text-[color:var(--tb-muted)]">
+              @if (stage.accommodation) {
+                <span class="flex items-center gap-1">
+                  <svg class="h-3.5 w-3.5 shrink-0 text-sky-500/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 22V6a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v16" /><path d="M21 22V10a1 1 0 0 0-1-1h-6" /><path d="M3 22h18" />
+                  </svg>
+                  <span class="max-w-[9rem] truncate">{{ stage.accommodation }}</span>
+                </span>
+              }
+              @if (stage.activityCount > 0) {
+                <span class="flex items-center gap-1">
+                  <svg class="h-3.5 w-3.5 shrink-0 tb-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6L9 17l-5-5" />
+                  </svg>
+                  {{ stage.activityCount }} {{ t.journey.activitiesLabel }}
+                </span>
+              }
+            </div>
+          </div>
+
+          <svg class="mt-1 h-4 w-4 shrink-0 self-center text-black/20 transition group-hover:translate-x-0.5 group-hover:text-[color:var(--tb-accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </div>
+      </button>
+    </li>
+  }
+</ol>

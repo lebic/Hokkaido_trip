@@ -3,11 +3,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { cva } from 'class-variance-authority';
 
 const navLinkStyles = cva(
-  'rounded-full border border-transparent px-3 py-2 text-sm font-semibold transition hover:border-zinc-900/20 hover:bg-zinc-900/5',
+  'rounded-full border border-transparent px-3 py-2 text-sm font-medium transition hover:bg-black/[0.04]',
   {
     variants: {
       tone: {
-        light: 'text-zinc-900',
+        light: 'text-[color:var(--tb-muted)] hover:text-[color:var(--tb-ink)]',
         dark: 'text-white hover:border-white/40 hover:bg-white/10'
       }
     },
@@ -29,7 +29,8 @@ export class NavLinkComponent {
   tone = input<'light' | 'dark'>('light');
   className = input<string>('');
 
-  protected readonly activeClasses = 'bg-zinc-900/10 border-zinc-900/40';
+  protected readonly activeClasses =
+    'tb-accent-soft !font-semibold border-transparent';
 
   readonly classes = computed(() => {
     const base = navLinkStyles({ tone: this.tone() });

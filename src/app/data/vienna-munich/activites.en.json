@@ -2,68 +2,39 @@
   "hero": {
     "eyebrow": "Activities",
     "title": "Activities to book",
-    "description": "Experiences requiring advance booking or planning. Day-by-day details are in the itinerary."
+    "description": "Experiences that need a booking or tickets in advance. Day-by-day details are in the itinerary."
   },
   "activities": [
     {
-      "chip": "Vienna - Day 3",
-      "title": "Belvedere Museum",
+      "chip": "Jan 30",
+      "title": "Classical music concert",
       "location": "Vienna, Austria",
-      "description": "Famous for Klimt's 'The Kiss'. Queue possible, online ticket recommended.",
+      "description": "Evening concert on the 30th. Book in advance (Musikverein, Konzerthaus or Staatsoper depending on the programme).",
       "links": [
-        {
-          "label": "Belvedere Museum",
-          "url": "https://www.belvedere.at/en"
-        }
+        { "label": "Musikverein", "url": "https://www.musikverein.at/en" },
+        { "label": "Wiener Konzerthaus", "url": "https://www.konzerthaus.at/en" }
       ]
     },
     {
-      "chip": "Vienna - Day 2",
-      "title": "Schönbrunn Palace",
-      "location": "Vienna, Austria",
-      "description": "Former imperial residence of the Habsburgs. Guided tour recommended, online ticket to skip the queue.",
-      "links": [
-        {
-          "label": "Schönbrunn Palace",
-          "url": "https://www.schoenbrunn.at/en/"
-        }
-      ]
+      "chip": "Feb 3",
+      "title": "Hohensalzburg Fortress",
+      "location": "Salzburg, Austria",
+      "description": "Funicular + entry ticket. Book a time slot in high season.",
+      "links": [{ "label": "Salzburg Burgen", "url": "https://www.salzburg-burgen.at/en/hohensalzburg-fortress/" }]
     },
     {
-      "chip": "Vienna - Day 4",
-      "title": "Hallstatt Day Trip (bus tour)",
+      "chip": "Feb 4-5",
+      "title": "Salzwelten Hallstatt (salt mine)",
       "location": "Hallstatt, Austria",
-      "description": "UNESCO World Heritage fairytale village on the lake shore. Full-day organised bus tour from Vienna, typically including the salt mine, Skywalk viewpoint, and a walk through the village.",
-      "links": [
-        {
-          "label": "Hallstatt Salt Mine",
-          "url": "https://www.salzwelten.at/en/hallstatt/"
-        }
-      ]
+      "description": "Oldest salt mine in the world + funicular. Check winter opening.",
+      "links": [{ "label": "Salzwelten Hallstatt", "url": "https://www.salzwelten.at/en/hallstatt/" }]
     },
     {
-      "chip": "Munich - Day 9",
-      "title": "Munich Residenz",
+      "chip": "Feb 8",
+      "title": "Neuschwanstein Castle",
       "location": "Munich, Germany",
-      "description": "Former residence of the Dukes and Kings of Bavaria. Guided tour recommended to explore the royal apartments and the treasury.",
-      "links": [
-        {
-          "label": "Munich Residenz",
-          "url": "https://www.residenz-muenchen.de/englisch/museum/index.htm"
-        }
-      ]
-    },
-    {
-      "chip": "Munich - Day 7",
-      "title": "Deutsches Museum",
-      "location": "Munich, Germany",
-      "description": "Largest science and technology museum in the world. Allow at least half a day.",
-      "links": [
-        {
-          "label": "Deutsches Museum",
-          "url": "https://www.deutsches-museum.de/en"
-        }
-      ]
+      "description": "Day trip from Munich. Book timed tickets in advance.",
+      "links": [{ "label": "Neuschwanstein tickets", "url": "https://www.hohenschwangau.de/" }]
     }
   ]
 }

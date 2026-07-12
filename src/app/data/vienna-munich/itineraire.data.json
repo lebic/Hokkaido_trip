@@ -1,117 +1,227 @@
 {
   "hero": {
     "eyebrow": "Itineraire",
-    "title": "Vienne & Munich : Capitales d'hiver",
-    "description": "Cout total estime : 677+149+74+500 = +-1400 EUR",
-    "duration": "11 jours / 10 nuits",
-    "date": "29 Jan au 8 Fev 2027"
+    "title": "Autriche & Baviere : Vienne -> Munich",
+    "description": "Cout total estime : +-1600 EUR. Vienne, Salzbourg, Hallstatt puis Munich, en train.",
+    "duration": "12 jours / 11 nuits",
+    "date": "29 Jan au 9 Fev 2027"
   },
   "cards": [
     {
-      "chip": "Jours 1-5",
+      "chip": "29 Jan - 2 Fev",
       "tone": "forest",
       "title": "Vienne",
       "location": "Vienne, Autriche",
-      "description": "Cinq jours pour explorer la capitale imperiale : palais, musees et une excursion a Hallstatt.",
-      "transportMode": "plane",
+      "description": "Quatre nuits dans la capitale imperiale : palais, musees et un concert de musique classique.",
+      "transportMode": "flight",
       "routeWaypoints": [
-        {
-          "name": "Luxembourg Airport",
-          "lat": 49.6233,
-          "lng": 6.2044
-        },
-        {
-          "name": "Vienna Airport (VIE)",
-          "lat": 48.1103,
-          "lng": 16.5697
-        }
+        { "name": "Luxembourg Airport", "lat": 49.6233, "lng": 6.2044 },
+        { "name": "Vienna Airport (VIE)", "lat": 48.1103, "lng": 16.5697 }
       ],
       "image": {
         "src": "/images/header-card/vienna/vienna.jpg",
-        "alt": "Vienna",
+        "alt": "Vienne",
         "position": "center 40%"
       },
       "sections": [
         {
           "title": "Hebergement",
+          "items": ["Hotel a Vienne centre-ville (4 nuits, 29 jan - 2 fev)"]
+        },
+        {
+          "title": "Jour 1 (29 jan) - Transport",
           "items": [
-            "Hotel a Vienne centre-ville (5 nuits, 29 jan - 3 fev)"
+            "Vol Luxembourg (LUX) -> Vienne (VIE)",
+            "CAT ou S-Bahn depuis l'aeroport vers le centre (~16-30 min)"
           ]
         },
         {
-          "title": "Jour 1 - Transport",
-          "items": [
-            "Vol Luxembourg (LUX) → Vienne (VIE)",
-            "Navette ou S-Bahn depuis l'aeroport vers le centre (≈ 16 min)"
-          ]
-        },
-        {
-          "title": "Jour 1 - Activites",
+          "title": "Jour 1 (29 jan) - Activites",
           "items": [
             "Installation a l'hotel",
-            "Promenade sur le Ringstrasse",
-            "Decouverte du quartier"
+            {
+              "text": "Stephansdom (cathedrale Saint-Etienne)",
+              "url": "https://maps.google.com/?q=48.2085,16.3731"
+            },
+            "Promenade sur le Ringstrasse"
           ]
         },
         {
-          "title": "Jour 2 - Activites",
+          "title": "Jour 2 (30 jan) - Activites",
           "items": [
-            "Palais de Schönbrunn et jardins",
-            "Quartier de Naschmarkt",
-            "Stephansdom (cathedrale Saint-Etienne)"
+            {
+              "text": "Palais de Schonbrunn et jardins",
+              "url": "https://maps.google.com/?q=48.1858,16.3122"
+            },
+            {
+              "text": "Hofburg et Sisi Museum",
+              "url": "https://maps.google.com/?q=48.2065,16.3657"
+            },
+            "Soiree : concert de musique classique (a reserver a l'avance)"
           ]
         },
         {
-          "title": "Jour 3 - Activites",
+          "title": "Jour 3 (31 jan) - Activites",
           "items": [
-            "Musee du Belvedere (Klimt - Le Baiser)",
-            "Hofburg Palace",
-            "Wiener Prater et Grande Roue"
+            {
+              "text": "Musee du Belvedere (Klimt - Le Baiser)",
+              "url": "https://maps.google.com/?q=48.1915,16.3809"
+            },
+            {
+              "text": "Naschmarkt",
+              "url": "https://maps.google.com/?q=48.1985,16.3639"
+            },
+            "Cafe viennois (Central ou Landtmann)"
           ]
         },
         {
-          "title": "Jour 4 - Excursion Hallstatt",
+          "title": "Jour 4 (1 fev) - Activites",
           "items": [
-            "Bus organise depuis Vienne (depart matinal ~7h)",
-            "Village historique et promenade au bord du lac",
-            "Mine de sel de Hallstatt et World Heritage Skywalk",
-            "Retour a Vienne en soiree (~19h-20h)"
-          ]
-        },
-        {
-          "title": "Jour 5 - Activites",
-          "items": [
-            "Kunsthistorisches Museum",
-            "Cafe Central ou Cafe Landtmann",
-            "Preparation du depart pour Munich"
-          ]
-        },
-        {
-          "title": "Jour 5 - Transport",
-          "items": [
-            "Train Railjet : Wien Hbf → München Hbf (≈ 4h)"
+            {
+              "text": "Kunsthistorisches Museum",
+              "url": "https://maps.google.com/?q=48.2039,16.3616"
+            },
+            {
+              "text": "MuseumsQuartier",
+              "url": "https://maps.google.com/?q=48.2033,16.3585"
+            },
+            {
+              "text": "Wiener Prater et Grande Roue",
+              "url": "https://maps.google.com/?q=48.2166,16.3959"
+            },
+            "Preparation du depart pour Salzbourg"
           ]
         }
       ]
     },
     {
-      "chip": "Jours 6-10",
+      "chip": "2 - 4 Fev",
       "tone": "clay",
-      "title": "Munich",
-      "location": "Munich, Allemagne",
-      "description": "Cinq jours dans la capitale bavaroise : bieres, baroque et musees de classe mondiale.",
+      "title": "Salzbourg",
+      "location": "Salzbourg, Autriche",
+      "description": "Deux nuits dans la ville de Mozart : vieille ville UNESCO, forteresse et jardins baroques.",
       "transportMode": "train",
       "routeWaypoints": [
+        { "name": "Wien Hbf", "lat": 48.1851, "lng": 16.3762 },
+        { "name": "Salzburg Hbf", "lat": 47.813, "lng": 13.0459 }
+      ],
+      "image": {
+        "src": "/images/placeholders/city.svg",
+        "alt": "Salzbourg",
+        "position": "center 50%"
+      },
+      "sections": [
         {
-          "name": "Wien Hauptbahnhof",
-          "lat": 48.1851,
-          "lng": 16.3762
+          "title": "Hebergement",
+          "items": ["Hotel a Salzbourg (2 nuits, 2 - 4 fev)"]
         },
         {
-          "name": "München Hauptbahnhof",
-          "lat": 48.1402,
-          "lng": 11.56
+          "title": "Transport",
+          "items": [
+            "Depart Vienne le 2 fevrier au matin",
+            "Railjet Wien Hbf -> Salzburg Hbf (~2h30)"
+          ]
+        },
+        {
+          "title": "Jour 1 (2 fev) - Activites",
+          "items": [
+            {
+              "text": "Vieille ville (Altstadt, patrimoine UNESCO)",
+              "url": "https://maps.google.com/?q=47.7998,13.0448"
+            },
+            {
+              "text": "Getreidegasse et maison natale de Mozart",
+              "url": "https://maps.google.com/?q=47.8001,13.0435"
+            },
+            {
+              "text": "Jardins Mirabell",
+              "url": "https://maps.google.com/?q=47.8060,13.0421"
+            }
+          ]
+        },
+        {
+          "title": "Jour 2 (3 fev) - Activites",
+          "items": [
+            {
+              "text": "Forteresse Hohensalzburg (funiculaire)",
+              "url": "https://maps.google.com/?q=47.7947,13.0477"
+            },
+            {
+              "text": "Cathedrale de Salzbourg (Dom)",
+              "url": "https://maps.google.com/?q=47.7981,13.0470"
+            },
+            "Cafe et Sachertorte",
+            "Balade le long de la Salzach"
+          ]
         }
+      ]
+    },
+    {
+      "chip": "4 - 5 Fev",
+      "tone": "berry",
+      "title": "Hallstatt",
+      "location": "Hallstatt, Autriche",
+      "description": "Une nuit au bord du lac, dans le village alpin le plus photographie d'Autriche. Sous reserve de reservation.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Salzburg Hbf", "lat": 47.813, "lng": 13.0459 },
+        { "name": "Hallstatt", "lat": 47.5615, "lng": 13.6449 }
+      ],
+      "image": {
+        "src": "/images/placeholders/lake.svg",
+        "alt": "Hallstatt",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Hebergement",
+          "items": ["Hotel a Hallstatt (1 nuit, 4 - 5 fev) - sous reserve de reservation"]
+        },
+        {
+          "title": "Transport",
+          "items": [
+            "Train Salzburg -> Hallstatt (~2h20, via Attnang-Puchheim)",
+            "Navette-bateau depuis la gare Hallstatt vers le village",
+            "A verifier : disponibilite hotel + horaires trains"
+          ]
+        },
+        {
+          "title": "Activites",
+          "items": [
+            {
+              "text": "Village au bord du Hallstatter See",
+              "url": "https://maps.google.com/?q=47.5615,13.6493"
+            },
+            {
+              "text": "World Heritage Skywalk (point de vue)",
+              "url": "https://maps.google.com/?q=47.5622,13.6470"
+            },
+            {
+              "text": "Salzwelten : plus vieille mine de sel du monde",
+              "url": "https://maps.google.com/?q=47.5606,13.6431"
+            },
+            "Balade autour du lac"
+          ]
+        },
+        {
+          "title": "En cas d'imprevu",
+          "items": [
+            "Si pas de reservation ou acces train difficile : nuit supplementaire a Salzbourg",
+            "Ou route directe Salzbourg -> Munich"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "5 - 9 Fev",
+      "tone": "forest",
+      "title": "Munich",
+      "location": "Munich, Allemagne",
+      "description": "Quatre nuits dans la capitale bavaroise : bieres, baroque et musees de classe mondiale.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Hallstatt", "lat": 47.5615, "lng": 13.6449 },
+        { "name": "Munchen Hbf", "lat": 48.1402, "lng": 11.56 }
       ],
       "image": {
         "src": "/images/header-card/munich/munich.avif",
@@ -121,76 +231,86 @@
       "sections": [
         {
           "title": "Hebergement",
+          "items": ["Hotel a Munich centre-ville (4 nuits, 5 - 9 fev)"]
+        },
+        {
+          "title": "Transport",
           "items": [
-            "Hotel a Munich centre-ville (5 nuits, 3 fev - 8 fev)"
+            "Train Hallstatt -> Munich (~3h-4h, via Salzbourg)",
+            "Arrivee Munchen Hbf, installation a l'hotel"
           ]
         },
         {
-          "title": "Jour 6 - Arrivee",
+          "title": "Jour 1 (5 fev) - Activites",
           "items": [
-            "Arrivee en train depuis Vienne",
-            "Installation a l'hotel",
-            "Marienplatz et Glockenspiel en soiree"
+            {
+              "text": "Marienplatz et Glockenspiel",
+              "url": "https://maps.google.com/?q=48.1374,11.5755"
+            },
+            {
+              "text": "Viktualienmarkt",
+              "url": "https://maps.google.com/?q=48.1351,11.5762"
+            },
+            {
+              "text": "Hofbrauhaus le soir",
+              "url": "https://maps.google.com/?q=48.1377,11.5799"
+            }
           ]
         },
         {
-          "title": "Jour 7 - Activites",
+          "title": "Jour 2 (6 fev) - Activites",
           "items": [
-            "Deutsches Museum (sciences et techniques)",
-            "Isar Promenade",
-            "Hofbräuhaus le soir"
+            {
+              "text": "Deutsches Museum",
+              "url": "https://maps.google.com/?q=48.1298,11.5834"
+            },
+            {
+              "text": "Englischer Garten",
+              "url": "https://maps.google.com/?q=48.1642,11.6056"
+            },
+            "Isar Promenade"
           ]
         },
         {
-          "title": "Jour 8 - Activites",
+          "title": "Jour 3 (7 fev) - Activites",
           "items": [
-            "Palais de Nymphenburg et jardins",
-            "Olympiapark et tour olympique",
-            "Vue panoramique sur les Alpes"
+            {
+              "text": "Munich Residenz et tresor",
+              "url": "https://maps.google.com/?q=48.1417,11.5783"
+            },
+            {
+              "text": "Alte Pinakothek",
+              "url": "https://maps.google.com/?q=48.1485,11.5700"
+            },
+            "Quartier de Maxvorstadt"
           ]
         },
         {
-          "title": "Jour 9 - Activites",
+          "title": "Jour 4 (8 fev) - Activites",
           "items": [
-            "Munich Residenz et trésor",
-            "Englischer Garten",
-            "Viktualienmarkt"
-          ]
-        },
-        {
-          "title": "Jour 10 - Activites",
-          "items": [
-            "Alte Pinakothek (peinture ancienne)",
-            "Promenade libre dans la Maxvorstadt",
+            {
+              "text": "Excursion possible : chateau de Neuschwanstein (train + bus)",
+              "url": "https://maps.google.com/?q=47.5576,10.7498"
+            },
+            {
+              "text": "Ou Palais de Nymphenburg et jardins",
+              "url": "https://maps.google.com/?q=48.1583,11.5033"
+            },
             "Dernier repas bavarois"
-          ]
-        },
-        {
-          "title": "Jour 10 - Transport",
-          "items": [
-            "Preparation bagages, verifier heure vol du lendemain"
           ]
         }
       ]
     },
     {
-      "chip": "Jour 11",
-      "tone": "berry",
+      "chip": "9 Fev",
+      "tone": "clay",
       "title": "Retour Luxembourg",
-      "location": "Munich → Luxembourg",
+      "location": "Munich -> Luxembourg",
       "description": "Dernier matin a Munich, vol de retour vers Luxembourg.",
-      "transportMode": "plane",
+      "transportMode": "flight",
       "routeWaypoints": [
-        {
-          "name": "Munich Airport (MUC)",
-          "lat": 48.3537,
-          "lng": 11.775
-        },
-        {
-          "name": "Luxembourg Airport (LUX)",
-          "lat": 49.6233,
-          "lng": 6.2044
-        }
+        { "name": "Munich Airport (MUC)", "lat": 48.3537, "lng": 11.775 },
+        { "name": "Luxembourg Airport (LUX)", "lat": 49.6233, "lng": 6.2044 }
       ],
       "image": {
         "src": "/images/placeholders/airport.svg",
@@ -201,8 +321,8 @@
         {
           "title": "Transport",
           "items": [
-            "S-Bahn ou navette depuis hotel vers Munich Airport (MUC)",
-            "Vol Munich (MUC) → Luxembourg (LUX)",
+            "S-Bahn ou navette depuis l'hotel vers Munich Airport (MUC)",
+            "Vol Munich (MUC) -> Luxembourg (LUX)",
             "Retour a la maison"
           ]
         },

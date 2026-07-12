@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Avenir Next"', '"Trebuchet MS"', '"Segoe UI"', 'sans-serif']
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'Cambria', 'serif']
       }
     }
   },

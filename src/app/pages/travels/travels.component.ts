@@ -2,11 +2,12 @@ import { Component, inject, computed } from '@angular/core';
 import { Router } from '@angular/router';
 import { TravelService } from '../../services/travel.service';
 import { TranslationService } from '../../services/translation.service';
+import { RevealDirective } from '../../ui/reveal/reveal.directive';
 
 @Component({
   selector: 'app-travels',
   standalone: true,
-  imports: [],
+  imports: [RevealDirective],
   templateUrl: './travels.component.html',
 })
 export class TravelsComponent {

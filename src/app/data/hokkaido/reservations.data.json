@@ -10,14 +10,20 @@
       "icon": "✈️",
       "label": "Vols",
       "badge": "bg-blue-50 text-blue-700",
-      "docs": ["Vol aller Europe → Tokyo", "Vol retour Tokyo → Europe", "Vol Sapporo → Tokyo (Jour 15)"]
+      "docs": [
+        "Vol aller Europe → Tokyo",
+        "Vol retour Tokyo → Europe",
+        "Vol Sapporo → Tokyo (Jour 15)"
+      ]
     },
     {
       "key": "ferry",
       "icon": "⛴️",
       "label": "Ferry",
       "badge": "bg-sky-50 text-sky-700",
-      "docs": ["Sunflower Ferry – Oarai → Tomakomai (Jour 6)"]
+      "docs": [
+        "Sunflower Ferry – Oarai → Tomakomai (Jour 6)"
+      ]
     },
     {
       "key": "hebergements",
@@ -39,152 +45,29 @@
       "icon": "🚂",
       "label": "JR Pass / Train",
       "badge": "bg-amber-50 text-amber-700",
-      "docs": ["JR Hokkaido Rail Pass", "Reservations sieges"]
+      "docs": [
+        "JR Hokkaido Rail Pass",
+        "Reservations sieges"
+      ]
     },
     {
       "key": "voiture",
       "icon": "🚗",
       "label": "Location voiture",
       "badge": "bg-emerald-50 text-emerald-700",
-      "docs": ["Confirmation location voiture (Jours 8-13)"]
+      "docs": [
+        "Confirmation location voiture (Jours 8-13)"
+      ]
     },
     {
       "key": "activites",
       "icon": "🎌",
       "label": "Activites",
       "badge": "bg-rose-50 text-rose-700",
-      "docs": ["Spectacle Ainou – Akan-ko", "Ropeway Daisetsuzan", "Autres billets"]
-    }
-  ],
-  "cards": [
-    {
-      "chip": "Avion",
-      "title": "Vols",
-      "description": "Aller, retour et vol domestique.",
-      "sections": [
-        {
-          "title": "Aller",
-          "items": [
-            "Europe -> Tokyo (Narita/Haneda)",
-            "Verifier bagages et correspondances"
-          ]
-        },
-        {
-          "title": "Retour",
-          "items": [
-            "Tokyo -> Europe",
-            "Verifier heure d'enregistrement"
-          ]
-        },
-        {
-          "title": "Domestique",
-          "items": [
-            "Sapporo (CTS) -> Tokyo (HND) - Jour 15"
-          ]
-        }
-      ]
-    },
-    {
-      "chip": "Ferry",
-      "title": "Sunflower Ferry",
-      "description": "Oarai -> Tomakomai (Jour 6).",
-      "sections": [
-        {
-          "title": "Horaires",
-          "items": [
-            "Depart 01h45",
-            "Arrivee 19h45",
-            "Cabine privee"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passeport",
-            "Confirmation email"
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "Sunflower Ferry",
-          "url": "https://www.sunflower.co.jp/en/"
-        }
-      ]
-    },
-    {
-      "chip": "Hotels",
-      "title": "Hebergements",
-      "description": "Regroupe tes confirmations.",
-      "sections": [
-        {
-          "title": "Tokyo",
-          "items": [
-            "Jours 1-5 (arrivee)",
-            "Jours 16-18 (retour)"
-          ]
-        },
-        {
-          "title": "Hokkaido",
-          "items": [
-            "Sapporo (Jours 5-7 + Jour 14)",
-            "Sounkyo Onsen (Jour 8)",
-            "Akan-ko (Jours 9-11)",
-            "Furano (Jours 12-13)"
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "Booking.com",
-          "url": "https://www.booking.com/"
-        }
-      ]
-    },
-    {
-      "chip": "JR Pass",
-      "title": "Pass et billets train",
-      "description": "Utiliser les trains pour les grandes villes.",
-      "sections": [
-        {
-          "title": "Pass recommande",
-          "items": [
-            "JR Hokkaido Rail Pass (5 jours)",
-            "Reserver les sieges a l'avance"
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "JR Hokkaido Rail Pass",
-          "url": "https://www.jrhokkaido.co.jp/global/english/ticket/railpass/"
-        }
-      ]
-    },
-    {
-      "chip": "Voiture",
-      "title": "Location voiture",
-      "description": "Pour les zones isolees uniquement.",
-      "sections": [
-        {
-          "title": "Periode",
-          "items": [
-            "Jours 8-13 (Sounkyo, Akan, Furano)"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Permis international",
-            "Carte bancaire"
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "Toyota Rent a Car",
-          "url": "https://rent.toyota.co.jp/eng/"
-        }
+      "docs": [
+        "Spectacle Ainou – Akan-ko",
+        "Ropeway Daisetsuzan",
+        "Autres billets"
       ]
     }
   ]

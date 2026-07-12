@@ -1,124 +1,73 @@
 {
   "hero": {
     "eyebrow": "Accommodation",
-    "title": "Complete accommodation guide",
-    "description": "Total accommodation budget: 700 EUR"
+    "title": "Accommodation to book",
+    "description": "Estimated total accommodation budget: ~1210 EUR"
   },
   "cards": [
     {
-      "chip": "Vienna",
+      "chip": "Jan 29 - Feb 2",
       "tone": "forest",
-      "title": "Days 1-5 (Jan 29 - Feb 3)",
+      "title": "Vienna (4 nights)",
       "location": "Vienna, Austria",
-      "nights": "5 nights",
-      "priority": 1,
-      "description": "3-star hotel near the historic city centre.",
-      "image": {
-        "src": "/images/header-card/vienna/vienna.jpg",
-        "alt": "Vienna",
-        "position": "center 40%"
-      },
+      "nights": "4 nights",
+      "priority": 2,
+      "description": "City-centre hotel, close to transport.",
       "sections": [
-        {
-          "title": "Budget",
-          "items": [
-            "350 EUR (70 EUR / night)"
-          ]
-        },
-        {
-          "title": "Status",
-          "items": [
-            "To book"
-          ]
-        },
-        {
-          "title": "Recommended options",
-          "items": [
-            "Hotel near Stephansdom (1st district)",
-            "Hotel near Naschmarkt (4th/6th district)",
-            "Hotel near Westbahnhof (for the train to Munich)"
-          ]
-        },
-        {
-          "title": "Criteria",
-          "items": [
-            "Easy access from airport (S-Bahn)",
-            "Close to U-Bahn",
-            "Late check-in available",
-            "Flexible check-out on February 3 (daytime train to Munich)"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passport or national ID",
-            "Email confirmation"
-          ]
-        }
+        { "title": "Budget", "items": ["~400 EUR (100 EUR / night)"] },
+        { "title": "Status", "items": ["To book"] },
+        { "title": "Recommended options", "items": ["Innere Stadt (1st district)", "Near the Ring / Stephansplatz", "Mariahilf district (lively)"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
       ],
-      "links": [
-        {
-          "label": "Booking.com Vienna – 509€, i.e. 254.50€ per person",
-          "url": "https://www.booking.com/Share-fX1Hw3"
-        }
-      ]
+      "links": [{ "label": "Booking.com Vienna", "url": "https://www.booking.com/city/at/vienna.html" }]
     },
     {
-      "chip": "Munich",
+      "chip": "Feb 2 - 4",
       "tone": "clay",
-      "title": "Days 6-10 (Feb 3 - Feb 8)",
-      "location": "Munich, Germany",
-      "nights": "5 nights",
-      "priority": 1,
-      "description": "3-star hotel in central Munich.",
-      "image": {
-        "src": "/images/header-card/munich/munich.avif",
-        "alt": "Munich",
-        "position": "center 40%"
-      },
+      "title": "Salzburg (2 nights)",
+      "location": "Salzburg, Austria",
+      "nights": "2 nights",
+      "priority": 2,
+      "description": "Close to the old town (Altstadt).",
       "sections": [
-        {
-          "title": "Budget",
-          "items": [
-            "350 EUR (70 EUR / night)"
-          ]
-        },
-        {
-          "title": "Status",
-          "items": [
-            "To book"
-          ]
-        },
-        {
-          "title": "Recommended options",
-          "items": [
-            "Hotel near Marienplatz (Altstadt)",
-            "Hotel near Hauptbahnhof (easy access)",
-            "Hotel near Schwabing or Maxvorstadt"
-          ]
-        },
-        {
-          "title": "Criteria",
-          "items": [
-            "Easy access from central station (Railjet from Vienna)",
-            "Close to S-Bahn to airport (Day 11)",
-            "Check-out on February 8 (possible early morning flight)"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passport or national ID",
-            "Email confirmation"
-          ]
-        }
+        { "title": "Budget", "items": ["~220 EUR (110 EUR / night)"] },
+        { "title": "Status", "items": ["To book"] },
+        { "title": "Recommended options", "items": ["Altstadt (left bank)", "Near Salzburg Hbf station", "Neustadt (Mirabell) district"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
       ],
-      "links": [
-        {
-          "label": "Booking.com Munich –845€, i.e. 422.50€ per person",
-          "url": "https://www.booking.com/Share-yPPIIRR"
-        }
-      ]
+      "links": [{ "label": "Booking.com Salzburg", "url": "https://www.booking.com/city/at/salzburg.html" }]
+    },
+    {
+      "chip": "Feb 4 - 5",
+      "tone": "berry",
+      "title": "Hallstatt (1 night)",
+      "location": "Hallstatt, Austria",
+      "nights": "1 night",
+      "priority": 1,
+      "description": "Subject to booking: few hotels, book very early.",
+      "sections": [
+        { "title": "Budget", "items": ["~150 EUR"] },
+        { "title": "Status", "items": ["Book early (limited availability)"] },
+        { "title": "Recommended options", "items": ["Lakeside hotel (village)", "Obertraun (next door, cheaper)", "Bad Goisern (15 min by train)"] },
+        { "title": "To check", "items": ["Train access confirmed", "Cancellation policy"] }
+      ],
+      "links": [{ "label": "Booking.com Hallstatt", "url": "https://www.booking.com/city/at/hallstatt.html" }]
+    },
+    {
+      "chip": "Feb 5 - 9",
+      "tone": "forest",
+      "title": "Munich (4 nights)",
+      "location": "Munich, Germany",
+      "nights": "4 nights",
+      "priority": 2,
+      "description": "City centre, close to sights and the station.",
+      "sections": [
+        { "title": "Budget", "items": ["~440 EUR (110 EUR / night)"] },
+        { "title": "Status", "items": ["To book"] },
+        { "title": "Recommended options", "items": ["Altstadt (near Marienplatz)", "Near Munchen Hauptbahnhof", "Ludwigsvorstadt district"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
+      ],
+      "links": [{ "label": "Booking.com Munich", "url": "https://www.booking.com/city/de/munich.html" }]
     }
   ]
 }

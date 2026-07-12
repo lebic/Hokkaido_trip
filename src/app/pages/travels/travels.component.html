@@ -1,68 +1,66 @@
-<!-- Hero -->
-<div class="mb-8">
-  <p class="mb-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-zinc-400">{{ translationService.t().travels.eyebrow }}</p>
-  <h1 class="text-3xl font-bold text-zinc-900">{{ translationService.t().travels.title }}</h1>
-  <p class="mt-2 text-sm text-zinc-500">{{ translationService.t().travels.subtitle }}</p>
-</div>
+@let t = translationService.t();
 
-<!-- Travel cards grid -->
-<div class="grid gap-5 sm:grid-cols-2">
-  @for (travel of travels(); track travel.id) {
+<!-- Hero -->
+<header class="mb-10 max-w-2xl">
+  <p class="tb-eyebrow mb-3">{{ t.travels.eyebrow }}</p>
+  <h1 class="font-display text-[2.6rem] font-semibold leading-[1.05] tracking-tight sm:text-5xl">
+    {{ t.travels.title }}
+  </h1>
+  <p class="mt-4 text-[0.95rem] leading-relaxed text-[color:var(--tb-muted)]">{{ t.travels.subtitle }}</p>
+</header>
+
+<!-- Travel cards -->
+<div class="grid gap-6 sm:grid-cols-2">
+  @for (travel of travels(); track travel.id; let i = $index) {
     @let isActive = travelService.selectedId() === travel.id;
 
     <button
       type="button"
       (click)="selectTravel(travel.id)"
-      class="group relative overflow-hidden rounded-2xl border text-left shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
-      [class.border-zinc-200]="!isActive"
-      [class.border-transparent]="isActive"
-      [class.ring-2]="isActive"
-      [class.ring-zinc-900]="isActive"
+      [appReveal]="i * 90"
+      class="group relative isolate overflow-hidden rounded-[1.75rem] text-left shadow-[0_30px_60px_-32px_rgba(30,18,10,0.55)] ring-1 ring-black/[0.06] transition duration-500 hover:-translate-y-1 hover:shadow-[0_40px_70px_-30px_rgba(30,18,10,0.6)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--tb-accent)]"
     >
-      <!-- Header image -->
-      <div class="relative h-36 overflow-hidden">
+      <!-- Full-bleed image -->
+      <div class="relative h-72 w-full overflow-hidden sm:h-80">
         <img
           [src]="travel.image"
           [alt]="travel.name"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          class="h-full w-full scale-105 object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-125"
           [style.object-position]="travel.imagePosition ?? 'center 50%'"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
-        <!-- Active badge -->
+        <div class="tb-hero-tint absolute inset-0"></div>
+
         @if (isActive) {
-          <span class="absolute right-3 top-3 rounded-full bg-white/90 px-2.5 py-0.5 text-[0.65rem] font-bold text-zinc-900 shadow">
-            {{ translationService.t().travels.active }}
+          <span class="tb-glass absolute right-4 top-4 flex items-center gap-1.5 rounded-full px-3 py-1 text-[0.62rem] font-bold uppercase tracking-[0.18em] text-[color:var(--tb-ink)]">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+            {{ t.travels.active }}
           </span>
         }
+
+        <!-- Overlaid editorial content -->
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          <p class="mb-1 text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-white/70">{{ travel.subtitle }}</p>
+          <h2 class="font-display text-[1.7rem] font-semibold leading-tight text-white drop-shadow-sm">{{ travel.name }}</h2>
+          <p class="mt-1.5 line-clamp-2 max-w-md text-[0.82rem] leading-relaxed text-white/85">{{ travel.description }}</p>
+
+          <div class="mt-3 flex flex-wrap items-center gap-2">
+            <span class="rounded-full bg-white/15 px-2.5 py-1 text-[0.7rem] font-medium text-white ring-1 ring-white/25 backdrop-blur-sm">{{ travel.dates }}</span>
+            <span class="rounded-full bg-white/15 px-2.5 py-1 text-[0.7rem] font-medium text-white ring-1 ring-white/25 backdrop-blur-sm">{{ travel.duration }}</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Content -->
-      <div class="bg-white p-5">
-        <p class="mb-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-zinc-400">{{ travel.subtitle }}</p>
-        <h2 class="text-lg font-bold text-zinc-900">{{ travel.name }}</h2>
-        <p class="mt-1 text-[0.8rem] text-zinc-500">{{ travel.description }}</p>
-
-        <div class="mt-3 flex flex-wrap items-center gap-3 border-t border-zinc-100 pt-3">
-          <span class="rounded-full bg-zinc-100 px-2.5 py-0.5 text-[0.72rem] font-medium text-zinc-600">
-            {{ travel.dates }}
-          </span>
-          <span class="rounded-full bg-zinc-100 px-2.5 py-0.5 text-[0.72rem] font-medium text-zinc-600">
-            {{ travel.duration }}
-          </span>
-        </div>
-
-        <p class="mt-4 flex items-center gap-1.5 text-[0.82rem] font-semibold text-zinc-700 group-hover:text-zinc-900 transition">
-          @if (isActive) {
-            {{ translationService.t().travels.viewItinerary }}
-          } @else {
-            {{ translationService.t().travels.select }}
-          }
-          <svg class="h-3.5 w-3.5 transition group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 8h10M9 4l4 4-4 4"/>
+      <!-- Action bar -->
+      <div class="flex items-center justify-between gap-2 bg-[rgb(var(--tb-surface)/0.92)] px-5 py-3.5 backdrop-blur">
+        <span class="text-[0.85rem] font-semibold text-[color:var(--tb-ink)]">
+          @if (isActive) { {{ t.travels.viewItinerary }} } @else { {{ t.travels.select }} }
+        </span>
+        <span class="tb-accent-bg flex h-8 w-8 items-center justify-center rounded-full shadow-sm transition-transform duration-300 group-hover:translate-x-1">
+          <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4" />
           </svg>
-        </p>
+        </span>
       </div>
     </button>
   }
 </div>
-

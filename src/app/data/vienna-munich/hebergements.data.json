@@ -1,124 +1,73 @@
 {
   "hero": {
     "eyebrow": "Hebergements",
-    "title": "Guide complet des hebergements",
-    "description": "Budget total hebergements : 700 EUR"
+    "title": "Hebergements a reserver",
+    "description": "Budget total estime hebergements : ~1210 EUR"
   },
   "cards": [
     {
-      "chip": "Vienne",
+      "chip": "29 Jan - 2 Fev",
       "tone": "forest",
-      "title": "Jours 1-5 (29 jan - 3 fev)",
+      "title": "Vienne (4 nuits)",
       "location": "Vienne, Autriche",
-      "nights": "5 nuits",
-      "priority": 1,
-      "description": "Hotel 3 etoiles proche du centre historique.",
-      "image": {
-        "src": "/images/header-card/vienna/vienna.jpg",
-        "alt": "Vienna",
-        "position": "center 40%"
-      },
+      "nights": "4 nuits",
+      "priority": 2,
+      "description": "Hotel centre-ville, proche des transports.",
       "sections": [
-        {
-          "title": "Budget",
-          "items": [
-            "350 EUR (70 EUR / nuit)"
-          ]
-        },
-        {
-          "title": "Statut",
-          "items": [
-            "A reserver"
-          ]
-        },
-        {
-          "title": "Options recommandees",
-          "items": [
-            "Hotel proche Stephansdom (1er arrondissement)",
-            "Hotel proche Naschmarkt (4e/6e arrondissement)",
-            "Hotel proche Westbahnhof (pour le train vers Munich)"
-          ]
-        },
-        {
-          "title": "Criteres",
-          "items": [
-            "Acces facile depuis l'aeroport (S-Bahn)",
-            "Proximite metro (U-Bahn)",
-            "Check-in tardif possible",
-            "Check-out flexible le 3 fevrier (train en journee vers Munich)"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passeport ou CNI",
-            "Confirmation email"
-          ]
-        }
+        { "title": "Budget", "items": ["~400 EUR (100 EUR / nuit)"] },
+        { "title": "Statut", "items": ["A reserver"] },
+        { "title": "Options recommandees", "items": ["Innere Stadt (1er arrondissement)", "Proche du Ring / Stephansplatz", "Quartier Mariahilf (anime)"] },
+        { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation email"] }
       ],
-      "links": [
-        {
-          "label": "Booking.com Vienne 509€, soit 254,50€ par personne",
-          "url": "https://www.booking.com/Share-fX1Hw3"
-        }
-      ]
+      "links": [{ "label": "Booking.com Vienne", "url": "https://www.booking.com/city/at/vienna.html" }]
     },
     {
-      "chip": "Munich",
+      "chip": "2 - 4 Fev",
       "tone": "clay",
-      "title": "Jours 6-10 (3 fev - 8 fev)",
-      "location": "Munich, Allemagne",
-      "nights": "5 nuits",
-      "priority": 1,
-      "description": "Hotel 3 etoiles dans le centre de Munich.",
-      "image": {
-        "src": "/images/header-card/munich/munich.avif",
-        "alt": "Munich",
-        "position": "center 40%"
-      },
+      "title": "Salzbourg (2 nuits)",
+      "location": "Salzbourg, Autriche",
+      "nights": "2 nuits",
+      "priority": 2,
+      "description": "Proche de la vieille ville (Altstadt).",
       "sections": [
-        {
-          "title": "Budget",
-          "items": [
-            "350 EUR (70 EUR / nuit)"
-          ]
-        },
-        {
-          "title": "Statut",
-          "items": [
-            "A reserver"
-          ]
-        },
-        {
-          "title": "Options recommandees",
-          "items": [
-            "Hotel proche Marienplatz (Altstadt)",
-            "Hotel proche Hauptbahnhof (facile d'acces)",
-            "Hotel proche Schwabing ou Maxvorstadt"
-          ]
-        },
-        {
-          "title": "Criteres",
-          "items": [
-            "Acces facile depuis la gare centrale (Railjet depuis Vienne)",
-            "Proximite S-Bahn vers l'aeroport (Jour 11)",
-            "Check-out le 8 fevrier (vol matinal possible)"
-          ]
-        },
-        {
-          "title": "Documents",
-          "items": [
-            "Passeport ou CNI",
-            "Confirmation email"
-          ]
-        }
+        { "title": "Budget", "items": ["~220 EUR (110 EUR / nuit)"] },
+        { "title": "Statut", "items": ["A reserver"] },
+        { "title": "Options recommandees", "items": ["Altstadt (rive gauche)", "Proche gare Salzburg Hbf", "Quartier Neustadt (Mirabell)"] },
+        { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation email"] }
       ],
-      "links": [
-        {
-          "label": "Booking.com Munich 845€, soit 422,50€ par personne",
-          "url": "https://www.booking.com/Share-yPPIIRR"
-        }
-      ]
+      "links": [{ "label": "Booking.com Salzbourg", "url": "https://www.booking.com/city/at/salzburg.html" }]
+    },
+    {
+      "chip": "4 - 5 Fev",
+      "tone": "berry",
+      "title": "Hallstatt (1 nuit)",
+      "location": "Hallstatt, Autriche",
+      "nights": "1 nuit",
+      "priority": 1,
+      "description": "Sous reserve : peu d'hotels, reserver tres tot.",
+      "sections": [
+        { "title": "Budget", "items": ["~150 EUR"] },
+        { "title": "Statut", "items": ["A reserver en priorite (disponibilite limitee)"] },
+        { "title": "Options recommandees", "items": ["Hotel au bord du lac (village)", "Obertraun (a cote, moins cher)", "Bad Goisern (a 15 min en train)"] },
+        { "title": "A verifier", "items": ["Acces en train confirme", "Politique d'annulation"] }
+      ],
+      "links": [{ "label": "Booking.com Hallstatt", "url": "https://www.booking.com/city/at/hallstatt.html" }]
+    },
+    {
+      "chip": "5 - 9 Fev",
+      "tone": "forest",
+      "title": "Munich (4 nuits)",
+      "location": "Munich, Allemagne",
+      "nights": "4 nuits",
+      "priority": 2,
+      "description": "Centre-ville, proche des sites et de la gare.",
+      "sections": [
+        { "title": "Budget", "items": ["~440 EUR (110 EUR / nuit)"] },
+        { "title": "Statut", "items": ["A reserver"] },
+        { "title": "Options recommandees", "items": ["Altstadt (proche Marienplatz)", "Proche Munchen Hauptbahnhof", "Quartier Ludwigsvorstadt"] },
+        { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation email"] }
+      ],
+      "links": [{ "label": "Booking.com Munich", "url": "https://www.booking.com/city/de/munich.html" }]
     }
   ]
 }

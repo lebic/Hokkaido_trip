@@ -1,5 +1,26 @@
 @use "tailwindcss";
 
+/* =========================================================
+   Travelbook — design tokens
+   Les valeurs par destination sont injectées sur :root par
+   ThemeService (voir core/theme.service.ts). Ici : les défauts.
+   Les couleurs "glow / tint / surface" sont en triplets RGB
+   pour permettre rgb(var(--x) / alpha).
+   ========================================================= */
+:root {
+	--tb-canvas: #f3ede4;
+	--tb-ink: #26201b;
+	--tb-muted: #6d635a;
+	--tb-surface: 255 255 255;
+	--tb-accent: #b5502f;
+	--tb-accent-strong: #963f22;
+	--tb-accent-soft: #f4e2d6;
+	--tb-glow-a: 224 122 79;
+	--tb-glow-b: 74 90 138;
+	--tb-hero-tint: 38 24 16;
+	color-scheme: light;
+}
+
 @layer base {
 	*,
 	*::before,
@@ -7,20 +28,214 @@
 		box-sizing: border-box;
 	}
 
-	:root {
-		color-scheme: light;
-	}
-
 	body {
 		margin: 0;
-		font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
-		color: #1b1b1b;
-		background: radial-gradient(circle at top left, #fff9f2 0%, #f6f1ea 45%, #f0e7dc 100%);
+		font-family: "Inter", "Segoe UI", sans-serif;
+		color: var(--tb-ink);
+		background: var(--tb-canvas);
 		min-height: 100vh;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+		transition: background 1s ease;
+	}
+
+	/* Atmospheric themed glows, fixed behind everything */
+	body::before {
+		content: "";
+		position: fixed;
+		inset: 0;
+		z-index: -2;
+		background:
+			radial-gradient(58vw 58vw at 12% -12%, rgb(var(--tb-glow-a) / 0.4), transparent 62%),
+			radial-gradient(52vw 52vw at 104% 4%, rgb(var(--tb-glow-b) / 0.34), transparent 60%),
+			radial-gradient(46vw 46vw at 78% 108%, rgb(var(--tb-glow-a) / 0.22), transparent 60%),
+			var(--tb-canvas);
+		transition: background 1.1s ease;
+	}
+
+	/* Fine film grain to warm the whole surface */
+	body::after {
+		content: "";
+		position: fixed;
+		inset: 0;
+		z-index: -1;
+		pointer-events: none;
+		opacity: 0.05;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 	}
 
 	img {
 		max-width: 100%;
 		display: block;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-family: "Fraunces", Georgia, serif;
+	}
+
+	::selection {
+		background: rgb(var(--tb-glow-a) / 0.3);
+	}
+}
+
+/* =========================================================
+   Reusable surfaces & accents (theme-aware)
+   ========================================================= */
+.tb-glass {
+	background: rgb(255 255 255 / 0.66);
+	backdrop-filter: blur(16px) saturate(1.15);
+	-webkit-backdrop-filter: blur(16px) saturate(1.15);
+	border: 1px solid rgb(255 255 255 / 0.55);
+}
+
+.tb-card {
+	background: rgb(var(--tb-surface) / 0.9);
+	border: 1px solid rgb(38 28 20 / 0.07);
+	box-shadow: 0 18px 40px -24px rgb(38 24 14 / 0.4);
+}
+
+.tb-accent {
+	color: var(--tb-accent);
+}
+
+.tb-accent-bg {
+	background: var(--tb-accent);
+	color: #fff;
+}
+
+.tb-accent-soft {
+	background: var(--tb-accent-soft);
+	color: var(--tb-accent-strong);
+}
+
+.tb-accent-ring {
+	box-shadow: 0 0 0 2px var(--tb-accent);
+}
+
+.tb-eyebrow {
+	font-family: "Inter", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.28em;
+	font-size: 0.66rem;
+	font-weight: 600;
+	color: var(--tb-accent-strong);
+}
+
+/* Themed image tint overlay to unify the mood of photos */
+.tb-hero-tint {
+	background: linear-gradient(
+		to top,
+		rgb(var(--tb-hero-tint) / 0.82) 0%,
+		rgb(var(--tb-hero-tint) / 0.35) 42%,
+		rgb(var(--tb-hero-tint) / 0.08) 100%
+	);
+}
+
+/* =========================================================
+   Cinematic motion
+   ========================================================= */
+@keyframes tb-kenburns {
+	0% {
+		transform: scale(1.05) translate3d(0, 0, 0);
+	}
+	100% {
+		transform: scale(1.18) translate3d(1.5%, -1.5%, 0);
+	}
+}
+
+.tb-kenburns {
+	animation: tb-kenburns 18s ease-out forwards;
+	will-change: transform;
+}
+
+/* ---- Scroll reveal (voir RevealDirective) ---- */
+.reveal {
+	opacity: 0;
+	transform: translateY(20px);
+	transition:
+		opacity 0.7s ease,
+		transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+	will-change: opacity, transform;
+}
+
+.reveal-in {
+	opacity: 1;
+	transform: none;
+}
+
+/* ---- Journey timeline ---- */
+@keyframes travelbook-draw {
+	from {
+		transform: scaleY(0);
+	}
+	to {
+		transform: scaleY(1);
+	}
+}
+
+@keyframes travelbook-glide {
+	0% {
+		transform: translateY(-3px);
+	}
+	50% {
+		transform: translateY(3px);
+	}
+	100% {
+		transform: translateY(-3px);
+	}
+}
+
+@keyframes travelbook-pop {
+	0% {
+		transform: scale(0.4);
+		opacity: 0;
+	}
+	60% {
+		transform: scale(1.14);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.tb-connector-fill {
+	transform-origin: top;
+	transform: scaleY(0);
+}
+
+.reveal-in .tb-connector-fill {
+	animation: travelbook-draw 0.8s ease forwards;
+}
+
+.reveal-in .tb-node-badge {
+	animation: travelbook-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.tb-glide {
+	animation: travelbook-glide 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal,
+	.reveal-in {
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+	}
+	.tb-connector-fill {
+		transform: scaleY(1) !important;
+		animation: none !important;
+	}
+	.tb-node-badge,
+	.tb-glide,
+	.tb-kenburns {
+		animation: none !important;
+	}
+	body,
+	body::before {
+		transition: none !important;
 	}
 }

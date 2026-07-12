@@ -1,17 +1,21 @@
 import { Routes } from '@angular/router';
-import { ItineraireComponent } from './pages/itineraire/itineraire.component';
-import { HebergementsComponent } from './pages/hebergements/hebergements.component';
-import { TransportsComponent } from './pages/transports/transports.component';
-import { ActivitesComponent } from './pages/activites/activites.component';
-import { ReservationsComponent } from './pages/reservations/reservations.component';
+import { JourneyComponent } from './features/journey/journey.component';
+import { StageComponent } from './features/stage/stage.component';
+import { PreparatifsComponent } from './features/preparatifs/preparatifs.component';
 import { TravelsComponent } from './pages/travels/travels.component';
 
 export const routes: Routes = [
 	{ path: '', pathMatch: 'full', redirectTo: 'voyages' },
-	{ path: 'voyages', component: TravelsComponent, title: 'Mes voyages' },
-	{ path: 'itineraire', component: ItineraireComponent, title: 'Itineraire' },
-	{ path: 'hebergements', component: HebergementsComponent, title: 'Hebergements' },
-	{ path: 'transports', component: TransportsComponent, title: 'Transports' },
-	{ path: 'activites', component: ActivitesComponent, title: 'Activites' },
-	{ path: 'reservations', component: ReservationsComponent, title: 'Reservations' }
+	{ path: 'voyages', component: TravelsComponent, title: 'Travelbook — Voyages' },
+	{ path: 'itineraire', component: JourneyComponent, title: 'Itinéraire' },
+	{ path: 'stage/:index', component: StageComponent, title: 'Étape' },
+	{ path: 'preparatifs', component: PreparatifsComponent, title: 'Préparatifs' },
+
+	// Anciennes pages type-silo : fusionnées dans Préparatifs (liens/bookmarks préservés)
+	{ path: 'hebergements', pathMatch: 'full', redirectTo: 'preparatifs' },
+	{ path: 'transports', pathMatch: 'full', redirectTo: 'preparatifs' },
+	{ path: 'activites', pathMatch: 'full', redirectTo: 'preparatifs' },
+	{ path: 'reservations', pathMatch: 'full', redirectTo: 'preparatifs' },
+
+	{ path: '**', redirectTo: 'voyages' },
 ];

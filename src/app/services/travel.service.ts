@@ -1,6 +1,7 @@
 import { Injectable, signal, computed, inject } from '@angular/core';
 import { ALL_TRAVEL_DATA, TRAVELS_REGISTRY } from '../data/all-travels';
 import { TranslationService } from './translation.service';
+import { buildStages, type RawTripData } from '../core/trip-stages';
 
 export type TravelId = keyof typeof ALL_TRAVEL_DATA;
 
@@ -54,6 +55,17 @@ export class TravelService {
   readonly transportsData = computed(() => this.localeData().transports);
   readonly activitesData = computed(() => this.localeData().activites);
   readonly reservationsData = computed(() => this.localeData().reservations);
+
+  /** Vue "centrée étape" dérivée de l'itinéraire (source unique de vérité). */
+  readonly stages = computed(() => buildStages(this.itineraireData() as unknown as RawTripData));
+
+  /** Métadonnées d'en-tête du voyage (titre, dates, budget estimé). */
+  readonly tripHero = computed(() => (this.itineraireData() as unknown as RawTripData).hero);
+
+  stageAt(index: number) {
+    const list = this.stages();
+    return index >= 0 && index < list.length ? list[index] : null;
+  }
 
   select(id: string): void {
     this.selectedId.set(id);

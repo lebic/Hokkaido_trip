@@ -1,17 +1,18 @@
-<div
-  class="relative z-0 min-h-screen overflow-x-hidden font-display text-zinc-900 before:absolute before:-right-36 before:-top-28 before:h-80 before:w-80 before:rounded-full before:bg-[radial-gradient(circle_at_30%_30%,_#f8c3a1,_transparent_65%)] before:-z-10 after:absolute after:-bottom-40 after:-left-40 after:h-[420px] after:w-[420px] after:rounded-full after:bg-[radial-gradient(circle_at_60%_40%,_#b4d8c2,_transparent_70%)] after:-z-10"
->
+<div class="relative z-0 min-h-screen overflow-x-hidden text-[color:var(--tb-ink)]">
   <header
-    class="fixed left-0 right-0 top-0 z-10 flex items-center justify-between gap-4 border-b border-zinc-900/10 bg-[#f6f1ea]/80 px-6 py-5 backdrop-blur"
+    class="tb-glass fixed left-0 right-0 top-0 z-30 flex items-center justify-between gap-4 border-b border-white/40 px-5 py-3.5 sm:px-6"
   >
-    <div class="flex flex-col gap-1 uppercase tracking-[0.2em]">
-      <span class="text-sm font-semibold">{{ translationService.t().nav.brand }}</span>
-      <span class="text-[0.65rem] font-medium text-zinc-900/60">{{ travelService.currentTravelLocalized().name }}</span>
-    </div>
+    <a routerLink="/voyages" class="flex items-center gap-3">
+      <span class="tb-accent-bg flex h-9 w-9 items-center justify-center rounded-xl text-base shadow-sm" aria-hidden="true">✦</span>
+      <span class="flex flex-col leading-none">
+        <span class="font-display text-lg font-semibold tracking-tight">{{ translationService.t().nav.brand }}</span>
+        <span class="mt-0.5 text-[0.62rem] font-medium uppercase tracking-[0.2em] text-[color:var(--tb-muted)]">{{ travelService.currentTravelLocalized().name }}</span>
+      </span>
+    </a>
 
     <div class="flex items-center gap-3">
       <app-button
-        className="md:hidden border border-zinc-900/20 bg-[#fefaf5] px-4 py-2 text-[0.65rem] tracking-[0.2em]"
+        className="md:hidden border border-black/10 bg-white/60 px-4 py-2 text-[0.65rem] tracking-[0.2em]"
         variant="outline"
         size="sm"
         [ariaExpanded]="isMenuOpen()"
@@ -19,9 +20,9 @@
         (click)="toggleMenu()"
       >
         <span class="flex flex-col gap-1" aria-hidden="true">
-          <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
-          <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
-          <span class="h-0.5 w-4 rounded-full bg-zinc-900"></span>
+          <span class="h-0.5 w-4 rounded-full bg-current"></span>
+          <span class="h-0.5 w-4 rounded-full bg-current"></span>
+          <span class="h-0.5 w-4 rounded-full bg-current"></span>
         </span>
         Menu
       </app-button>
@@ -29,22 +30,19 @@
 
     <nav
       id="site-nav"
-      class="absolute left-4 right-4 top-full mt-2 flex flex-col gap-2 rounded-2xl border border-zinc-900/10 bg-[#fefaf5] p-4 shadow-xl shadow-zinc-900/10 md:static md:mt-0 md:!flex md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+      class="tb-glass absolute left-4 right-4 top-full mt-2 flex flex-col gap-1 rounded-2xl border border-white/50 p-3 shadow-xl shadow-black/10 md:static md:mt-0 md:!flex md:flex-row md:items-center md:gap-1 md:border-0 md:!bg-transparent md:p-0 md:shadow-none md:backdrop-blur-none"
       [class.hidden]="!isMenuOpen()"
     >
       <app-nav-link to="/voyages" (click)="closeMenu()">{{ translationService.t().nav.voyages }}</app-nav-link>
       <app-nav-link to="/itineraire" (click)="closeMenu()">{{ translationService.t().nav.itineraire }}</app-nav-link>
-      <app-nav-link to="/hebergements" (click)="closeMenu()">{{ translationService.t().nav.hebergements }}</app-nav-link>
-      <app-nav-link to="/transports" (click)="closeMenu()">{{ translationService.t().nav.transports }}</app-nav-link>
-      <app-nav-link to="/activites" (click)="closeMenu()">{{ translationService.t().nav.activites }}</app-nav-link>
-      <app-nav-link to="/reservations" (click)="closeMenu()">{{ translationService.t().nav.reservations }}</app-nav-link>
+      <app-nav-link to="/preparatifs" (click)="closeMenu()">{{ translationService.t().nav.preparatifs }}</app-nav-link>
 
-      <span class="hidden md:block w-px h-4 bg-zinc-900/15 mx-1"></span>
+      <span class="mx-1 hidden h-4 w-px bg-black/15 md:block"></span>
       <app-lang-picker />
     </nav>
   </header>
 
-  <main class="relative z-0 mx-auto w-full max-w-5xl px-6 pb-12 pt-28">
+  <main class="relative z-0 mx-auto w-full max-w-5xl px-5 pb-16 pt-24 sm:px-6">
     <router-outlet></router-outlet>
   </main>
 </div>
