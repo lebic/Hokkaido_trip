@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "eyebrow": "Hebergements",
+    "title": "Hebergements du sejour",
+    "description": "Alfar Hotel (1 nuit) et SOL Hotel (6 nuits, 546 EUR) reserves. Reste 2 nuits a trouver pour le week-end du 29 au 31 aout."
+  },
+  "cards": [
+    {
+      "chip": "28 - 29 Aout",
+      "tone": "forest",
+      "title": "Alfar Hotel (1 nuit)",
+      "location": "Taipei, Taiwan",
+      "nights": "1 nuit",
+      "priority": 2,
+      "description": "Premiere nuit apres l'arrivee tardive (22h10 a l'aeroport).",
+      "sections": [
+        { "title": "Statut", "items": ["Reserve"] },
+        { "title": "Reservation", "items": ["Arrivee ven. 28 aout tard dans la soiree (vol atterrit a 22h10)", "Depart sam. 29 aout", "Prevenir l'hotel de l'arrivee tardive (apres 23h)"] },
+        { "title": "Documents", "items": ["Passeport", "Confirmation (a ajouter sur Drive)"] }
+      ],
+      "links": [
+        { "label": "Alfar Hotel (Maps)", "url": "https://maps.google.com/?q=Alfar+Hotel+Taipei" }
+      ]
+    },
+    {
+      "chip": "29 - 31 Aout",
+      "tone": "clay",
+      "title": "Week-end a Taipei (2 nuits)",
+      "location": "Taipei (ou ailleurs), Taiwan",
+      "nights": "2 nuits",
+      "priority": 1,
+      "description": "Pas encore de plan pour les nuits du 29 -> 30 et du 30 -> 31 aout.",
+      "sections": [
+        { "title": "Statut", "items": ["A reserver"] },
+        { "title": "Options recommandees", "items": ["Taipei - Ximending (animation, food)", "Taipei - Main Station (pratique pour le train vers Hsinchu)", "Hsinchu des le 29 si le SOL Hotel a de la dispo", "Jiufen (1 nuit) pour le village au calme le soir"] },
+        { "title": "Documents", "items": ["Passeport", "Confirmation email"] }
+      ],
+      "links": [
+        { "label": "Booking.com Taipei", "url": "https://www.booking.com/city/tw/taipei.html" }
+      ]
+    },
+    {
+      "chip": "31 Aout - 6 Sept",
+      "tone": "berry",
+      "title": "SOL Hotel (6 nuits)",
+      "location": "Hsinchu, Taiwan",
+      "nights": "6 nuits",
+      "priority": 2,
+      "description": "Reserve. Camp de base du sejour : excursions a la journee et retour chaque soir a Hsinchu.",
+      "sections": [
+        { "title": "Budget", "items": ["546 EUR (6 nuits)"] },
+        { "title": "Statut", "items": ["Reserve"] },
+        { "title": "Reservation", "items": ["SOL Hotel - No. 10, Wenhua Street, North District, Hsinchu", "Arrivee lun. 31 aout -> Depart dim. 6 sept", "En plein centre : temple Cheng Huang et gare a quelques minutes a pied"] },
+        { "title": "Documents", "items": ["Passeport", "Confirmation (a ajouter sur Drive)"] }
+      ],
+      "links": [
+        { "label": "SOL Hotel (site officiel)", "url": "https://www.solhotel.com.tw/" },
+        { "label": "SOL Hotel (Maps)", "url": "https://maps.google.com/?q=SOL+Hotel+Hsinchu" }
+      ]
+    }
+  ]
+}

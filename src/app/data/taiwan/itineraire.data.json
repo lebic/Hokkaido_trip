@@ -1,0 +1,243 @@
+{
+  "hero": {
+    "eyebrow": "Itineraire",
+    "title": "Taiwan : Taipei -> Hsinchu",
+    "description": "Premiere fois a Taiwan. Vols : 1 544,08 EUR (aller-retour, Economy Flex). Taipei, puis une semaine a Hsinchu en excursions a la journee.",
+    "duration": "12 jours / 11 nuits",
+    "date": "27 Aout au 7 Sept 2026"
+  },
+  "cards": [
+    {
+      "chip": "27 - 29 Aout",
+      "tone": "forest",
+      "title": "Vol et arrivee a Taipei",
+      "location": "Taipei, Taiwan",
+      "description": "Long voyage via Munich et Bangkok (20h), arrivee le vendredi soir. Premiere nuit a l'Alfar Hotel.",
+      "transportMode": "flight",
+      "routeWaypoints": [
+        { "name": "Luxembourg (LUX)", "lat": 49.6233, "lng": 6.2044 },
+        { "name": "Munich (MUC)", "lat": 48.3537, "lng": 11.775 },
+        { "name": "Bangkok (BKK)", "lat": 13.69, "lng": 100.7501 },
+        { "name": "Taipei Taoyuan (TPE)", "lat": 25.0777, "lng": 121.2328 }
+      ],
+      "image": {
+        "src": "/images/header-card/taiwan/taipei.svg",
+        "alt": "Taipei",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Hebergement",
+          "items": ["Alfar Hotel (1 nuit, 28 - 29 aout)"]
+        },
+        {
+          "title": "Jeu 27 aout - Vol aller",
+          "items": [
+            "LH 2323 : Luxembourg (LUX) 20h10 -> Munich (MUC) 21h15 (Air Dolomiti)",
+            "LH 772 : Munich 22h20 -> Bangkok (BKK) 13h45 (+1 jour, A350-900)",
+            "LH 9728 : Bangkok 17h15 -> Taipei (TPE) 22h10 (Thai Airways)",
+            "Duree totale : 20h00 - arrivee Terminal 1"
+          ]
+        },
+        {
+          "title": "Ven 28 aout - Arrivee",
+          "items": [
+            "Arrivee a Taoyuan (TPE) a 22h10, Terminal 1",
+            "MRT Aeroport vers Taipei Main (~40 min, dernier depart ~23h35) ou taxi (~45 min)",
+            "Installation a l'Alfar Hotel, nuit"
+          ]
+        },
+        {
+          "title": "Sam 29 aout - Premiers pas",
+          "items": [
+            "Grasse matinee apres le voyage",
+            {
+              "text": "Ximending et temple Longshan pour se mettre dans l'ambiance",
+              "url": "https://maps.google.com/?q=25.0372,121.4999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "29 - 31 Aout",
+      "tone": "clay",
+      "title": "Taipei - week-end a planifier",
+      "location": "Taipei, Taiwan",
+      "description": "Deux nuits encore sans hebergement (29 -> 31 aout). Week-end pour decouvrir Taipei avant de descendre a Hsinchu.",
+      "image": {
+        "src": "/images/header-card/taiwan/taipei.svg",
+        "alt": "Taipei 101",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Hebergement",
+          "items": ["A reserver : 2 nuits (29 - 31 aout), pas encore de plan"]
+        },
+        {
+          "title": "Idees d'activites",
+          "items": [
+            {
+              "text": "Taipei 101 et quartier Xinyi",
+              "url": "https://maps.google.com/?q=25.0339,121.5645"
+            },
+            {
+              "text": "Memorial Chiang Kai-shek",
+              "url": "https://maps.google.com/?q=25.0347,121.5216"
+            },
+            {
+              "text": "National Palace Museum",
+              "url": "https://maps.google.com/?q=25.1024,121.5485"
+            },
+            {
+              "text": "Marches de nuit : Shilin ou Raohe",
+              "url": "https://maps.google.com/?q=25.0510,121.5769"
+            },
+            {
+              "text": "Elephant Mountain (vue sur Taipei 101 au coucher du soleil)",
+              "url": "https://maps.google.com/?q=25.0273,121.5708"
+            },
+            {
+              "text": "Excursion Jiufen et Shifen (lanternes)",
+              "url": "https://maps.google.com/?q=25.1097,121.8443"
+            }
+          ]
+        },
+        {
+          "title": "Options pour ces 2 nuits",
+          "items": [
+            "Rester a Taipei (Ximending ou Main Station, pratique pour le train)",
+            "Descendre plus tot a Hsinchu (verifier si le SOL Hotel a de la dispo)",
+            "Nuit a Jiufen pour le village le soir sans la foule"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "31 Aout - 6 Sept",
+      "tone": "berry",
+      "title": "Hsinchu - camp de base",
+      "location": "Hsinchu, Taiwan",
+      "description": "Six nuits au SOL Hotel (reserve). Base fixe pour explorer la region en excursions a la journee et revenir dormir a Hsinchu.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Taipei Main Station", "lat": 25.0478, "lng": 121.517 },
+        { "name": "Hsinchu Station", "lat": 24.8016, "lng": 120.9715 }
+      ],
+      "image": {
+        "src": "/images/header-card/taiwan/hsinchu.svg",
+        "alt": "Hsinchu",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Hebergement",
+          "items": ["SOL Hotel (6 nuits, 31 aout - 6 sept) - reserve"]
+        },
+        {
+          "title": "Transport",
+          "items": [
+            "Lun 31 aout : train TRA Taipei -> Hsinchu (~1h10, arrivee en centre-ville)",
+            "Ou THSR Taipei -> HSR Hsinchu (~35 min), puis navette vers le centre (~20 min)",
+            "Sur place : a pied dans le centre, bus urbains, YouBike"
+          ]
+        },
+        {
+          "title": "Dans Hsinchu",
+          "items": [
+            {
+              "text": "Temple du Dieu de la Ville (Cheng Huang) et son marche aux snacks",
+              "url": "https://maps.google.com/?q=24.8047,120.9656"
+            },
+            {
+              "text": "Porte de l'Est (Yingxi Gate) et les douves",
+              "url": "https://maps.google.com/?q=24.8018,120.9718"
+            },
+            {
+              "text": "Parc de Hsinchu et zoo",
+              "url": "https://maps.google.com/?q=24.8003,120.9793"
+            },
+            {
+              "text": "Port de peche de Nanliao et piste cyclable des 17 km de cote",
+              "url": "https://maps.google.com/?q=24.8497,120.9230"
+            }
+          ]
+        },
+        {
+          "title": "Excursions a la journee",
+          "items": [
+            {
+              "text": "Neiwan : vieille rue et petite ligne de train foret (~1h)",
+              "url": "https://maps.google.com/?q=24.7057,121.1839"
+            },
+            {
+              "text": "Beipu : village Hakka, vieille rue et lei cha (the pile, ~50 min en bus)",
+              "url": "https://maps.google.com/?q=24.7003,121.0577"
+            },
+            {
+              "text": "Lion's Head Mountain (Shitoushan) : temples a flanc de montagne",
+              "url": "https://maps.google.com/?q=24.6620,120.9970"
+            },
+            {
+              "text": "Taipei en THSR (~35 min) pour completer le week-end",
+              "url": "https://maps.google.com/?q=25.0478,121.5170"
+            },
+            {
+              "text": "Taichung en THSR (~35 min) : National Taichung Theater, Miyahara",
+              "url": "https://maps.google.com/?q=24.1629,120.6409"
+            }
+          ]
+        },
+        {
+          "title": "Specialites locales",
+          "items": [
+            "Bihun : vermicelles de riz, la specialite de Hsinchu",
+            "Gong wan : soupe de boulettes de porc",
+            "Rou yuan : boulette de viande dans sa pate translucide"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "6 - 7 Sept",
+      "tone": "forest",
+      "title": "Retour Luxembourg",
+      "location": "Hsinchu -> Luxembourg",
+      "description": "Dernier matin a Hsinchu, retour vers l'aeroport de Taoyuan puis vol de nuit via Bangkok et Munich.",
+      "transportMode": "flight",
+      "routeWaypoints": [
+        { "name": "Taipei Taoyuan (TPE)", "lat": 25.0777, "lng": 121.2328 },
+        { "name": "Bangkok (BKK)", "lat": 13.69, "lng": 100.7501 },
+        { "name": "Munich (MUC)", "lat": 48.3537, "lng": 11.775 },
+        { "name": "Luxembourg (LUX)", "lat": 49.6233, "lng": 6.2044 }
+      ],
+      "image": {
+        "src": "/images/placeholders/airport.svg",
+        "alt": "Aeroport de Taoyuan",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Transport",
+          "items": [
+            "Hsinchu -> aeroport Taoyuan : THSR HSR Hsinchu -> HSR Taoyuan + MRT aeroport (~50 min), ou bus/taxi direct (~45 min)",
+            "Arriver au Terminal 1 vers 16h30 (vol a 18h50)",
+            "LH 9729 : Taipei (TPE) 18h50 -> Bangkok (BKK) 21h35 (Thai Airways, A350-900)",
+            "LH 773 : Bangkok 22h55 -> Munich (MUC) 05h15 (+1 jour)",
+            "LH 2316 : Munich 07h55 -> Luxembourg (LUX) 09h00, lundi 7 sept",
+            "Duree totale : 20h10"
+          ]
+        },
+        {
+          "title": "A prevoir",
+          "items": [
+            "Enregistrement en ligne la veille",
+            "Verifier la franchise bagages : 1 soute 23 kg + 1 cabine 8 kg",
+            "Garder de quoi s'occuper : 2 escales, nuit dans l'avion"
+          ]
+        }
+      ]
+    }
+  ]
+}

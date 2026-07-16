@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "eyebrow": "Transport",
+    "title": "Confirmed flights + trains on site",
+    "description": "Lufthansa round trip via Munich and Bangkok (1,544.08 EUR, Economy Flex, confirmed). On site: TRA, THSR and buses."
+  },
+  "cards": [
+    {
+      "chip": "Aug 27 - 28",
+      "tone": "forest",
+      "title": "Outbound flight Luxembourg -> Taipei",
+      "category": "vol",
+      "toReserve": false,
+      "description": "Confirmed. Economy Flex, 2 layovers (Munich, Bangkok), total duration 20h00.",
+      "sections": [
+        { "title": "Itinerary", "items": ["LH 2323: LUX 8:10pm -> MUC 9:15pm (Air Dolomiti, E195) - 1h05 transfer", "LH 772: MUC 10:20pm -> BKK 1:45pm +1 (Lufthansa, A350-900) - 3h30 transfer", "LH 9728: BKK 5:15pm -> TPE 10:10pm (Thai Airways, A321neo)", "Arrival at Taoyuan Terminal 1"] },
+        { "title": "Baggage", "items": ["1 personal item (max 40 x 30 x 15 cm)", "1 cabin bag 8 kg (max 55 x 40 x 23 cm)", "1 checked bag 23 kg", "Seat reservation included"] },
+        { "title": "Documents", "items": ["Passport (valid 6 months beyond return)", "Visa-free entry up to 90 days", "Taiwan Arrival Card online before departure"] }
+      ],
+      "links": [
+        { "label": "Lufthansa - My booking", "url": "https://www.lufthansa.com/lu/en/my-bookings" }
+      ]
+    },
+    {
+      "chip": "Sep 6 - 7",
+      "tone": "clay",
+      "title": "Return flight Taipei -> Luxembourg",
+      "category": "vol",
+      "toReserve": false,
+      "description": "Confirmed. Sunday evening departure, Monday morning arrival in Luxembourg. Total duration 20h10.",
+      "sections": [
+        { "title": "Itinerary", "items": ["LH 9729: TPE 6:50pm -> BKK 9:35pm (Thai Airways, A350-900) - 1h20 transfer", "LH 773: BKK 10:55pm -> MUC 5:15am +1 (Lufthansa, A350-900) - 2h40 transfer", "LH 2316: MUC 7:55am -> LUX 9:00am (Lufthansa, A319)", "Departure from Taoyuan Terminal 1"] },
+        { "title": "To plan", "items": ["Online check-in the day before", "Be at Terminal 1 around 4:30pm"] }
+      ],
+      "links": [
+        { "label": "Lufthansa - My booking", "url": "https://www.lufthansa.com/lu/en/my-bookings" }
+      ]
+    },
+    {
+      "chip": "Aug 31",
+      "tone": "berry",
+      "title": "Train Taipei -> Hsinchu",
+      "category": "train",
+      "toReserve": true,
+      "description": "TRA (~1h10, center to center) or THSR (~35 min + shuttle).",
+      "sections": [
+        { "title": "Booking", "items": ["TRA: tickets at the station or app, no need to book early", "THSR: early bird tickets online (-10 to -35%) 28 days ahead", "THSR: Hsinchu HSR station (Zhubei) is ~20 min from downtown"] }
+      ],
+      "links": [
+        { "label": "TRA (regular trains)", "url": "https://www.railway.gov.tw/tra-tip-web/tip?lang=EN_US" },
+        { "label": "THSR (high-speed rail)", "url": "https://en.thsrc.com.tw/" }
+      ]
+    },
+    {
+      "chip": "On site",
+      "tone": "forest",
+      "title": "Local transport",
+      "category": "local",
+      "toReserve": false,
+      "description": "EasyCard for everything: MRT, buses, TRA, YouBike and even convenience stores.",
+      "sections": [
+        { "title": "On arrival", "items": ["Buy an EasyCard at the airport (MRT or convenience store)", "Airport MRT TPE -> Taipei Main: ~40 min, last departure ~11:35pm"] },
+        { "title": "Taipei", "items": ["Dense, easy MRT, everything in English", "YouBike along the riverbanks"] },
+        { "title": "Hsinchu and around", "items": ["Downtown walkable from the SOL Hotel", "Buses to Beipu, TRA Neiwan line for the valley", "THSR for Taipei / Taichung day trips"] }
+      ],
+      "links": [
+        { "label": "Taoyuan Airport MRT", "url": "https://www.tymetro.com.tw/tymetro-new/en/" }
+      ]
+    },
+    {
+      "chip": "Sep 6",
+      "tone": "clay",
+      "title": "Hsinchu -> Taoyuan airport",
+      "category": "local",
+      "toReserve": false,
+      "description": "Allow ~1h travel, to time before the 6:50pm flight.",
+      "sections": [
+        { "title": "Options", "items": ["THSR Hsinchu HSR -> Taoyuan HSR (~12 min) then airport MRT (~20 min)", "Or direct taxi Hsinchu -> TPE (~45 min, ~1200-1500 TWD)", "Leave Hsinchu by 3pm at the latest"] }
+      ]
+    }
+  ]
+}

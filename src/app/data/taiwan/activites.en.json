@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "eyebrow": "Activities",
+    "title": "Activities to book",
+    "description": "Experiences that need a reservation or tickets in advance. Day-by-day ideas are in the itinerary."
+  },
+  "activities": [
+    {
+      "chip": "Aug 29 - 30",
+      "title": "Taipei 101 Observatory",
+      "location": "Taipei, Taiwan",
+      "description": "Timed tickets online to skip the line. Aim for late afternoon and the sunset.",
+      "links": [
+        { "label": "Taipei 101 Observatory", "url": "https://www.taipei-101.com.tw/en/observatory/" }
+      ]
+    },
+    {
+      "chip": "Aug 29 - 30",
+      "title": "National Palace Museum",
+      "location": "Taipei, Taiwan",
+      "description": "The world's largest collection of Chinese art. Online tickets recommended on weekends.",
+      "links": [
+        { "label": "NPM - tickets", "url": "https://www.npm.gov.tw/en/" }
+      ]
+    },
+    {
+      "chip": "Aug 30",
+      "title": "Jiufen & Shifen day trip",
+      "location": "Northeast of Taipei",
+      "description": "Jiufen village + Shifen lanterns. Organized tour (easier) or DIY by bus/train.",
+      "links": [
+        { "label": "Tours (Klook)", "url": "https://www.klook.com/en-US/city/19-taipei/" }
+      ]
+    },
+    {
+      "chip": "Sep 1 - 5",
+      "title": "THSR early bird (day trips)",
+      "location": "From Hsinchu",
+      "description": "Discounted THSR tickets 28 days ahead for the Taipei and Taichung days.",
+      "links": [
+        { "label": "THSR", "url": "https://en.thsrc.com.tw/" }
+      ]
+    }
+  ]
+}

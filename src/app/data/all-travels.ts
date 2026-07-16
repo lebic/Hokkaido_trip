@@ -1,5 +1,6 @@
 import { hokkaidoData } from './hokkaido/index';
 import { viennaMunichData } from './vienna-munich/index';
+import { taiwanData } from './taiwan/index';
 
 export type TravelTheme = Record<string, string>;
 
@@ -47,6 +48,31 @@ export const TRAVELS_REGISTRY: TravelMeta[] = [
     },
   },
   {
+    id: 'taiwan',
+    name: 'Taipei & Hsinchu',
+    subtitle: 'Taïwan',
+    subtitleEn: 'Taiwan',
+    dates: '27 Août – 7 Sept 2026',
+    duration: '12 jours / 11 nuits',
+    durationEn: '12 days / 11 nights',
+    description: 'Première fois à Taïwan : Taipei et ses marchés de nuit, puis une semaine à Hsinchu en excursions à la journée.',
+    descriptionEn: 'First time in Taiwan: Taipei and its night markets, then a week in Hsinchu with day trips all around.',
+    image: '/images/header-card/taiwan/taipei.svg',
+    imagePosition: 'center 50%',
+    color: 'from-rose-500 to-amber-400',
+    theme: {
+      '--tb-canvas': '#eef0e9',
+      '--tb-ink': '#1d211f',
+      '--tb-muted': '#5f6a64',
+      '--tb-accent': '#0e7a6a',
+      '--tb-accent-strong': '#0a5f53',
+      '--tb-accent-soft': '#d9ede6',
+      '--tb-glow-a': '214 69 69',
+      '--tb-glow-b': '20 122 106',
+      '--tb-hero-tint': '12 26 22',
+    },
+  },
+  {
     id: 'vienna-munich',
     name: 'Vienna & Munich',
     subtitle: 'Autriche · Allemagne',
@@ -75,5 +101,6 @@ export const TRAVELS_REGISTRY: TravelMeta[] = [
 
 export const ALL_TRAVEL_DATA = {
   hokkaido: hokkaidoData,
+  taiwan: taiwanData,
   'vienna-munich': viennaMunichData,
 };

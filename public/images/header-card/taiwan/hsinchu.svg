@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7d9a8"/>
+      <stop offset="0.55" stop-color="#f2b07e"/>
+      <stop offset="1" stop-color="#e2846a"/>
+    </linearGradient>
+    <linearGradient id="hwater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d98f6d"/>
+      <stop offset="1" stop-color="#8a4f4a"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7e2f33"/>
+      <stop offset="1" stop-color="#5c1f26"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a082"/>
+      <stop offset="1" stop-color="#9c7458"/>
+    </linearGradient>
+    <radialGradient id="hsun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3cf" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff3cf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#hsky)"/>
+  <circle cx="880" cy="250" r="210" fill="url(#hsun)"/>
+  <circle cx="880" cy="250" r="58" fill="#fff0c4"/>
+
+  <!-- hills -->
+  <path d="M0 470 L180 400 L360 462 L560 396 L780 466 L980 408 L1200 460 L1200 750 L0 750 Z" fill="#b96a54" opacity="0.55"/>
+
+  <!-- wind turbines on the coast (Hsinchu, the windy city) -->
+  <g stroke="#7a4038" stroke-width="6" opacity="0.8">
+    <line x1="150" y1="470" x2="150" y2="360"/>
+    <line x1="1050" y1="462" x2="1050" y2="368"/>
+  </g>
+  <g fill="#7a4038" opacity="0.8">
+    <g transform="translate(150,360)">
+      <path d="M0 0 L-46 -22 L-40 -30 Z"/>
+      <path d="M0 0 L40 -30 L46 -20 Z"/>
+      <path d="M0 0 L6 52 L-6 52 Z" transform="rotate(35)"/>
+      <circle r="7"/>
+    </g>
+    <g transform="translate(1050,368)">
+      <path d="M0 0 L-44 -18 L-38 -27 Z"/>
+      <path d="M0 0 L36 -30 L44 -22 Z"/>
+      <path d="M0 0 L6 48 L-6 48 Z" transform="rotate(28)"/>
+      <circle r="7"/>
+    </g>
+  </g>
+
+  <!-- moat / water -->
+  <rect x="0" y="620" width="1200" height="130" fill="url(#hwater)"/>
+  <g stroke="#ffd9a6" stroke-width="4" opacity="0.5" stroke-linecap="round">
+    <line x1="180" y1="656" x2="300" y2="656"/>
+    <line x1="420" y1="688" x2="560" y2="688"/>
+    <line x1="700" y1="662" x2="830" y2="662"/>
+    <line x1="920" y1="700" x2="1060" y2="700"/>
+  </g>
+
+  <!-- East Gate (Yingxi Gate) -->
+  <g>
+    <!-- stone base -->
+    <path d="M400 620 L410 470 L790 470 L800 620 Z" fill="url(#base)"/>
+    <path d="M560 620 L560 540 Q600 500 640 540 L640 620 Z" fill="#4a2c28"/>
+    <g stroke="#8a6449" stroke-width="3" opacity="0.6">
+      <line x1="412" y1="505" x2="788" y2="505"/>
+      <line x1="408" y1="545" x2="792" y2="545"/>
+      <line x1="404" y1="585" x2="796" y2="585"/>
+    </g>
+    <!-- balustrade -->
+    <rect x="416" y="452" width="368" height="18" fill="#8a5a44"/>
+    <!-- pavilion lower level -->
+    <rect x="470" y="392" width="260" height="60" fill="#a3402f"/>
+    <g fill="#f4d9a1" opacity="0.85">
+      <rect x="492" y="404" width="26" height="36"/>
+      <rect x="540" y="404" width="26" height="36"/>
+      <rect x="588" y="404" width="26" height="36"/>
+      <rect x="636" y="404" width="26" height="36"/>
+      <rect x="684" y="404" width="26" height="36"/>
+    </g>
+    <!-- lower roof -->
+    <path d="M440 392 Q600 350 760 392 L742 366 Q600 330 458 366 Z" fill="url(#roof)"/>
+    <path d="M440 392 Q426 388 416 374 L458 366 Z" fill="url(#roof)"/>
+    <path d="M760 392 Q774 388 784 374 L742 366 Z" fill="url(#roof)"/>
+    <!-- pavilion upper level -->
+    <rect x="510" y="312" width="180" height="54" fill="#a3402f"/>
+    <g fill="#f4d9a1" opacity="0.85">
+      <rect x="530" y="324" width="24" height="32"/>
+      <rect x="588" y="324" width="24" height="32"/>
+      <rect x="646" y="324" width="24" height="32"/>
+    </g>
+    <!-- upper roof -->
+    <path d="M486 312 Q600 274 714 312 L694 288 Q600 256 506 288 Z" fill="url(#roof)"/>
+    <path d="M486 312 Q472 308 462 294 L506 288 Z" fill="url(#roof)"/>
+    <path d="M714 312 Q728 308 738 294 L694 288 Z" fill="url(#roof)"/>
+    <!-- ridge ornament -->
+    <rect x="592" y="248" width="16" height="14" rx="3" fill="#5c1f26"/>
+    <!-- reflection -->
+    <path d="M410 622 L790 622 L770 700 L430 700 Z" fill="#5c2f2e" opacity="0.35"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#6b3a33" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M240 220 q 12 -12 24 0 q 12 -12 24 0"/>
+    <path d="M320 260 q 10 -10 20 0 q 10 -10 20 0"/>
+    <path d="M1010 190 q 10 -10 20 0 q 10 -10 20 0"/>
+  </g>
+</svg>
