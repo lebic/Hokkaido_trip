@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Itinerary",
     "title": "Austria & Bavaria: Vienna -> Munich",
-    "description": "Estimated total cost: ~1600 EUR. Vienna, Salzburg, Hallstatt, Munich and Neuschwanstein, by train.",
+    "description": "Estimated total cost: ~3350 EUR for 2 excl. meals (~1700 Anthony / ~1650 Victoria, incl. her long-haul from Taiwan), ~4300 EUR all in. Vienna, Salzburg, Hallstatt, Munich and Neuschwanstein, by train.",
     "duration": "12 days / 11 nights",
     "date": "Jan 29 to Feb 9, 2027"
   },
@@ -31,7 +31,7 @@
         {
           "title": "Day 1 (Jan 29) - Transport",
           "items": [
-            "Flight Luxembourg (LUX) -> Vienna (VIE)",
+            "Flight Luxembourg (LUX) 2:20pm -> Vienna (VIE) 4:05pm - LG 8853",
             "Victoria: arrives in Vienna on Jan 29 at 12:30",
             "CAT or S-Bahn from the airport to the centre (~16-30 min)"
           ]
@@ -162,7 +162,7 @@
       "tone": "berry",
       "title": "Hallstatt",
       "location": "Hallstatt, Austria",
-      "description": "One night by the lake, in Austria's most photographed alpine village. Subject to booking.",
+      "description": "One night by the lake, in Austria's most photographed alpine village.",
       "transportMode": "train",
       "routeWaypoints": [
         { "name": "Salzburg Hbf", "lat": 47.813, "lng": 13.0459 },
@@ -176,14 +176,14 @@
       "sections": [
         {
           "title": "Accommodation",
-          "items": ["Hotel in Hallstatt (1 night, Feb 4 - 5) - subject to booking"]
+          "items": ["I da Mitt - Marktplatz 45 (1 night, Feb 4 - 5) - booked"]
         },
         {
           "title": "Transport",
           "items": [
             "Train Salzburg -> Hallstatt (~2h20, via Attnang-Puchheim)",
             "Ferry shuttle from Hallstatt station to the village",
-            "To check: hotel availability + train times"
+            "To check: train times (hotel check-in between 2pm and 8pm)"
           ]
         },
         {

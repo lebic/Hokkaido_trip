@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Accommodation",
     "title": "Accommodation to book",
-    "description": "Estimated total accommodation budget: ~1216 EUR"
+    "description": "Estimated total accommodation budget: ~1314 EUR (~957 Anthony / ~357 Victoria)"
   },
   "cards": [
     {
@@ -14,7 +14,7 @@
       "priority": 2,
       "description": "Booked and paid. Double Room, 2 adults, breakfast included.",
       "sections": [
-        { "title": "Budget", "items": ["357.21 EUR (2 guests, 4 nights) - prepaid via Booking, breakfast included"] },
+        { "title": "Budget", "items": ["357.21 EUR (2 guests, 4 nights) - covered by Victoria, breakfast included"] },
         { "title": "Status", "items": ["Booked & paid - see confirmation (Drive)"] },
         { "title": "Reservation", "items": ["Hotel Caroline - Gudrunstrasse 138, 1100 Vienna (Favoriten)", "Check-in Fri Jan 29 (from 2pm) -> Check-out Tue Feb 2 (by noon)", "Double Room, 2 adults - breakfast included", "Prepaid via Booking (357.21 EUR)", "Free cancellation until Jan 29, 2027 6pm (then 105.30 EUR)"] },
         { "title": "Documents", "items": ["Passport or ID card", "Confirmation (see Drive)"] }
@@ -33,8 +33,8 @@
       "priority": 2,
       "description": "Close to the old town (Altstadt).",
       "sections": [
-        { "title": "Budget", "items": ["~220 EUR (110 EUR / night)"] },
-        { "title": "Status", "items": ["To book"] },
+        { "title": "Budget", "items": ["~220 EUR (110 EUR / night) - covered by Anthony"] },
+        { "title": "Status", "items": ["To book by Anthony"] },
         { "title": "Recommended options", "items": ["Altstadt (left bank)", "Near Salzburg Hbf station", "Neustadt (Mirabell) district"] },
         { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
       ],
@@ -43,18 +43,21 @@
     {
       "chip": "Feb 4 - 5",
       "tone": "berry",
-      "title": "Hallstatt (1 night)",
+      "title": "I da Mitt (1 night)",
       "location": "Hallstatt, Austria",
       "nights": "1 night",
-      "priority": 1,
-      "description": "Subject to booking: few hotels, book very early.",
+      "priority": 2,
+      "description": "Booked. Deluxe Double Room, 2 adults, breakfast not included.",
       "sections": [
-        { "title": "Budget", "items": ["~150 EUR"] },
-        { "title": "Status", "items": ["Book early (limited availability)"] },
-        { "title": "Recommended options", "items": ["Lakeside hotel (village)", "Obertraun (next door, cheaper)", "Bad Goisern (15 min by train)"] },
-        { "title": "To check", "items": ["Train access confirmed", "Cancellation policy"] }
+        { "title": "Budget", "items": ["248 EUR (2 guests, 1 night) - covered by Anthony, incl. 8 EUR city tax"] },
+        { "title": "Status", "items": ["Booked - see confirmation (Drive)"] },
+        { "title": "Reservation", "items": ["I da Mitt - Marktplatz 45, 4830 Hallstatt (+43 664 1101200)", "Check-in Thu Feb 4 (2pm - 8pm) -> Check-out Fri Feb 5 (6am - 11am)", "Deluxe Double Room, 2 adults - 1 extra-large double bed", "Breakfast not included", "Confirmation no. 6697.108.152 - PIN 5863", "Non-refundable (full amount charged)", "No parking at the property - free WiFi"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation (see Drive)"] }
       ],
-      "links": [{ "label": "Booking.com Hallstatt", "url": "https://www.booking.com/city/at/hallstatt.html" }]
+      "links": [
+        { "label": "My confirmation (Drive)", "url": "https://drive.google.com/drive/u/3/folders/1XrbPvawh1At-STGiJhQFtEBhKEv-MhDH" },
+        { "label": "Booking.com Hallstatt", "url": "https://www.booking.com/city/at/hallstatt.html" }
+      ]
     },
     {
       "chip": "Feb 5 - 8",
@@ -65,7 +68,7 @@
       "priority": 2,
       "description": "Booked. Queen-size bed room, 2 adults, breakfast not included.",
       "sections": [
-        { "title": "Budget", "items": ["349 EUR (2 guests, 3 nights) - pay at the property"] },
+        { "title": "Budget", "items": ["349 EUR (2 guests, 3 nights) - covered by Anthony, pay at the property"] },
         { "title": "Status", "items": ["Booked - see confirmation (Drive)"] },
         { "title": "Reservation", "items": ["Goethestr. 7, Ludwigsvorstadt, 80336 Munich", "Check-in Fri Feb 5 (from 3pm) -> Check-out Mon Feb 8 (by noon)", "Queen-size bed room, 2 adults", "Free cancellation until Feb 3, 2027", "Public parking ~32 EUR/day (tell reception) - free WiFi"] },
         { "title": "Documents", "items": ["Passport or ID card", "Confirmation (see Drive)"] }
@@ -84,8 +87,8 @@
       "priority": 1,
       "description": "Last night near Neuschwanstein Castle.",
       "sections": [
-        { "title": "Budget", "items": ["~140 EUR"] },
-        { "title": "Status", "items": ["To book (few hotels in the area)"] },
+        { "title": "Budget", "items": ["~140 EUR - covered by Anthony"] },
+        { "title": "Status", "items": ["To book by Anthony (few hotels in the area)"] },
         { "title": "Recommended options", "items": ["Fussen centre (old town + station)", "Hohenschwangau (foot of the castles)", "Schwangau (near Neuschwanstein)"] },
         { "title": "To check", "items": ["Train Munich -> Fussen (~2h)", "Bus to Hohenschwangau"] }
       ],

@@ -10,13 +10,30 @@
       "tone": "forest",
       "title": "Vol Luxembourg -> Vienne",
       "category": "vol",
-      "toReserve": true,
-      "description": "Vol aller vers Vienne (VIE).",
+      "toReserve": false,
+      "description": "Reserve et paye. Vol direct Luxair LG 8853, tarif Flex.",
       "sections": [
-        { "title": "Reservation", "items": ["Billet Luxembourg (LUX) -> Vienne (VIE)", "Verifier bagages"] },
+        { "title": "Budget", "items": ["214 EUR - reserve et paye (Anthony uniquement)"] },
+        { "title": "Statut", "items": ["Reserve et paye"] },
+        { "title": "Reservation", "items": ["Luxembourg (LUX) 14h20 -> Vienne (VIE) 16h05, Terminal 3", "Vol LG 8853 - direct, 1h45 - De Havilland DHC-8 400", "Tarif Flex : 1 bagage cabine + 1 bagage soute 23 kg", "Selection de siege, collation, fast lane inclus", "Remboursement complet et changement de vol possibles"] },
         { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation email"] }
       ],
       "links": [{ "label": "Luxair", "url": "https://www.luxair.lu/en" }]
+    },
+    {
+      "chip": "29 Jan / 9 Fev",
+      "tone": "berry",
+      "title": "Vols Victoria : Taiwan <-> Europe",
+      "category": "vol",
+      "toReserve": false,
+      "description": "Reserve par Victoria. Elle vient de Taiwan, long-courrier a sa charge.",
+      "sections": [
+        { "title": "Budget", "items": ["Montant non communique - ~900 EUR estime dans le budget global"] },
+        { "title": "Statut", "items": ["Reserve par Victoria"] },
+        { "title": "Reservation", "items": ["Aller : arrivee a Vienne le 29 jan a 12h30", "Retour : depart de Munich le 9 fev a 21h25", "Vols differents de ceux d'Anthony (Luxair)"] },
+        { "title": "A verifier", "items": ["Recuperer aupres de Victoria : compagnie, numeros de vol, prix"] }
+      ],
+      "links": []
     },
     {
       "chip": "2 Fev",
@@ -36,7 +53,7 @@
       "title": "Train Salzbourg -> Hallstatt",
       "category": "train",
       "toReserve": true,
-      "description": "~2h20 via Attnang-Puchheim. Sous reserve d'aller a Hallstatt.",
+      "description": "~2h20 via Attnang-Puchheim. Arrivee hotel entre 14h et 20h.",
       "sections": [
         { "title": "Reservation", "items": ["Salzburg Hbf -> Hallstatt", "Puis navette-bateau vers le village"] },
         { "title": "A verifier", "items": ["Horaires trains en hiver", "Correspondance a Attnang-Puchheim"] }
@@ -76,10 +93,12 @@
       "tone": "clay",
       "title": "Vol Munich -> Luxembourg",
       "category": "vol",
-      "toReserve": true,
-      "description": "Vol retour depuis Munich (MUC).",
+      "toReserve": false,
+      "description": "Reserve et paye. Vol retour depuis Munich (MUC).",
       "sections": [
-        { "title": "Reservation", "items": ["Billet Munich (MUC) -> Luxembourg (LUX)", "Choisir option bagages"] }
+        { "title": "Budget", "items": ["151,97 EUR - reserve et paye (Anthony uniquement)"] },
+        { "title": "Statut", "items": ["Reserve et paye"] },
+        { "title": "Reservation", "items": ["Billet Munich (MUC) -> Luxembourg (LUX)"] }
       ],
       "links": [{ "label": "Luxair", "url": "https://www.luxair.lu/en" }]
     },

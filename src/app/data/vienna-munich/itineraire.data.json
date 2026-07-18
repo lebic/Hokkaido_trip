@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Itineraire",
     "title": "Autriche & Baviere : Vienne -> Munich",
-    "description": "Cout total estime : +-1600 EUR. Vienne, Salzbourg, Hallstatt, Munich et Neuschwanstein, en train.",
+    "description": "Cout total estime : +-3350 EUR pour 2 hors repas (~1700 Anthony / ~1650 Victoria, dont son long-courrier depuis Taiwan), +-4300 EUR tout compris. Vienne, Salzbourg, Hallstatt, Munich et Neuschwanstein, en train.",
     "duration": "12 jours / 11 nuits",
     "date": "29 Jan au 9 Fev 2027"
   },
@@ -31,7 +31,7 @@
         {
           "title": "Jour 1 (29 jan) - Transport",
           "items": [
-            "Vol Luxembourg (LUX) -> Vienne (VIE)",
+            "Vol Luxembourg (LUX) 14h20 -> Vienne (VIE) 16h05 - LG 8853",
             "Victoria : arrivee a Vienne le 29 jan a 12h30",
             "CAT ou S-Bahn depuis l'aeroport vers le centre (~16-30 min)"
           ]
@@ -162,7 +162,7 @@
       "tone": "berry",
       "title": "Hallstatt",
       "location": "Hallstatt, Autriche",
-      "description": "Une nuit au bord du lac, dans le village alpin le plus photographie d'Autriche. Sous reserve de reservation.",
+      "description": "Une nuit au bord du lac, dans le village alpin le plus photographie d'Autriche.",
       "transportMode": "train",
       "routeWaypoints": [
         { "name": "Salzburg Hbf", "lat": 47.813, "lng": 13.0459 },
@@ -176,14 +176,14 @@
       "sections": [
         {
           "title": "Hebergement",
-          "items": ["Hotel a Hallstatt (1 nuit, 4 - 5 fev) - sous reserve de reservation"]
+          "items": ["I da Mitt - Marktplatz 45 (1 nuit, 4 - 5 fev) - reserve"]
         },
         {
           "title": "Transport",
           "items": [
             "Train Salzburg -> Hallstatt (~2h20, via Attnang-Puchheim)",
             "Navette-bateau depuis la gare Hallstatt vers le village",
-            "A verifier : disponibilite hotel + horaires trains"
+            "A verifier : horaires trains (arrivee hotel entre 14h et 20h)"
           ]
         },
         {

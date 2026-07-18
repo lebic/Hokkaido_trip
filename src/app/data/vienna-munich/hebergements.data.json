@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Hebergements",
     "title": "Hebergements a reserver",
-    "description": "Budget total estime hebergements : ~1216 EUR"
+    "description": "Budget total estime hebergements : ~1314 EUR (~957 Anthony / ~357 Victoria)"
   },
   "cards": [
     {
@@ -14,7 +14,7 @@
       "priority": 2,
       "description": "Reserve et paye. Chambre Double, 2 adultes, petit-dejeuner inclus.",
       "sections": [
-        { "title": "Budget", "items": ["357,21 EUR (2 pers, 4 nuits) - paye via Booking, petit-dej inclus"] },
+        { "title": "Budget", "items": ["357,21 EUR (2 pers, 4 nuits) - pris en charge par Victoria, petit-dej inclus"] },
         { "title": "Statut", "items": ["Reserve et paye - voir confirmation (Drive)"] },
         { "title": "Reservation", "items": ["Hotel Caroline - Gudrunstrasse 138, 1100 Vienne (Favoriten)", "Arrivee ven. 29 jan (des 14h) -> Depart mar. 2 fev (jusqu'a 12h)", "Chambre Double, 2 adultes - petit-dejeuner inclus", "Paye d'avance via Booking (357,21 EUR)", "Annulation gratuite jusqu'au 29 jan 2027 18h (puis 105,30 EUR)"] },
         { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation (voir Drive)"] }
@@ -33,8 +33,8 @@
       "priority": 2,
       "description": "Proche de la vieille ville (Altstadt).",
       "sections": [
-        { "title": "Budget", "items": ["~220 EUR (110 EUR / nuit)"] },
-        { "title": "Statut", "items": ["A reserver"] },
+        { "title": "Budget", "items": ["~220 EUR (110 EUR / nuit) - pris en charge par Anthony"] },
+        { "title": "Statut", "items": ["A reserver par Anthony"] },
         { "title": "Options recommandees", "items": ["Altstadt (rive gauche)", "Proche gare Salzburg Hbf", "Quartier Neustadt (Mirabell)"] },
         { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation email"] }
       ],
@@ -43,18 +43,21 @@
     {
       "chip": "4 - 5 Fev",
       "tone": "berry",
-      "title": "Hallstatt (1 nuit)",
+      "title": "I da Mitt (1 nuit)",
       "location": "Hallstatt, Autriche",
       "nights": "1 nuit",
-      "priority": 1,
-      "description": "Sous reserve : peu d'hotels, reserver tres tot.",
+      "priority": 2,
+      "description": "Reserve. Chambre Double Deluxe, 2 adultes, petit-dejeuner non inclus.",
       "sections": [
-        { "title": "Budget", "items": ["~150 EUR"] },
-        { "title": "Statut", "items": ["A reserver en priorite (disponibilite limitee)"] },
-        { "title": "Options recommandees", "items": ["Hotel au bord du lac (village)", "Obertraun (a cote, moins cher)", "Bad Goisern (a 15 min en train)"] },
-        { "title": "A verifier", "items": ["Acces en train confirme", "Politique d'annulation"] }
+        { "title": "Budget", "items": ["248 EUR (2 pers, 1 nuit) - pris en charge par Anthony, dont 8 EUR de taxe de sejour"] },
+        { "title": "Statut", "items": ["Reserve - voir confirmation (Drive)"] },
+        { "title": "Reservation", "items": ["I da Mitt - Marktplatz 45, 4830 Hallstatt (+43 664 1101200)", "Arrivee jeu. 4 fev (14h - 20h) -> Depart ven. 5 fev (6h - 11h)", "Chambre Double Deluxe, 2 adultes - 1 tres grand lit double", "Petit-dejeuner non inclus", "Confirmation n. 6697.108.152 - code 5863", "Annulation non remboursable (montant total debite)", "Pas de parking a l'etablissement - WiFi gratuit"] },
+        { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation (voir Drive)"] }
       ],
-      "links": [{ "label": "Booking.com Hallstatt", "url": "https://www.booking.com/city/at/hallstatt.html" }]
+      "links": [
+        { "label": "Ma confirmation (Drive)", "url": "https://drive.google.com/drive/u/3/folders/1XrbPvawh1At-STGiJhQFtEBhKEv-MhDH" },
+        { "label": "Booking.com Hallstatt", "url": "https://www.booking.com/city/at/hallstatt.html" }
+      ]
     },
     {
       "chip": "5 - 8 Fev",
@@ -65,7 +68,7 @@
       "priority": 2,
       "description": "Reserve. Chambre Lit Queen-Size, 2 adultes, petit-dejeuner non inclus.",
       "sections": [
-        { "title": "Budget", "items": ["349 EUR (2 pers, 3 nuits) - a regler sur place"] },
+        { "title": "Budget", "items": ["349 EUR (2 pers, 3 nuits) - pris en charge par Anthony, a regler sur place"] },
         { "title": "Statut", "items": ["Reserve - voir confirmation (Drive)"] },
         { "title": "Reservation", "items": ["Goethestr. 7, Ludwigsvorstadt, 80336 Munich", "Arrivee ven. 5 fev (des 15h) -> Depart lun. 8 fev (jusqu'a 12h)", "Chambre Lit Queen-Size, 2 adultes", "Annulation gratuite jusqu'au 3 fev 2027", "Parking public ~32 EUR/jour (prevenir la reception) - WiFi gratuit"] },
         { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation (voir Drive)"] }
@@ -84,8 +87,8 @@
       "priority": 1,
       "description": "Derniere nuit pres du chateau de Neuschwanstein.",
       "sections": [
-        { "title": "Budget", "items": ["~140 EUR"] },
-        { "title": "Statut", "items": ["A reserver (peu d'hotels en station)"] },
+        { "title": "Budget", "items": ["~140 EUR - pris en charge par Anthony"] },
+        { "title": "Statut", "items": ["A reserver par Anthony (peu d'hotels en station)"] },
         { "title": "Options recommandees", "items": ["Fussen centre (vieille ville + gare)", "Hohenschwangau (au pied des chateaux)", "Schwangau (proche Neuschwanstein)"] },
         { "title": "A verifier", "items": ["Acces train Munich -> Fussen (~2h)", "Bus vers Hohenschwangau"] }
       ],

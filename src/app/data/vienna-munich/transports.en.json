@@ -10,13 +10,30 @@
       "tone": "forest",
       "title": "Flight Luxembourg -> Vienna",
       "category": "vol",
-      "toReserve": true,
-      "description": "Outbound flight to Vienna (VIE).",
+      "toReserve": false,
+      "description": "Booked and paid. Direct Luxair flight LG 8853, Flex fare.",
       "sections": [
-        { "title": "Booking", "items": ["Ticket Luxembourg (LUX) -> Vienna (VIE)", "Check baggage"] },
+        { "title": "Budget", "items": ["214 EUR - booked and paid (Anthony only)"] },
+        { "title": "Status", "items": ["Booked and paid"] },
+        { "title": "Booking", "items": ["Luxembourg (LUX) 2:20pm -> Vienna (VIE) 4:05pm, Terminal 3", "Flight LG 8853 - direct, 1h45 - De Havilland DHC-8 400", "Flex fare: 1 cabin bag + 1 checked bag 23 kg", "Seat selection, snack and fast lane included", "Full refund and flight change allowed"] },
         { "title": "Documents", "items": ["Passport or ID card", "Confirmation email"] }
       ],
       "links": [{ "label": "Luxair", "url": "https://www.luxair.lu/en" }]
+    },
+    {
+      "chip": "Jan 29 / Feb 9",
+      "tone": "berry",
+      "title": "Victoria's flights: Taiwan <-> Europe",
+      "category": "vol",
+      "toReserve": false,
+      "description": "Booked by Victoria. She is coming from Taiwan, long-haul at her own cost.",
+      "sections": [
+        { "title": "Budget", "items": ["Amount not shared - ~900 EUR estimated in the overall budget"] },
+        { "title": "Status", "items": ["Booked by Victoria"] },
+        { "title": "Booking", "items": ["Outbound: arrives in Vienna Jan 29 at 12:30pm", "Return: departs Munich Feb 9 at 9:25pm", "Different flights from Anthony's (Luxair)"] },
+        { "title": "To check", "items": ["Get from Victoria: airline, flight numbers, price"] }
+      ],
+      "links": []
     },
     {
       "chip": "Feb 2",
@@ -36,7 +53,7 @@
       "title": "Train Salzburg -> Hallstatt",
       "category": "train",
       "toReserve": true,
-      "description": "~2h20 via Attnang-Puchheim. Subject to going to Hallstatt.",
+      "description": "~2h20 via Attnang-Puchheim. Hotel check-in between 2pm and 8pm.",
       "sections": [
         { "title": "Booking", "items": ["Salzburg Hbf -> Hallstatt", "Then ferry shuttle to the village"] },
         { "title": "To check", "items": ["Winter train times", "Connection at Attnang-Puchheim"] }
@@ -76,10 +93,12 @@
       "tone": "clay",
       "title": "Flight Munich -> Luxembourg",
       "category": "vol",
-      "toReserve": true,
-      "description": "Return flight from Munich (MUC).",
+      "toReserve": false,
+      "description": "Booked and paid. Return flight from Munich (MUC).",
       "sections": [
-        { "title": "Booking", "items": ["Ticket Munich (MUC) -> Luxembourg (LUX)", "Choose baggage option"] }
+        { "title": "Budget", "items": ["151.97 EUR - booked and paid (Anthony only)"] },
+        { "title": "Status", "items": ["Booked and paid"] },
+        { "title": "Booking", "items": ["Ticket Munich (MUC) -> Luxembourg (LUX)"] }
       ],
       "links": [{ "label": "Luxair", "url": "https://www.luxair.lu/en" }]
     },
