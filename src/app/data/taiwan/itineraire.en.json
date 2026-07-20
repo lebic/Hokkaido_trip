@@ -48,13 +48,10 @@
           ]
         },
         {
-          "title": "Sat Aug 29 - First steps",
+          "title": "Sat Aug 29 - Departure",
           "items": [
-            "Sleep in after the long trip",
-            {
-              "text": "Ximending and Longshan Temple to get in the mood",
-              "url": "https://maps.google.com/?q=25.0372,121.4999"
-            }
+            "Check out of the Alfar Hotel",
+            "Off to Taipei on the high-speed train (see the next stage)"
           ]
         }
       ]
@@ -62,9 +59,15 @@
     {
       "chip": "Aug 29 - 31",
       "tone": "clay",
-      "title": "Taipei - weekend to plan",
-      "location": "Taipei, Taiwan",
-      "description": "Two nights still without accommodation (Aug 29 -> 31). A weekend to discover Taipei before heading down to Hsinchu.",
+      "title": "Taipei then Luodong - Turtle Island",
+      "location": "Taipei -> Luodong, Yilan",
+      "description": "Morning in Taipei (Fu Hang Soy Milk and shopping), then the train to Luodong. Next day: Turtle Island, whales and island landing.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Taoyuan (Dayuan)", "lat": 25.0645, "lng": 121.2168 },
+        { "name": "Taipei Main Station", "lat": 25.0478, "lng": 121.517 },
+        { "name": "Luodong", "lat": 24.6829, "lng": 121.7712 }
+      ],
       "image": {
         "src": "/images/header-card/taiwan/taipei.svg",
         "alt": "Taipei 101",
@@ -73,43 +76,40 @@
       "sections": [
         {
           "title": "Accommodation",
-          "items": ["To book: 2 nights (Aug 29 - 31), no plan yet"]
+          "items": ["CHECK inn HIVE, Luodong (2 nights, Aug 29 - 31) - booked"]
         },
         {
-          "title": "Activity ideas",
+          "title": "Sat Aug 29 - Taipei then Luodong",
           "items": [
+            "High-speed train (THSR) to Taipei from Taoyuan",
             {
-              "text": "Taipei 101 and the Xinyi district",
-              "url": "https://maps.google.com/?q=25.0339,121.5645"
+              "text": "Breakfast at Fu Hang Soy Milk (local institution, go early for the queue)",
+              "url": "https://maps.google.com/?q=25.0444,121.5288"
             },
+            "Shopping around Taipei (Ximending, Zhongshan or Xinyi)",
             {
-              "text": "Chiang Kai-shek Memorial",
-              "url": "https://maps.google.com/?q=25.0347,121.5216"
+              "text": "Train Taipei -> Luodong (~2h, east coast line)",
+              "url": "https://maps.google.com/?q=24.6829,121.7712"
             },
+            "Check in at CHECK inn HIVE (across from the station)",
             {
-              "text": "National Palace Museum",
-              "url": "https://maps.google.com/?q=25.1024,121.5485"
-            },
-            {
-              "text": "Night markets: Shilin or Raohe",
-              "url": "https://maps.google.com/?q=25.0510,121.5769"
-            },
-            {
-              "text": "Elephant Mountain (Taipei 101 view at sunset)",
-              "url": "https://maps.google.com/?q=25.0273,121.5708"
-            },
-            {
-              "text": "Day trip to Jiufen and Shifen (lanterns)",
-              "url": "https://maps.google.com/?q=25.1097,121.8443"
+              "text": "Luodong night market in the evening",
+              "url": "https://maps.google.com/?q=24.6784,121.7690"
             }
           ]
         },
         {
-          "title": "Options for these 2 nights",
+          "title": "Sun Aug 30 - Turtle Island (booked)",
           "items": [
-            "Stay in Taipei (Ximending or Main Station, handy for the train)",
-            "Head to Hsinchu earlier (check if the SOL Hotel has availability)",
-            "Night in Jiufen to enjoy the village after the crowds leave"
+            "Klook booking YVS176209 - 2 adults, 1:00pm departure",
+            {
+              "text": "Meet at 12:20pm: Lanyang Museum Wushi Station, 1st floor (Huaqi 168), No. 60 Gangqian Road, Toucheng",
+              "url": "https://maps.google.com/?q=No.+60+Gangqian+Road+Toucheng+Yilan"
+            },
+            "Getting there from Luodong: 30 min to 1h (train to Toucheng then taxi, or taxi all the way)",
+            "Programme: whale watching, landing on the island and cruising around it (~4h)",
+            "Bring: passport (coast guard check), NTD 100/person cleaning fee on site, life jacket mandatory on board",
+            "The exact meeting time is confirmed the day before by 5pm (tides)"
           ]
         }
       ]
@@ -122,6 +122,7 @@
       "description": "Six nights at the SOL Hotel (booked). A fixed base to explore the region on day trips and come back to Hsinchu every evening.",
       "transportMode": "train",
       "routeWaypoints": [
+        { "name": "Luodong", "lat": 24.6829, "lng": 121.7712 },
         { "name": "Taipei Main Station", "lat": 25.0478, "lng": 121.517 },
         { "name": "Hsinchu Station", "lat": 24.8016, "lng": 120.9715 }
       ],
@@ -138,8 +139,8 @@
         {
           "title": "Transport",
           "items": [
-            "Mon Aug 31: TRA train Taipei -> Hsinchu (~1h10, arrives downtown)",
-            "Or THSR Taipei -> Hsinchu HSR (~35 min), then shuttle to the center (~20 min)",
+            "Mon Aug 31: train Luodong -> Taipei (~2h), then Taipei -> Hsinchu",
+            "TRA Taipei -> Hsinchu (~1h10, arrives downtown) or THSR Taipei -> Hsinchu HSR (~35 min) + shuttle (~20 min)",
             "Around town: walkable center, city buses, YouBike"
           ]
         },

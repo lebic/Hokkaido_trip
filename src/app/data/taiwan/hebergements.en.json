@@ -2,41 +2,41 @@
   "hero": {
     "eyebrow": "Accommodation",
     "title": "Accommodation for the trip",
-    "description": "Alfar Hotel (1 night) and SOL Hotel (6 nights, 546 EUR) booked. Still 2 nights to find for the Aug 29 - 31 weekend."
+    "description": "All booked: Alfar Hotel (1 night), CHECK inn HIVE in Luodong (2 nights) and SOL Hotel (6 nights, 546 EUR)."
   },
   "cards": [
     {
       "chip": "Aug 28 - 29",
       "tone": "forest",
       "title": "Alfar Hotel (1 night)",
-      "location": "Taipei, Taiwan",
+      "location": "Dayuan, Taoyuan, Taiwan",
       "nights": "1 night",
       "priority": 2,
-      "description": "First night after the late arrival (10:10pm at the airport).",
+      "description": "First night near the airport after the late arrival (10:10pm).",
       "sections": [
         { "title": "Status", "items": ["Booked"] },
-        { "title": "Reservation", "items": ["Check-in Fri Aug 28 late evening (flight lands at 10:10pm)", "Check-out Sat Aug 29", "Tell the hotel about the late arrival (after 11pm)"] },
+        { "title": "Reservation", "items": ["Alfar Hotel - No. 109, Daren Road, 337 Dayuan, Taiwan", "Check-in Fri Aug 28 late evening (flight lands at 10:10pm)", "Check-out Sat Aug 29", "Tell the hotel about the late arrival (after 11pm)"] },
         { "title": "Documents", "items": ["Passport", "Confirmation (to add to Drive)"] }
       ],
       "links": [
-        { "label": "Alfar Hotel (Maps)", "url": "https://maps.google.com/?q=Alfar+Hotel+Taipei" }
+        { "label": "Alfar Hotel (Maps)", "url": "https://maps.google.com/?q=No.+109+Daren+Road+337+Dayuan+Taiwan" }
       ]
     },
     {
       "chip": "Aug 29 - 31",
       "tone": "clay",
-      "title": "Weekend in Taipei (2 nights)",
-      "location": "Taipei (or elsewhere), Taiwan",
+      "title": "CHECK inn HIVE (2 nights)",
+      "location": "Luodong, Yilan, Taiwan",
       "nights": "2 nights",
-      "priority": 1,
-      "description": "No plan yet for the nights of Aug 29 -> 30 and Aug 30 -> 31.",
+      "priority": 2,
+      "description": "Booked. Base for the Luodong night market and the Turtle Island trip.",
       "sections": [
-        { "title": "Status", "items": ["To book"] },
-        { "title": "Recommended options", "items": ["Taipei - Ximending (buzz, food)", "Taipei - Main Station (handy for the train to Hsinchu)", "Hsinchu from Aug 29 if the SOL Hotel has availability", "Jiufen (1 night) to enjoy the village quiet in the evening"] },
+        { "title": "Status", "items": ["Booked"] },
+        { "title": "Reservation", "items": ["CHECK inn HIVE - No. 38, Gongzheng Road, Luodong, Yilan 26550", "Check-in Sat Aug 29 (after the train from Taipei)", "Check-out Mon Aug 31", "Right across from Luodong station, 5 min from the night market"] },
         { "title": "Documents", "items": ["Passport", "Confirmation email"] }
       ],
       "links": [
-        { "label": "Booking.com Taipei", "url": "https://www.booking.com/city/tw/taipei.html" }
+        { "label": "CHECK inn HIVE (Maps)", "url": "https://maps.google.com/?q=CHECK+inn+HIVE+Luodong" }
       ]
     },
     {

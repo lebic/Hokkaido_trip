@@ -6,30 +6,22 @@
   },
   "activities": [
     {
-      "chip": "29 - 30 Aout",
-      "title": "Observatoire Taipei 101",
+      "chip": "29 Aout",
+      "title": "Fu Hang Soy Milk (petit-dejeuner)",
       "location": "Taipei, Taiwan",
-      "description": "Billets horodates en ligne pour eviter la file. Viser la fin de journee pour le coucher de soleil.",
+      "description": "L'institution du petit-dejeuner taiwanais (2e etage du Huashan Market). Pas de reservation : y aller tot, la file est longue.",
       "links": [
-        { "label": "Taipei 101 Observatory", "url": "https://www.taipei-101.com.tw/en/observatory/" }
-      ]
-    },
-    {
-      "chip": "29 - 30 Aout",
-      "title": "National Palace Museum",
-      "location": "Taipei, Taiwan",
-      "description": "La plus grande collection d'art chinois au monde. Billets en ligne conseilles le week-end.",
-      "links": [
-        { "label": "NPM - billets", "url": "https://www.npm.gov.tw/en/" }
+        { "label": "Fu Hang Soy Milk (Maps)", "url": "https://maps.google.com/?q=25.0444,121.5288" }
       ]
     },
     {
       "chip": "30 Aout",
-      "title": "Excursion Jiufen & Shifen",
-      "location": "Nord-est de Taipei",
-      "description": "Village de Jiufen + lanternes de Shifen. En tour organise (plus simple) ou en bus/train par soi-meme.",
+      "title": "Turtle Island - baleines & debarquement",
+      "location": "Port de Wushi, Toucheng, Yilan",
+      "description": "RESERVE (Klook YVS176209) - 2 adultes, depart 13h00. Rendez-vous 12h20 au 1er etage du Lanyang Museum Wushi Station (Huaqi 168). Duree ~4h. Frais de nettoyage a payer sur place : 100 NTD/adulte. Passeport obligatoire (controle des garde-cotes). Guide en chinois uniquement.",
       "links": [
-        { "label": "Tours (Klook)", "url": "https://www.klook.com/en-US/city/19-taipei/" }
+        { "label": "Point de rendez-vous (Maps)", "url": "https://maps.google.com/?q=No.+60+Gangqian+Road+Toucheng+Yilan" },
+        { "label": "Operateur : +886 968 334 686", "url": "tel:+886968334686" }
       ]
     },
     {

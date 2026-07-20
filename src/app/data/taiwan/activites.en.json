@@ -6,30 +6,22 @@
   },
   "activities": [
     {
-      "chip": "Aug 29 - 30",
-      "title": "Taipei 101 Observatory",
+      "chip": "Aug 29",
+      "title": "Fu Hang Soy Milk (breakfast)",
       "location": "Taipei, Taiwan",
-      "description": "Timed tickets online to skip the line. Aim for late afternoon and the sunset.",
+      "description": "The Taiwanese breakfast institution (2nd floor of Huashan Market). No booking: get there early, the queue is long.",
       "links": [
-        { "label": "Taipei 101 Observatory", "url": "https://www.taipei-101.com.tw/en/observatory/" }
-      ]
-    },
-    {
-      "chip": "Aug 29 - 30",
-      "title": "National Palace Museum",
-      "location": "Taipei, Taiwan",
-      "description": "The world's largest collection of Chinese art. Online tickets recommended on weekends.",
-      "links": [
-        { "label": "NPM - tickets", "url": "https://www.npm.gov.tw/en/" }
+        { "label": "Fu Hang Soy Milk (Maps)", "url": "https://maps.google.com/?q=25.0444,121.5288" }
       ]
     },
     {
       "chip": "Aug 30",
-      "title": "Jiufen & Shifen day trip",
-      "location": "Northeast of Taipei",
-      "description": "Jiufen village + Shifen lanterns. Organized tour (easier) or DIY by bus/train.",
+      "title": "Turtle Island - whale watching & landing",
+      "location": "Wushi Port, Toucheng, Yilan",
+      "description": "BOOKED (Klook YVS176209) - 2 adults, 1:00pm departure. Meet at 12:20pm on the 1st floor of the Lanyang Museum Wushi Station (Huaqi 168). About 4h. Island cleaning fee payable on site: NTD 100/adult. Passport required (coast guard check). Guiding in Chinese only.",
       "links": [
-        { "label": "Tours (Klook)", "url": "https://www.klook.com/en-US/city/19-taipei/" }
+        { "label": "Meeting point (Maps)", "url": "https://maps.google.com/?q=No.+60+Gangqian+Road+Toucheng+Yilan" },
+        { "label": "Operator: +886 968 334 686", "url": "tel:+886968334686" }
       ]
     },
     {

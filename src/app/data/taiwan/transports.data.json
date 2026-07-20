@@ -37,12 +37,40 @@
       ]
     },
     {
-      "chip": "31 Aout",
-      "tone": "berry",
-      "title": "Train Taipei -> Hsinchu",
+      "chip": "29 Aout",
+      "tone": "clay",
+      "title": "Train Taipei -> Luodong",
       "category": "train",
       "toReserve": true,
-      "description": "TRA (~1h10, centre a centre) ou THSR (~35 min + navette).",
+      "description": "Ligne TRA cote est (~2h). Reserver a l'avance : c'est un samedi, la ligne est tres demandee.",
+      "sections": [
+        { "title": "Reservation", "items": ["TRA ligne Yilan : Taipei Main -> Luodong, ~2h en Tze-Chiang / Puyuma", "Billets ouverts 29 jours avant le depart - reserver des l'ouverture pour un samedi", "Le matin : THSR Taoyuan -> Taipei (~20 min) depuis l'Alfar Hotel"] }
+      ],
+      "links": [
+        { "label": "TRA (trains classiques)", "url": "https://www.railway.gov.tw/tra-tip-web/tip?lang=EN_US" }
+      ]
+    },
+    {
+      "chip": "30 Aout",
+      "tone": "berry",
+      "title": "Luodong -> port de Wushi (Turtle Island)",
+      "category": "train",
+      "toReserve": false,
+      "description": "30 min a 1h selon le mode. Etre au point de rendez-vous a 12h20 pour un depart a 13h00.",
+      "sections": [
+        { "title": "Options", "items": ["TRA Luodong -> Toucheng (~25 min) puis taxi jusqu'au port (~10 min)", "Taxi direct depuis Luodong (~40 min)", "Point de rendez-vous : Lanyang Museum Wushi Station, 1er etage (Huaqi 168)"] }
+      ],
+      "links": [
+        { "label": "Point de rendez-vous (Maps)", "url": "https://maps.google.com/?q=No.+60+Gangqian+Road+Toucheng+Yilan" }
+      ]
+    },
+    {
+      "chip": "31 Aout",
+      "tone": "berry",
+      "title": "Train Luodong -> Taipei -> Hsinchu",
+      "category": "train",
+      "toReserve": true,
+      "description": "Luodong -> Taipei (~2h), puis TRA (~1h10, centre a centre) ou THSR (~35 min + navette).",
       "sections": [
         { "title": "Reservation", "items": ["TRA : billets en gare ou app, pas besoin de reserver tot", "THSR : billets early bird en ligne (-10 a -35%) 28 jours avant", "THSR : la gare HSR Hsinchu (Zhubei) est a ~20 min du centre"] }
       ],

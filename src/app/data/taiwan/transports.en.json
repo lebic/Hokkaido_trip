@@ -37,12 +37,40 @@
       ]
     },
     {
-      "chip": "Aug 31",
-      "tone": "berry",
-      "title": "Train Taipei -> Hsinchu",
+      "chip": "Aug 29",
+      "tone": "clay",
+      "title": "Train Taipei -> Luodong",
       "category": "train",
       "toReserve": true,
-      "description": "TRA (~1h10, center to center) or THSR (~35 min + shuttle).",
+      "description": "TRA east coast line (~2h). Book ahead: it's a Saturday and the line sells out.",
+      "sections": [
+        { "title": "Booking", "items": ["TRA Yilan line: Taipei Main -> Luodong, ~2h on a Tze-Chiang / Puyuma", "Tickets open 29 days before departure - book at opening for a Saturday", "In the morning: THSR Taoyuan -> Taipei (~20 min) from the Alfar Hotel"] }
+      ],
+      "links": [
+        { "label": "TRA (regular trains)", "url": "https://www.railway.gov.tw/tra-tip-web/tip?lang=EN_US" }
+      ]
+    },
+    {
+      "chip": "Aug 30",
+      "tone": "berry",
+      "title": "Luodong -> Wushi Port (Turtle Island)",
+      "category": "train",
+      "toReserve": false,
+      "description": "30 min to 1h depending on the mode. Be at the meeting point by 12:20pm for a 1:00pm departure.",
+      "sections": [
+        { "title": "Options", "items": ["TRA Luodong -> Toucheng (~25 min) then taxi to the port (~10 min)", "Direct taxi from Luodong (~40 min)", "Meeting point: Lanyang Museum Wushi Station, 1st floor (Huaqi 168)"] }
+      ],
+      "links": [
+        { "label": "Meeting point (Maps)", "url": "https://maps.google.com/?q=No.+60+Gangqian+Road+Toucheng+Yilan" }
+      ]
+    },
+    {
+      "chip": "Aug 31",
+      "tone": "berry",
+      "title": "Train Luodong -> Taipei -> Hsinchu",
+      "category": "train",
+      "toReserve": true,
+      "description": "Luodong -> Taipei (~2h), then TRA (~1h10, center to center) or THSR (~35 min + shuttle).",
       "sections": [
         { "title": "Booking", "items": ["TRA: tickets at the station or app, no need to book early", "THSR: early bird tickets online (-10 to -35%) 28 days ahead", "THSR: Hsinchu HSR station (Zhubei) is ~20 min from downtown"] }
       ],
