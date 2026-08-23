@@ -67,12 +67,14 @@
     {
       "chip": "31 Aout",
       "tone": "berry",
-      "title": "Train Luodong -> Taipei -> Hsinchu",
+      "title": "Luodong -> Jiufen -> Taipei -> Hsinchu",
       "category": "train",
       "toReserve": true,
-      "description": "Luodong -> Taipei (~2h), puis TRA (~1h10, centre a centre) ou THSR (~35 min + navette).",
+      "description": "Journee de transfert avec arret a Jiufen et soiree a Taipei. Bagages a gerer toute la journee.",
       "sections": [
-        { "title": "Reservation", "items": ["TRA : billets en gare ou app, pas besoin de reserver tot", "THSR : billets early bird en ligne (-10 a -35%) 28 jours avant", "THSR : la gare HSR Hsinchu (Zhubei) est a ~20 min du centre"] }
+        { "title": "Etapes", "items": ["TRA Luodong -> Ruifang (~1h, ligne cote est)", "Bus 788 ou 1062 Ruifang -> Jiufen (~15 min, depart devant la gare)", "TRA Ruifang -> Taipei Main (~40 min)", "THSR Taipei -> HSR Hsinchu (~35 min) + navette, ou TRA Taipei -> Hsinchu (~1h10)"] },
+        { "title": "Bagages", "items": ["Casiers a la gare de Ruifang : pratiques mais peu nombreux et vite pleins", "Repli : garder les bagages jusqu'a Taipei Main (casiers en nombre) et faire Jiufen en aller-retour depuis Taipei", "Jiufen avec les valises est a eviter : ruelles etroites, escaliers, forte pente"] },
+        { "title": "Reservation", "items": ["TRA : billets en gare ou app, pas besoin de reserver tot", "THSR : billets early bird en ligne (-10 a -35%) 28 jours avant", "THSR : la gare HSR Hsinchu (Zhubei) est a ~20 min du centre", "Verifier l'heure du dernier train Taipei -> Hsinchu avant de s'attarder au diner"] }
       ],
       "links": [
         { "label": "TRA (trains classiques)", "url": "https://www.railway.gov.tw/tra-tip-web/tip?lang=EN_US" },

@@ -25,10 +25,28 @@
       ]
     },
     {
+      "chip": "31 Aout",
+      "title": "Observatoire Taipei 101 (coucher de soleil)",
+      "location": "Xinyi, Taipei",
+      "description": "Billets horodates a reserver : viser un creneau vers 17h30 pour etre en haut au coucher de soleil (~18h20 fin aout). Creneaux de fin de journee tres demandes.",
+      "links": [
+        { "label": "Taipei 101 Observatory", "url": "https://www.taipei-101.com.tw/en/observatory/" }
+      ]
+    },
+    {
+      "chip": "31 Aout",
+      "title": "Din Tai Fung - Taipei 101",
+      "location": "Taipei 101, niveau B1",
+      "description": "Dans la tour meme, donc enchainable apres l'observatoire. Pas de reservation le soir : prendre un ticket a l'arrivee (attente 30-60 min) ou passer avant de monter pour reserver le creneau.",
+      "links": [
+        { "label": "Din Tai Fung (Maps)", "url": "https://maps.google.com/?q=25.0334,121.5645" }
+      ]
+    },
+    {
       "chip": "1 - 5 Sept",
-      "title": "THSR early bird (excursions)",
+      "title": "THSR early bird (4 allers-retours)",
       "location": "Depuis Hsinchu",
-      "description": "Billets THSR a tarif reduit 28 jours a l'avance pour les journees Taipei et Taichung.",
+      "description": "Billets a tarif reduit (-10 a -35%) ouverts 28 jours avant. Mar 1, mer 2 et ven 4 sept : Hsinchu -> Taipei. Sam 5 sept : Hsinchu -> Taichung. Les early bird sont en quantite limitee : reserver des l'ouverture.",
       "links": [
         { "label": "THSR", "url": "https://en.thsrc.com.tw/" }
       ]
