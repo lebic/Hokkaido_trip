@@ -25,10 +25,28 @@
       ]
     },
     {
+      "chip": "Aug 31",
+      "title": "Taipei 101 Observatory (sunset)",
+      "location": "Xinyi, Taipei",
+      "description": "Timed tickets to book ahead: aim for a 5:30pm slot to be up there for sunset (~6:20pm in late August). Late-day slots go fast.",
+      "links": [
+        { "label": "Taipei 101 Observatory", "url": "https://www.taipei-101.com.tw/en/observatory/" }
+      ]
+    },
+    {
+      "chip": "Aug 31",
+      "title": "Din Tai Fung - Taipei 101",
+      "location": "Taipei 101, level B1",
+      "description": "Inside the tower itself, so it follows straight on from the observatory. No evening reservations: take a ticket on arrival (30-60 min wait) or stop by before going up to claim a slot.",
+      "links": [
+        { "label": "Din Tai Fung (Maps)", "url": "https://maps.google.com/?q=25.0334,121.5645" }
+      ]
+    },
+    {
       "chip": "Sep 1 - 5",
-      "title": "THSR early bird (day trips)",
+      "title": "THSR early bird (4 round trips)",
       "location": "From Hsinchu",
-      "description": "Discounted THSR tickets 28 days ahead for the Taipei and Taichung days.",
+      "description": "Discounted tickets (-10 to -35%) open 28 days ahead. Tue Sep 1, Wed Sep 2 and Fri Sep 4: Hsinchu -> Taipei. Sat Sep 5: Hsinchu -> Taichung. Early bird stock is limited: book as soon as it opens.",
       "links": [
         { "label": "THSR", "url": "https://en.thsrc.com.tw/" }
       ]

@@ -137,57 +137,170 @@
           "items": ["SOL Hotel (6 nuits, 31 aout - 6 sept) - reserve"]
         },
         {
-          "title": "Transport",
+          "title": "Lun 31 aout - Jiufen, Taipei 101 et route vers Hsinchu",
           "items": [
-            "Lun 31 aout : train Luodong -> Taipei (~2h), puis Taipei -> Hsinchu",
-            "TRA Taipei -> Hsinchu (~1h10, arrivee en centre-ville) ou THSR Taipei -> HSR Hsinchu (~35 min) + navette (~20 min)",
-            "Sur place : a pied dans le centre, bus urbains, YouBike"
+            "Grosse journee : check-out a Luodong le matin, nuit a Hsinchu. Jiufen est pile sur le chemin.",
+            "Check-out du CHECK inn HIVE, TRA Luodong -> Ruifang (~1h, ligne cote est)",
+            "Deposer les bagages dans les casiers de la gare de Ruifang (voir la note ci-dessous)",
+            {
+              "text": "Bus 788 ou 1062 Ruifang -> Jiufen (~15 min) : Jiushi Old Street, maisons de the et lanternes rouges",
+              "url": "https://maps.google.com/?q=25.1097,121.8443"
+            },
+            "Redescendre a Ruifang en debut d'apres-midi, recuperer les bagages",
+            "TRA Ruifang -> Taipei Main (~40 min)",
+            {
+              "text": "Taipei 101 : observatoire pour le coucher de soleil (vers 18h20 fin aout) - billets horodates a reserver",
+              "url": "https://maps.google.com/?q=25.0339,121.5645"
+            },
+            {
+              "text": "Diner au Din Tai Fung du Taipei 101 (niveau B1, dans la tour meme)",
+              "url": "https://maps.google.com/?q=25.0334,121.5645"
+            },
+            "THSR Taipei -> HSR Hsinchu (~35 min) + navette, ou TRA Taipei -> Hsinchu (~1h10)",
+            "Installation au SOL Hotel en fin de soiree"
           ]
         },
         {
-          "title": "Dans Hsinchu",
+          "title": "Mar 1 sept - Taipei : Xinyi et l'est",
           "items": [
+            "THSR Hsinchu -> Taipei (~35 min), puis MRT depuis Taipei Main",
             {
-              "text": "Temple du Dieu de la Ville (Cheng Huang) et son marche aux snacks",
+              "text": "Sun Yat-sen Memorial Hall : le point de vue classique sur Taipei 101 et la releve de la garde",
+              "url": "https://maps.google.com/?q=25.0400,121.5600"
+            },
+            {
+              "text": "Quartier Xinyi au pied de Taipei 101 : centres commerciaux, Eslite, passerelles",
+              "url": "https://maps.google.com/?q=25.0339,121.5645"
+            },
+            {
+              "text": "Songshan Cultural and Creative Park : ancienne manufacture de tabac, design et expos",
+              "url": "https://maps.google.com/?q=25.0435,121.5606"
+            },
+            {
+              "text": "Elephant Mountain (Xiangshan) : 20 min de marches, la vue carte postale sur Taipei 101 au coucher du soleil (~18h20)",
+              "url": "https://maps.google.com/?q=25.0273,121.5708"
+            },
+            {
+              "text": "Marche de nuit de Raohe et temple Ciyou juste a cote",
+              "url": "https://maps.google.com/?q=25.0510,121.5769"
+            },
+            "Retour a Hsinchu : verifier l'heure du dernier THSR (~23h)"
+          ]
+        },
+        {
+          "title": "Mer 2 sept - Taipei : vieille ville et musees",
+          "items": [
+            "THSR Hsinchu -> Taipei (~35 min)",
+            {
+              "text": "National Palace Museum le matin : la plus grande collection d'art chinois au monde (prevoir 3h)",
+              "url": "https://maps.google.com/?q=25.1024,121.5485"
+            },
+            {
+              "text": "Memorial Chiang Kai-shek et la releve de la garde (toutes les heures)",
+              "url": "https://maps.google.com/?q=25.0347,121.5216"
+            },
+            {
+              "text": "Temple Longshan, le plus beau temple de la ville",
+              "url": "https://maps.google.com/?q=25.0372,121.4999"
+            },
+            {
+              "text": "Ximending : le quartier jeune, boutiques et street food",
+              "url": "https://maps.google.com/?q=25.0421,121.5075"
+            },
+            {
+              "text": "Dadaocheng et Dihua Street au crepuscule : maisons de commerce anciennes, the et apothicaires",
+              "url": "https://maps.google.com/?q=25.0557,121.5100"
+            },
+            {
+              "text": "Marche de nuit de Ningxia (petit et tres food) ou Shilin (le plus grand)",
+              "url": "https://maps.google.com/?q=25.0561,121.5153"
+            }
+          ]
+        },
+        {
+          "title": "Jeu 3 sept - Neiwan et Hsinchu",
+          "items": [
+            "Journee plus calme entre trois grosses journees a Taipei",
+            {
+              "text": "Ligne TRA Neiwan depuis Hsinchu (~1h, changement a Zhuzhong)",
+              "url": "https://maps.google.com/?q=24.7057,121.1839"
+            },
+            "Vieille rue de Neiwan : specialites Hakka, gateaux de riz, marche couvert",
+            "Balade le long de la riviere You-Luo et pont suspendu",
+            "Retour a Hsinchu en fin d'apres-midi",
+            {
+              "text": "Temple du Dieu de la Ville (Cheng Huang) et son marche aux snacks - le meilleur bihun de la ville",
               "url": "https://maps.google.com/?q=24.8047,120.9656"
             },
             {
-              "text": "Porte de l'Est (Yingxi Gate) et les douves",
+              "text": "Porte de l'Est (Yingxi Gate) et les douves, a 5 min a pied",
               "url": "https://maps.google.com/?q=24.8018,120.9718"
             },
             {
-              "text": "Parc de Hsinchu et zoo",
-              "url": "https://maps.google.com/?q=24.8003,120.9793"
-            },
-            {
-              "text": "Port de peche de Nanliao et piste cyclable des 17 km de cote",
-              "url": "https://maps.google.com/?q=24.8497,120.9230"
+              "text": "Alternative : Beipu (lei cha) et Lion's Head Mountain en bus Hsinchu Bus 5700 / 5701",
+              "url": "https://maps.google.com/?q=24.7003,121.0577"
             }
           ]
         },
         {
-          "title": "Excursions a la journee",
+          "title": "Ven 4 sept - Tamsui (Danshui)",
+          "items": [
+            "THSR Hsinchu -> Taipei, puis MRT ligne rouge jusqu'au terminus Tamsui (~40 min depuis Taipei Main)",
+            {
+              "text": "Vieille rue de Tamsui et la promenade au bord du fleuve",
+              "url": "https://maps.google.com/?q=25.1677,121.4406"
+            },
+            {
+              "text": "Fort San Domingo (Hongmao Cheng) : fort espagnol puis consulat britannique, et la Petite Maison Blanche juste a cote",
+              "url": "https://maps.google.com/?q=25.1751,121.4327"
+            },
+            {
+              "text": "Universite Aletheia et son campus de style chinois ancien",
+              "url": "https://maps.google.com/?q=25.1738,121.4340"
+            },
+            {
+              "text": "Ferry depuis le quai de Tamsui vers Fisherman's Wharf (~10 min) et le pont des Amoureux",
+              "url": "https://maps.google.com/?q=25.1836,121.4108"
+            },
+            "Coucher de soleil sur le detroit depuis le quai : c'est LA raison de venir a Tamsui",
+            "A gouter : a-gei (tofu farci, la specialite locale), oeufs de fer, gaufres de poisson, gros glacon a la creme",
+            {
+              "text": "Option sur le chemin du retour : sources chaudes de Beitou, sur la meme ligne rouge",
+              "url": "https://maps.google.com/?q=25.1365,121.5065"
+            }
+          ]
+        },
+        {
+          "title": "Sam 5 sept - Taichung a la journee",
           "items": [
             {
-              "text": "Neiwan : vieille rue et petite ligne de train foret (~1h)",
-              "url": "https://maps.google.com/?q=24.7057,121.1839"
-            },
-            {
-              "text": "Beipu : village Hakka, vieille rue et lei cha (the pile, ~50 min en bus)",
-              "url": "https://maps.google.com/?q=24.7003,121.0577"
-            },
-            {
-              "text": "Lion's Head Mountain (Shitoushan) : temples a flanc de montagne",
-              "url": "https://maps.google.com/?q=24.6620,120.9970"
-            },
-            {
-              "text": "Taipei en THSR (~35 min) pour completer le week-end",
-              "url": "https://maps.google.com/?q=25.0478,121.5170"
-            },
-            {
-              "text": "Taichung en THSR (~35 min) : National Taichung Theater, Miyahara",
+              "text": "THSR Hsinchu -> Taichung (~35 min)",
               "url": "https://maps.google.com/?q=24.1629,120.6409"
-            }
+            },
+            "National Taichung Theater (architecture de Toyo Ito)",
+            "Miyahara : ancienne clinique devenue glacier et boutique de the",
+            {
+              "text": "Rainbow Village ou le parc Calligraphy Greenway",
+              "url": "https://maps.google.com/?q=24.1341,120.6100"
+            },
+            "Marche de nuit de Fengjia si l'energie suit"
+          ]
+        },
+        {
+          "title": "Dim 6 sept - Dernier matin",
+          "items": [
+            "Check-out du SOL Hotel",
+            "Derniers achats au marche du temple Cheng Huang",
+            "Depart vers l'aeroport de Taoyuan (voir l'etape suivante)"
+          ]
+        },
+        {
+          "title": "Transports sur place",
+          "items": [
+            "Centre-ville de Hsinchu : tout se fait a pied depuis le SOL Hotel",
+            "Bus urbains et YouBike pour la cote et le parc",
+            "Hsinchu Bus (gare routiere pres de la gare TRA) pour Beipu et Shitoushan",
+            "THSR pour Taipei et Taichung : billets early bird 28 jours avant (-10 a -35%)"
           ]
         },
         {
