@@ -6,7 +6,99 @@
   },
   "activities": [
     {
-      "chip": "Jour 8",
+      "chip": "Jour 2",
+      "title": "Owl Cafe Akiba Fukurou (reserve)",
+      "location": "Akihabara, Tokyo",
+      "description": "RESERVE - dimanche 25 octobre a 14h00. Arriver 10 min avant. 67 Kanda Neribeicho, 3 min de JR Akihabara (sortie Central Gate).",
+      "links": [
+        {
+          "label": "Owl Cafe Akiba Fukurou",
+          "url": "https://akiba2960.com/"
+        },
+        {
+          "label": "Owl Cafe (Maps)",
+          "url": "https://maps.app.goo.gl/hD2g2CtV8euu5mEYA"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 2",
+      "title": "Tokyo Skytree au coucher du soleil",
+      "location": "Oshiage, Tokyo",
+      "description": "Billet Tembo Deck + Tembo Galleria (le plus haut, 450 m), creneau horodate vers 16h30 le dimanche 25 octobre (coucher du soleil ~16h50). A acheter en ligne des maintenant : les creneaux du coucher de soleil partent vite le week-end.",
+      "links": [
+        {
+          "label": "Tokyo Skytree - billets",
+          "url": "https://www.tokyo-skytree.jp/en/"
+        },
+        {
+          "label": "Tokyo Skytree (Maps)",
+          "url": "https://maps.app.goo.gl/VZsTgehoznXaLgZP6"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 4",
+      "title": "Warner Bros. Studio Tour Tokyo - Harry Potter",
+      "location": "Toshimaen (Nerima), Tokyo",
+      "description": "A RESERVER EN PRIORITE. Mardi 27 octobre, creneau vers 10h, ~4h sur place. Billets horodates uniquement sur le site officiel, non remboursables (adulte ~7 000 JPY). Arriver 20 min avant le creneau.",
+      "links": [
+        {
+          "label": "Billets officiels",
+          "url": "https://www.wbstudiotour.jp/en/tickets/"
+        },
+        {
+          "label": "Studio Tour (Maps)",
+          "url": "https://maps.app.goo.gl/nMX7J8Hwc7iUXYgG8"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 5",
+      "title": "Small Worlds Tokyo",
+      "location": "Ariake, Tokyo",
+      "description": "Mercredi 28 octobre vers 10h30, ~2h. Ouvert 9h-19h (derniere entree 18h). Billet en ligne conseille.",
+      "links": [
+        {
+          "label": "Small Worlds Tokyo",
+          "url": "https://smallworlds.jp/en/"
+        },
+        {
+          "label": "Small Worlds (Maps)",
+          "url": "https://maps.google.com/?q=Small+Worlds+Tokyo+Ariake"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 16",
+      "title": "Balade de nuit a Shinjuku (reserve)",
+      "location": "Shinjuku (6 min d'Ikebukuro)",
+      "description": "RESERVE (Japan Experience) - dimanche 8 novembre, 18h30-20h00, en anglais. RDV devant Uniqlo Shinjuku West Exit (en travaux) : chercher la pancarte Japan Experience. Arriver 10 min avant, le groupe part a l'heure. Peut etre annulee en cas de mauvais temps.",
+      "links": [
+        {
+          "label": "Point de RDV (Maps)",
+          "url": "https://maps.google.com/?q=Uniqlo+Shinjuku+Nishiguchi"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 17",
+      "title": "Ogakiku - unagi a Kawagoe",
+      "location": "Kawagoe (30 min d'Ikebukuro)",
+      "description": "Lundi 9 novembre. Pas de reservation : arriver avant l'ouverture (11h en semaine, midi jusqu'a 14h). Ferme le jeudi. Unaju de 3 950 a 6 500 JPY. Ferme plus tot si l'anguille est epuisee.",
+      "links": [
+        {
+          "label": "Ogakiku",
+          "url": "https://www.ogakiku.com/en.html"
+        },
+        {
+          "label": "Ogakiku (Maps)",
+          "url": "https://maps.google.com/?q=Ogakiku+Kawagoe"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 9",
       "title": "Daisetsuzan Ropeway",
       "location": "Sounkyo Onsen",
       "description": "Teleeferique panoramique. Ouverture conditionnee a la meteo, affluence elevee en haute saison.",
@@ -18,7 +110,7 @@
       ]
     },
     {
-      "chip": "Jour 10",
+      "chip": "Jour 11",
       "title": "Village Ainou - Spectacle Ikahchu",
       "location": "Akan-ko",
       "description": "Spectacle de danse et musique Ainou en soiree. Seances limitees, reservation recommandee.",
@@ -30,7 +122,7 @@
       ]
     },
     {
-      "chip": "Jour 10",
+      "chip": "Jour 11",
       "title": "Bateau sur Lake Akan",
       "location": "Akan-ko",
       "description": "Tour du lac avec visite du Marimo Exhibition Center.",
@@ -42,14 +134,14 @@
       ]
     },
     {
-      "chip": "Jour 11",
+      "chip": "Jour 12",
       "title": "Canoe sur Lake Akan",
       "location": "Akan-ko",
       "description": "Optionnel. Reserver aupres des operateurs locaux a l'arrivee ou en avance.",
       "links": []
     },
     {
-      "chip": "Jour 13",
+      "chip": "Jour 14",
       "title": "Farm Tomita",
       "location": "Furano",
       "description": "Champs de lavande et Melon House. Entree libre, verifier ouverture selon la saison.",
@@ -61,7 +153,7 @@
       ]
     },
     {
-      "chip": "Jour 13",
+      "chip": "Jour 14",
       "title": "Ningle Terrace",
       "location": "Furano",
       "description": "Village artisanal en pleine foret de Furano. Soiree recommandee, horaires a verifier.",
