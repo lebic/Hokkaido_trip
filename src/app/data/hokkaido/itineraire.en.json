@@ -12,11 +12,19 @@
       "tone": "forest",
       "title": "Tokyo (arrival)",
       "location": "Tokyo",
-      "description": "Settling in and gradually discovering the city.",
+      "description": "4 nights in Ryogoku with a Skytree view. One area per day so there's no running around: Akihabara and Skytree, Kamakura and Enoshima, Harry Potter and Shibuya, then Odaiba before the Shinkansen.",
       "transportMode": "train",
       "routeWaypoints": [
-        { "name": "Narita Airport", "lat": 35.7647, "lng": 140.3864 },
-        { "name": "Tokyo Centre", "lat": 35.6762, "lng": 139.6503 }
+        {
+          "name": "Tokyo Haneda (HND)",
+          "lat": 35.5494,
+          "lng": 139.7798
+        },
+        {
+          "name": "Ryogoku (Daiichi Hotel)",
+          "lat": 35.6965,
+          "lng": 139.7975
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
@@ -27,110 +35,210 @@
         {
           "title": "Accommodation",
           "items": [
-            "Hotel in central Tokyo (5 nights)"
+            "Daiichi Hotel Ryogoku (4 nights, Oct 24-28) - booked, double room with Skytree view",
+            {
+              "text": "1-6-1 Yokoami, Sumida - JR Ryogoku station ~9 min on foot (East exit)",
+              "url": "https://maps.google.com/?q=Daiichi+Hotel+Ryogoku"
+            }
           ]
         },
         {
           "title": "Day 1 - Transport",
           "items": [
-            "Arrival in Tokyo (Narita or Haneda)",
-            "Narita Express or monorail to city centre hotel"
+            "Landing at Haneda (HND): Japan Experience agent after customs with a sign showing your name (don't leave the airport without meeting them)",
+            "They hand over the travel book, the tickets (Shinkansen, ferry, JAL flight), the preloaded IC card and the pocket Wi-Fi",
+            "Shared shuttle Haneda → hotel: pickup time emailed the evening before from 18:00 (check spam)",
+            "Allow 1h30 to 2h30 between landing and the shuttle leaving",
+            "Japan Experience assistance: WhatsApp +81 90 3823 1949 (8:00-22:00)"
           ]
         },
         {
-          "title": "Day 1 - Activities",
+          "title": "Sat Oct 24 - Settling in at Ryogoku",
           "items": [
-            "Hotel check-in",
+            "Check-in from 15:00 (bags can be left earlier)",
             {
-              "text": "Asakusa (Sensoji Temple)",
+              "text": "Walk around the sumo district and the Ryogoku Kokugikan",
+              "url": "https://maps.google.com/?q=Ryogoku+Kokugikan"
+            },
+            {
+              "text": "Chanko-nabe dinner, the wrestlers' hotpot and the local speciality",
+              "url": "https://maps.google.com/?q=chanko+nabe+Ryogoku"
+            },
+            "Quiet evening, the Skytree lit up from the room"
+          ]
+        },
+        {
+          "title": "Sun Oct 25 - Akihabara (Owl Cafe 2pm), Asakusa and Skytree at sunset",
+          "items": [
+            "Everything is around the hotel, 5-15 min from one spot to the next: Ueno → Akihabara → Asakusa → Skytree",
+            {
+              "text": "Slow morning (jet lag): Ueno Park and Ameyoko market - Oedo line Ryogoku → Ueno-Okachimachi (~6 min)",
+              "url": "https://maps.app.goo.gl/32JMeZvNry9iFYiBA"
+            },
+            {
+              "text": "Walk down to Akihabara along Ameyoko (~15 min)",
+              "url": "https://maps.google.com/?q=Ameyoko+Shopping+Street"
+            },
+            {
+              "text": "~12:00: lunch at Sushiro Akihabara Ekimae, 1 min from JR Akihabara south exit - grab a ticket in the Sushiro app, Sundays mean a wait",
+              "url": "https://maps.google.com/?q=Sushiro+Akihabara+Ekimae"
+            },
+            {
+              "text": "13:50: Owl Cafe Akiba Fukurou - BOOKED for 14:00 (67 Kanda Neribeicho, 3 min from JR Akihabara, Central Gate). Arrive 10 min early",
+              "url": "https://maps.app.goo.gl/hD2g2CtV8euu5mEYA"
+            },
+            {
+              "text": "Optional: Don Quijote Akihabara, cosplay and costume floor (well-stocked for Halloween in late October)",
+              "url": "https://maps.google.com/?q=Don+Quijote+Akihabara"
+            },
+            {
+              "text": "~15:30: Tsukuba Express Akihabara → Asakusa (~5 min): Senso-ji and Nakamise-dori (busy on Sundays, but it's on the way)",
               "url": "https://maps.app.goo.gl/jq75j6RzL1MHDK7z8"
             },
             {
-              "text": "Imperial Gardens",
-              "url": "https://maps.app.goo.gl/zBe9WUDMCM9UV2dF9"
+              "text": "Cross the Sumida on the Azuma bridge and walk to the Skytree (~20 min)",
+              "url": "https://maps.google.com/?q=Azumabashi+Bridge"
             },
             {
-              "text": "Tokyo Skytree (evening view)",
+              "text": "~16:30: Tokyo Skytree, Tembo Deck (350 m) + Tembo Galleria (450 m). Sunset around 16:50, then the city lights up. Timed tickets, buy online",
               "url": "https://maps.app.goo.gl/VZsTgehoznXaLgZP6"
             },
-            "Rest after the flight"
+            "Dinner at Tokyo Solamachi at the foot of the tower. Back to Ryogoku in ~15 min (Hanzomon line to Kinshicho + 1 stop on JR Sobu, or taxi)"
           ]
         },
         {
-          "title": "Day 2 - Activities",
+          "title": "Mon Oct 26 - Kamakura, Hokoku-ji and Enoshima",
           "items": [
+            "A day down south, east to west: Hokoku-ji → central Kamakura → Great Buddha → Enoshima for sunset",
+            "~08:00: JR Sobu Ryogoku → Kinshicho (1 stop), then the direct JR Yokosuka line to Kamakura (~1h)",
             {
-              "text": "Shibuya Crossing",
-              "url": "https://maps.app.goo.gl/kfdUUBxt6HY7DhbZ8"
+              "text": "Hokoku-ji, the bamboo temple: be there when it opens (9:00) before the crowds, matcha in the tea house among the bamboo. Taxi ~7 min from the station, or bus to Jomyoji",
+              "url": "https://maps.app.goo.gl/48mftMv1YtyAPtaYA"
             },
             {
-              "text": "Meiji Shrine",
-              "url": "https://maps.app.goo.gl/1ThcQ9KqszwrniUp8"
+              "text": "Tsurugaoka Hachimangu then Komachi-dori: shirasu-don lunch (whitebait, the local speciality)",
+              "url": "https://maps.google.com/?q=Tsurugaoka+Hachimangu"
             },
             {
-              "text": "Harajuku",
-              "url": "https://maps.app.goo.gl/wECPUpN8nUE34xJY8"
-            },
-            {
-              "text": "Shinjuku Gyoen National Garden",
-              "url": "https://maps.app.goo.gl/pUH2BrkppuqwT4tw6"
-            },
-            {
-              "text": "Evening at Shinjuku (Golden Gai)",
-              "url": "https://maps.app.goo.gl/nBeLu9Eb7V6KbeQN6"
-            }
-          ]
-        },
-        {
-          "title": "Day 3 - Activities",
-          "items": [
-            {
-              "text": "Kamakura (Giant Buddha statue, temples)",
+              "text": "Enoden Kamakura → Hase: the Great Buddha (Kotoku-in) and Hase-dera temple with its sea view",
               "url": "https://maps.app.goo.gl/ak35jHKzWGK3MAKe6"
             },
             {
-              "text": "Hokoku-ji (bamboo temple)",
-              "url": "https://maps.app.goo.gl/48mftMv1YtyAPtaYA"
-            }
-          ]
-        },
-        {
-          "title": "Day 4 - Activities",
-          "items": [
-            {
-              "text": "Harry potter tour",
-              "url": "https://maps.app.goo.gl/nMX7J8Hwc7iUXYgG8"
-            }
-          ]
-        },
-        {
-          "title": "Day 5 - Activities",
-          "items": [
-            {
-              "text": "Ueno Park and museums",
-              "url": "https://maps.app.goo.gl/32JMeZvNry9iFYiBA"
+              "text": "Enoden Hase → Enoshima (~20 min, the little train along the sea): the bridge, the shrine, then the Sea Candle at sunset (~16:50), Fuji visible on clear days",
+              "url": "https://maps.google.com/?q=Enoshima+Sea+Candle"
             },
-            "18:00: departure to Oarai Port (2h by train)"
+            "Back: Odakyu Katase-Enoshima → Shinjuku (~1h10), then JR Sobu straight to Ryogoku (~25 min). Optional: dinner in Shinjuku on the way (Omoide Yokocho)"
           ]
         },
         {
-          "title": "Day 5 - Transport",
+          "title": "Tue Oct 27 - Harry Potter, then Shibuya",
           "items": [
-            "18:00: departure to Oarai Port (2h by train)"
+            "Morning in the north-west, evening in Shibuya, linked by a direct train",
+            "Getting there: Toei Oedo line from Ryogoku to Toshimaen (~50 min, cross-platform change at Tochomae)",
+            {
+              "text": "Warner Bros. Studio Tour Tokyo - The Making of Harry Potter: slot around 10:00, allow ~4h (Butterbeer and lunch on site). Timed tickets, official website only, non-refundable",
+              "url": "https://maps.app.goo.gl/nMX7J8Hwc7iUXYgG8"
+            },
+            "Afterwards: Seibu Toshimaen → Nerima (1 stop), then a direct Fukutoshin line train to Shibuya (~30 min)",
+            {
+              "text": "Shibuya Crossing at dusk (~17:00): free view from above through the glass walkway in Shibuya Mark City, or Shibuya Sky (paid) for the rooftop",
+              "url": "https://maps.app.goo.gl/kfdUUBxt6HY7DhbZ8"
+            },
+            {
+              "text": "Hachiko statue, Center Gai and Shibuya 109",
+              "url": "https://maps.google.com/?q=Hachiko+Statue+Shibuya"
+            },
+            {
+              "text": "Evening: Nonbei Yokocho, an alley of tiny 6-8 seat bars, more intimate than Golden Gai",
+              "url": "https://maps.google.com/?q=Nonbei+Yokocho+Shibuya"
+            },
+            {
+              "text": "To end the night: up the Dogenzaka hill (5 min on foot) - themed hotels, 2-3h “rest” rate",
+              "url": "https://maps.google.com/?q=Dogenzaka+Shibuya"
+            },
+            "Back to Ryogoku: Hanzomon line direct to Kinshicho (~30 min) + 1 stop on JR Sobu"
+          ]
+        },
+        {
+          "title": "Wed Oct 28 - Odaiba, then the 18:12 Shinkansen",
+          "items": [
+            "Check out in the morning. Tokyo Station is on the way to Odaiba: drop the suitcases there on the way out, pick them up on the way back, no detour",
+            "~09:30: JR Sobu Ryogoku → Akihabara, then JR Yamanote or Keihin-Tohoku → Tokyo (~20 min). Luggage: the large lockers go fast, or use a staffed baggage counter / book ecbo cloak",
+            "Tokyo → Shimbashi (JR, 2 stops), then the Yurikamome, the driverless train that crosses the Rainbow Bridge",
+            {
+              "text": "~10:30: Small Worlds Tokyo (Ariake), the world's largest indoor miniature museum. Allow ~2h. Open 9:00-19:00, tickets online",
+              "url": "https://maps.google.com/?q=Small+Worlds+Tokyo+Ariake"
+            },
+            {
+              "text": "After lunch, Yurikamome to Odaiba-kaihinkoen (~10 min): Odaiba Retro Museum, recreated Showa-era streets (4th floor of DECKS Tokyo Beach, 11:00-20:00, ~1h, JPY 1,300, no booking needed)",
+              "url": "https://maps.google.com/?q=Odaiba+Retro+Museum+DECKS+Tokyo+Beach"
+            },
+            {
+              "text": "Walk on Odaiba beach facing the Rainbow Bridge, and the giant Gundam outside DiverCity (Daiba station)",
+              "url": "https://maps.google.com/?q=Unicorn+Gundam+DiverCity+Tokyo+Plaza"
+            },
+            "~16:30: Yurikamome → Shimbashi → Tokyo (~25 min), pick up the suitcases",
+            {
+              "text": "Buy an ekiben (station bento) for dinner on the train at Ekibenya Matsuri. Plan B: Sushiro Yaechika, under the station (Yaesu side)",
+              "url": "https://maps.google.com/?q=Ekibenya+Matsuri+Tokyo+Station"
+            },
+            "17:50 at the latest on the Joetsu Shinkansen platform: the Toki 337 leaves at 18:12"
+          ]
+        },
+        {
+          "title": "Extra ideas (if you feel like it or the weather turns)",
+          "items": [
+            "Miraikan (the museum of the future) is closed for renovation from Oct 1, 2026 to Apr 22, 2027",
+            {
+              "text": "teamLab Planets (Toyosu) instead: immersive digital art, on the same Yurikamome line as Odaiba - timed tickets, you walk barefoot",
+              "url": "https://maps.google.com/?q=teamLab+Planets+Tokyo"
+            },
+            {
+              "text": "Hakone Yuryo private onsen, for a relaxing half-day for two (1h30 from Tokyo, online booking)",
+              "url": "https://maps.google.com/?q=Hakone+Yuryo"
+            },
+            {
+              "text": "Gotokuji, the temple of thousands of maneki-neko cats, then Shimokitazawa (thrift shops, record stores, cafes)",
+              "url": "https://maps.google.com/?q=Gotokuji+Temple+Setagaya"
+            },
+            {
+              "text": "Yanaka Ginza and sunset on the Yuyake Dandan steps (Nippori, 10 min from Akihabara)",
+              "url": "https://maps.google.com/?q=Yanaka+Ginza"
+            }
           ]
         }
       ]
     },
     {
-      "chip": "Day 6",
+      "chip": "Days 5-6",
       "tone": "clay",
-      "title": "Overnight ferry to Hokkaido",
-      "location": "At sea (Pacific Ocean)",
-      "description": "Long but comfortable crossing.",
+      "title": "Shinkansen + overnight ferry to Hokkaido",
+      "location": "Niigata → Tomakomai",
+      "description": "Shinkansen to Niigata, then the overnight ferry with a stop in Akita and a day at sea. Arrival in Tomakomai-Higashi the next day at 16:45.",
       "transportMode": "ferry",
       "routeWaypoints": [
-        { "name": "Oarai Port", "lat": 36.3133, "lng": 140.5782 },
-        { "name": "Tomakomai Port", "lat": 42.6333, "lng": 141.6007 }
+        {
+          "name": "Tokyo Station",
+          "lat": 35.6812,
+          "lng": 139.7671
+        },
+        {
+          "name": "Niigata Port",
+          "lat": 37.934,
+          "lng": 139.078,
+          "isStop": true
+        },
+        {
+          "name": "Akita Port",
+          "lat": 39.7536,
+          "lng": 140.0647,
+          "isStop": true
+        },
+        {
+          "name": "Tomakomai-Higashi Port",
+          "lat": 42.6105,
+          "lng": 141.815
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/ferry.jpg",
@@ -141,46 +249,57 @@
         {
           "title": "Accommodation",
           "items": [
-            "Cabin on the Sunflower Ferry"
+            "Shin Nihonkai ferry Niigata → Tomakomai - Deluxe Twin cabin, single use (booked)"
           ]
         },
         {
           "title": "Transport",
           "items": [
-            "01:45: departure from Oarai Port (Ibaraki)",
-            "19:45: arrival at Tomakomai Port",
-            "Duration: 18h crossing"
+            "Wed Oct 28, 18:12: Shinkansen Toki 337, Tokyo Station → Niigata (arrives 20:07). Reserved seat, ordinary class, ticket handed over on arrival",
+            "Be on the platform by 17:50. The IC card doesn't work on the Shinkansen: use the ticket",
+            "Niigata: taxi from the station to the ferry terminal (~15 min, 4 km). Be at the port by 21:00 (1h30 before departure)",
+            "22:30: Shin Nihonkai ferry departs (ship Lilac / Yukari)",
+            "Thu Oct 29: stop in Akita around 05:00, then 16:45 arrival at Tomakomai-Higashi port (~18h crossing)"
           ]
         },
         {
           "title": "On-board activities",
           "items": [
-            "Relax on the panoramic deck",
-            "Restaurants and common areas",
-            "View of the Pacific Ocean",
-            "Sunrise/sunset at sea"
+            "Relax on the deck",
+            "Restaurant and common areas (meals not included)",
+            "Stop in Akita at dawn, then a full day at sea along the coast",
+            "Sunrise at sea"
           ]
         },
         {
           "title": "After arrival",
           "items": [
-            "Pick up rental car in Tomakomai",
-            "Drive to Sapporo (1h, 60 km)",
-            "Hotel check-in in the evening"
+            "Donan Bus connecting bus in front of the terminal → JR Minami-Chitose station (~45 min, JPY 1,500 cash or PayPay, no IC card). It leaves once passengers are off the ship",
+            "JR Rapid Airport Minami-Chitose → Sapporo (~35 min)",
+            "Check in at the Sapporo Tokyu REI Hotel around 19:00",
+            "Heads-up: the travel book says bus no. 24 to Tomakomai station, but that is the West port access. The Niigata ferry arrives at Tomakomai-Higashi, ~30 km from town"
           ]
         }
       ]
     },
     {
-      "chip": "Days 5-7",
+      "chip": "Days 6-8",
       "tone": "berry",
       "title": "Sapporo",
       "location": "Sapporo, Hokkaido",
-      "description": "Urban exploration and day trip to Otaru.",
+      "description": "3 nights at the Tokyu REI, right in Susukino: the city and a day trip to Otaru.",
       "transportMode": "train",
       "routeWaypoints": [
-        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 },
-        { "name": "Otaru", "lat": 43.1906, "lng": 140.9946 }
+        {
+          "name": "Sapporo",
+          "lat": 43.0618,
+          "lng": 141.3545
+        },
+        {
+          "name": "Otaru",
+          "lat": 43.1906,
+          "lng": 140.9946
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/sapporo.jpeg",
@@ -191,57 +310,103 @@
         {
           "title": "Accommodation",
           "items": [
-            "Hotel in central Sapporo (3 nights)"
+            "Sapporo Tokyu REI Hotel (3 nights, Oct 29 - Nov 1) - booked",
+            {
+              "text": "Minami 4-jo Nishi 5-chome, Chuo-ku (Susukino)",
+              "url": "https://maps.google.com/?q=Sapporo+Tokyu+REI+Hotel"
+            }
           ]
         },
         {
-          "title": "Day 5 - Activities",
+          "title": "Day 6 (Thu Oct 29) - Evening in Susukino",
           "items": [
-            { "text": "Odori Park", "url": "https://maps.google.com/?q=43.0606,141.3526" },
-            { "text": "Sapporo Clock Tower", "url": "https://maps.google.com/?q=43.0614,141.3556" },
-            { "text": "Sapporo Beer Museum", "url": "https://maps.google.com/?q=43.0714,141.3671" },
-            { "text": "Hitsujigaoka Observation Hill", "url": "https://maps.google.com/?q=42.9867,141.4225" },
-            { "text": "Susukino in the evening", "url": "https://maps.google.com/?q=43.0554,141.3546" }
+            {
+              "text": "Susukino in the evening, the hotel is in the neighbourhood",
+              "url": "https://maps.google.com/?q=43.0554,141.3546"
+            },
+            {
+              "text": "Yokocho Ramen Alley",
+              "url": "https://maps.google.com/?q=43.0621,141.3537"
+            }
           ]
         },
         {
-          "title": "Day 6 - Transport",
+          "title": "Day 7 (Fri Oct 30) - Sapporo",
           "items": [
-            "Train to Otaru (~35 min)"
+            {
+              "text": "Odori Park",
+              "url": "https://maps.google.com/?q=43.0606,141.3526"
+            },
+            {
+              "text": "Sapporo Clock Tower",
+              "url": "https://maps.google.com/?q=43.0614,141.3556"
+            },
+            {
+              "text": "Sapporo Beer Museum",
+              "url": "https://maps.google.com/?q=43.0714,141.3671"
+            },
+            {
+              "text": "Hitsujigaoka Observation Hill",
+              "url": "https://maps.google.com/?q=42.9867,141.4225"
+            },
+            {
+              "text": "Tanukikoji Shopping Arcade",
+              "url": "https://maps.google.com/?q=43.0587,141.3527"
+            }
           ]
         },
         {
-          "title": "Day 6 - Activities",
+          "title": "Day 8 (Sat Oct 31) - Transport",
           "items": [
-            { "text": "Walk along the canal", "url": "https://maps.google.com/?q=43.1987,141.0043" },
-            { "text": "Glasswork shops", "url": "https://maps.google.com/?q=43.2001,141.0025" },
+            "JR train to Otaru (~35 min)"
+          ]
+        },
+        {
+          "title": "Day 8 (Sat Oct 31) - Otaru",
+          "items": [
+            {
+              "text": "Walk along the canal",
+              "url": "https://maps.google.com/?q=43.1987,141.0043"
+            },
+            {
+              "text": "Glasswork shops",
+              "url": "https://maps.google.com/?q=43.2001,141.0025"
+            },
             "Local snacks and tastings",
-            { "text": "Fish market", "url": "https://maps.google.com/?q=43.1948,141.0013" },
-            "Return to Sapporo in the late afternoon"
-          ]
-        },
-        {
-          "title": "Day 7 - Activities",
-          "items": [
-            "Last shopping and supplies",
-            { "text": "Tanukikoji Shopping Arcade", "url": "https://maps.google.com/?q=43.0587,141.3527" },
-            { "text": "Yokocho Ramen Alley", "url": "https://maps.google.com/?q=43.0621,141.3537" },
-            "Prepare for early departure"
+            {
+              "text": "Fish market",
+              "url": "https://maps.google.com/?q=43.1948,141.0013"
+            },
+            "Return to Sapporo in the late afternoon",
+            "Get ready to leave: the car pickup is at 9:00 the next morning"
           ]
         }
       ]
     },
     {
-      "chip": "Day 8",
+      "chip": "Day 9",
       "tone": "forest",
       "title": "Sapporo → Sounkyo Onsen",
       "location": "Sounkyo Onsen",
-      "description": "Scenic drive and night at a ryokan.",
+      "description": "Car pickup, scenic drive and a night at an onsen hotel with half-board.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 },
-        { "name": "Asahikawa", "lat": 43.7683, "lng": 142.3649, "isStop": true },
-        { "name": "Sounkyo Onsen", "lat": 43.7429, "lng": 142.9884 }
+        {
+          "name": "Sapporo",
+          "lat": 43.0618,
+          "lng": 141.3545
+        },
+        {
+          "name": "Asahikawa",
+          "lat": 43.7683,
+          "lng": 142.3649,
+          "isStop": true
+        },
+        {
+          "name": "Sounkyo Onsen",
+          "lat": 43.7429,
+          "lng": 142.9884
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/sounkyo-onsen.jpg",
@@ -252,14 +417,14 @@
         {
           "title": "Accommodation",
           "items": [
-            "Ryokan in Sounkyo Onsen with half-board (1 night)"
+            "Sounkyo Choyo Resort Hotel - twin room, half-board (1 night, Nov 1-2) - booked"
           ]
         },
         {
           "title": "Transport",
           "items": [
-            "08:00: departure from Sapporo",
-            "11:30: arrival at Sounkyo Onsen",
+            "Sun Nov 1, 09:00: car pickup at Toyota Rent a Car Sapporo Ekimae (Kita 5-jo Higashi 1-2-4) - Toyota voucher required",
+            "Arrival at Sounkyo Onsen around 13:00",
             "Duration: 3h30 (210 km)",
             "Cost: ~50 EUR (fuel + tolls)"
           ]
@@ -268,34 +433,64 @@
           "title": "En route",
           "items": [
             "Possible stop in Asahikawa",
-            "Scenic mountain road"
+            "Scenic mountain road",
+            "Early November can bring snow at altitude: check the car has winter tyres"
           ]
         },
         {
           "title": "Activities",
           "items": [
-            "Ryokan check-in",
-            { "text": "Sounkyo Gorge", "url": "https://maps.google.com/?q=43.7469,142.9918" },
-            { "text": "Daisetsuzan Ropeway (weather permitting)", "url": "https://maps.google.com/?q=43.7485,142.9880" },
+            "Hotel check-in (free parking)",
+            {
+              "text": "Sounkyo Gorge",
+              "url": "https://maps.google.com/?q=43.7469,142.9918"
+            },
+            {
+              "text": "Daisetsuzan Ropeway (weather permitting)",
+              "url": "https://maps.google.com/?q=43.7485,142.9880"
+            },
             "Onsen in the evening",
-            "Kaiseki dinner (included)"
+            "Dinner included (half-board)"
           ]
         }
       ]
     },
     {
-      "chip": "Day 9",
+      "chip": "Day 10",
       "tone": "clay",
       "title": "Sounkyo Onsen → Akan-ko",
       "location": "Akan-ko",
       "description": "Long drive past lakes and volcanoes.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Sounkyo Onsen", "lat": 43.7429, "lng": 142.9884 },
-        { "name": "Lake Kussharo", "lat": 43.6033, "lng": 144.3433, "isStop": true },
-        { "name": "Mt. Io (Iozan)", "lat": 43.5867, "lng": 144.4483, "isStop": true },
-        { "name": "Lake Mashu", "lat": 43.5710, "lng": 144.5277, "isStop": true },
-        { "name": "Akan-ko", "lat": 43.4364, "lng": 144.1072 }
+        {
+          "name": "Sounkyo Onsen",
+          "lat": 43.7429,
+          "lng": 142.9884
+        },
+        {
+          "name": "Lake Kussharo",
+          "lat": 43.6033,
+          "lng": 144.3433,
+          "isStop": true
+        },
+        {
+          "name": "Mt. Io (Iozan)",
+          "lat": 43.5867,
+          "lng": 144.4483,
+          "isStop": true
+        },
+        {
+          "name": "Lake Mashu",
+          "lat": 43.571,
+          "lng": 144.5277,
+          "isStop": true
+        },
+        {
+          "name": "Akan-ko",
+          "lat": 43.4364,
+          "lng": 144.1072
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/iozan.jpeg",
@@ -306,14 +501,14 @@
         {
           "title": "Accommodation",
           "items": [
-            "Ryokan or hotel at Akan-ko (start of 3 nights)"
+            "Akan no Mori Tsuruga Resort Hanayuka - Japanese-style room, breakfast included (3 nights, Nov 2-5) - booked"
           ]
         },
         {
           "title": "Transport",
           "items": [
             "09:30: departure from Sounkyo Onsen",
-            "13:30: arrival at Akan-ko",
+            "15:00: hotel check-in (Akanko Onsen 1-6-1)",
             "Duration: 4h (180 km + stops)",
             "Cost: ~40 EUR (fuel)"
           ]
@@ -321,24 +516,33 @@
         {
           "title": "Stops en route",
           "items": [
-            { "text": "Lake Kussharo (Sunayu, Kotan Onsen)", "url": "https://maps.google.com/?q=43.6033,144.3433" },
-            { "text": "Mt. Io (Iozan) - fumaroles", "url": "https://maps.google.com/?q=43.5867,144.4483" },
-            { "text": "Lake Mashu - observation deck", "url": "https://maps.google.com/?q=43.5710,144.5277" }
+            {
+              "text": "Lake Kussharo (Sunayu, Kotan Onsen)",
+              "url": "https://maps.google.com/?q=43.6033,144.3433"
+            },
+            {
+              "text": "Mt. Io (Iozan) - fumaroles",
+              "url": "https://maps.google.com/?q=43.5867,144.4483"
+            },
+            {
+              "text": "Lake Mashu - observation deck",
+              "url": "https://maps.google.com/?q=43.5710,144.5277"
+            }
           ]
         },
         {
           "title": "Activities at Akan",
           "items": [
-            "Ryokan check-in",
+            "Hotel check-in (free parking)",
             "First look at the lake",
             "Onsen with lake view",
-            "Kaiseki dinner (if half-board)"
+            "Dinner not included (breakfast only): restaurants in Akanko Onsen village"
           ]
         }
       ]
     },
     {
-      "chip": "Days 10-11",
+      "chip": "Days 11-12",
       "tone": "berry",
       "title": "Akan-ko",
       "location": "Akan-ko",
@@ -352,43 +556,79 @@
         {
           "title": "Accommodation",
           "items": [
-            "Ryokan or hotel at Akan-ko"
+            "Akan no Mori Tsuruga Resort Hanayuka"
           ]
         },
         {
-          "title": "Day 10 - Activities",
+          "title": "Day 11 (Tue Nov 3) - Activities",
           "items": [
-            { "text": "Boat trip on Lake Akan", "url": "https://maps.google.com/?q=43.4394,144.1131" },
-            { "text": "Marimo Observation Center", "url": "https://maps.google.com/?q=43.4394,144.1131" },
-            { "text": "Ainu Village (museum, dance, crafts)", "url": "https://maps.google.com/?q=43.4387,144.1081" },
-            { "text": "Hike to Bokke", "url": "https://maps.google.com/?q=43.4452,144.1079" },
+            {
+              "text": "Boat trip on Lake Akan",
+              "url": "https://maps.google.com/?q=43.4394,144.1131"
+            },
+            {
+              "text": "Marimo Observation Center",
+              "url": "https://maps.google.com/?q=43.4394,144.1131"
+            },
+            {
+              "text": "Ainu Village (museum, dance, crafts)",
+              "url": "https://maps.google.com/?q=43.4387,144.1081"
+            },
+            {
+              "text": "Hike to Bokke",
+              "url": "https://maps.google.com/?q=43.4452,144.1079"
+            },
             "Onsen in the evening"
           ]
         },
         {
-          "title": "Day 11 - Your choice",
+          "title": "Day 12 (Wed Nov 4) - Your choice",
           "items": [
-            { "text": "Hike Mt. Oakan (4-5h)", "url": "https://maps.google.com/?q=43.4614,144.2078" },
-            { "text": "Hike Mt. Meakan (6-7h)", "url": "https://maps.google.com/?q=43.3833,144.0167" },
+            {
+              "text": "Hike Mt. Oakan (4-5h)",
+              "url": "https://maps.google.com/?q=43.4614,144.2078"
+            },
+            {
+              "text": "Hike Mt. Meakan (6-7h)",
+              "url": "https://maps.google.com/?q=43.3833,144.0167"
+            },
             "Canoe on the lake",
-            "Relax at ryokan and onsen",
+            "Relax at the hotel and onsen",
             "Explore the village"
           ]
         }
       ]
     },
     {
-      "chip": "Day 12",
+      "chip": "Day 13",
       "tone": "forest",
       "title": "Akan-ko → Furano",
       "location": "Furano",
       "description": "Long drive with gourmet stops.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Akan-ko", "lat": 43.4364, "lng": 144.1072 },
-        { "name": "Obihiro", "lat": 42.9178, "lng": 143.1963, "isStop": true },
-        { "name": "Biei", "lat": 43.5925, "lng": 142.4700, "isStop": true },
-        { "name": "Furano", "lat": 43.3418, "lng": 142.3834 }
+        {
+          "name": "Akan-ko",
+          "lat": 43.4364,
+          "lng": 144.1072
+        },
+        {
+          "name": "Obihiro",
+          "lat": 42.9178,
+          "lng": 143.1963,
+          "isStop": true
+        },
+        {
+          "name": "Biei",
+          "lat": 43.5925,
+          "lng": 142.47,
+          "isStop": true
+        },
+        {
+          "name": "Furano",
+          "lat": 43.3418,
+          "lng": 142.3834
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/biei.jpg",
@@ -399,13 +639,13 @@
         {
           "title": "Accommodation",
           "items": [
-            "Hotel near Furano station (2 nights)"
+            "Dormy Inn Premium La Vista Furano Hills - double room, breakfast included (2 nights, Nov 5-7) - booked"
           ]
         },
         {
           "title": "Transport",
           "items": [
-            "09:00: departure from Akan-ko",
+            "09:00: departure from Akan-ko (check-out before 10:00)",
             "16:00: arrival at Furano",
             "Duration: 7h (350 km + stops)",
             "Cost: ~60 EUR (fuel + tolls)"
@@ -414,27 +654,37 @@
         {
           "title": "Suggested stops",
           "items": [
-            { "text": "Obihiro (lunch, butadon)", "url": "https://maps.google.com/?q=42.9178,143.1963" },
+            {
+              "text": "Obihiro (lunch, butadon)",
+              "url": "https://maps.google.com/?q=42.9178,143.1963"
+            },
             "Tokachigawa Onsen (coffee break)",
-            { "text": "Biei: Blue Pond, Shikisai-no-oka", "url": "https://maps.google.com/?q=43.5999,142.4968" }
+            {
+              "text": "Biei: Blue Pond, Shikisai-no-oka",
+              "url": "https://maps.google.com/?q=43.5999,142.4968"
+            }
           ]
         },
         {
           "title": "Activities in Furano",
           "items": [
-            "Hotel check-in",
+            {
+              "text": "Check in at the Dormy Inn (Asahimachi 5-14)",
+              "url": "https://maps.google.com/?q=Dormy+Inn+Premium+La+Vista+Furano+Hills"
+            },
             "Explore the town centre",
-            "Local dinner"
+            "Local dinner",
+            "The hotel onsen, and free late-night ramen (yonaki soba, a Dormy Inn habit)"
           ]
         }
       ]
     },
     {
-      "chip": "Day 13",
+      "chip": "Day 14",
       "tone": "clay",
       "title": "Furano & Biei",
       "location": "Furano & Biei",
-      "description": "Lavender fields and scenic roads.",
+      "description": "Farms, cheese and scenic roads.",
       "image": {
         "src": "/images/header-card/japan/farm-tomita.avif",
         "alt": "Farm Tomita lavender fields",
@@ -444,31 +694,54 @@
         {
           "title": "Accommodation",
           "items": [
-            "Hotel in Furano"
+            "Dormy Inn Premium La Vista Furano Hills"
           ]
         },
         {
           "title": "Activities",
           "items": [
-            { "text": "Farm Tomita (lavender, Melon House)", "url": "https://maps.google.com/?q=43.3578,142.4441" },
-            { "text": "Furano Cheese Factory", "url": "https://maps.google.com/?q=43.3523,142.4040" },
-            { "text": "Ningle Terrace", "url": "https://maps.google.com/?q=43.3523,142.3809" },
-            { "text": "Biei scenic drive (Patchwork, Panorama roads)", "url": "https://maps.google.com/?q=43.5925,142.4700" },
-            { "text": "Furano Wine House", "url": "https://maps.google.com/?q=43.3387,142.3811" }
+            {
+              "text": "Farm Tomita (lavender, Melon House)",
+              "url": "https://maps.google.com/?q=43.3578,142.4441"
+            },
+            {
+              "text": "Furano Cheese Factory",
+              "url": "https://maps.google.com/?q=43.3523,142.4040"
+            },
+            {
+              "text": "Ningle Terrace",
+              "url": "https://maps.google.com/?q=43.3523,142.3809"
+            },
+            {
+              "text": "Biei scenic drive (Patchwork, Panorama roads)",
+              "url": "https://maps.google.com/?q=43.5925,142.4700"
+            },
+            {
+              "text": "Furano Wine House",
+              "url": "https://maps.google.com/?q=43.3387,142.3811"
+            }
           ]
         }
       ]
     },
     {
-      "chip": "Day 14",
+      "chip": "Day 15",
       "tone": "berry",
       "title": "Furano → Sapporo",
       "location": "Sapporo",
-      "description": "Return and last shopping.",
+      "description": "Car return and last shopping.",
       "transportMode": "driving",
       "routeWaypoints": [
-        { "name": "Furano", "lat": 43.3418, "lng": 142.3834 },
-        { "name": "Sapporo", "lat": 43.0618, "lng": 141.3545 }
+        {
+          "name": "Furano",
+          "lat": 43.3418,
+          "lng": 142.3834
+        },
+        {
+          "name": "Sapporo",
+          "lat": 43.0618,
+          "lng": 141.3545
+        }
       ],
       "image": {
         "src": "/images/header-card/japan/sapporo-tadao-ando.webp",
@@ -479,7 +752,7 @@
         {
           "title": "Accommodation",
           "items": [
-            "Hotel in central Sapporo (1 night)"
+            "Sapporo Tokyu REI Hotel (1 night, Nov 7-8) - booked"
           ]
         },
         {
@@ -487,6 +760,7 @@
           "items": [
             "14:00: departure from Furano",
             "16:30: arrival at Sapporo",
+            "Return the car to Toyota Sapporo Ekimae before 19:00 (tank full; ETC tolls are charged to your card at that point)",
             "Duration: 2h30 (140 km)",
             "Cost: ~30 EUR (fuel)"
           ]
@@ -494,13 +768,15 @@
         {
           "title": "Option en route",
           "items": [
-            { "text": "Asahikawa (Asahiyama Zoo if interested)", "url": "https://maps.google.com/?q=43.7783,142.4708" }
+            {
+              "text": "Asahikawa (Asahiyama Zoo if interested)",
+              "url": "https://maps.google.com/?q=43.7783,142.4708"
+            }
           ]
         },
         {
           "title": "Activities in Sapporo",
           "items": [
-            "Return rental car",
             "Hotel check-in",
             "Last souvenir shopping",
             "Ramen dinner",
@@ -510,46 +786,29 @@
       ]
     },
     {
-      "chip": "Day 15",
+      "chip": "Days 16-18",
       "tone": "forest",
-      "title": "Sapporo → Tokyo (flight)",
-      "location": "Tokyo",
-      "description": "Domestic flight and arrival in Tokyo.",
+      "title": "Sapporo → Tokyo, Ikebukuro base",
+      "location": "Ikebukuro, Tokyo",
+      "description": "JAL flight to Haneda and 2 nights in Ikebukuro: guided walk in Shinjuku, Kawagoe and its eel, the Kochikame museum in Kameari.",
       "transportMode": "flight",
       "routeWaypoints": [
-        { "name": "New Chitose Airport (CTS)", "lat": 42.7754, "lng": 141.6923 },
-        { "name": "Tokyo Haneda (HND)", "lat": 35.5533, "lng": 139.7811 }
-      ],
-      "image": {
-        "src": "/images/header-card/japan/tokyo.avif",
-        "alt": "Tokyo skyline",
-        "position": "center 10%"
-      },
-      "sections": [
         {
-          "title": "Transport",
-          "items": [
-            "Shuttle from hotel to New Chitose Airport",
-            "14:00: departure from Sapporo (CTS)",
-            "17:30: arrival at Tokyo Haneda (HND)",
-            "Monorail to Tokyo hotel"
-          ]
+          "name": "New Chitose Airport (CTS)",
+          "lat": 42.7754,
+          "lng": 141.6923
         },
         {
-          "title": "Activities",
-          "items": [
-            "Tokyo hotel check-in",
-            "Relaxing evening"
-          ]
+          "name": "Tokyo Haneda (HND)",
+          "lat": 35.5533,
+          "lng": 139.7811
+        },
+        {
+          "name": "Ikebukuro (Hotel Resol)",
+          "lat": 35.7277,
+          "lng": 139.7166
         }
-      ]
-    },
-    {
-      "chip": "Days 16-17",
-      "tone": "clay",
-      "title": "Tokyo (return)",
-      "location": "Tokyo",
-      "description": "Last neighbourhoods and shopping.",
+      ],
       "image": {
         "src": "/images/header-card/japan/akihabara.jpg",
         "alt": "Akihabara district",
@@ -559,24 +818,106 @@
         {
           "title": "Accommodation",
           "items": [
-            "Hotel in central Tokyo (3 nights)"
+            "Hotel Resol Ikebukuro (2 nights, Nov 8-10) - booked",
+            {
+              "text": "2-30-14 Minami-Ikebukuro, Toshima - 6 min on foot from JR Ikebukuro, 1 min from Higashi-Ikebukuro (Yurakucho line, exit 1)",
+              "url": "https://maps.google.com/?q=Hotel+Resol+Ikebukuro"
+            }
           ]
         },
         {
-          "title": "Day 16 - Activities",
+          "title": "Transport (Sun Nov 8)",
           "items": [
-            { "text": "Ueno Park & museums", "url": "https://maps.google.com/?q=35.7148,139.7731" },
-            { "text": "Akihabara (electronics)", "url": "https://maps.google.com/?q=35.7022,139.7745" },
-            { "text": "Yanaka (old neighbourhood)", "url": "https://maps.google.com/?q=35.7277,139.7666" }
+            "Private shuttle hotel → New Chitose (CTS): time emailed the day before, by 17:30. Plan B: JR Rapid Airport from Sapporo station (37 min)",
+            "11:40: JAL 508 Sapporo (CTS) → Tokyo Haneda (HND), arrives 13:25. Be at the airport 1h30 to 2h before",
+            "Shuttle Haneda → hotel in Ikebukuro: time emailed the day before, by 17:30"
           ]
         },
         {
-          "title": "Day 17 - Activities",
+          "title": "Sun Nov 8 - Night walk in Shinjuku",
           "items": [
-            { "text": "Ginza (upscale shopping)", "url": "https://maps.google.com/?q=35.6714,139.7670" },
-            { "text": "Tokyo Tower or Roppongi Hills", "url": "https://maps.google.com/?q=35.6586,139.7454" },
-            "Last favourite restaurants",
-            "Pack luggage"
+            "Ikebukuro → Shinjuku: JR Yamanote or Saikyo (~6 min)",
+            {
+              "text": "18:30-20:00: guided night walk in Shinjuku (Japan Experience, in English). Meet outside Uniqlo Shinjuku West Exit: the store is under renovation, look for the Japan Experience sign. Arrive 10 min early",
+              "url": "https://maps.google.com/?q=Uniqlo+Shinjuku+Nishiguchi"
+            },
+            {
+              "text": "Afterwards: dinner in Omoide Yokocho, or head back to Ikebukuro",
+              "url": "https://maps.google.com/?q=Omoide+Yokocho+Shinjuku"
+            }
+          ]
+        },
+        {
+          "title": "Mon Nov 9 - Kawagoe and Ogakiku's eel",
+          "items": [
+            "Ikebukuro is the gateway to Kawagoe: Tobu Tojo Line to Kawagoe (~30 min by express), then bus or ~20 min on foot to the old town",
+            {
+              "text": "Ogakiku, eel since 1807: arrive before opening (11:00 on weekdays, lunch service until 14:00). Unaju JPY 3,950 to 6,500. Closed on Thursdays",
+              "url": "https://www.ogakiku.com/en.html"
+            },
+            {
+              "text": "After lunch, head north: Taisho Roman street, the Kurazukuri warehouse houses, the Toki no Kane bell tower",
+              "url": "https://maps.google.com/?q=Kawagoe+Ichibangai"
+            },
+            {
+              "text": "Kashiya Yokocho, the old-fashioned candy alley",
+              "url": "https://maps.google.com/?q=Kashiya+Yokocho+Kawagoe"
+            },
+            {
+              "text": "Optional: Kita-in temple and its 500 Rakan statues",
+              "url": "https://maps.google.com/?q=Kitain+Temple+Kawagoe"
+            },
+            "Back to Ikebukuro mid-afternoon, free evening"
+          ]
+        },
+        {
+          "title": "Tue Nov 10 - Kochikame, Shibamata, then the airport",
+          "items": [
+            "Check out in the morning, leave the bags at reception",
+            "Ikebukuro → Nishi-Nippori (JR Yamanote), then the Chiyoda / Joban line to Kameari (~40 min)",
+            {
+              "text": "10:00: KochiKame Museum, 3 min from Kameari station (JPY 700, 10:00-18:00, closed on the 3rd Tuesday of the month: Nov 10 is the 2nd). Plus the hunt for the Ryotsu statues around the station",
+              "url": "https://maps.google.com/?q=KochiKame+Museum+Kameari"
+            },
+            {
+              "text": "Optional, close by: Shibamata, retro shopping street and Taishakuten temple - pure Showa vibes (bus ~10 min, or JR to Kanamachi + 1 Keisei stop)",
+              "url": "https://maps.google.com/?q=Shibamata+Taishakuten"
+            },
+            "Back to Ikebukuro in the afternoon, pick up the bags",
+            "Shared shuttle hotel → Haneda: pickup ~3h30 before the flight, so around 19:15 (exact time emailed the evening before between 18:00 and 20:00). Be ready 10 min early"
+          ]
+        },
+        {
+          "title": "Free time: off-the-beaten-path ideas",
+          "items": [
+            {
+              "text": "Kichijoji: Harmonica Yokocho and the Inokashira swan boats (legend says couples who ride them break up...)",
+              "url": "https://maps.google.com/?q=Inokashira+Park"
+            },
+            {
+              "text": "Koenji: punk thrift shops and tiny neighbourhood bars, the locals' Tokyo",
+              "url": "https://maps.google.com/?q=Koenji"
+            },
+            {
+              "text": "Nakano Broadway: retro mall, vintage toys, second-hand manga",
+              "url": "https://maps.google.com/?q=Nakano+Broadway"
+            },
+            {
+              "text": "Todoroki Valley: a real wooded ravine in the middle of the city",
+              "url": "https://maps.google.com/?q=Todoroki+Valley"
+            },
+            {
+              "text": "Kiyosumi-Shirakawa: roaster cafes, Kiyosumi garden, galleries",
+              "url": "https://maps.google.com/?q=Kiyosumi+Garden"
+            },
+            {
+              "text": "Kagurazaka in the evening: cobbled lanes, old geisha-district feel",
+              "url": "https://maps.google.com/?q=Kagurazaka"
+            },
+            {
+              "text": "Round1: bowling, darts and arcade under one roof",
+              "url": "https://maps.google.com/?q=Round1+Ikebukuro"
+            }
           ]
         }
       ]
@@ -585,18 +926,20 @@
       "chip": "Day 18",
       "tone": "berry",
       "title": "Departure from Tokyo",
-      "location": "Tokyo",
+      "location": "Tokyo Haneda",
       "description": "End of the trip.",
       "image": {
         "src": "/images/header-card/japan/retour-europe.jpg",
-        "alt": "Return to Europe",
+        "alt": "Retour en Europe",
         "position": "center 85%"
       },
       "sections": [
         {
           "title": "Transport",
           "items": [
-            "Return flight to Europe"
+            "Tue Nov 10, 22:45: flight NH203 Tokyo Haneda → Frankfurt",
+            "Connection in Frankfurt (3h35)",
+            "Flight LH9528 Frankfurt → Luxembourg, arrives Wed Nov 11 at 09:55"
           ]
         }
       ]
@@ -617,8 +960,8 @@
         {
           "title": "Accommodation",
           "items": [
-            "Tokyo: 3 nights (arrival) + 3 nights (return)",
-            "Ferry: 1 night",
+            "Tokyo: 4 nights in Ryogoku (arrival) + 2 nights in Ikebukuro (return)",
+            "Ferry Niigata → Tomakomai: 1 night",
             "Sapporo: 3 nights + 1 night",
             "Sounkyo Onsen: 1 night",
             "Akan-ko: 3 nights",
@@ -628,15 +971,16 @@
         {
           "title": "Main transport",
           "items": [
-            "Ferry Tokyo → Hokkaido",
-            "Rental car in Hokkaido (7 days)",
-            "Flight Sapporo → Tokyo"
+            "Shinkansen Tokyo → Niigata, then overnight ferry Niigata → Tomakomai",
+            "Toyota rental car in Hokkaido (Nov 1-7)",
+            "JAL flight Sapporo → Tokyo"
           ]
         },
         {
           "title": "Cities / places",
           "items": [
-            "Tokyo, Sapporo, Otaru, Sounkyo Onsen",
+            "Tokyo, Kamakura, Enoshima, Kawagoe",
+            "Niigata, Sapporo, Otaru, Sounkyo Onsen",
             "Lake Kussharo, Mt. Io, Lake Mashu",
             "Akan-ko, Obihiro, Biei, Furano"
           ]

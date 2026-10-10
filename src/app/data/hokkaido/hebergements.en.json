@@ -1,18 +1,18 @@
 {
   "hero": {
     "eyebrow": "Accommodation",
-    "title": "Complete accommodation guide",
-    "description": "Total accommodation budget: 2100 EUR"
+    "title": "Complete Accommodation Guide",
+    "description": "All accommodation is booked through Japan Experience (included in the package). Check-in is usually at 15:00, check-out at 10:00. Accommodation tax ~JPY 200 / night / person, paid in cash on site."
   },
   "cards": [
     {
       "chip": "Tokyo",
       "tone": "forest",
-      "title": "Days 1-5 (arrival)",
-      "location": "Tokyo",
-      "nights": "5 nights",
+      "title": "Daiichi Hotel Ryogoku",
+      "location": "Tokyo (Ryogoku)",
+      "nights": "4 nights",
       "priority": 2,
-      "description": "3-star city centre hotel.",
+      "description": "Moderate double room (19 m2) with a Skytree view, no meals.",
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
@@ -22,58 +22,47 @@
         {
           "title": "Budget",
           "items": [
-            "500 EUR (100 EUR / night)"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "To book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Recommended options",
+          "title": "Reservation",
           "items": [
-            "Hotel near Tokyo Station (Nihonbashi, Yaesu, Marunouchi)",
-            "Hotel near Shinjuku (lively city centre)",
-            "Hotel near Ueno (close to park and museums)"
-          ]
-        },
-        {
-          "title": "Criteria",
-          "items": [
-            "Easy access from airport",
-            "Late check-in available",
-            "Close to transport for Oarai (Day 5)"
+            "1-6-1 Yokoami, Sumida-ku, Tokyo 130-0015",
+            "Arrive Sat Oct 24 (check-in 15:00), leave Wed Oct 28",
+            "JR Ryogoku station ~9 min on foot (East exit)",
+            "Bags can be left at reception before check-in and after check-out"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Booking.com Tokyo",
-          "url": "https://www.booking.com/city/jp/tokyo.en.html"
-        },
-        {
-          "label": "Agoda Tokyo",
-          "url": "https://www.agoda.com/city/tokyo-jp.html"
+          "label": "Daiichi Hotel Ryogoku (Maps)",
+          "url": "https://maps.google.com/?q=Daiichi+Hotel+Ryogoku"
         }
       ]
     },
     {
       "chip": "Ferry",
       "tone": "clay",
-      "title": "Day 6 (Sunflower Ferry)",
-      "location": "At sea (Pacific Ocean)",
+      "title": "Shin Nihonkai Ferry",
+      "location": "Ferry Niigata → Tomakomai",
       "nights": "1 night",
-      "priority": 1,
-      "description": "Private cabin on the ferry.",
+      "priority": 2,
+      "description": "Private cabin for the overnight crossing on the Sea of Japan.",
       "image": {
         "src": "/images/header-card/japan/ferry.jpg",
         "alt": "Ferry at sea",
@@ -83,61 +72,47 @@
         {
           "title": "Budget",
           "items": [
-            "150 EUR (private cabin)"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "Top priority to book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Transport",
+          "title": "Reservation",
           "items": [
-            "Route: Oarai Port → Tomakomai Port",
-            "Duration: 18h (01:45 → 19:45)"
-          ]
-        },
-        {
-          "title": "Cabins",
-          "items": [
-            "Standard private (~150 EUR)",
-            "Deluxe (~250 EUR)",
-            "Suite (~400 EUR)"
-          ]
-        },
-        {
-          "title": "Getting to Oarai",
-          "items": [
-            "Train Tokyo → Mito (1h30)",
-            "Bus Mito → Oarai (30 min)",
-            "Direct taxi (2h)"
+            "Leaves Niigata Wed Oct 28 at 22:30, stops in Akita, arrives Tomakomai-Higashi Thu Oct 29 at 16:45",
+            "Deluxe Twin cabin, single use, no meals (restaurant on board)",
+            "The service voucher says 'Standard Room': check the cabin type on the ticket",
+            "Be at the port 1h30 before departure (21:00)"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Ferry email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Sunflower Ferry",
-          "url": "https://www.sunflower.co.jp/en/"
+          "label": "Shin Nihonkai Ferry",
+          "url": "https://www.snf.jp/english/"
         }
       ]
     },
     {
       "chip": "Sapporo",
       "tone": "berry",
-      "title": "Days 5-7",
+      "title": "Sapporo Tokyu REI Hotel",
       "location": "Sapporo, Hokkaido",
       "nights": "3 nights",
       "priority": 2,
-      "description": "3-star city centre hotel.",
+      "description": "Hotel right in Susukino, single room, no meals.",
       "image": {
         "src": "/images/header-card/japan/sapporo.jpeg",
         "alt": "Sapporo city",
@@ -147,263 +122,181 @@
         {
           "title": "Budget",
           "items": [
-            "300 EUR (100 EUR / night)"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "To book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Recommended options",
+          "title": "Reservation",
           "items": [
-            "Vessel Inn Sapporo Nakajima Park",
-            "ibis Styles Sapporo",
-            "UNWIND HOTEL & BAR SAPPORO"
-          ]
-        },
-        {
-          "title": "Notes",
-          "items": [
-            "Late arrival on Day 6",
-            "Parking if renting a car",
-            "Check late check-in policy"
+            "Minami 4-jo Nishi 5-chome 1, Chuo-ku, Sapporo 064-8509",
+            "Arrive Thu Oct 29 (evening, after the ferry), leave Sun Nov 1",
+            "Toyota branch (car on Nov 1 at 9:00) ~15 min on foot, near Sapporo station"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Vessel Inn Sapporo (Booking)",
-          "url": "https://www.booking.com/Share-N0o365"
-        },
-        {
-          "label": "ibis Styles Sapporo (Booking)",
-          "url": "https://www.booking.com/Share-1QU1T5y"
-        },
-        {
-          "label": "UNWIND HOTEL & BAR (Booking)",
-          "url": "https://www.booking.com/Share-PIJhl5"
+          "label": "Sapporo Tokyu REI Hotel (Maps)",
+          "url": "https://maps.google.com/?q=Sapporo+Tokyu+REI+Hotel"
         }
       ]
     },
     {
       "chip": "Sounkyo Onsen",
       "tone": "forest",
-      "title": "Day 8",
+      "title": "Sounkyo Choyo Resort Hotel",
       "location": "Sounkyo Onsen",
       "nights": "1 night",
-      "priority": 1,
-      "description": "Ryokan with onsen and half-board.",
+      "priority": 2,
+      "description": "Onsen hotel in the gorge, half-board.",
       "sections": [
         {
           "title": "Budget",
           "items": [
-            "180 EUR"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "Top priority to book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Features",
+          "title": "Reservation",
           "items": [
-            "Quality onsen",
-            "Half-board included",
-            "Sounkyo Gorge view",
-            "Free parking"
-          ]
-        },
-        {
-          "title": "Options",
-          "items": [
-            "Sounkyo Choyotei",
-            "Hotel Taisetsu",
-            "Choyo Resort Hotel"
-          ]
-        },
-        {
-          "title": "Notes",
-          "items": [
-            "Book early",
-            "Confirm meals included",
-            "Request room with a view"
+            "Sounkyo Onsen, Kamikawa-cho 078-1701",
+            "Arrive Sun Nov 1, leave Mon Nov 2",
+            "Twin room, dinner and breakfast included",
+            "Free parking - ~30 min by car from Asahikawa station"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Booking.com",
-          "url": "https://www.booking.com/"
-        },
-        {
-          "label": "Rakuten Travel",
-          "url": "https://travel.rakuten.com/"
-        },
-        {
-          "label": "Japanese Guest Houses",
-          "url": "https://www.japaneseguesthouses.com/"
+          "label": "Sounkyo Choyo Resort Hotel (Maps)",
+          "url": "https://maps.google.com/?q=Sounkyo+Choyo+Resort+Hotel"
         }
       ]
     },
     {
       "chip": "Akan-ko",
       "tone": "clay",
-      "title": "Days 9-11",
+      "title": "Akan no Mori Tsuruga Resort Hanayuka",
       "location": "Akan-ko",
       "nights": "3 nights",
-      "priority": 1,
-      "description": "Ryokan or hotel with onsen.",
+      "priority": 2,
+      "description": "Onsen resort on Lake Akan, breakfast included.",
       "sections": [
         {
           "title": "Budget",
           "items": [
-            "450 EUR (150 EUR / night)"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "Top priority to book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Features",
+          "title": "Reservation",
           "items": [
-            "Lakeside setting",
-            "Onsen with view",
-            "Half-board included",
+            "Akanko Onsen 1-6-1, Akan-cho, Kushiro 085-0467",
+            "Check-in Mon Nov 2 at 15:00, check-out Thu Nov 5 at 10:00",
+            "Japanese-style room, single use, breakfast included (dinner not included)",
             "Free parking"
-          ]
-        },
-        {
-          "title": "Options",
-          "items": [
-            "Tsuruga Wings",
-            "New Akan Hotel",
-            "Akan Yuku no Sato Tsuruga",
-            "Akan no Mori Tsuruga Resort Hanayuuka"
-          ]
-        },
-        {
-          "title": "Criteria",
-          "items": [
-            "Lake view",
-            "Onsen quality",
-            "Close to Ainu village",
-            "Kaiseki meal quality"
-          ]
-        },
-        {
-          "title": "Notes",
-          "items": [
-            "Book 3-6 months in advance",
-            "3-night stay possible",
-            "Check meal policy"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Booking.com",
-          "url": "https://www.booking.com/"
-        },
-        {
-          "label": "Rakuten Travel",
-          "url": "https://travel.rakuten.com/"
+          "label": "Tsuruga Resort Hanayuka (Maps)",
+          "url": "https://maps.google.com/?q=Akan+no+Mori+Tsuruga+Resort+Hanayuka"
         }
       ]
     },
     {
       "chip": "Furano",
       "tone": "berry",
-      "title": "Days 12-13",
+      "title": "Dormy Inn Premium La Vista Furano Hills",
       "location": "Furano",
       "nights": "2 nights",
       "priority": 2,
-      "description": "3-star hotel in town or close to nature.",
+      "description": "Hotel with onsen, breakfast included.",
       "sections": [
         {
           "title": "Budget",
           "items": [
-            "200 EUR (100 EUR / night)"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "To book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Options",
+          "title": "Reservation",
           "items": [
-            "Natulux Hotel Furano",
-            "New Furano Prince Hotel",
-            "Hotel Munin Furano"
-          ]
-        },
-        {
-          "title": "Criteria",
-          "items": [
-            "Free parking",
-            "Easy access to Biei and Farm Tomita",
-            "Close to restaurants",
-            "Mountain view"
+            "Asahimachi 5-14, Furano 076-0026",
+            "Arrive Thu Nov 5, leave Sat Nov 7",
+            "Standard double room, breakfast included",
+            "The guide's hotel blurb describes Lake Akan by mistake: the Furano address is the right one"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Booking.com",
-          "url": "https://www.booking.com/"
-        },
-        {
-          "label": "Rakuten Travel",
-          "url": "https://travel.rakuten.com/"
+          "label": "Dormy Inn Furano (Maps)",
+          "url": "https://maps.google.com/?q=Dormy+Inn+Premium+La+Vista+Furano+Hills"
         }
       ]
     },
     {
       "chip": "Sapporo",
       "tone": "forest",
-      "title": "Day 14 (return)",
+      "title": "Sapporo Tokyu REI Hotel",
       "location": "Sapporo, Hokkaido",
       "nights": "1 night",
       "priority": 2,
-      "description": "3-star city centre hotel.",
+      "description": "Same hotel as before, single room, no meals.",
       "image": {
         "src": "/images/header-card/japan/sapporo.jpeg",
         "alt": "Sapporo city",
@@ -413,54 +306,46 @@
         {
           "title": "Budget",
           "items": [
-            "100 EUR"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "To book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Options",
+          "title": "Reservation",
           "items": [
-            "Same hotel as Days 5-7",
-            "Or a new neighbourhood"
-          ]
-        },
-        {
-          "title": "Criteria",
-          "items": [
-            "City centre",
-            "Close to car rental agency",
-            "Easy access to New Chitose",
-            "Close to shopping"
+            "Minami 4-jo Nishi 5-chome 1, Chuo-ku, Sapporo 064-8509",
+            "Arrive Sat Nov 7 (car returned before 19:00), leave Sun Nov 8",
+            "Private shuttle to New Chitose: time emailed the day before, by 17:30"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Booking.com Sapporo",
-          "url": "https://www.booking.com/city/jp/sapporo.en.html"
+          "label": "Sapporo Tokyu REI Hotel (Maps)",
+          "url": "https://maps.google.com/?q=Sapporo+Tokyu+REI+Hotel"
         }
       ]
     },
     {
       "chip": "Tokyo",
       "tone": "clay",
-      "title": "Days 16-18 (return)",
-      "location": "Tokyo",
-      "nights": "3 nights",
+      "title": "Hotel Resol Ikebukuro",
+      "location": "Ikebukuro",
+      "nights": "2 nights",
       "priority": 2,
-      "description": "3-star city centre hotel.",
+      "description": "Base for the return to Tokyo, single room, no meals.",
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
@@ -470,68 +355,55 @@
         {
           "title": "Budget",
           "items": [
-            "300 EUR (100 EUR / night)"
+            "Included (Japan Experience package)"
           ]
         },
         {
           "title": "Status",
           "items": [
-            "To book"
+            "Booked (Japan Experience)"
           ]
         },
         {
-          "title": "Options",
+          "title": "Reservation",
           "items": [
-            "Same area as on arrival",
-            "Or a new neighbourhood (Ginza, Roppongi, Asakusa)"
-          ]
-        },
-        {
-          "title": "Criteria",
-          "items": [
-            "Easy access from Haneda",
-            "Easy airport access on Day 18",
-            "Close to shopping",
-            "Good restaurant area"
+            "2-30-14 Minami-Ikebukuro, Toshima-ku, Tokyo 171-0022",
+            "Arrive Sun Nov 8 (shuttle from Haneda), leave Tue Nov 10",
+            "6 min on foot from JR Ikebukuro, 1 min from Higashi-Ikebukuro (Yurakucho line, exit 1)",
+            "Nov 10: leave the bags at reception, shuttle to Haneda around 19:15"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passport",
-            "Email confirmation"
+            "Japan Experience travel book"
           ]
         }
       ],
       "links": [
         {
-          "label": "Booking.com Tokyo",
-          "url": "https://www.booking.com/city/jp/tokyo.en.html"
+          "label": "Hotel Resol Ikebukuro (Maps)",
+          "url": "https://maps.google.com/?q=Hotel+Resol+Ikebukuro"
         }
       ]
     },
     {
       "chip": "Checklist",
       "tone": "berry",
-      "title": "Booking checklist",
-      "description": "Booking priorities.",
+      "title": "Booking Checklist",
+      "description": "Everything is booked through Japan Experience.",
       "sections": [
         {
-          "title": "Priority 1",
+          "title": "Booked",
           "items": [
-            "Sunflower Ferry (Day 6)",
-            "Sounkyo Onsen (Day 8)",
-            "Akan-ko (Days 9-11)"
-          ]
-        },
-        {
-          "title": "Priority 2",
-          "items": [
-            "Tokyo Days 1-5",
-            "Sapporo Days 5-7",
-            "Furano Days 12-13",
-            "Sapporo Day 14",
-            "Tokyo Days 16-18"
+            "Tokyo (Ryogoku) - 4 nights",
+            "Ferry Niigata → Tomakomai - 1 night",
+            "Sapporo - 3 nights + 1 night",
+            "Sounkyo Onsen - 1 night",
+            "Akan-ko - 3 nights",
+            "Furano - 2 nights",
+            "Tokyo (Ikebukuro) - 2 nights"
           ]
         }
       ]
@@ -539,44 +411,33 @@
     {
       "chip": "Tips",
       "tone": "forest",
-      "title": "General tips",
-      "description": "Best practices for booking.",
+      "title": "General Tips",
+      "description": "Good practice on site.",
       "sections": [
         {
-          "title": "Booking",
+          "title": "On site",
           "items": [
-            "Ferry: book 2-3 months in advance",
-            "Hotels: Booking, Agoda, Rakuten",
-            "Ryokans: specialist websites",
-            "Book 3-6 months ahead for best rates"
+            "Check-in usually at 15:00, check-out at 10:00",
+            "Early check-in at your own cost and up to the hotel",
+            "Accommodation tax ~JPY 200 / night / person, in cash",
+            "Bags can be left at reception before / after"
           ]
         },
         {
           "title": "Communication",
           "items": [
-            "English-speaking staff is common",
-            "Keep hotel address in Japanese on your phone",
-            "Confirm check-in time",
-            "Mention dietary restrictions"
+            "English-speaking staff common",
+            "Address in Japanese on phone",
+            "Mention dietary restrictions (half-board in Sounkyo)"
           ]
         },
         {
           "title": "Included",
           "items": [
-            "Free Wi-Fi",
+            "Free WiFi",
             "Toiletries",
-            "Pyjamas/yukatas at ryokans",
-            "Free parking outside Tokyo"
-          ]
-        },
-        {
-          "title": "To check",
-          "items": [
-            "Check-in / check-out times",
-            "Breakfast included",
-            "Cancellation policy",
-            "Parking available",
-            "Meals included at ryokan"
+            "Yukatas in the onsen hotels",
+            "Free parking in Sounkyo, Akan and Furano"
           ]
         }
       ]

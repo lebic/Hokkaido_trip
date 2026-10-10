@@ -2,14 +2,106 @@
   "hero": {
     "eyebrow": "Activities",
     "title": "Activities to book",
-    "description": "Experiences requiring advance booking or planning. Day-by-day details are in the itinerary."
+    "description": "Experiences that need a booking or advance planning. Day-by-day details are in the itinerary."
   },
   "activities": [
     {
-      "chip": "Day 8",
+      "chip": "Day 2",
+      "title": "Owl Cafe Akiba Fukurou (booked)",
+      "location": "Akihabara, Tokyo",
+      "description": "BOOKED - Sunday Oct 25 at 14:00. Arrive 10 min early. 67 Kanda Neribeicho, 3 min from JR Akihabara (Central Gate).",
+      "links": [
+        {
+          "label": "Owl Cafe Akiba Fukurou",
+          "url": "https://akiba2960.com/"
+        },
+        {
+          "label": "Owl Cafe (Maps)",
+          "url": "https://maps.app.goo.gl/hD2g2CtV8euu5mEYA"
+        }
+      ]
+    },
+    {
+      "chip": "Day 2",
+      "title": "Tokyo Skytree at sunset",
+      "location": "Oshiage, Tokyo",
+      "description": "Tembo Deck + Tembo Galleria ticket (the highest, 450 m), timed slot around 16:30 on Sunday Oct 25 (sunset ~16:50). Buy online now: weekend sunset slots go fast.",
+      "links": [
+        {
+          "label": "Tokyo Skytree - tickets",
+          "url": "https://www.tokyo-skytree.jp/en/"
+        },
+        {
+          "label": "Tokyo Skytree (Maps)",
+          "url": "https://maps.app.goo.gl/VZsTgehoznXaLgZP6"
+        }
+      ]
+    },
+    {
+      "chip": "Day 4",
+      "title": "Warner Bros. Studio Tour Tokyo - Harry Potter",
+      "location": "Toshimaen (Nerima), Tokyo",
+      "description": "BOOK FIRST. Tuesday Oct 27, slot around 10:00, ~4h on site. Timed tickets on the official website only, non-refundable (adult ~JPY 7,000). Arrive 20 min before the slot.",
+      "links": [
+        {
+          "label": "Official tickets",
+          "url": "https://www.wbstudiotour.jp/en/tickets/"
+        },
+        {
+          "label": "Studio Tour (Maps)",
+          "url": "https://maps.app.goo.gl/nMX7J8Hwc7iUXYgG8"
+        }
+      ]
+    },
+    {
+      "chip": "Day 5",
+      "title": "Small Worlds Tokyo",
+      "location": "Ariake, Tokyo",
+      "description": "Wednesday Oct 28 around 10:30, ~2h. Open 9:00-19:00 (last entry 18:00). Online ticket recommended.",
+      "links": [
+        {
+          "label": "Small Worlds Tokyo",
+          "url": "https://smallworlds.jp/en/"
+        },
+        {
+          "label": "Small Worlds (Maps)",
+          "url": "https://maps.google.com/?q=Small+Worlds+Tokyo+Ariake"
+        }
+      ]
+    },
+    {
+      "chip": "Day 16",
+      "title": "Shinjuku night walk (booked)",
+      "location": "Shinjuku (6 min from Ikebukuro)",
+      "description": "BOOKED (Japan Experience) - Sunday Nov 8, 18:30-20:00, in English. Meet outside Uniqlo Shinjuku West Exit (under renovation): look for the Japan Experience sign. Arrive 10 min early, the group leaves on time. May be cancelled in bad weather.",
+      "links": [
+        {
+          "label": "Meeting point (Maps)",
+          "url": "https://maps.google.com/?q=Uniqlo+Shinjuku+Nishiguchi"
+        }
+      ]
+    },
+    {
+      "chip": "Day 17",
+      "title": "Ogakiku - eel in Kawagoe",
+      "location": "Kawagoe (30 min from Ikebukuro)",
+      "description": "Monday Nov 9. No bookings: arrive before opening (11:00 on weekdays, lunch until 14:00). Closed on Thursdays. Unaju JPY 3,950 to 6,500. Closes early if the eel runs out.",
+      "links": [
+        {
+          "label": "Ogakiku",
+          "url": "https://www.ogakiku.com/en.html"
+        },
+        {
+          "label": "Ogakiku (Maps)",
+          "url": "https://maps.google.com/?q=Ogakiku+Kawagoe"
+        }
+      ]
+    },
+    {
+      "chip": "Day 9",
       "title": "Daisetsuzan Ropeway",
       "location": "Sounkyo Onsen",
-      "description": "Panoramic gondola. Opening depends on weather, can get busy in peak season.",
+      "description": "Panoramic cable car. Operation depends on weather, heavy crowds in high season.",
       "links": [
         {
           "label": "Daisetsuzan Ropeway",
@@ -18,10 +110,10 @@
       ]
     },
     {
-      "chip": "Day 10",
-      "title": "Ainu Village - Ikahchu Performance",
+      "chip": "Day 11",
+      "title": "Ainu Village - Ikahchu Show",
       "location": "Akan-ko",
-      "description": "Evening Ainu dance and music show. Limited sessions, booking recommended.",
+      "description": "Ainu dance and music show in the evening. Limited sessions, booking recommended.",
       "links": [
         {
           "label": "Akan Ainu Theater (Ikor)",
@@ -30,8 +122,8 @@
       ]
     },
     {
-      "chip": "Day 10",
-      "title": "Boat trip on Lake Akan",
+      "chip": "Day 11",
+      "title": "Boat on Lake Akan",
       "location": "Akan-ko",
       "description": "Lake tour with a visit to the Marimo Exhibition Center.",
       "links": [
@@ -42,17 +134,17 @@
       ]
     },
     {
-      "chip": "Day 11",
+      "chip": "Day 12",
       "title": "Canoe on Lake Akan",
       "location": "Akan-ko",
       "description": "Optional. Book with local operators on arrival or in advance.",
       "links": []
     },
     {
-      "chip": "Day 13",
+      "chip": "Day 14",
       "title": "Farm Tomita",
       "location": "Furano",
-      "description": "Lavender fields and Melon House. Free entry, check opening based on season.",
+      "description": "Lavender fields and Melon House. Free entry, check seasonal opening.",
       "links": [
         {
           "label": "Farm Tomita",
@@ -61,10 +153,10 @@
       ]
     },
     {
-      "chip": "Day 13",
+      "chip": "Day 14",
       "title": "Ningle Terrace",
       "location": "Furano",
-      "description": "Artisan village in the Furano forest. Evening visit recommended, check opening hours.",
+      "description": "Craft village in the Furano forest. Best in the evening, check opening hours.",
       "links": [
         {
           "label": "Ningle Terrace",

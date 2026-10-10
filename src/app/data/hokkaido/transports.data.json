@@ -1,17 +1,17 @@
 {
   "hero": {
     "eyebrow": "Transports",
-    "title": "Trains en priorite + voiture pour zones isolees",
-    "description": "Base sur l'itineraire : trains pour grandes villes, voiture ponctuelle en zones remotes."
+    "title": "Shinkansen, ferry, voiture et vol : tout est reserve",
+    "description": "Billets remis a l'arrivee par Japan Experience. Carte IC pour les transports locaux, voiture Toyota pour la boucle de Hokkaido."
   },
   "cards": [
     {
-      "chip": "Avant depart",
+      "chip": "23 - 24 Oct",
       "tone": "forest",
-      "title": "Vol international vers Tokyo",
+      "title": "Vol aller Luxembourg -> Tokyo Haneda",
       "category": "vol",
-      "toReserve": true,
-      "description": "Reservation principale du voyage.",
+      "toReserve": false,
+      "description": "Reserve via Japan Experience. Depart le 23 oct, arrivee a Haneda le 24.",
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
@@ -19,76 +19,31 @@
       },
       "sections": [
         {
-          "title": "Reservation",
+          "title": "Arrivee a Haneda",
           "items": [
-            "Billet avion aller-retour Europe -> Tokyo",
-            "Verifier bagages et correspondances"
+            "Meet & greet apres la douane : agent avec pancarte a ton nom - ne pas quitter l'aeroport sans l'avoir vu",
+            "Verifier l'enveloppe de documents avec l'agent et signer (signaler tout manque sur place)",
+            "Navette partagee vers l'hotel : heure envoyee la veille entre 18h et 20h (verifier les spams). 1 grand bagage par personne",
+            "Si le vol a plus de 45 min de retard, la navette peut partir sans toi : taxi, garder le recu pour remboursement",
+            "Assistance : WhatsApp +81 90 3823 1949 (8h-22h)"
           ]
         },
         {
           "title": "Documents",
           "items": [
             "Passeport",
-            "Confirmation email"
-          ]
-        },
-        {
-          "title": "Arrivee",
-          "items": [
-            "Narita ou Haneda",
-            "Prevoir change et carte IC"
+            "Carnet de voyage Japan Experience"
           ]
         }
       ]
     },
     {
-      "chip": "JR Pass",
-      "tone": "clay",
-      "title": "Cartes JR Pass necessaires",
-      "category": "train",
-      "toReserve": true,
-      "description": "Trains pour les grandes villes, voiture uniquement pour zones isolees.",
-      "sections": [
-        {
-          "title": "Pass recommande",
-          "items": [
-            "JR Hokkaido Rail Pass (5 jours)"
-          ]
-        },
-        {
-          "title": "Couvrir",
-          "items": [
-            "Sapporo <-> Otaru (Jour 6)",
-            "Sapporo <-> Asahikawa (Jour 8, option train)",
-            "Sapporo <-> Hakodate si besoin"
-          ]
-        },
-        {
-          "title": "Activation",
-          "items": [
-            "Demarrer autour des Jours 5-9",
-            "Reserver les sieges a l'avance"
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "JR Hokkaido Rail Pass",
-          "url": "https://www.jrhokkaido.co.jp/global/english/ticket/railpass/"
-        },
-        {
-          "label": "JR East - South Hokkaido Rail Pass",
-          "url": "https://www.jreast.co.jp/multi/en/pass/east-south-hokkaido.html"
-        }
-      ]
-    },
-    {
-      "chip": "Jours 1-3",
+      "chip": "Jours 1-5",
       "tone": "berry",
       "title": "Transports Tokyo",
       "category": "local",
       "toReserve": false,
-      "description": "Deplacements urbains avant le ferry.",
+      "description": "Metro et trains avec la carte IC remise a l'aeroport.",
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
@@ -96,34 +51,56 @@
       },
       "sections": [
         {
-          "title": "Transferts",
+          "title": "Carte IC (Suica / Pasmo)",
           "items": [
-            "Narita Express ou monorail vers hotel",
-            "Metro Tokyo pour visites"
+            "Remise a l'aeroport, chargee de 2 000 JPY (dont 500 JPY de caution)",
+            "Valable metro, trains locaux, bus, monorail et petits achats",
+            "Ne marche pas dans le Shinkansen, les express limites ni les navettes aeroport",
+            "Recharge et remboursement en gare"
           ]
         },
         {
-          "title": "Jour 3 soir",
+          "title": "Lignes utiles",
           "items": [
-            "Train Tokyo -> Mito (1h30)",
-            "Bus Mito -> Oarai Ferry Terminal (30 min)"
-          ]
-        },
-        {
-          "title": "Reservation",
-          "items": [
-            "Billets train et bus (achat sur place)"
+            "JR Sobu (gare de Ryogoku) et metro Toei Oedo",
+            "JR Yokosuka (Kinshicho -> Kamakura) et Enoden",
+            "Yurikamome (Shimbashi -> Odaiba)"
           ]
         }
       ]
     },
     {
-      "chip": "Jour 6",
+      "chip": "Jour 5",
       "tone": "forest",
-      "title": "Ferry Oarai -> Tomakomai",
+      "title": "Shinkansen Tokyo -> Niigata",
+      "category": "train",
+      "toReserve": false,
+      "description": "Reserve. Mer 28 oct, Toki 337, place reservee en classe ordinaire.",
+      "sections": [
+        {
+          "title": "Horaires",
+          "items": [
+            "18h12 : depart de la gare de Tokyo",
+            "20h07 : arrivee a Niigata",
+            "Etre sur le quai a 17h50 (au moins 15 min avant)"
+          ]
+        },
+        {
+          "title": "Ensuite",
+          "items": [
+            "Taxi de la gare de Niigata au terminal ferry (~15 min, 4 km)",
+            "Etre au port a 21h00"
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Jours 5-6",
+      "tone": "clay",
+      "title": "Ferry Niigata -> Tomakomai",
       "category": "ferry",
-      "toReserve": true,
-      "description": "Traversees de 18h avec cabine.",
+      "toReserve": false,
+      "description": "Reserve. Traversee de nuit avec cabine privee, via Akita, arrivee au port de Tomakomai-Higashi.",
       "image": {
         "src": "/images/header-card/japan/ferry.jpg",
         "alt": "Ferry at sea",
@@ -131,41 +108,37 @@
       },
       "sections": [
         {
-          "title": "Reservation",
-          "items": [
-            "Ferry Sunflower (cabine privee)",
-            "Reserver 2-3 mois a l'avance"
-          ]
-        },
-        {
           "title": "Horaires",
           "items": [
-            "01h45 depart Oarai",
-            "19h45 arrivee Tomakomai"
+            "22h30 : depart de Niigata (mer 28 oct)",
+            "Escale a Akita (05h05 - 06h15)",
+            "16h45 : arrivee a Tomakomai-Higashi (jeu 29 oct)",
+            "Etre au port 1h30 avant"
           ]
         },
         {
-          "title": "Documents",
+          "title": "Tomakomai-Higashi -> Sapporo",
           "items": [
-            "Passeport",
-            "Confirmation email ferry"
+            "Bus de correspondance Donan Bus -> gare JR Minami-Chitose (~45 min, 1 500 JPY, especes ou PayPay)",
+            "JR Rapid Airport Minami-Chitose -> Sapporo (~35 min)",
+            "Le carnet indique le bus n°24 vers la gare de Tomakomai : c'est l'acces du port Ouest, pas de Tomakomai-Higashi"
           ]
         }
       ],
       "links": [
         {
-          "label": "Sunflower Ferry",
-          "url": "https://www.sunflower.co.jp/en/"
+          "label": "Shin Nihonkai Ferry - horaires",
+          "url": "https://www.snf.jp/guide/time_schedule/"
         }
       ]
     },
     {
-      "chip": "Jours 5-7",
-      "tone": "clay",
+      "chip": "Jours 6-8",
+      "tone": "berry",
       "title": "Trains regionaux Hokkaido",
       "category": "local",
       "toReserve": false,
-      "description": "Priorite aux trains pour Sapporo et Otaru.",
+      "description": "Pas besoin de JR Pass : seulement Sapporo <-> Otaru avant la voiture.",
       "image": {
         "src": "/images/header-card/japan/sapporo.jpeg",
         "alt": "Sapporo city",
@@ -175,64 +148,60 @@
         {
           "title": "Lignes utiles",
           "items": [
-            "Sapporo <-> Otaru (JR Hakodate Line)",
-            "Sapporo -> Asahikawa (option train avant location)"
-          ]
-        },
-        {
-          "title": "Conseils",
-          "items": [
-            "Reserver sieges fenetre",
-            "Utiliser JR Pass si actif"
+            "Sapporo <-> Otaru (JR Hakodate Line, ~35 min)",
+            "Payer avec la carte IC ou un billet au guichet"
           ]
         }
       ]
     },
     {
-      "chip": "Jours 8-13",
-      "tone": "berry",
-      "title": "Location voiture (zones isolees)",
+      "chip": "Jours 9-15",
+      "tone": "forest",
+      "title": "Voiture Toyota Rent a Car",
       "category": "voiture",
-      "toReserve": true,
-      "description": "Uniquement pour Sounkyo, Akan-ko et Biei.",
+      "toReserve": false,
+      "description": "Reserve et prepaye. Du dim 1 nov 9h00 au sam 7 nov 19h00, agence Sapporo Ekimae.",
       "sections": [
         {
-          "title": "Quand louer",
+          "title": "Retrait et retour",
           "items": [
-            "Sapporo -> Sounkyo Onsen",
-            "Sounkyo -> Akan-ko",
-            "Akan-ko -> Furano",
-            "Biei routes panoramiques"
+            "Retrait dim 1 nov a 09h00 : Toyota Rent a Car Sapporo Ekimae, Kita 5-jo Higashi 1-2-4, Chuo-ku",
+            "Retour sam 7 nov avant 19h00, meme agence",
+            "Classe S (C1), non-fumeur, GPS en anglais, double protection",
+            "Carte ETC : 550 JPY sur place, les peages sont debites sur la carte bancaire au retour"
           ]
         },
         {
-          "title": "Reservation",
+          "title": "Conduite",
           "items": [
-            "Assurance complete conseillee",
-            "Demander ETC + GPS"
+            "Conduite a gauche, alcool zero, pas de telephone au volant",
+            "Debut novembre : neige possible en montagne, verifier les pneus hiver",
+            "Urgences : 110 (police), 119 (ambulance)"
           ]
         },
         {
-          "title": "Retour",
+          "title": "Documents",
           "items": [
-            "Retour voiture a Sapporo (Jour 14)"
+            "Voucher Toyota imprime (obligatoire)",
+            "Permis de conduire + traduction officielle",
+            "Passeport"
           ]
         }
       ],
       "links": [
         {
-          "label": "Toyota Rent a Car",
-          "url": "https://rent.toyota.co.jp/eng/"
+          "label": "Toyota Rent a Car Sapporo Ekimae (Maps)",
+          "url": "https://maps.google.com/?q=Toyota+Rent+a+Car+Sapporo+Ekimae"
         },
         {
-          "label": "Times Car Rental",
-          "url": "https://www.timescar-rental.com/en/"
+          "label": "Conduire au Japon (Japan Experience)",
+          "url": "https://www.japan-experience.com/fr/preparer-voyage/dossiers/conduire-au-japon"
         }
       ]
     },
     {
       "chip": "Excursions",
-      "tone": "forest",
+      "tone": "clay",
       "title": "Reservations activites",
       "category": "activites",
       "toReserve": true,
@@ -261,12 +230,12 @@
       ]
     },
     {
-      "chip": "Jour 15",
-      "tone": "clay",
-      "title": "Vol Sapporo -> Tokyo",
+      "chip": "Jour 16",
+      "tone": "berry",
+      "title": "Vol Sapporo -> Tokyo (JAL 508)",
       "category": "vol",
-      "toReserve": true,
-      "description": "Retour en avion depuis New Chitose.",
+      "toReserve": false,
+      "description": "Reserve. Dim 8 nov, New Chitose 11h40 -> Haneda 13h25.",
       "image": {
         "src": "/images/header-card/japan/tokyo.avif",
         "alt": "Tokyo skyline",
@@ -274,41 +243,38 @@
       },
       "sections": [
         {
-          "title": "Reservation",
-          "items": [
-            "Billet avion Sapporo (CTS) -> Tokyo (HND)",
-            "Choisir option bagages"
-          ]
-        },
-        {
           "title": "Transferts",
           "items": [
-            "Navette hotel -> aeroport",
-            "Monorail vers hotel Tokyo"
+            "Navette privee hotel -> New Chitose : heure envoyee la veille avant 17h30",
+            "Plan B : JR Rapid Airport depuis la gare de Sapporo (37 min, carte IC)",
+            "Etre a l'aeroport 1h30 a 2h avant le vol",
+            "Navette Haneda -> Hotel Resol Ikebukuro : heure envoyee la veille avant 17h30"
           ]
         }
       ]
     },
     {
       "chip": "Jour 18",
-      "tone": "berry",
-      "title": "Vol retour Europe",
+      "tone": "clay",
+      "title": "Vol retour Tokyo Haneda -> Luxembourg",
       "category": "vol",
-      "toReserve": true,
-      "description": "Depart final depuis Tokyo.",
+      "toReserve": false,
+      "description": "Reserve. Mar 10 nov 22h45, via Francfort, arrivee le 11 nov a 09h55.",
       "sections": [
         {
-          "title": "Reservation",
+          "title": "Vols",
           "items": [
-            "Billet retour Tokyo -> Europe",
-            "Verifier heure d'enregistrement"
+            "NH203 : Tokyo Haneda 22h45 -> Francfort",
+            "Correspondance a Francfort : 3h35",
+            "LH9528 : Francfort -> Luxembourg, arrivee 09h55 (mer 11 nov)"
           ]
         },
         {
           "title": "Transfert",
           "items": [
-            "Acces aeroport depuis hotel",
-            "Verifier transport tardif"
+            "Navette partagee hotel -> Haneda : prise en charge ~3h30 avant le vol (vers 19h15)",
+            "Heure exacte envoyee la veille entre 18h et 20h - etre pret 10 min avant",
+            "1 grand bagage par personne"
           ]
         }
       ]
