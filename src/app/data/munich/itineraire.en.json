@@ -1,0 +1,355 @@
+{
+  "hero": {
+    "eyebrow": "Itinerary",
+    "title": "Munich & Bavaria: 5 days with Victoria",
+    "description": "One hotel, the Maritim near the central station, and five full days: Nymphenburg and the Olympiapark, the Romantic Road to Rothenburg, Dachau, King Ludwig II's castles, then the old town before the evening flights. Already paid: hotel 349 EUR (3 nights) and return flight 151.97 EUR.",
+    "duration": "5 days / 4 nights",
+    "date": "Feb 5 to Feb 9, 2027"
+  },
+  "cards": [
+    {
+      "chip": "Feb 5",
+      "tone": "forest",
+      "title": "Arrival, Konigsplatz & Nymphenburg",
+      "location": "Munich, Germany",
+      "description": "Anthony lands at 10:20am, Victoria arrives from Salzburg on the Nightjet. Bags at the hotel, Konigsplatz, lunch at the Augustiner-Keller, Nymphenburg Palace, then an evening at the Olympiapark.",
+      "transportMode": "flight",
+      "routeWaypoints": [
+        { "name": "Luxembourg Airport (LUX)", "lat": 49.6233, "lng": 6.2044 },
+        { "name": "Munich Airport (MUC)", "lat": 48.3537, "lng": 11.775 }
+      ],
+      "image": {
+        "src": "/images/header-card/munich/munich.avif",
+        "alt": "Munich",
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "title": "Accommodation",
+          "items": ["Maritim Hotel München (4 nights, Feb 5 - 9)"]
+        },
+        {
+          "title": "Fri Feb 5 - Arrivals",
+          "items": [
+            "Victoria: Nightjet NJ294 Salzburg Hbf 7:01am -> Munchen Hbf 9:29am (ticket to buy on the spot)",
+            "Anthony: flight Luxembourg (LUX) 9:15am -> Munich (MUC) 10:20am",
+            "Airport -> Munchen Hbf: S-Bahn S1 or S8 (~40 min)",
+            {
+              "text": "Drop the bags at the Maritim (Goethestr. 7, 3 min walk from Hbf)",
+              "url": "https://maps.google.com/?q=48.1385,11.5617"
+            }
+          ]
+        },
+        {
+          "title": "Fri Feb 5 - Plan",
+          "items": [
+            {
+              "text": "Propylaen",
+              "url": "https://maps.google.com/?q=48.1456,11.5636"
+            },
+            {
+              "text": "Konigsplatz",
+              "url": "https://maps.google.com/?q=48.1459,11.5655"
+            },
+            {
+              "text": "12:15pm: lunch at the Augustiner-Keller (booked)",
+              "url": "https://maps.google.com/?q=48.1440,11.5530"
+            },
+            {
+              "text": "2:00pm: Nymphenburg Palace (booked by Anthony on GetYourGuide)",
+              "url": "https://maps.google.com/?q=48.1583,11.5033"
+            },
+            {
+              "text": "BMW Welt (open until midnight)",
+              "url": "https://maps.google.com/?q=48.1771,11.5562"
+            },
+            {
+              "text": "Olympiaturm (Olympic Tower)",
+              "url": "https://maps.google.com/?q=48.1743,11.5537"
+            },
+            {
+              "text": "Dinner at the Olympiaalm (until 9pm)",
+              "url": "https://maps.google.com/?q=Olympiaalm+Munich"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Feb 6",
+      "tone": "clay",
+      "title": "Romantic Road: Harburg, Nordlingen, Rothenburg",
+      "location": "Rothenburg ob der Tauber, Germany",
+      "description": "Full-day coach tour from Karlsplatz: Harburg Castle, the Ries meteorite crater at Nordlingen and the medieval town of Rothenburg. Evening in Schwabing.",
+      "transportMode": "driving",
+      "routeWaypoints": [
+        { "name": "Munich (Karlsplatz)", "lat": 48.139, "lng": 11.566 },
+        { "name": "Harburg", "lat": 48.7867, "lng": 10.69, "isStop": true },
+        { "name": "Nordlingen", "lat": 48.851, "lng": 10.4886, "isStop": true },
+        { "name": "Rothenburg ob der Tauber", "lat": 49.3772, "lng": 10.1787 }
+      ],
+      "image": {
+        "src": "/images/header-card/munich/rothenburg.svg",
+        "alt": "Rothenburg ob der Tauber",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Accommodation",
+          "items": ["Maritim Hotel München (night 2/4)"]
+        },
+        {
+          "title": "Sat Feb 6 - Transport",
+          "items": [
+            {
+              "text": "Meet before 8:30am: Karlsplatz 21, 80335 Munich (Stachus, next to Hotel Buddy)",
+              "url": "https://maps.google.com/?q=48.1390,11.5660"
+            },
+            "Full-day coach tour - back at Karlsplatz around 7pm"
+          ]
+        },
+        {
+          "title": "Sat Feb 6 - Day trip",
+          "items": [
+            {
+              "text": "Breakfast at Frischbackstube Alp (from 6am)",
+              "url": "https://maps.google.com/?q=Frischbackstube+Alp+Munich"
+            },
+            {
+              "text": "Harburg Castle - one of Germany's oldest castle complexes",
+              "url": "https://maps.google.com/?q=48.7867,10.6900"
+            },
+            {
+              "text": "Nordlinger Ries: meteorite crater and the round walled town of Nordlingen",
+              "url": "https://maps.google.com/?q=48.8510,10.4886"
+            },
+            {
+              "text": "Rothenburg ob der Tauber: medieval town",
+              "url": "https://maps.google.com/?q=49.3772,10.1787"
+            }
+          ]
+        },
+        {
+          "title": "Sat Feb 6 - Evening in Schwabing",
+          "items": [
+            {
+              "text": "Dinner at the Kaisergarten (noon - midnight)",
+              "url": "https://maps.google.com/?q=Kaisergarten+Munich"
+            },
+            {
+              "text": "Siegestor (Victory Gate)",
+              "url": "https://maps.google.com/?q=48.1525,11.5823"
+            },
+            {
+              "text": "University of Munich (LMU)",
+              "url": "https://maps.google.com/?q=48.1508,11.5803"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Feb 7",
+      "tone": "berry",
+      "title": "Dachau & Blutenburg",
+      "location": "Dachau, Germany",
+      "description": "Morning at the Dachau Concentration Camp Memorial Site, then west Munich: Kaiserschmarrn at Blutenburg Castle and the Orthodox monastery of St. Job.",
+      "transportMode": "train",
+      "routeWaypoints": [
+        { "name": "Munchen Hbf", "lat": 48.1402, "lng": 11.56 },
+        { "name": "KZ-Gedenkstatte Dachau", "lat": 48.27, "lng": 11.4683, "isStop": true },
+        { "name": "Schloss Blutenburg", "lat": 48.163, "lng": 11.457 }
+      ],
+      "image": {
+        "src": "/images/header-card/munich/blutenburg.svg",
+        "alt": "Blutenburg Castle",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Accommodation",
+          "items": ["Maritim Hotel München (night 3/4)"]
+        },
+        {
+          "title": "Sun Feb 7 - Transport",
+          "items": [
+            "S2 Munchen Hbf -> Dachau (~20 min), then bus 726 to the KZ-Gedenkstatte stop",
+            "Dachau is outside zone M: get the right ticket",
+            "Back on the S2 to Obermenzing, then ~10 min walk to Blutenburg"
+          ]
+        },
+        {
+          "title": "Sun Feb 7 - Plan",
+          "items": [
+            {
+              "text": "Dachau Concentration Camp Memorial Site (9am - 5pm, free entry)",
+              "url": "https://maps.google.com/?q=48.2700,11.4683"
+            },
+            {
+              "text": "Lunch: Backerei Aumuller (7am - 5pm)",
+              "url": "https://maps.google.com/?q=Backerei+Aumuller"
+            },
+            {
+              "text": "Must-eat: Kaiserschmarrn at the Schlossschanke Blutenburg (noon - 8:30pm)",
+              "url": "https://maps.google.com/?q=48.1630,11.4570"
+            },
+            {
+              "text": "St. Job of Pochayev Orthodox monastery (6pm - 9pm)",
+              "url": "https://maps.google.com/?q=St.+Job+of+Pochayev+Orthodox+monastery+Munich"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Feb 8",
+      "tone": "forest",
+      "title": "Ludwig II's castles: Linderhof & Neuschwanstein",
+      "location": "Linderhof & Neuschwanstein, Germany",
+      "description": "Second coach tour: the small palace of Linderhof, then the fairy-tale Neuschwanstein Castle. Back at Karlsplatz around 7pm, dinner near Karlstor.",
+      "transportMode": "driving",
+      "routeWaypoints": [
+        { "name": "Munich (Karlsplatz)", "lat": 48.139, "lng": 11.566 },
+        { "name": "Schloss Linderhof", "lat": 47.5711, "lng": 10.9605, "isStop": true },
+        { "name": "Neuschwanstein", "lat": 47.5576, "lng": 10.7498 }
+      ],
+      "image": {
+        "src": "/images/header-card/munich/neuschwanstein.jpg",
+        "alt": "Neuschwanstein Castle",
+        "position": "center 55%"
+      },
+      "sections": [
+        {
+          "title": "Accommodation",
+          "items": ["Maritim Hotel München (night 4/4)"]
+        },
+        {
+          "title": "Mon Feb 8 - Transport",
+          "items": [
+            {
+              "text": "Meet before 8:30am: Karlsplatz 21, 80335 Munich (Stachus, next to Hotel Buddy)",
+              "url": "https://maps.google.com/?q=48.1390,11.5660"
+            },
+            "Full-day coach tour - back at Karlsplatz around 7pm"
+          ]
+        },
+        {
+          "title": "Mon Feb 8 - Day trip",
+          "items": [
+            {
+              "text": "Breakfast at Frischbackstube Alp (from 6am)",
+              "url": "https://maps.google.com/?q=Frischbackstube+Alp+Munich"
+            },
+            {
+              "text": "Linderhof Palace",
+              "url": "https://maps.google.com/?q=47.5711,10.9605"
+            },
+            {
+              "text": "Neuschwanstein Castle",
+              "url": "https://maps.google.com/?q=47.5576,10.7498"
+            },
+            "To check: are the castle entry tickets included in the tour?"
+          ]
+        },
+        {
+          "title": "Mon Feb 8 - Evening",
+          "items": [
+            {
+              "text": "Dinner at Bohne & Malz (until 11pm)",
+              "url": "https://maps.google.com/?q=Bohne+%26+Malz+Munich"
+            },
+            {
+              "text": "Karlstor",
+              "url": "https://maps.google.com/?q=48.1391,11.5683"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chip": "Feb 9",
+      "tone": "clay",
+      "title": "Old town & flights home",
+      "location": "Altstadt, Munich",
+      "description": "Last day in the historic centre: the Residenz, Marienplatz, churches and the Viktualienmarkt, then the evening flights (Anthony 8:10pm, Victoria 9:25pm).",
+      "transportMode": "flight",
+      "routeWaypoints": [
+        { "name": "Munich Airport (MUC)", "lat": 48.3537, "lng": 11.775 },
+        { "name": "Luxembourg Airport (LUX)", "lat": 49.6233, "lng": 6.2044 }
+      ],
+      "image": {
+        "src": "/images/header-card/munich/altstadt.svg",
+        "alt": "Munich old town",
+        "position": "center 50%"
+      },
+      "sections": [
+        {
+          "title": "Tue Feb 9 - Plan",
+          "items": [
+            "Check out of the Maritim, leave the bags at the hotel",
+            {
+              "text": "Odeonsplatz",
+              "url": "https://maps.google.com/?q=48.1425,11.5774"
+            },
+            {
+              "text": "Residenz München (10am - 5pm) - book tickets online!",
+              "url": "https://maps.google.com/?q=48.1417,11.5783"
+            },
+            {
+              "text": "Lunch at the Spatenhaus an der Oper (from 11:30am)",
+              "url": "https://maps.google.com/?q=48.1394,11.5786"
+            },
+            {
+              "text": "Frauenkirche",
+              "url": "https://maps.google.com/?q=48.1386,11.5736"
+            },
+            {
+              "text": "Rathaus-Glockenspiel (in winter only at 11am and noon: fit it in before lunch)",
+              "url": "https://maps.google.com/?q=48.1374,11.5755"
+            },
+            {
+              "text": "Neues Rathaus (New Town Hall)",
+              "url": "https://maps.google.com/?q=48.1374,11.5755"
+            },
+            {
+              "text": "St. Peter's Church (8:30am - 8pm)",
+              "url": "https://maps.google.com/?q=48.1364,11.5757"
+            },
+            {
+              "text": "Heilig-Geist-Kirche",
+              "url": "https://maps.google.com/?q=48.1356,11.5774"
+            },
+            {
+              "text": "Viktualienmarkt (closed on Sundays, open this Tuesday)",
+              "url": "https://maps.google.com/?q=48.1351,11.5762"
+            },
+            {
+              "text": "Asamkirche (until 6pm? to check)",
+              "url": "https://maps.google.com/?q=48.1350,11.5697"
+            },
+            {
+              "text": "Sendlinger Tor",
+              "url": "https://maps.google.com/?q=48.1340,11.5673"
+            }
+          ]
+        },
+        {
+          "title": "Tue Feb 9 - Transport",
+          "items": [
+            "Pick up the bags at the Maritim, then S1 or S8 Hbf -> airport (~40 min)",
+            "Anthony: flight Munich (MUC) -> Luxembourg, departs 8:10pm",
+            "Victoria: Emirates flight EK052, Munich Terminal 1, departs 9:25pm"
+          ]
+        },
+        {
+          "title": "Before you go",
+          "items": [
+            "Online check-in the day before",
+            "Be at the airport ~2h before the flight",
+            "Book the Residenz tickets before the trip"
+          ]
+        }
+      ]
+    }
+  ]
+}

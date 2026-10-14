@@ -8,7 +8,7 @@ import hebergementsEn from './hebergements.en.json';
 import transportsEn from './transports.en.json';
 import activitesEn from './activites.en.json';
 
-export const viennaMunichData = {
+export const munichData = {
   fr: { itineraire: itineraireFr, hebergements: hebergementsFr, transports: transportsFr, activites: activitesFr },
   en: { itineraire: itineraireEn, hebergements: hebergementsEn, transports: transportsEn, activites: activitesEn },
 };

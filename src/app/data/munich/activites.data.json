@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "eyebrow": "Activites",
+    "title": "Reservations et billets",
+    "description": "Ce qui est deja reserve et ce qu'il reste a reserver. Le detail jour par jour est dans l'itineraire."
+  },
+  "activities": [
+    {
+      "chip": "5 Fev",
+      "title": "Dejeuner a l'Augustiner-Keller (12h15)",
+      "location": "Munich, Allemagne",
+      "description": "Table reservee a 12h15. Arnulfstrasse 52, pres de la gare centrale.",
+      "booked": true,
+      "links": [{ "label": "Augustiner-Keller", "url": "https://www.augustinerkeller.de" }]
+    },
+    {
+      "chip": "5 Fev",
+      "title": "Palais de Nymphenburg (14h)",
+      "location": "Munich, Allemagne",
+      "description": "Reserve par Anthony sur GetYourGuide, creneau de 14h.",
+      "booked": true,
+      "links": [{ "label": "Schloss Nymphenburg", "url": "https://www.schloss-nymphenburg.de" }]
+    },
+    {
+      "chip": "6 Fev",
+      "title": "Excursion Route romantique : Harburg, Nordlingen, Rothenburg",
+      "location": "Rothenburg ob der Tauber, Allemagne",
+      "description": "Excursion en car a la journee. Rendez-vous avant 8h30 a Karlsplatz 21 (Stachus), retour vers 19h.",
+      "booked": true,
+      "links": []
+    },
+    {
+      "chip": "8 Fev",
+      "title": "Excursion Linderhof & Neuschwanstein",
+      "location": "Linderhof & Neuschwanstein, Allemagne",
+      "description": "Excursion en car a la journee. Rendez-vous avant 8h30 a Karlsplatz 21 (Stachus), retour vers 19h. Verifier si les billets d'entree des chateaux sont inclus.",
+      "booked": true,
+      "links": [{ "label": "Billets Neuschwanstein", "url": "https://www.hohenschwangau.de/" }]
+    },
+    {
+      "chip": "9 Fev",
+      "title": "Residenz München",
+      "location": "Altstadt (Odeonsplatz)",
+      "description": "Billets a reserver en ligne avant le voyage. Ouvert 10h - 17h en hiver.",
+      "links": [{ "label": "Residenz München", "url": "https://www.residenz-muenchen.de" }]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "eyebrow": "Activities",
+    "title": "Bookings and tickets",
+    "description": "What is already booked and what is left to book. Day-by-day details are in the itinerary."
+  },
+  "activities": [
+    {
+      "chip": "Feb 5",
+      "title": "Lunch at the Augustiner-Keller (12:15pm)",
+      "location": "Munich, Germany",
+      "description": "Table booked for 12:15pm. Arnulfstrasse 52, near the central station.",
+      "booked": true,
+      "links": [{ "label": "Augustiner-Keller", "url": "https://www.augustinerkeller.de" }]
+    },
+    {
+      "chip": "Feb 5",
+      "title": "Nymphenburg Palace (2pm)",
+      "location": "Munich, Germany",
+      "description": "Booked by Anthony on GetYourGuide, 2pm slot.",
+      "booked": true,
+      "links": [{ "label": "Schloss Nymphenburg", "url": "https://www.schloss-nymphenburg.de" }]
+    },
+    {
+      "chip": "Feb 6",
+      "title": "Romantic Road tour: Harburg, Nordlingen, Rothenburg",
+      "location": "Rothenburg ob der Tauber, Germany",
+      "description": "Full-day coach tour. Meet before 8:30am at Karlsplatz 21 (Stachus), back around 7pm.",
+      "booked": true,
+      "links": []
+    },
+    {
+      "chip": "Feb 8",
+      "title": "Linderhof & Neuschwanstein tour",
+      "location": "Linderhof & Neuschwanstein, Germany",
+      "description": "Full-day coach tour. Meet before 8:30am at Karlsplatz 21 (Stachus), back around 7pm. Check whether the castle entry tickets are included.",
+      "booked": true,
+      "links": [{ "label": "Neuschwanstein tickets", "url": "https://www.hohenschwangau.de/" }]
+    },
+    {
+      "chip": "Feb 9",
+      "title": "Residenz München",
+      "location": "Altstadt (Odeonsplatz)",
+      "description": "Book tickets online before the trip. Open 10am - 5pm in winter.",
+      "links": [{ "label": "Residenz München", "url": "https://www.residenz-muenchen.de" }]
+    }
+  ]
+}

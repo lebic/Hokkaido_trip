@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "eyebrow": "Hebergements",
+    "title": "Un seul hotel pour tout le sejour",
+    "description": "Maritim Hotel München, 4 nuits (5 - 9 fev). Budget : 349 EUR pour les 3 nuits deja reservees, la nuit du 8 au 9 est a confirmer."
+  },
+  "cards": [
+    {
+      "chip": "5 - 9 Fev",
+      "tone": "forest",
+      "title": "Maritim Hotel München (4 nuits)",
+      "location": "Munich, Allemagne",
+      "nights": "4 nuits",
+      "priority": 2,
+      "description": "Reserve. Chambre Lit Queen-Size, 2 adultes, petit-dejeuner non inclus. A 3 min a pied de la gare centrale.",
+      "sections": [
+        { "title": "Budget", "items": ["349 EUR (2 pers, 3 nuits 5 - 8 fev) - pris en charge par Anthony, a regler sur place ; nuit du 8 au 9 en plus"] },
+        { "title": "Statut", "items": ["Reserve - voir confirmation (Drive)"] },
+        { "title": "Reservation", "items": ["Goethestr. 7, Ludwigsvorstadt, 80336 Munich (a cote de Munchen Hbf)", "Arrivee ven. 5 fev (des 15h) -> Depart mar. 9 fev (jusqu'a 12h)", "Chambre Lit Queen-Size, 2 adultes", "Annulation gratuite jusqu'au 3 fev 2027", "WiFi gratuit"] },
+        { "title": "A verifier", "items": ["La confirmation d'origine couvre 3 nuits (depart lun. 8 fev) : prolonger jusqu'au 9 fev ou verifier que la reservation a ete modifiee", "Arrivee vers 11h le 5 fev : deposer les bagages avant le check-in", "Consigne a bagages le 9 fev apres le check-out (vols le soir)"] },
+        { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation (voir Drive)"] }
+      ],
+      "links": [
+        { "label": "Ma confirmation (Drive)", "url": "https://drive.google.com/file/d/1GjKIk1zAidd8BzlFXFkWzzzRaPFKRBEF/view?usp=drive_link" },
+        { "label": "Maritim Hotel München (Booking)", "url": "https://www.booking.com/hotel/de/maritimmuenchen.fr.html" }
+      ]
+    }
+  ]
+}
