@@ -64,6 +64,8 @@ interface RawActivity {
   location?: string;
   description?: string;
   links?: PrepLink[];
+  /** true si déjà réservé → coché par défaut dans les préparatifs. */
+  booked?: boolean;
 }
 
 /** Cherche l'étape correspondant à un lieu/titre (best-effort, tolérant fr/en). */
@@ -163,7 +165,7 @@ export function buildPreparatifs(opts: {
     stageIndex: matchStage(stages, a.location),
     options: [],
     reservation: [],
-    booked: false,
+    booked: a.booked === true,
   }));
 
   // --- Documents (déduits des sections "Documents" existantes, dédupliqués) ---

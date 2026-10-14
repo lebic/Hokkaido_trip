@@ -8,10 +8,13 @@ export type TravelId = keyof typeof ALL_TRAVEL_DATA;
 const STORAGE_KEY = 'selected-travel-id';
 
 function loadPersistedId(): string {
+  const fallback = TRAVELS_REGISTRY[0].id;
   try {
-    return localStorage.getItem(STORAGE_KEY) ?? TRAVELS_REGISTRY[0].id;
+    const stored = localStorage.getItem(STORAGE_KEY);
+    // Un voyage renommé ou supprimé (ex : 'vienna-munich') ne doit pas casser l'app.
+    return stored && stored in ALL_TRAVEL_DATA ? stored : fallback;
   } catch {
-    return TRAVELS_REGISTRY[0].id;
+    return fallback;
   }
 }
 

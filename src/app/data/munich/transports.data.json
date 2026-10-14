@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "eyebrow": "Transports",
+    "title": "Vols aller/retour + S-Bahn et cars sur place",
+    "description": "Anthony arrive de Luxembourg en avion, Victoria de Salzbourg en Nightjet. Sur place : S-Bahn, U-Bahn et tram MVV, plus deux excursions en car depuis Karlsplatz."
+  },
+  "cards": [
+    {
+      "chip": "5 Fev",
+      "tone": "forest",
+      "title": "Vol Luxembourg -> Munich",
+      "category": "vol",
+      "toReserve": false,
+      "description": "Vol du matin pour Anthony : depart 9h15, arrivee a Munich (MUC) 10h20.",
+      "sections": [
+        { "title": "Reservation", "items": ["Luxembourg (LUX) 9h15 -> Munich (MUC) 10h20", "Puis S-Bahn S1 ou S8 vers Munchen Hbf (~40 min)"] },
+        { "title": "A verifier", "items": ["Numero de vol et prix a completer", "Ancien vol LG 8853 Luxembourg -> Vienne du 29 jan (214 EUR, tarif Flex) : a annuler ou modifier si ce n'est pas deja fait"] },
+        { "title": "Documents", "items": ["Passeport ou carte d'identite", "Confirmation email"] }
+      ],
+      "links": []
+    },
+    {
+      "chip": "5 Fev",
+      "tone": "clay",
+      "title": "Nightjet Salzbourg -> Munich (Victoria)",
+      "category": "train",
+      "toReserve": true,
+      "description": "Nightjet NJ294, depart Salzburg Hbf 7h01, arrivee Munchen Hbf 9h29. Billet a acheter sur place.",
+      "sections": [
+        { "title": "Reservation", "items": ["NJ294 : Salzburg Hbf 7h01 -> Munchen Hbf 9h29", "Billet a acheter sur place, a Salzbourg"] },
+        { "title": "A verifier", "items": ["Places disponibles le jour meme (sinon acheter en ligne la veille)"] }
+      ],
+      "links": [{ "label": "ÖBB Nightjet", "url": "https://www.nightjet.com" }]
+    },
+    {
+      "chip": "9 Fev",
+      "tone": "forest",
+      "title": "Vol Munich -> Luxembourg",
+      "category": "vol",
+      "toReserve": false,
+      "description": "Reserve et paye. Vol retour d'Anthony depuis Munich (MUC), depart 20h10.",
+      "sections": [
+        { "title": "Budget", "items": ["151,97 EUR - reserve et paye (Anthony uniquement)"] },
+        { "title": "Statut", "items": ["Reserve et paye"] },
+        { "title": "Reservation", "items": ["Munich (MUC) 20h10 -> Luxembourg (LUX)"] }
+      ],
+      "links": [{ "label": "Luxair", "url": "https://www.luxair.lu/en" }]
+    },
+    {
+      "chip": "9 Fev",
+      "tone": "berry",
+      "title": "Vol retour de Victoria",
+      "category": "vol",
+      "toReserve": false,
+      "description": "Reserve par Victoria. Emirates EK052 depuis Munich, Terminal 1, depart 21h25.",
+      "sections": [
+        { "title": "Statut", "items": ["Reserve par Victoria"] },
+        { "title": "Reservation", "items": ["EK052 : Munich (MUC) Terminal 1, 21h25", "Long-courrier a sa charge"] },
+        { "title": "A verifier", "items": ["Note du planning : « 08:45 Vicky take off - EK386 LHR T2 » (a clarifier avec Victoria)"] }
+      ],
+      "links": []
+    },
+    {
+      "chip": "Sur place",
+      "tone": "clay",
+      "title": "Transports locaux",
+      "category": "local",
+      "toReserve": false,
+      "description": "S-Bahn, U-Bahn et tram MVV. Le Maritim est a cote de la gare centrale.",
+      "sections": [
+        { "title": "Aeroport", "items": ["Aeroport <-> Munchen Hbf : S1 ou S8 (~40 min)", "Airport-City-Day-Ticket : valable sur tout le reseau le jour de l'arrivee"] },
+        { "title": "Dans Munich", "items": ["Karlsplatz (Stachus), point de depart des excursions : ~10 min a pied de l'hotel", "Nymphenburg : tram 17 depuis Hbf", "Olympiapark / BMW Welt : U3 Olympiazentrum", "Billet journee MVV (individuel ou de groupe)"] },
+        { "title": "Dachau & Blutenburg", "items": ["S2 jusqu'a Dachau puis bus 726 (hors zone M)", "S2 jusqu'a Obermenzing pour Blutenburg"] }
+      ],
+      "links": [{ "label": "MVV", "url": "https://www.mvv-muenchen.de" }]
+    }
+  ]
+}

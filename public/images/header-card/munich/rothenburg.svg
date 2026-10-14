@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="rbSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b2c2d8"/>
+      <stop offset="0.45" stop-color="#dadfe4"/>
+      <stop offset="0.75" stop-color="#f3e4c6"/>
+    </linearGradient>
+    <radialGradient id="rbSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c6a05c" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#c6a05c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rbRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a2f3e"/>
+      <stop offset="1" stop-color="#7c2333"/>
+    </linearGradient>
+    <linearGradient id="rbYellow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e2b04e"/>
+      <stop offset="1" stop-color="#f4d37c"/>
+    </linearGradient>
+    <linearGradient id="rbStone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c7b79f"/>
+      <stop offset="0.6" stop-color="#eee3d0"/>
+      <stop offset="1" stop-color="#e0d0b6"/>
+    </linearGradient>
+    <linearGradient id="rbFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ece3d6" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ece3d6" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="rbCobble" width="40" height="24" patternUnits="userSpaceOnUse">
+      <rect width="40" height="24" fill="#a89b8c"/>
+      <g fill="#c3b7a7">
+        <rect x="2" y="2" width="16" height="9" rx="4"/>
+        <rect x="22" y="2" width="16" height="9" rx="4"/>
+        <rect x="-8" y="13" width="16" height="9" rx="4"/>
+        <rect x="12" y="13" width="16" height="9" rx="4"/>
+        <rect x="32" y="13" width="16" height="9" rx="4"/>
+      </g>
+    </pattern>
+    <path id="rbGround" d="M0 644 L180 610 L340 572 L440 572 L520 598 L700 600 L760 576 L960 606 L1200 640 V750 H0Z"/>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#rbSky)"/>
+  <circle cx="780" cy="230" r="250" fill="url(#rbSun)"/>
+  <circle cx="780" cy="230" r="38" fill="#fbecc8"/>
+
+  <!-- Tauber valley, glimpsed down the slope -->
+  <path d="M0 470 Q260 400 560 440 Q820 400 1200 436 V750 H0Z" fill="#60769e" opacity="0.3"/>
+
+  <!-- Kobolzeller Tor, down the right-hand lane -->
+  <rect x="742" y="476" width="62" height="130" fill="#dfcfb5"/>
+  <rect x="802" y="356" width="70" height="250" fill="url(#rbStone)"/>
+  <path d="M792 360 L837 280 L882 360Z" fill="url(#rbRoof)"/>
+  <g fill="#5b4a4a">
+    <rect x="831" y="392" width="12" height="24" rx="6"/>
+    <rect x="831" y="450" width="12" height="24" rx="6"/>
+  </g>
+  <path d="M864 438 L922 378 L980 438Z" fill="url(#rbRoof)"/>
+  <path d="M878 432 L922 390 L966 432 V610 H878Z" fill="#ead8c4"/>
+  <rect x="912" y="454" width="20" height="28" fill="#4a4250"/>
+
+  <!-- Siebersturm, straight ahead on the left-hand lane -->
+  <rect x="340" y="152" width="100" height="420" fill="url(#rbStone)"/>
+  <rect x="334" y="146" width="112" height="10" fill="#bba98f"/>
+  <path d="M326 148 L390 34 L454 148Z" fill="url(#rbRoof)"/>
+  <g fill="#5b4a4a">
+    <rect x="384" y="190" width="12" height="28" rx="6"/>
+    <rect x="384" y="262" width="12" height="28" rx="6"/>
+    <rect x="384" y="334" width="12" height="28" rx="6"/>
+  </g>
+  <path d="M366 572 V506 Q390 472 414 506 V572Z" fill="#efe2c8" stroke="#a8967c" stroke-width="6"/>
+  <g fill="none" stroke="#fbfaf7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M322 150 H458 M356 104 H424 M384 46 L390 38 L396 46"/>
+    <path d="M788 362 H886 M831 292 L837 284 L843 292 M738 474 H808"/>
+    <path d="M860 440 L922 374 L984 440"/>
+  </g>
+
+  <!-- houses along the lanes -->
+  <path d="M172 346 L258 228 L344 346Z" fill="url(#rbRoof)"/>
+  <path d="M188 340 L258 246 L328 340 V620 H188Z" fill="#e5c6b6"/>
+  <path d="M432 342 L492 258 L552 342Z" fill="url(#rbRoof)"/>
+  <path d="M444 336 L492 274 L540 336 V600 H444Z" fill="#ead8c4"/>
+  <path d="M1100 366 L1186 250 L1272 366Z" fill="url(#rbRoof)"/>
+  <path d="M1116 360 L1186 268 L1256 360 V640 H1116Z" fill="#e5c6b6"/>
+  <g fill="#4a4250">
+    <rect x="208" y="364" width="24" height="34" rx="2"/>
+    <rect x="284" y="364" width="24" height="34" rx="2"/>
+    <rect x="208" y="436" width="24" height="34" rx="2"/>
+    <rect x="248" y="290" width="18" height="24" rx="2"/>
+    <rect x="460" y="360" width="20" height="30" rx="2"/>
+    <rect x="460" y="424" width="20" height="30" rx="2"/>
+    <rect x="1140" y="384" width="24" height="34" rx="2"/>
+    <rect x="1140" y="456" width="24" height="34" rx="2"/>
+  </g>
+  <rect x="284" y="436" width="24" height="34" rx="2" fill="#f2d79a"/>
+  <g fill="none" stroke="#fbfaf7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M168 348 L258 224 L348 348"/>
+    <path d="M428 344 L492 254 L556 344"/>
+    <path d="M1096 368 L1186 246 L1276 368"/>
+  </g>
+
+  <!-- half-timbered houses framing the square -->
+  <path d="M-40 304 L78 146 L196 304Z" fill="url(#rbRoof)"/>
+  <path d="M-12 296 L78 174 L168 296 V660 H-12Z" fill="#f0e4d3"/>
+  <rect x="1074" y="186" width="16" height="40" fill="#7c2333"/>
+  <path d="M930 306 L1040 160 L1150 306Z" fill="url(#rbRoof)"/>
+  <path d="M956 298 L1040 186 L1124 298 V660 H956Z" fill="#f0e4d3"/>
+  <path d="M-12 296 H168 M-12 384 H168 M-12 400 H168 M-12 488 H168 M-12 504 H168 M8 296 V504 M78 296 V504 M148 296 V504 M30 296 L60 236 M126 296 L96 236 M956 298 H1124 M956 384 H1124 M956 400 H1124 M956 486 H1124 M956 502 H1124 M976 298 V502 M1040 298 V502 M1104 298 V502 M1000 298 L1022 252 M1080 298 L1058 252" fill="none" stroke="#7c2333" stroke-width="6"/>
+  <g fill="#3d3542">
+    <rect x="26" y="316" width="34" height="56" rx="2"/>
+    <rect x="96" y="316" width="34" height="56" rx="2"/>
+    <rect x="26" y="420" width="34" height="56" rx="2"/>
+    <rect x="66" y="228" width="24" height="32" rx="2"/>
+    <rect x="110" y="540" width="40" height="40" rx="2"/>
+    <path d="M40 660 V560 Q60 540 80 560 V660Z"/>
+    <rect x="992" y="318" width="32" height="52" rx="2"/>
+    <rect x="1056" y="318" width="32" height="52" rx="2"/>
+    <rect x="992" y="420" width="32" height="52" rx="2"/>
+    <rect x="1028" y="232" width="24" height="32" rx="2"/>
+    <path d="M1020 660 V566 Q1040 546 1060 566 V660Z"/>
+  </g>
+  <g fill="#f2d79a">
+    <rect x="96" y="420" width="34" height="56" rx="2"/>
+    <rect x="1056" y="420" width="32" height="52" rx="2"/>
+  </g>
+  <g fill="none" stroke="#fbfaf7" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-44 306 L78 142 L200 306"/>
+    <path d="M926 308 L1040 156 L1154 308 M1074 184 H1090"/>
+  </g>
+  <path d="M1082 174 q-16 -22 2 -40 q16 -16 0 -40" fill="none" stroke="#fbfaf7" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- the yellow Ploenlein house at the fork -->
+  <path d="M600 178 L650 196 L752 346 L706 334Z" fill="#7c2333"/>
+  <path d="M600 178 L650 196 L744 334 L704 324Z" fill="#f3f1ec"/>
+  <path d="M682 326 L742 344 V600 H682Z" fill="#c4943f"/>
+  <path d="M494 334 L600 178 L706 334Z" fill="url(#rbRoof)"/>
+  <path d="M518 326 L600 206 L682 326 V600 H518Z" fill="url(#rbYellow)"/>
+  <path d="M518 326 H682 M518 388 H682 M518 402 H682 M518 464 H682 M518 478 H682 M522 326 V478 M600 272 V478 M678 326 V478 M556 272 H644 M548 326 L572 272 M652 326 L628 272 M576 400 L600 334 L624 400 M576 476 L600 410 L624 476" fill="none" stroke="#6a3a2e" stroke-width="5"/>
+  <g fill="#3d3542">
+    <rect x="540" y="340" width="28" height="40" rx="2"/>
+    <rect x="632" y="340" width="28" height="40" rx="2"/>
+    <rect x="540" y="416" width="28" height="40" rx="2"/>
+    <rect x="572" y="284" width="16" height="24" rx="2"/>
+    <rect x="612" y="284" width="16" height="24" rx="2"/>
+    <rect x="592" y="232" width="16" height="22" rx="2"/>
+    <rect x="700" y="384" width="18" height="30" rx="2"/>
+    <path d="M540 600 V532 Q556 514 572 532 V600Z"/>
+  </g>
+  <g fill="#f2d79a">
+    <rect x="632" y="416" width="28" height="40" rx="2"/>
+    <rect x="606" y="506" width="50" height="36" rx="3"/>
+  </g>
+  <path d="M490 336 L600 174 L710 336" fill="none" stroke="#fbfaf7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fbfaf7">
+    <rect x="537" y="380" width="34" height="5" rx="2"/>
+    <rect x="629" y="380" width="34" height="5" rx="2"/>
+    <rect x="537" y="456" width="34" height="5" rx="2"/>
+    <rect x="629" y="456" width="34" height="5" rx="2"/>
+  </g>
+
+  <!-- cobbled square with snow drifts -->
+  <use href="#rbGround" fill="url(#rbCobble)"/>
+  <use href="#rbGround" fill="url(#rbFade)"/>
+  <g fill="#fbfaf7">
+    <path d="M0 650 Q90 624 180 612 L196 618 Q100 652 0 690Z"/>
+    <path d="M1200 646 Q1080 616 960 608 L944 614 Q1060 650 1200 690Z"/>
+    <path d="M500 604 Q600 594 700 604 Q610 620 520 614Z"/>
+    <path d="M0 750 V712 Q160 676 330 700 Q470 668 600 694 Q760 670 900 702 Q1060 676 1200 704 V750Z"/>
+  </g>
+  <path d="M0 750 V730 Q300 708 600 726 Q900 708 1200 728 V750Z" fill="#dde3ec"/>
+  <path d="M0 660 L340 578 L520 604 L300 750 H0Z" fill="#60769e" opacity="0.12"/>
+
+  <!-- little fountain -->
+  <rect x="490" y="560" width="10" height="50" fill="#a8977f"/>
+  <rect x="452" y="604" width="86" height="30" rx="6" fill="#b5a690"/>
+  <rect x="448" y="598" width="94" height="10" rx="5" fill="#fbfaf7"/>
+  <circle cx="495" cy="556" r="9" fill="#fbfaf7"/>
+</svg>

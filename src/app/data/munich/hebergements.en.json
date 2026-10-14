@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "eyebrow": "Accommodation",
+    "title": "One hotel for the whole stay",
+    "description": "Maritim Hotel München, 4 nights (Feb 5 - 9). Budget: 349 EUR for the 3 nights already booked, the night of Feb 8 to 9 still to confirm."
+  },
+  "cards": [
+    {
+      "chip": "Feb 5 - 9",
+      "tone": "forest",
+      "title": "Maritim Hotel München (4 nights)",
+      "location": "Munich, Germany",
+      "nights": "4 nights",
+      "priority": 2,
+      "description": "Booked. Queen-size bed room, 2 adults, breakfast not included. 3 min walk from the central station.",
+      "sections": [
+        { "title": "Budget", "items": ["349 EUR (2 guests, 3 nights Feb 5 - 8) - covered by Anthony, pay at the property; night of Feb 8 to 9 on top"] },
+        { "title": "Status", "items": ["Booked - see confirmation (Drive)"] },
+        { "title": "Reservation", "items": ["Goethestr. 7, Ludwigsvorstadt, 80336 Munich (next to Munchen Hbf)", "Check-in Fri Feb 5 (from 3pm) -> Check-out Tue Feb 9 (by noon)", "Queen-size bed room, 2 adults", "Free cancellation until Feb 3, 2027", "Free WiFi"] },
+        { "title": "To check", "items": ["The original confirmation covers 3 nights (check-out Mon Feb 8): extend to Feb 9 or check that the booking was changed", "Arriving around 11am on Feb 5: drop the bags before check-in", "Luggage storage on Feb 9 after check-out (evening flights)"] },
+        { "title": "Documents", "items": ["Passport or ID card", "Confirmation (see Drive)"] }
+      ],
+      "links": [
+        { "label": "My confirmation (Drive)", "url": "https://drive.google.com/file/d/1GjKIk1zAidd8BzlFXFkWzzzRaPFKRBEF/view?usp=drive_link" },
+        { "label": "Maritim Hotel München (Booking)", "url": "https://www.booking.com/hotel/de/maritimmuenchen.en-gb.html" }
+      ]
+    }
+  ]
+}

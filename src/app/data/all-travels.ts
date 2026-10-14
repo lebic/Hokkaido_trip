@@ -1,5 +1,5 @@
 import { hokkaidoData } from './hokkaido/index';
-import { viennaMunichData } from './vienna-munich/index';
+import { munichData } from './munich/index';
 import { taiwanData } from './taiwan/index';
 
 export type TravelTheme = Record<string, string>;
@@ -73,17 +73,17 @@ export const TRAVELS_REGISTRY: TravelMeta[] = [
     },
   },
   {
-    id: 'vienna-munich',
-    name: 'Vienna & Munich',
-    subtitle: 'Autriche · Allemagne',
-    subtitleEn: 'Austria · Germany',
-    dates: '29 Jan – 9 Feb 2027',
-    duration: '12 jours / 11 nuits',
-    durationEn: '12 days / 11 nights',
-    description: 'Vienne, Salzbourg, Hallstatt, Munich et Neuschwanstein : palais, concert classique et trains entre Autriche et Bavière.',
-    descriptionEn: 'Vienna, Salzburg, Hallstatt, Munich and Neuschwanstein: palaces, a classical concert and trains across Austria and Bavaria.',
-    image: '/images/header-card/vienna/vienna.jpg',
-    imagePosition: 'center 30%',
+    id: 'munich',
+    name: 'Munich',
+    subtitle: 'Bavière, Allemagne',
+    subtitleEn: 'Bavaria, Germany',
+    dates: '5 – 9 Feb 2027',
+    duration: '5 jours / 4 nuits',
+    durationEn: '5 days / 4 nights',
+    description: 'Munich avec Victoria : Nymphenburg, Olympiapark, Dachau, la Route romantique jusqu’à Rothenburg et les châteaux de Louis II.',
+    descriptionEn: 'Munich with Victoria: Nymphenburg, the Olympiapark, Dachau, the Romantic Road to Rothenburg and King Ludwig II’s castles.',
+    image: '/images/header-card/munich/munich.avif',
+    imagePosition: 'center 40%',
     color: 'from-blue-500 to-indigo-400',
     theme: {
       '--tb-canvas': '#f1ede6',
@@ -102,5 +102,5 @@ export const TRAVELS_REGISTRY: TravelMeta[] = [
 export const ALL_TRAVEL_DATA = {
   hokkaido: hokkaidoData,
   taiwan: taiwanData,
-  'vienna-munich': viennaMunichData,
+  munich: munichData,
 };
