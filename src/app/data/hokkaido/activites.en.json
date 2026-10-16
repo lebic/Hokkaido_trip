@@ -70,6 +70,106 @@
       ]
     },
     {
+      "chip": "Day 8",
+      "title": "Nikka Yoichi distillery (optional)",
+      "location": "Yoichi (25 min from Otaru)",
+      "description": "Saturday Oct 31 in the morning. Museum, shop and tasting bar need no booking. The guided tour (free, in Japanese) must be booked ahead, otherwise you're turned away.",
+      "links": [
+        {
+          "label": "Nikka Yoichi - tours",
+          "url": "https://nikka.com/eng/distilleries/yoichi/tour"
+        },
+        {
+          "label": "Nikka Yoichi (Maps)",
+          "url": "https://maps.google.com/?q=Nikka+Whisky+Yoichi+Distillery"
+        }
+      ]
+    },
+    {
+      "chip": "Day 9",
+      "title": "Asahiyama Zoo",
+      "location": "Asahikawa (road to Sounkyo)",
+      "description": "Sunday Nov 1, no booking needed. Last days of the summer season (until Nov 3, 9:30-16:30), closed Nov 4-10: not possible on the way back.",
+      "links": [
+        {
+          "label": "Asahiyama Zoo (Maps)",
+          "url": "https://maps.google.com/?q=Asahiyama+Zoo"
+        }
+      ]
+    },
+    {
+      "chip": "Day 9",
+      "title": "Kurodake ropeway",
+      "location": "Sounkyo Onsen",
+      "description": "If you arrive before ~15:30 on Nov 1. Weather-dependent; the annual maintenance falls later in November. Check the last ascent time.",
+      "links": [
+        {
+          "label": "Kurodake Ropeway",
+          "url": "https://www.rinyu.co.jp/sounkyo/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 11",
+      "title": "Lost Kamuy - Ikor theatre",
+      "location": "Akan-ko",
+      "description": "Tuesday Nov 3 (holiday): 15:00 show, otherwise 21:15. ~40 min, ~JPY 2,200. Booking recommended. Traditional dances only resume in December.",
+      "links": [
+        {
+          "label": "Akan Ainu Theater Ikor",
+          "url": "https://www.akanainu.jp/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 11",
+      "title": "Lake Akan cruise",
+      "location": "Akan-ko",
+      "description": "Lake tour (~85 min) with a stop at the marimo centre on Churui island. Season until Nov 30, no booking needed. Check the autumn timetable.",
+      "links": [
+        {
+          "label": "Akan Kisen (boats)",
+          "url": "https://www.akankisen.com/lang_eng/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 12",
+      "title": "Red-crowned cranes - Akan International Crane Center",
+      "location": "Akan-ko (45 min, towards Kushiro)",
+      "description": "Wednesday Nov 4 in the morning. Winter feeding starts in November; the centre is open year-round (9:00-17:00), no booking needed.",
+      "links": [
+        {
+          "label": "Crane Center (Maps)",
+          "url": "https://maps.google.com/?q=Akan+International+Crane+Center+GRUS"
+        }
+      ]
+    },
+    {
+      "chip": "Day 14",
+      "title": "Farm Tomita",
+      "location": "Furano",
+      "description": "No lavender in November: greenhouse, shop and café only. Free entry.",
+      "links": [
+        {
+          "label": "Farm Tomita",
+          "url": "https://www.farm-tomita.co.jp/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Day 14",
+      "title": "Blue Pond light-up",
+      "location": "Furano & Biei",
+      "description": "Friday Nov 6 after dark. Lit from Oct 22 to Apr 21, 17:00-21:00 in November. Cancelled in bad weather.",
+      "links": [
+        {
+          "label": "Blue Pond (Maps)",
+          "url": "https://maps.google.com/?q=Shirogane+Blue+Pond"
+        }
+      ]
+    },
+    {
       "chip": "Day 16",
       "title": "Shinjuku night walk (booked)",
       "location": "Shinjuku (6 min from Ikebukuro)",
@@ -94,73 +194,6 @@
         {
           "label": "Ogakiku (Maps)",
           "url": "https://maps.google.com/?q=Ogakiku+Kawagoe"
-        }
-      ]
-    },
-    {
-      "chip": "Day 9",
-      "title": "Daisetsuzan Ropeway",
-      "location": "Sounkyo Onsen",
-      "description": "Panoramic cable car. Operation depends on weather, heavy crowds in high season.",
-      "links": [
-        {
-          "label": "Daisetsuzan Ropeway",
-          "url": "https://www.rinyu.co.jp/sounkyo/en/"
-        }
-      ]
-    },
-    {
-      "chip": "Day 11",
-      "title": "Ainu Village - Ikahchu Show",
-      "location": "Akan-ko",
-      "description": "Ainu dance and music show in the evening. Limited sessions, booking recommended.",
-      "links": [
-        {
-          "label": "Akan Ainu Theater (Ikor)",
-          "url": "https://www.akanainu.jp/"
-        }
-      ]
-    },
-    {
-      "chip": "Day 11",
-      "title": "Boat on Lake Akan",
-      "location": "Akan-ko",
-      "description": "Lake tour with a visit to the Marimo Exhibition Center.",
-      "links": [
-        {
-          "label": "Akan Kisen (boats)",
-          "url": "https://www.akankisen.com/lang_eng/"
-        }
-      ]
-    },
-    {
-      "chip": "Day 12",
-      "title": "Canoe on Lake Akan",
-      "location": "Akan-ko",
-      "description": "Optional. Book with local operators on arrival or in advance.",
-      "links": []
-    },
-    {
-      "chip": "Day 14",
-      "title": "Farm Tomita",
-      "location": "Furano",
-      "description": "Lavender fields and Melon House. Free entry, check seasonal opening.",
-      "links": [
-        {
-          "label": "Farm Tomita",
-          "url": "https://www.farm-tomita.co.jp/en/"
-        }
-      ]
-    },
-    {
-      "chip": "Day 14",
-      "title": "Ningle Terrace",
-      "location": "Furano",
-      "description": "Craft village in the Furano forest. Best in the evening, check opening hours.",
-      "links": [
-        {
-          "label": "Ningle Terrace",
-          "url": "https://www.princehotels.com/en/furano/ningle-terrace/"
         }
       ]
     }

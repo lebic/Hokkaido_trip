@@ -287,7 +287,7 @@
       "tone": "berry",
       "title": "Sapporo",
       "location": "Sapporo, Hokkaido",
-      "description": "3 nights at the Tokyu REI, right in Susukino: the city and a day trip to Otaru.",
+      "description": "3 nights at the Tokyu REI, right in Susukino: the city at golden-ginkgo time, and a day in Otaru.",
       "transportMode": "train",
       "routeWaypoints": [
         {
@@ -321,63 +321,83 @@
           "title": "Day 6 (Thu Oct 29) - Evening in Susukino",
           "items": [
             {
-              "text": "Susukino in the evening, the hotel is in the neighbourhood",
-              "url": "https://maps.google.com/?q=43.0554,141.3546"
+              "text": "Arriving ~19:00: miso ramen, THE Sapporo speciality, at Ganso Ramen Yokocho (ramen alley, 5 min from the hotel)",
+              "url": "https://maps.google.com/?q=Ganso+Ramen+Yokocho+Sapporo"
             },
             {
-              "text": "Yokocho Ramen Alley",
-              "url": "https://maps.google.com/?q=43.0621,141.3537"
-            }
+              "text": "Or jingisukan (lamb grilled on a cast-iron dome) at Daruma, Susukino's cult spot - queues in the evening",
+              "url": "https://maps.google.com/?q=Jingisukan+Daruma+Honten+Sapporo"
+            },
+            "Walk under the Susukino neon"
           ]
         },
         {
           "title": "Day 7 (Fri Oct 30) - Sapporo",
           "items": [
             {
-              "text": "Odori Park",
+              "text": "Kaisendon breakfast (seafood bowl) at Nijo Market",
+              "url": "https://maps.google.com/?q=Nijo+Market+Sapporo"
+            },
+            {
+              "text": "Odori Park, the TV Tower and the Clock Tower (quick, it's small)",
               "url": "https://maps.google.com/?q=43.0606,141.3526"
             },
             {
-              "text": "Sapporo Clock Tower",
-              "url": "https://maps.google.com/?q=43.0614,141.3556"
+              "text": "Hokkaido University ginkgo avenue: the golden leaves peak in late October, right this week. 10 min on foot from Sapporo station",
+              "url": "https://maps.google.com/?q=Hokkaido+University+Ginkgo+Avenue"
             },
             {
-              "text": "Sapporo Beer Museum",
+              "text": "Soup curry lunch, Sapporo's other speciality (e.g. Soup Curry GARAKU)",
+              "url": "https://maps.google.com/?q=Soup+Curry+GARAKU+Sapporo"
+            },
+            {
+              "text": "Tanukikoji, the covered shopping arcade (handy if it rains)",
+              "url": "https://maps.google.com/?q=43.0587,141.3527"
+            },
+            {
+              "text": "Sapporo Beer Museum (free, paid tasting), then jingisukan dinner at the Sapporo Beer Garden next door",
               "url": "https://maps.google.com/?q=43.0714,141.3671"
             },
             {
-              "text": "Hitsujigaoka Observation Hill",
-              "url": "https://maps.google.com/?q=42.9867,141.4225"
+              "text": "Evening: night view from Mt Moiwa (ropeway + mini cable car, last ascent 21:30). Tram to Ropeway-iriguchi then free shuttle",
+              "url": "https://maps.google.com/?q=Mt+Moiwa+Ropeway"
             },
             {
-              "text": "Tanukikoji Shopping Arcade",
-              "url": "https://maps.google.com/?q=43.0587,141.3527"
+              "text": "Optional: Hitsujigaoka Observation Hill and the Clark statue",
+              "url": "https://maps.google.com/?q=42.9867,141.4225"
             }
           ]
         },
         {
           "title": "Day 8 (Sat Oct 31) - Transport",
           "items": [
-            "JR train to Otaru (~35 min)"
+            "JR train Sapporo → Otaru (~35 min by rapid, IC card)"
           ]
         },
         {
           "title": "Day 8 (Sat Oct 31) - Otaru",
           "items": [
             {
-              "text": "Walk along the canal",
+              "text": "Optional in the morning: Nikka distillery in Yoichi (JR Otaru → Yoichi, ~25 min). Museum and shop need no booking; the free guided tour needs a reservation and is in Japanese",
+              "url": "https://maps.google.com/?q=Nikka+Whisky+Yoichi+Distillery"
+            },
+            {
+              "text": "Kaisendon lunch at Sankaku Market, right next to Otaru station",
+              "url": "https://maps.google.com/?q=Otaru+Sankaku+Market"
+            },
+            {
+              "text": "Walk down to the canal: stone warehouses and gas lamps",
               "url": "https://maps.google.com/?q=43.1987,141.0043"
             },
             {
-              "text": "Glasswork shops",
+              "text": "Sakaimachi street: Kitaichi Glass, LeTAO (the double cheesecake), the music box museum and its steam clock",
               "url": "https://maps.google.com/?q=43.2001,141.0025"
             },
-            "Local snacks and tastings",
+            "The canal at dusk (~16:30), when the lamps come on",
             {
-              "text": "Fish market",
-              "url": "https://maps.google.com/?q=43.1948,141.0013"
+              "text": "Sushi dinner in Otaru (Sushi-ya dori) before heading back, or back to Sapporo",
+              "url": "https://maps.google.com/?q=Otaru+Sushiya+Dori"
             },
-            "Return to Sapporo in the late afternoon",
             "Get ready to leave: the car pickup is at 9:00 the next morning"
           ]
         }
@@ -388,7 +408,7 @@
       "tone": "forest",
       "title": "Sapporo → Sounkyo Onsen",
       "location": "Sounkyo Onsen",
-      "description": "Car pickup, scenic drive and a night at an onsen hotel with half-board.",
+      "description": "Car pickup, Asahiyama Zoo on the way (last days of its summer season) and a night at an onsen hotel in the gorge.",
       "transportMode": "driving",
       "routeWaypoints": [
         {
@@ -397,9 +417,9 @@
           "lng": 141.3545
         },
         {
-          "name": "Asahikawa",
-          "lat": 43.7683,
-          "lng": 142.3649,
+          "name": "Asahiyama Zoo",
+          "lat": 43.7686,
+          "lng": 142.4799,
           "isStop": true
         },
         {
@@ -424,16 +444,26 @@
           "title": "Transport",
           "items": [
             "Sun Nov 1, 09:00: car pickup at Toyota Rent a Car Sapporo Ekimae (Kita 5-jo Higashi 1-2-4) - Toyota voucher required",
-            "Arrival at Sounkyo Onsen around 13:00",
-            "Duration: 3h30 (210 km)",
+            "Do-o Expressway to Asahikawa (~1h50, 140 km), then the free expressway and Route 39 to Sounkyo (~1h)",
+            "Arrival at Sounkyo Onsen around 15:00, dark by ~16:30",
             "Cost: ~50 EUR (fuel + tolls)"
           ]
         },
         {
-          "title": "En route",
+          "title": "Stops en route",
           "items": [
-            "Possible stop in Asahikawa",
-            "Scenic mountain road",
+            {
+              "text": "~11:00: Asahiyama Zoo, Japan's most famous (polar bears, seals swimming through a tube, penguins). Summer season until Nov 3 (9:30-16:30), closed Nov 4-10: Nov 1 is fine. Allow 2h",
+              "url": "https://maps.google.com/?q=Asahiyama+Zoo"
+            },
+            {
+              "text": "Lunch at Asahikawa Ramen Village: 8 shops serving Asahikawa shoyu ramen, on the way to Sounkyo",
+              "url": "https://maps.google.com/?q=Asahikawa+Ramen+Village"
+            },
+            {
+              "text": "Optional: Otokoyama sake brewery (free museum, shop) - tasting for the passenger only",
+              "url": "https://maps.google.com/?q=Otokoyama+Sake+Brewery+Museum"
+            },
             "Early November can bring snow at altitude: check the car has winter tyres"
           ]
         },
@@ -442,11 +472,7 @@
           "items": [
             "Hotel check-in (free parking)",
             {
-              "text": "Sounkyo Gorge",
-              "url": "https://maps.google.com/?q=43.7469,142.9918"
-            },
-            {
-              "text": "Daisetsuzan Ropeway (weather permitting)",
+              "text": "If you arrive before ~15:30: Kurodake ropeway up to 1,300 m, sunset over the Daisetsuzan (check the last ascent time)",
               "url": "https://maps.google.com/?q=43.7485,142.9880"
             },
             "Onsen in the evening",
@@ -460,13 +486,25 @@
       "tone": "clay",
       "title": "Sounkyo Onsen → Akan-ko",
       "location": "Akan-ko",
-      "description": "Long drive past lakes and volcanoes.",
+      "description": "The big driving day: waterfalls, a mountain aquarium, lakes Kussharo and Mashu, a steaming volcano. Leave early, it gets dark around 16:15 in the east.",
       "transportMode": "driving",
       "routeWaypoints": [
         {
           "name": "Sounkyo Onsen",
           "lat": 43.7429,
           "lng": 142.9884
+        },
+        {
+          "name": "Onneyu Onsen",
+          "lat": 43.7545,
+          "lng": 143.4917,
+          "isStop": true
+        },
+        {
+          "name": "Bihoro Pass",
+          "lat": 43.6406,
+          "lng": 144.2536,
+          "isStop": true
         },
         {
           "name": "Lake Kussharo",
@@ -507,26 +545,43 @@
         {
           "title": "Transport",
           "items": [
-            "09:30: departure from Sounkyo Onsen",
-            "15:00: hotel check-in (Akanko Onsen 1-6-1)",
-            "Duration: 4h (180 km + stops)",
-            "Cost: ~40 EUR (fuel)"
+            "08:30: leave Sounkyo",
+            "~4h of driving (260 km) + stops: arrival in Akan around 16:00",
+            "Check-in from 15:00 (Akanko Onsen 1-6-1)",
+            "Avoid driving after dark: lots of deer on the road at dusk",
+            "Cost: ~45 EUR (fuel)"
           ]
         },
         {
-          "title": "Stops en route",
+          "title": "Stops en route (in order)",
           "items": [
             {
-              "text": "Lake Kussharo (Sunayu, Kotan Onsen)",
+              "text": "Ryusei and Ginga falls, 5 min past Sounkyo: the \"husband and wife falls\" (parking on Route 39)",
+              "url": "https://maps.google.com/?q=Ryusei+Ginga+Falls+Sounkyo"
+            },
+            {
+              "text": "Onneyu Onsen: Yama no Suizokukan, a small mountain aquarium known for its giant itou fish (~45 min, ~JPY 700). Skip it if you're running late",
+              "url": "https://maps.google.com/?q=Yama+no+Suizokukan+Onneyu"
+            },
+            {
+              "text": "Bihoro Pass: the panorama over the whole of Lake Kussharo",
+              "url": "https://maps.google.com/?q=Bihoro+Pass"
+            },
+            {
+              "text": "Lake Kussharo: Sunayu (dig into the beach and hot water wells up) and the Wakoto peninsula",
               "url": "https://maps.google.com/?q=43.6033,144.3433"
             },
             {
-              "text": "Mt. Io (Iozan) - fumaroles",
+              "text": "Mt. Io (Iozan): yellow sulphur vents right by the car park, eggs steamed by the volcano",
               "url": "https://maps.google.com/?q=43.5867,144.4483"
             },
             {
-              "text": "Lake Mashu - observation deck",
+              "text": "Lake Mashu, observatory no. 1: one of the clearest lakes in the world, often in the mist",
               "url": "https://maps.google.com/?q=43.5710,144.5277"
+            },
+            {
+              "text": "Sogakudai on Route 241: view of the Oakan and Meakan volcanoes just before Akan",
+              "url": "https://maps.google.com/?q=Sogakudai+Observatory+Akan"
             }
           ]
         },
@@ -534,9 +589,11 @@
           "title": "Activities at Akan",
           "items": [
             "Hotel check-in (free parking)",
-            "First look at the lake",
             "Onsen with lake view",
-            "Dinner not included (breakfast only): restaurants in Akanko Onsen village"
+            {
+              "text": "Dinner not included (breakfast only): Ainu cuisine at Poronno in the Ainu Kotan",
+              "url": "https://maps.google.com/?q=Poronno+Akanko+Ainu+Kotan"
+            }
           ]
         }
       ]
@@ -546,7 +603,7 @@
       "tone": "berry",
       "title": "Akan-ko",
       "location": "Akan-ko",
-      "description": "Nature, local culture and hikes.",
+      "description": "Lake Akan and Ainu culture, then a day towards Kushiro for the cranes and the great marsh.",
       "image": {
         "src": "/images/header-card/japan/akan-ko.jpg",
         "alt": "Akan-ko Lake",
@@ -560,41 +617,62 @@
           ]
         },
         {
-          "title": "Day 11 (Tue Nov 3) - Activities",
+          "title": "Day 11 (Tue Nov 3, holiday) - Akan",
           "items": [
             {
-              "text": "Boat trip on Lake Akan",
+              "text": "Morning: Lake Onneto (~30 min drive), its water changes colour with the light, Mt Meakan behind. The road closes in December, November is fine",
+              "url": "https://maps.google.com/?q=Lake+Onneto"
+            },
+            {
+              "text": "Lake Akan cruise (~85 min) with a stop on Churui island to see the marimo, the giant algae balls. Until Nov 30, no booking needed",
               "url": "https://maps.google.com/?q=43.4394,144.1131"
             },
             {
-              "text": "Marimo Observation Center",
-              "url": "https://maps.google.com/?q=43.4394,144.1131"
+              "text": "Bokke trail (~1h on foot from the Eco Museum Center): little bubbling mud volcanoes on the lakeshore",
+              "url": "https://maps.google.com/?q=43.4452,144.1079"
             },
             {
-              "text": "Ainu Village (museum, dance, crafts)",
+              "text": "Ainu Kotan, the Ainu village: wood-carving workshops",
               "url": "https://maps.google.com/?q=43.4387,144.1081"
             },
             {
-              "text": "Hike to Bokke",
-              "url": "https://maps.google.com/?q=43.4452,144.1079"
+              "text": "15:00: \"Lost Kamuy\" at the Ikor theatre (dance and projections, ~40 min). 15:00 show on weekends and holidays, otherwise 21:15. Traditional dances only resume in December",
+              "url": "https://maps.google.com/?q=Akanko+Ainu+Theater+Ikor"
             },
             "Onsen in the evening"
           ]
         },
         {
-          "title": "Day 12 (Wed Nov 4) - Your choice",
+          "title": "Day 12 (Wed Nov 4) - Kushiro: cranes and marsh",
+          "items": [
+            "A day south on Route 240, back in Akan around nightfall",
+            {
+              "text": "Akan International Crane Center (~45 min): Japan's red-crowned cranes (tancho). Winter feeding starts in November, best chances in the morning",
+              "url": "https://maps.google.com/?q=Akan+International+Crane+Center+GRUS"
+            },
+            {
+              "text": "Kushiro Marsh, the largest in Japan: Kushiro Shitsugen observatory, or Hosooka for the widest view",
+              "url": "https://maps.google.com/?q=Kushiro+Marsh+Observatory"
+            },
+            {
+              "text": "Lunch at Washo Market: katte-don, you build your own raw-fish bowl stall by stall",
+              "url": "https://maps.google.com/?q=Washo+Market+Kushiro"
+            },
+            {
+              "text": "Sunset on Nusamai Bridge (~16:15), one of Japan's most famous sunsets",
+              "url": "https://maps.google.com/?q=Nusamai+Bridge+Kushiro"
+            },
+            "Back to Akan (~1h15): careful, deer on the road at night"
+          ]
+        },
+        {
+          "title": "Alternative for day 12",
           "items": [
             {
-              "text": "Hike Mt. Oakan (4-5h)",
+              "text": "Hike Mt. Oakan (4-5h) if there's no snow at the top - ask at the Eco Museum Center",
               "url": "https://maps.google.com/?q=43.4614,144.2078"
             },
-            {
-              "text": "Hike Mt. Meakan (6-7h)",
-              "url": "https://maps.google.com/?q=43.3833,144.0167"
-            },
-            "Canoe on the lake",
-            "Relax at the hotel and onsen",
-            "Explore the village"
+            "Or a quiet day: onsen and village"
           ]
         }
       ]
@@ -604,7 +682,7 @@
       "tone": "forest",
       "title": "Akan-ko → Furano",
       "location": "Furano",
-      "description": "Long drive with gourmet stops.",
+      "description": "Across the Tokachi plain: wine, butadon and sweets, then the Karikachi pass to Furano.",
       "transportMode": "driving",
       "routeWaypoints": [
         {
@@ -613,15 +691,27 @@
           "lng": 144.1072
         },
         {
+          "name": "Ashoro",
+          "lat": 43.244,
+          "lng": 143.5536,
+          "isStop": true
+        },
+        {
+          "name": "Ikeda",
+          "lat": 42.9246,
+          "lng": 143.4489,
+          "isStop": true
+        },
+        {
           "name": "Obihiro",
           "lat": 42.9178,
           "lng": 143.1963,
           "isStop": true
         },
         {
-          "name": "Biei",
-          "lat": 43.5925,
-          "lng": 142.47,
+          "name": "Karikachi Pass",
+          "lat": 43.14,
+          "lng": 142.77,
           "isStop": true
         },
         {
@@ -645,23 +735,38 @@
         {
           "title": "Transport",
           "items": [
-            "09:00: departure from Akan-ko (check-out before 10:00)",
-            "16:00: arrival at Furano",
-            "Duration: 7h (350 km + stops)",
+            "09:00: leave Akan-ko (check-out before 10:00)",
+            "~4h of driving (240 km): arrival in Furano around 16:30",
+            "Karikachi pass (644 m): snow possible in early November, check the road weather",
             "Cost: ~60 EUR (fuel + tolls)"
           ]
         },
         {
-          "title": "Suggested stops",
+          "title": "Stops en route (in order)",
           "items": [
             {
-              "text": "Obihiro (lunch, butadon)",
-              "url": "https://maps.google.com/?q=42.9178,143.1963"
+              "text": "Ashoro: break at the Ginga Hall 21 michi-no-eki (roadside station)",
+              "url": "https://maps.google.com/?q=Michi+no+Eki+Ashoro+Ginga+Hall+21"
             },
-            "Tokachigawa Onsen (coffee break)",
             {
-              "text": "Biei: Blue Pond, Shikisai-no-oka",
-              "url": "https://maps.google.com/?q=43.5999,142.4968"
+              "text": "Ikeda Wine Castle: Tokachi's wine château, cellars and shop (tasting for the passenger)",
+              "url": "https://maps.google.com/?q=Ikeda+Wine+Castle"
+            },
+            {
+              "text": "Obihiro, lunch: butadon, the grilled pork bowl with sweet sauce born in Obihiro (Pancho or Butadon no Ippin)",
+              "url": "https://maps.google.com/?q=Butadon+Pancho+Obihiro"
+            },
+            {
+              "text": "Rokkatei's flagship store in Obihiro: the marusei butter sandwich, THE Hokkaido sweet souvenir",
+              "url": "https://maps.google.com/?q=Rokkatei+Obihiro+Main+Store"
+            },
+            {
+              "text": "Optional: Tokachigawa Onsen and its brown \"moor\" water (15 min east of Obihiro)",
+              "url": "https://maps.google.com/?q=Tokachigawa+Onsen"
+            },
+            {
+              "text": "Karikachi Pass: a last look over the Tokachi plain before dropping into Furano",
+              "url": "https://maps.google.com/?q=Karikachi+Pass"
             }
           ]
         },
@@ -672,8 +777,10 @@
               "text": "Check in at the Dormy Inn (Asahimachi 5-14)",
               "url": "https://maps.google.com/?q=Dormy+Inn+Premium+La+Vista+Furano+Hills"
             },
-            "Explore the town centre",
-            "Local dinner",
+            {
+              "text": "Dinner: Furano omu-curry (omelette, rice and curry), the town's speciality",
+              "url": "https://maps.google.com/?q=Furano+omu+curry"
+            },
             "The hotel onsen, and free late-night ramen (yonaki soba, a Dormy Inn habit)"
           ]
         }
@@ -684,7 +791,7 @@
       "tone": "clay",
       "title": "Furano & Biei",
       "location": "Furano & Biei",
-      "description": "Farms, cheese and scenic roads.",
+      "description": "Cheese factory, the Biei hills facing snowy peaks, and the Blue Pond lit up after dark.",
       "image": {
         "src": "/images/header-card/japan/farm-tomita.avif",
         "alt": "Farm Tomita lavender fields",
@@ -698,28 +805,42 @@
           ]
         },
         {
-          "title": "Activities",
+          "title": "Day 14 (Fri Nov 6) - Furano & Biei",
           "items": [
+            "Out of flower season: no lavender in November, but bare rolling hills and often the first white peaks",
             {
-              "text": "Farm Tomita (lavender, Melon House)",
-              "url": "https://maps.google.com/?q=43.3578,142.4441"
-            },
-            {
-              "text": "Furano Cheese Factory",
+              "text": "09:00: Furano Cheese Factory, cheese, ice cream and wood-fired pizza",
               "url": "https://maps.google.com/?q=43.3523,142.4040"
             },
             {
-              "text": "Ningle Terrace",
-              "url": "https://maps.google.com/?q=43.3523,142.3809"
+              "text": "Furano Winery, the town's winery: tasting and a view over Furano",
+              "url": "https://maps.google.com/?q=Furano+Winery"
             },
             {
-              "text": "Biei scenic drive (Patchwork, Panorama roads)",
+              "text": "Farm Tomita, on the way north: no flower fields, but the lavender greenhouse, the shop and the café",
+              "url": "https://maps.google.com/?q=43.3578,142.4441"
+            },
+            {
+              "text": "Biei, Panorama Road and Shikisai-no-oka: rolling hills facing the Tokachidake range",
               "url": "https://maps.google.com/?q=43.5925,142.4700"
             },
             {
-              "text": "Furano Wine House",
-              "url": "https://maps.google.com/?q=43.3387,142.3811"
-            }
+              "text": "Lunch in Biei: curry udon, the local speciality",
+              "url": "https://maps.google.com/?q=Biei+curry+udon"
+            },
+            {
+              "text": "Patchwork Road: the famous trees (Ken & Mary, Seven Stars) and the Hokusei-no-oka lookout",
+              "url": "https://maps.google.com/?q=Hokuseinooka+Observatory+Park+Biei"
+            },
+            {
+              "text": "Shirogane: Shirahige falls and the blue torrent under the bridge, then a soak at Shirogane Onsen while it gets dark",
+              "url": "https://maps.google.com/?q=Shirahige+Falls"
+            },
+            {
+              "text": "17:00: the Blue Pond lit up - Oct 22 to Apr 21, 17:00-21:00 in November. Back to Furano ~45 min",
+              "url": "https://maps.google.com/?q=Shirogane+Blue+Pond"
+            },
+            "Ningle Terrace is closed Nov 5-27 (annual maintenance)"
           ]
         }
       ]
@@ -729,13 +850,19 @@
       "tone": "berry",
       "title": "Furano → Sapporo",
       "location": "Sapporo",
-      "description": "Car return and last shopping.",
+      "description": "Back to Sapporo via an open-air museum, the car to return before 19:00, last evening in Susukino.",
       "transportMode": "driving",
       "routeWaypoints": [
         {
           "name": "Furano",
           "lat": 43.3418,
           "lng": 142.3834
+        },
+        {
+          "name": "Historical Village of Hokkaido",
+          "lat": 43.048,
+          "lng": 141.496,
+          "isStop": true
         },
         {
           "name": "Sapporo",
@@ -758,29 +885,36 @@
         {
           "title": "Transport",
           "items": [
-            "14:00: departure from Furano",
-            "16:30: arrival at Sapporo",
+            "10:00: leave Furano (check-out)",
+            "~2h30 to Sapporo (140 km) via Takikawa and the Do-o Expressway",
             "Return the car to Toyota Sapporo Ekimae before 19:00 (tank full; ETC tolls are charged to your card at that point)",
-            "Duration: 2h30 (140 km)",
-            "Cost: ~30 EUR (fuel)"
+            "Cost: ~30 EUR (fuel + tolls)"
           ]
         },
         {
-          "title": "Option en route",
+          "title": "Stops en route",
           "items": [
             {
-              "text": "Asahikawa (Asahiyama Zoo if interested)",
-              "url": "https://maps.google.com/?q=43.7783,142.4708"
-            }
+              "text": "Historical Village of Hokkaido (Nopporo, on the edge of Sapporo): some fifty pioneer-era buildings in an open-air museum. Open on Saturdays, 9:00-16:30 (closed Mondays from October to April)",
+              "url": "https://maps.google.com/?q=Historical+Village+of+Hokkaido"
+            },
+            {
+              "text": "Optional with the car: Moerenuma Park, Isamu Noguchi's sculpture park and its glass pyramid",
+              "url": "https://maps.google.com/?q=Moerenuma+Park"
+            },
+            "Asahiyama Zoo is closed Nov 4-10: do it on the way out (day 9)"
           ]
         },
         {
           "title": "Activities in Sapporo",
           "items": [
             "Hotel check-in",
-            "Last souvenir shopping",
-            "Ramen dinner",
-            "Free evening at Susukino"
+            "Last souvenirs: Shiroi Koibito, Royce, Rokkatei at Sapporo station and Daimaru",
+            {
+              "text": "Last dinner: jingisukan at Daruma if you haven't yet, or crab in Susukino",
+              "url": "https://maps.google.com/?q=Jingisukan+Daruma+Honten+Sapporo"
+            },
+            "Free evening in Susukino"
           ]
         }
       ]
