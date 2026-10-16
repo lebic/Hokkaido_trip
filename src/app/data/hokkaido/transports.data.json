@@ -175,6 +175,8 @@
           "title": "Conduite",
           "items": [
             "Conduite a gauche, alcool zero, pas de telephone au volant",
+            "Nuit vers 16h15-16h30 : partir tot et eviter de rouler de nuit (cerfs sur la route)",
+            "Faire le plein des que possible : en campagne, les stations sont rares et ferment tot",
             "Debut novembre : neige possible en montagne, verifier les pneus hiver",
             "Urgences : 110 (police), 119 (ambulance)"
           ]
@@ -210,21 +212,27 @@
         {
           "title": "Sounkyo",
           "items": [
-            "Daisetsuzan Ropeway (reserver si possible)"
+            "Telepherique du Kurodake (sans reservation, verifier la derniere montee)"
           ]
         },
         {
           "title": "Akan-ko",
           "items": [
-            "Bateau sur Lake Akan",
-            "Village Ainou : spectacle et musee"
+            "Croisiere sur le lac Akan (sans reservation, jusqu'au 30 nov)",
+            "Theatre Ikor : Lost Kamuy (reservation conseillee)"
           ]
         },
         {
           "title": "Furano/Biei",
           "items": [
             "Farm Tomita (sans reservation)",
-            "Furano Wine House (reservation si besoin)"
+            "Blue Pond illumine (17h-21h, sans reservation)"
+          ]
+        },
+        {
+          "title": "Otaru",
+          "items": [
+            "Distillerie Nikka Yoichi : visite guidee sur reservation (option)"
           ]
         }
       ]

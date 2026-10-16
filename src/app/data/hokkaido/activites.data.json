@@ -70,6 +70,106 @@
       ]
     },
     {
+      "chip": "Jour 8",
+      "title": "Distillerie Nikka Yoichi (option)",
+      "location": "Yoichi (25 min d'Otaru)",
+      "description": "Samedi 31 octobre le matin. Musee, boutique et bar de degustation sans reservation. La visite guidee (gratuite, en japonais) se reserve a l'avance, sinon refusee.",
+      "links": [
+        {
+          "label": "Nikka Yoichi - visites",
+          "url": "https://nikka.com/eng/distilleries/yoichi/tour"
+        },
+        {
+          "label": "Nikka Yoichi (Maps)",
+          "url": "https://maps.google.com/?q=Nikka+Whisky+Yoichi+Distillery"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 9",
+      "title": "Zoo d'Asahiyama",
+      "location": "Asahikawa (route de Sounkyo)",
+      "description": "Dimanche 1er novembre, sans reservation. Derniers jours de la saison d'ete (jusqu'au 3 nov, 9h30-16h30), ferme du 4 au 10 nov : impossible au retour.",
+      "links": [
+        {
+          "label": "Asahiyama Zoo (Maps)",
+          "url": "https://maps.google.com/?q=Asahiyama+Zoo"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 9",
+      "title": "Telepherique du Kurodake",
+      "location": "Sounkyo Onsen",
+      "description": "Si vous arrivez avant ~15h30 le 1er novembre. Fonctionne selon la meteo ; la maintenance annuelle tombe plus tard en novembre. Verifier l'heure de la derniere montee.",
+      "links": [
+        {
+          "label": "Kurodake Ropeway",
+          "url": "https://www.rinyu.co.jp/sounkyo/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 11",
+      "title": "Lost Kamuy - theatre Ikor",
+      "location": "Akan-ko",
+      "description": "Mardi 3 novembre (ferie) : seance de 15h, sinon 21h15. ~40 min, ~2 200 JPY. Reservation conseillee. Les danses traditionnelles ne reprennent qu'en decembre.",
+      "links": [
+        {
+          "label": "Akan Ainu Theater Ikor",
+          "url": "https://www.akanainu.jp/"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 11",
+      "title": "Croisiere sur le lac Akan",
+      "location": "Akan-ko",
+      "description": "Tour du lac (~85 min) avec arret au centre des marimo sur l'ile Churui. Saison jusqu'au 30 novembre, sans reservation. Verifier les horaires d'automne.",
+      "links": [
+        {
+          "label": "Akan Kisen (bateaux)",
+          "url": "https://www.akankisen.com/lang_eng/"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 12",
+      "title": "Grues du Japon - Akan International Crane Center",
+      "location": "Akan-ko (45 min, route de Kushiro)",
+      "description": "Mercredi 4 novembre le matin. Le nourrissage d'hiver commence en novembre ; centre ouvert toute l'annee (9h-17h), sans reservation.",
+      "links": [
+        {
+          "label": "Crane Center (Maps)",
+          "url": "https://maps.google.com/?q=Akan+International+Crane+Center+GRUS"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 14",
+      "title": "Farm Tomita",
+      "location": "Furano",
+      "description": "Pas de lavande en novembre : serre, boutique et cafe seulement. Entree libre.",
+      "links": [
+        {
+          "label": "Farm Tomita",
+          "url": "https://www.farm-tomita.co.jp/en/"
+        }
+      ]
+    },
+    {
+      "chip": "Jour 14",
+      "title": "Etang bleu (Blue Pond) illumine",
+      "location": "Furano & Biei",
+      "description": "Vendredi 6 novembre a la nuit tombee. Illumination du 22 octobre au 21 avril, 17h-21h en novembre. Annulee en cas de mauvais temps.",
+      "links": [
+        {
+          "label": "Blue Pond (Maps)",
+          "url": "https://maps.google.com/?q=Shirogane+Blue+Pond"
+        }
+      ]
+    },
+    {
       "chip": "Jour 16",
       "title": "Balade de nuit a Shinjuku (reserve)",
       "location": "Shinjuku (6 min d'Ikebukuro)",
@@ -94,73 +194,6 @@
         {
           "label": "Ogakiku (Maps)",
           "url": "https://maps.google.com/?q=Ogakiku+Kawagoe"
-        }
-      ]
-    },
-    {
-      "chip": "Jour 9",
-      "title": "Daisetsuzan Ropeway",
-      "location": "Sounkyo Onsen",
-      "description": "Teleeferique panoramique. Ouverture conditionnee a la meteo, affluence elevee en haute saison.",
-      "links": [
-        {
-          "label": "Daisetsuzan Ropeway",
-          "url": "https://www.rinyu.co.jp/sounkyo/en/"
-        }
-      ]
-    },
-    {
-      "chip": "Jour 11",
-      "title": "Village Ainou - Spectacle Ikahchu",
-      "location": "Akan-ko",
-      "description": "Spectacle de danse et musique Ainou en soiree. Seances limitees, reservation recommandee.",
-      "links": [
-        {
-          "label": "Akan Ainu Theater (Ikor)",
-          "url": "https://www.akanainu.jp/"
-        }
-      ]
-    },
-    {
-      "chip": "Jour 11",
-      "title": "Bateau sur Lake Akan",
-      "location": "Akan-ko",
-      "description": "Tour du lac avec visite du Marimo Exhibition Center.",
-      "links": [
-        {
-          "label": "Akan Kisen (bateaux)",
-          "url": "https://www.akankisen.com/lang_eng/"
-        }
-      ]
-    },
-    {
-      "chip": "Jour 12",
-      "title": "Canoe sur Lake Akan",
-      "location": "Akan-ko",
-      "description": "Optionnel. Reserver aupres des operateurs locaux a l'arrivee ou en avance.",
-      "links": []
-    },
-    {
-      "chip": "Jour 14",
-      "title": "Farm Tomita",
-      "location": "Furano",
-      "description": "Champs de lavande et Melon House. Entree libre, verifier ouverture selon la saison.",
-      "links": [
-        {
-          "label": "Farm Tomita",
-          "url": "https://www.farm-tomita.co.jp/en/"
-        }
-      ]
-    },
-    {
-      "chip": "Jour 14",
-      "title": "Ningle Terrace",
-      "location": "Furano",
-      "description": "Village artisanal en pleine foret de Furano. Soiree recommandee, horaires a verifier.",
-      "links": [
-        {
-          "label": "Ningle Terrace",
-          "url": "https://www.princehotels.com/en/furano/ningle-terrace/"
         }
       ]
     }
